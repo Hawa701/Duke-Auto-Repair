@@ -6,15 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:google-reviews": "node --test scripts/google-reviews.test.cjs",
+    "test:reveals": "node --test scripts/reveal-observer.test.cjs",
+    "test:scrollbar": "node --test scripts/scrollbar.test.cjs"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^2.1.3",
+    "motion": "^14.3.0",
     "next": "16.4.1",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
+    "@types/google.maps": "^3.66.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -1,0 +1,10 @@
+export const business = {
+  name: "Duke Auto Repair & Service",
+  street: "5220 Duke St",
+  city: "Alexandria",
+  region: "VA",
+  postalCode: "22304",
+  country: "United States",
+  address: "5220 Duke St, Alexandria, VA 22304, United States",
+  shortAddress: "5220 Duke St, Alexandria, VA 22304",
+  phoneDisplay: "+1 (703) 212-0608",

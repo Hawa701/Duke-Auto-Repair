@@ -20,3 +20,15 @@ export const reviewTopics = [
   { id: "rotor-replacement", label: "Rotor replacement", count: 3 },
   { id: "honest-staff", label: "Honest staff", count: 17 },
   { id: "battery-replacement", label: "Battery replacement", count: 2 },
+] as const;
+
+export type ReviewTopic = (typeof reviewTopics)[number]["id"];
+
+export type CustomerReview = {
+  id: string;
+  name: string;
+  initials: string;
+  rating: number;
+  text: string;
+  service: string;
+  topics: ReviewTopic[];

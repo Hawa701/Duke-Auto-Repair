@@ -32,3 +32,14 @@ export type CustomerReview = {
   text: string;
   service: string;
   topics: ReviewTopic[];
+};
+
+// Transcribed from the Google review screenshot supplied by the user.
+export const customerReviews: CustomerReview[] = [
+  {
+    id: "jennie-dunnavant",
+    name: "Jennie Dunnavant",
+    initials: "JD",
+    rating: 5,
+    text: "I stopped in for a safety inspection. I was helped right away and my car was finished more quickly than they estimated. Everyone I spoke to was friendly and helpful. I will definitely be bringing my car here in the future.",
+    service: "Safety inspection",

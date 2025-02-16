@@ -43,3 +43,15 @@ export const customerReviews: CustomerReview[] = [
     rating: 5,
     text: "I stopped in for a safety inspection. I was helped right away and my car was finished more quickly than they estimated. Everyone I spoke to was friendly and helpful. I will definitely be bringing my car here in the future.",
     service: "Safety inspection",
+    topics: ["safety-inspection", "kind-staff"],
+  },
+];
+
+// Relative visual lengths approximated from the screenshot, not exact percentages.
+export const ratingDistribution = [
+  { stars: 5, width: 100 },
+  { stars: 4, width: 4 },
+  { stars: 3, width: 1 },
+  { stars: 2, width: 1 },
+  { stars: 1, width: 4 },
+] as const;

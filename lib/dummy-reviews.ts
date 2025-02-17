@@ -18,3 +18,13 @@ export const dummyReviews: CustomerReview[] = [
     initials: "LO",
     rating: 5,
     text: "Quick emissions test, clear pricing, and no surprises. The team had me back on the road sooner than I expected. I'll be coming back for my next service.",
+    service: "Emissions test",
+    topics: ["emissions-test", "fair-pricing"],
+  },
+  {
+    id: "dummy-priya",
+    name: "Priya Shah",
+    initials: "PS",
+    rating: 5,
+    text: "My check engine light had been worrying me for days. They found the issue, explained the options in plain language, and gave me time to decide before starting any work. I appreciated the honest advice about what needed attention now and what could wait. It's reassuring to have a shop that takes the time to explain things.",
+    service: "Check engine diagnostics",

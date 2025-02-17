@@ -48,3 +48,13 @@ export const dummyReviews: CustomerReview[] = [
     service: "Rotor replacement",
     topics: ["rotor-replacement", "fair-pricing"],
   },
+  {
+    id: "dummy-marcus",
+    name: "Marcus Bell",
+    initials: "MB",
+    rating: 4,
+    text: "Helpful staff and an easy battery replacement. The waiting area was busy when I arrived, but the team kept me informed and got everything sorted. I'd happily use them again.",
+    service: "Battery replacement",
+    topics: ["battery-replacement", "kind-staff"],
+  },
+];

@@ -38,3 +38,13 @@ export const dummyReviews: CustomerReview[] = [
     text: "Stopped in for an oil change and the technicians were friendly and helpful. They walked me through the service and made sure everything was ready before I left. A really smooth experience.",
     service: "Oil change",
     topics: ["friendly-technicians"],
+  },
+  {
+    id: "dummy-hannah",
+    name: "Hannah Cole",
+    initials: "HC",
+    rating: 5,
+    text: "I was hearing a vibration when braking and booked a visit to have it checked. The team showed me the worn rotors and explained the replacement before giving me a clear estimate. My car feels much better now, and I appreciated knowing exactly what I was paying for.",
+    service: "Rotor replacement",
+    topics: ["rotor-replacement", "fair-pricing"],
+  },

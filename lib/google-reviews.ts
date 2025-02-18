@@ -62,3 +62,13 @@ export function loadGoogleRating(
       await import("@googlemaps/js-api-loader");
     if (!configured) {
       setOptions({ key: apiKey, v: "weekly", language: "en", region: "US" });
+      configured = true;
+    }
+    const { Place } = await importLibrary("places");
+    let id = placeId?.trim() || resolvedPlaceId;
+    if (!id) {
+      const { places } = await Place.searchByText({
+        textQuery: business.googlePlaceQuery,
+        fields: ["id"],
+        maxResultCount: 1,
+      });

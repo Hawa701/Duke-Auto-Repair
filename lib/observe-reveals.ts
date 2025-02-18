@@ -10,3 +10,15 @@ export function observeReveals(
     (entries) => {
       const visibleItems = entries
         .filter(
+          (entry) =>
+            entry.isIntersecting &&
+            entry.intersectionRatio >= 0.01 &&
+            pending.has(entry.target as HTMLElement),
+        )
+        .map((entry) => entry.target as HTMLElement);
+
+      if (!visibleItems.length) return;
+      visibleItems.forEach((item) => {
+        pending.delete(item);
+        observer.unobserve(item);
+      });

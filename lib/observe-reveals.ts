@@ -22,3 +22,16 @@ export function observeReveals(
         pending.delete(item);
         observer.unobserve(item);
       });
+      reveal(visibleItems);
+    },
+    // Wait until a card is 80px inside the viewport. A low ratio also works
+    // for tall cards on short mobile screens.
+    { rootMargin: "0px 0px -80px 0px", threshold: 0.01 },
+  );
+  items.forEach((item) => observer.observe(item));
+
+  return () => {
+    pending.clear();
+    observer.disconnect();
+  };
+}

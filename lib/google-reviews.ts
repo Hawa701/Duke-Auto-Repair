@@ -19,3 +19,14 @@ export function readGoogleRating(
   const expectedPhone = business.phoneHref.replace(/\D/g, "");
   const street = new RegExp(
     `\\b${business.street.replaceAll(" ", "\\s+")}\\b`,
+    "i",
+  );
+  if (
+    phone !== expectedPhone ||
+    !street.test(address) ||
+    !address.toLowerCase().includes(business.city.toLowerCase())
+  ) {
+    throw new Error("Google returned a different business listing.");
+  }
+  if (
+    typeof place.rating !== "number" ||

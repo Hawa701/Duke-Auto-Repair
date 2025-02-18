@@ -30,3 +30,13 @@ export function readGoogleRating(
   }
   if (
     typeof place.rating !== "number" ||
+    !Number.isFinite(place.rating) ||
+    place.rating < 1 ||
+    place.rating > 5 ||
+    typeof place.userRatingCount !== "number" ||
+    !Number.isInteger(place.userRatingCount) ||
+    place.userRatingCount < 0
+  ) {
+    throw new Error("Google did not return a valid rating and review count.");
+  }
+  return {

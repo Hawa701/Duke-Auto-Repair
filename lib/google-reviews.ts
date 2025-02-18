@@ -40,3 +40,14 @@ export function readGoogleRating(
     throw new Error("Google did not return a valid rating and review count.");
   }
   return {
+    rating: place.rating,
+    reviewCount: place.userRatingCount,
+    mapsUrl: place.googleMapsURI || business.googleReviewsUrl,
+    attributions: (place.attributions ?? []).flatMap((item) =>
+      item.provider ? [{ provider: item.provider, uri: item.providerURI }] : [],
+    ),
+  };
+}
+
+// Shared by every badge. Values stay in memory for the current page session only.
+export function loadGoogleRating(

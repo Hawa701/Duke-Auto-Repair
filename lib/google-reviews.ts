@@ -51,3 +51,14 @@ export function readGoogleRating(
 
 // Shared by every badge. Values stay in memory for the current page session only.
 export function loadGoogleRating(
+  apiKey: string,
+  placeId?: string,
+): Promise<GoogleRatingData> {
+  if (!apiKey.trim())
+    return Promise.reject(new Error("Google Maps API key is not configured."));
+  if (inFlight) return inFlight;
+  inFlight = (async () => {
+    const { importLibrary, setOptions } =
+      await import("@googlemaps/js-api-loader");
+    if (!configured) {
+      setOptions({ key: apiKey, v: "weekly", language: "en", region: "US" });

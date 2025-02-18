@@ -83,3 +83,14 @@ export function loadGoogleRating(
         "userRatingCount",
         "googleMapsURI",
         "formattedAddress",
+        "internationalPhoneNumber",
+      ],
+    });
+    const rating = readGoogleRating(place);
+    resolvedPlaceId = id;
+    return rating;
+  })().finally(() => {
+    inFlight = undefined;
+  });
+  return inFlight;
+}

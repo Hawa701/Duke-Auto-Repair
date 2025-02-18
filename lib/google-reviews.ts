@@ -72,3 +72,14 @@ export function loadGoogleRating(
         fields: ["id"],
         maxResultCount: 1,
       });
+      id = places[0]?.id;
+    }
+    if (!id)
+      throw new Error("Duke Auto Repair's Google listing could not be found.");
+    const place = new Place({ id });
+    await place.fetchFields({
+      fields: [
+        "rating",
+        "userRatingCount",
+        "googleMapsURI",
+        "formattedAddress",

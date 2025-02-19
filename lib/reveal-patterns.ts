@@ -8,3 +8,14 @@ export function revealStart(pattern: RevealPattern) {
     scale: pattern === "zoom" ? 0.96 : 1,
   };
 }
+
+export function itemRevealPattern(
+  pattern: RevealPattern | "alternate",
+  index: number,
+): RevealPattern {
+  return pattern === "alternate"
+    ? index % 2 === 0
+      ? "left"
+      : "right"
+    : pattern;
+}

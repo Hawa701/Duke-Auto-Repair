@@ -19,3 +19,13 @@ export const sampleReviews = [
     category: "inspections",
     previewDaysAgo: 3,
     rating: 5,
+  },
+  {
+    id: "3",
+    name: "Priya Shah",
+    initials: "PS",
+    text: "The free vehicle health report is the best thing I've ever seen from a mechanic. It had photos, simple explanations, and everything was color-coded so I could see what needed urgent attention. No tricks, just solid transparency. I'll be bringing all my vehicles here from now on.",
+    service: "digital inspection",
+    category: "inspections",
+    previewDaysAgo: 3,
+    rating: 5,

@@ -50,3 +50,14 @@ export const sampleReviews = [
     previewDaysAgo: 3,
     rating: 5,
   },
+  {
+    id: "6",
+    name: "Marcus Bell",
+    initials: "MB",
+    text: "Service was super fast and everyone was friendly. Got my oil changed and tires checked in under 30 minutes. Only thing I'd improve is the size of the waiting area. It gets crowded at peak hours. Otherwise, awesome experience!",
+    service: "oil change",
+    category: "oil-tires",
+    previewDaysAgo: 3,
+    rating: 5,
+  },
+] as const;

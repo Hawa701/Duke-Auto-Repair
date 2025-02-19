@@ -40,3 +40,13 @@ export const sampleReviews = [
     previewDaysAgo: 4,
     rating: 5,
   },
+  {
+    id: "5",
+    name: "Hannah Cole",
+    initials: "HC",
+    text: "Steering was pulling to one side so I booked a wheel alignment. Not only did they fix the problem, but they gave me a printout of my before-and-after specs. Driving feels smooth and responsive now. Very thorough and professional!",
+    service: "wheel alignment",
+    category: "alignment",
+    previewDaysAgo: 3,
+    rating: 5,
+  },

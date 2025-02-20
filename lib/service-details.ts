@@ -7,3 +7,13 @@ export type ServiceDetail = {
   imagePosition: string;
   introTitle: string;
   intro: string;
+  signsTitle: string;
+  signs: string[];
+  checks: { title: string; description: string }[];
+  bookingTitle: string;
+  bookingTag: string;
+  bookingDescription: string;
+  relatedIds: string[];
+  relatedDescription: string;
+  helpfulLinks?: { label: string; href: string }[];
+};

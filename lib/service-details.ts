@@ -46,3 +46,13 @@ export const serviceDetails = {
       },
       {
         title: "Rotors and drums",
+        description:
+          "Worn or warped rotors can cause vibration and longer stops. We check their thickness and surface, then resurface or replace them as needed.",
+      },
+      {
+        title: "Calipers",
+        description:
+          "A sticking caliper can make the car pull to one side and wear pads unevenly. We make sure each one grips and releases smoothly.",
+      },
+      {
+        title: "Brake fluid",

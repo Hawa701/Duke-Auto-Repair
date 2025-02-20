@@ -37,3 +37,12 @@ export const serviceDetails = {
       "The car pulls to one side when stopping",
       "Vibration in the pedal or steering wheel",
       "The brake warning light is on",
+    ],
+    checks: [
+      {
+        title: "Brake pads and shoes",
+        description:
+          "Pads and shoes wear down every time you stop. We measure what's left and replace them before they damage other parts.",
+      },
+      {
+        title: "Rotors and drums",

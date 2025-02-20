@@ -17,3 +17,13 @@ export type ServiceDetail = {
   relatedDescription: string;
   helpfulLinks?: { label: string; href: string }[];
 };
+
+export const serviceDetails = {
+  "brake-repair": {
+    id: "brake-repair",
+    title: "Brake Repair",
+    description:
+      "Free brake inspection and premium brake service, so you can stop with confidence.",
+    image: "/images/about/brake-tech.jpg",
+    imagePosition: "center 45%",
+    introTitle: "Brakes you can trust, every time you stop.",

@@ -27,3 +27,13 @@ export const serviceDetails = {
     image: "/images/about/brake-tech.jpg",
     imagePosition: "center 45%",
     introTitle: "Brakes you can trust, every time you stop.",
+    intro:
+      "Your brakes are one of the most important safety systems on your car. Our certified technicians inspect your brakes for free, show you exactly what they found, and only do the work you approve.",
+    signsTitle: "Signs you need brake repair",
+    signs: [
+      "Squealing or squeaking when you brake",
+      "Grinding or scraping sounds",
+      "A soft or spongy brake pedal",
+      "The car pulls to one side when stopping",
+      "Vibration in the pedal or steering wheel",
+      "The brake warning light is on",

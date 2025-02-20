@@ -56,3 +56,13 @@ export const serviceDetails = {
       },
       {
         title: "Brake fluid",
+        description:
+          "Old fluid absorbs moisture, which can make the pedal feel soft. We test it and flush it when it's due.",
+      },
+      {
+        title: "Brake lines and hoses",
+        description:
+          "We look for leaks, cracks and corrosion so pressure reaches every wheel when you press the pedal.",
+      },
+      {
+        title: "ABS and warning lights",

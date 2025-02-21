@@ -144,3 +144,13 @@ export const serviceDetails = {
       "engine-diagnostics",
     ],
     relatedDescription: "More ways to keep routine maintenance on track.",
+  },
+  "bg-fluids": {
+    id: "bg-fluids",
+    title: "BG Fluid Services",
+    description:
+      "Fluid maintenance selected for your vehicle, its service history, and the systems that need attention.",
+    image: "/images/about/shop-floor.jpg",
+    imagePosition: "center 50%",
+    introTitle: "Protect the systems that work hard on every drive.",
+    intro:

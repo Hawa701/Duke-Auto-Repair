@@ -135,3 +135,12 @@ export const serviceDetails = {
     ],
     bookingTitle: "Book your oil change",
     bookingTag: "Routine engine care",
+    bookingDescription:
+      "Tell us your make, model and engine so we can discuss the right service for your car.",
+    relatedIds: [
+      "bg-fluids",
+      "battery-services",
+      "brake-repair",
+      "engine-diagnostics",
+    ],
+    relatedDescription: "More ways to keep routine maintenance on track.",

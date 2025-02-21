@@ -86,3 +86,12 @@ export const serviceDetails = {
     id: "oil-change",
     title: "Oil Change",
     description:
+      "The right oil, a fresh filter, and a maintenance plan that fits your engine.",
+    image: "/images/about/techs-under-hood.jpg",
+    imagePosition: "center 45%",
+    introTitle: "A small service that does a lot for your engine.",
+    intro:
+      "Fresh oil helps moving engine parts stay lubricated. We match the oil and filter to your vehicle, check for visible leaks, and help you follow the manufacturer's time, mileage or oil-life recommendations. There is no single change interval that fits every car.",
+    signsTitle: "When to arrange an oil change",
+    signs: [
+      "Your maintenance reminder is on",

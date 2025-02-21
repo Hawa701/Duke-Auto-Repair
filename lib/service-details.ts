@@ -105,3 +105,13 @@ export const serviceDetails = {
       {
         title: "Vehicle specifications",
         description:
+          "We confirm the viscosity and approval requirements for your engine before choosing oil.",
+      },
+      {
+        title: "Oil and filter",
+        description:
+          "Old oil is drained and the oil filter replaced with a suitable new filter.",
+      },
+      {
+        title: "Seals and drain plug",
+        description:

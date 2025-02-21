@@ -154,3 +154,13 @@ export const serviceDetails = {
     imagePosition: "center 50%",
     introTitle: "Protect the systems that work hard on every drive.",
     intro:
+      "Engine, transmission, cooling and brake systems depend on suitable fluids. We review your manufacturer's recommendations and service history before discussing an appropriate BG maintenance service. Fluid service is preventive care; it cannot repair a worn or damaged mechanical component.",
+    signsTitle: "When to discuss fluid maintenance",
+    signs: [
+      "A scheduled fluid service is due",
+      "Your service records are incomplete",
+      "You've bought a used vehicle",
+      "Your vehicle works in demanding conditions",
+      "A fluid leak has been repaired",
+      "An inspection identifies a fluid concern",
+    ],

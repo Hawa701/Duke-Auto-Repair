@@ -76,3 +76,13 @@ export const serviceDetails = {
       "Call our team to find a time that works for you. Most services are done the same day.",
     relatedIds: [
       "suspension-steering",
+      "wheel-alignment",
+      "bg-fluids",
+      "engine-diagnostics",
+    ],
+    relatedDescription: "Often done alongside brake repair.",
+  },
+  "oil-change": {
+    id: "oil-change",
+    title: "Oil Change",
+    description:

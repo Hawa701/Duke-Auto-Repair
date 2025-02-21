@@ -115,3 +115,13 @@ export const serviceDetails = {
       {
         title: "Seals and drain plug",
         description:
+          "The filter seal, drain plug and visible surrounding areas are checked for leakage.",
+      },
+      {
+        title: "Correct fill level",
+        description:
+          "We refill to the specified quantity and verify the level using the vehicle's required procedure.",
+      },
+      {
+        title: "Maintenance reminder",
+        description:

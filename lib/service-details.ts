@@ -95,3 +95,13 @@ export const serviceDetails = {
     signsTitle: "When to arrange an oil change",
     signs: [
       "Your maintenance reminder is on",
+      "You've reached the scheduled mileage",
+      "The time interval in your manual is due",
+      "Your last service date is uncertain",
+      "You frequently make short trips",
+      "Your driving includes towing or heavy loads",
+    ],
+    checks: [
+      {
+        title: "Vehicle specifications",
+        description:

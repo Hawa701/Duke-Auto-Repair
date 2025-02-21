@@ -66,3 +66,13 @@ export const serviceDetails = {
       },
       {
         title: "ABS and warning lights",
+        description:
+          "If your ABS or brake light is on, we read the codes and find the cause before we recommend a repair.",
+      },
+    ],
+    bookingTitle: "Book your brake repair",
+    bookingTag: "Free brake inspection",
+    bookingDescription:
+      "Call our team to find a time that works for you. Most services are done the same day.",
+    relatedIds: [
+      "suspension-steering",

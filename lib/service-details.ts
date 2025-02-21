@@ -125,3 +125,13 @@ export const serviceDetails = {
       {
         title: "Maintenance reminder",
         description:
+          "Where applicable, the service reminder is reset after the oil change is complete.",
+      },
+      {
+        title: "Your next visit",
+        description:
+          "We review the factory schedule and your driving conditions, rather than using a universal mileage rule.",
+      },
+    ],
+    bookingTitle: "Book your oil change",
+    bookingTag: "Routine engine care",

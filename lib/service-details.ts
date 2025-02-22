@@ -233,3 +233,12 @@ export const serviceDetails = {
         description:
           "Testing helps distinguish a discharged battery from one that can no longer deliver adequate starting power.",
       },
+      {
+        title: "Terminals and cables",
+        description:
+          "We inspect for loose connections, damage and corrosion that can restrict electrical current.",
+      },
+      {
+        title: "Charging performance",
+        description:
+          "Charging-system checks help identify faults that leave an otherwise usable battery undercharged.",

@@ -223,3 +223,13 @@ export const serviceDetails = {
       "The engine cranks slowly",
       "You hear clicking instead of cranking",
       "The car has needed a jump-start",
+      "Connections show visible corrosion",
+      "Starting becomes unreliable in cold weather",
+      "A battery or charging warning appears",
+    ],
+    checks: [
+      {
+        title: "Battery condition",
+        description:
+          "Testing helps distinguish a discharged battery from one that can no longer deliver adequate starting power.",
+      },

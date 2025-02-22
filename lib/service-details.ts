@@ -164,3 +164,13 @@ export const serviceDetails = {
       "A fluid leak has been repaired",
       "An inspection identifies a fluid concern",
     ],
+    checks: [
+      {
+        title: "Service history",
+        description:
+          "We establish what has already been done and which maintenance tasks are actually due.",
+      },
+      {
+        title: "Fluid compatibility",
+        description:
+          "The fluid specification and service method must suit the particular vehicle and system.",

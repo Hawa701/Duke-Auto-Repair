@@ -203,3 +203,13 @@ export const serviceDetails = {
     relatedIds: [
       "oil-change",
       "brake-repair",
+      "heating-system",
+      "engine-diagnostics",
+    ],
+    relatedDescription: "Related maintenance and diagnostic services.",
+  },
+  "battery-services": {
+    id: "battery-services",
+    title: "Battery Services",
+    description:
+      "Battery, starting and charging checks to find out why your car is struggling to start.",

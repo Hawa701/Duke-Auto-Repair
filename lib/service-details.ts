@@ -184,3 +184,12 @@ export const serviceDetails = {
         title: "Transmission condition",
         description:
           "Fluid maintenance is considered separately from a shifting fault that needs diagnosis or mechanical repair.",
+      },
+      {
+        title: "Cooling and braking",
+        description:
+          "Coolant or brake-fluid maintenance is considered according to condition, service requirements and system compatibility.",
+      },
+      {
+        title: "A clear recommendation",
+        description:

@@ -213,3 +213,13 @@ export const serviceDetails = {
     title: "Battery Services",
     description:
       "Battery, starting and charging checks to find out why your car is struggling to start.",
+    image: "/images/about/diagnostics-tech.jpg",
+    imagePosition: "center 45%",
+    introTitle: "Find the cause of the slow start.",
+    intro:
+      "A weak battery is only one possible reason a car will not start. Loose connections, charging problems and starter faults can produce similar symptoms. We test before recommending a replacement and check that the battery type and fit suit your vehicle.",
+    signsTitle: "Signs your starting system needs attention",
+    signs: [
+      "The engine cranks slowly",
+      "You hear clicking instead of cranking",
+      "The car has needed a jump-start",

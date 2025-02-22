@@ -174,3 +174,13 @@ export const serviceDetails = {
         title: "Fluid compatibility",
         description:
           "The fluid specification and service method must suit the particular vehicle and system.",
+      },
+      {
+        title: "Engine maintenance",
+        description:
+          "We discuss applicable engine-oil maintenance options, alongside the required oil and filter service.",
+      },
+      {
+        title: "Transmission condition",
+        description:
+          "Fluid maintenance is considered separately from a shifting fault that needs diagnosis or mechanical repair.",

@@ -193,3 +193,13 @@ export const serviceDetails = {
       {
         title: "A clear recommendation",
         description:
+          "We explain the suggested service and its purpose before you approve the work.",
+      },
+    ],
+    bookingTitle: "Discuss BG fluid service",
+    bookingTag: "Vehicle-specific maintenance",
+    bookingDescription:
+      "Call with your vehicle details. Our team will help identify the applicable fluid service.",
+    relatedIds: [
+      "oil-change",
+      "brake-repair",

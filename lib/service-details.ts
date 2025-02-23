@@ -291,3 +291,13 @@ export const serviceDetails = {
       "The vehicle sits lower on one side",
     ],
     checks: [
+      {
+        title: "Shocks and struts",
+        description:
+          "We assess damping, mount condition and signs of leakage or damage, rather than relying on mileage alone.",
+      },
+      {
+        title: "Steering joints",
+        description:
+          "Tie rods and other steering connections are checked for wear, damage and excessive movement.",
+      },

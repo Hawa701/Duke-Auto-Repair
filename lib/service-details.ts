@@ -282,3 +282,12 @@ export const serviceDetails = {
     intro:
       "Steering and suspension components work together to control the vehicle and maintain road contact. Wear can develop gradually. We inspect the relevant parts and explain whether the concern calls for a repair, an alignment, or further testing before recommending work.",
     signsTitle: "Signs your suspension or steering needs attention",
+    signs: [
+      "Clunking over bumps or during turns",
+      "Repeated bouncing after a bump",
+      "Loose or imprecise steering",
+      "Excessive body roll in corners",
+      "Uneven or scalloped tread wear",
+      "The vehicle sits lower on one side",
+    ],
+    checks: [

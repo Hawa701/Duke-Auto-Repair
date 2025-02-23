@@ -242,3 +242,13 @@ export const serviceDetails = {
         title: "Charging performance",
         description:
           "Charging-system checks help identify faults that leave an otherwise usable battery undercharged.",
+      },
+      {
+        title: "Starting circuit",
+        description:
+          "Where symptoms call for it, we investigate the starter and related electrical connections.",
+      },
+      {
+        title: "Suitable replacement",
+        description:
+          "A replacement must match the required size, capacity and battery technology, including AGM where specified.",

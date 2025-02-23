@@ -321,3 +321,13 @@ export const serviceDetails = {
         description:
           "We determine whether wheel-angle checks or adjustment are needed after replacing relevant components.",
       },
+    ],
+    bookingTitle: "Check your ride and handling",
+    bookingTag: "Find the cause of the clunk",
+    bookingDescription:
+      "Tell us when the noise or handling change happens, including speed, bumps and turns.",
+    relatedIds: [
+      "wheel-alignment",
+      "brake-repair",
+      "state-inspection",
+      "engine-diagnostics",

@@ -301,3 +301,13 @@ export const serviceDetails = {
         description:
           "Tie rods and other steering connections are checked for wear, damage and excessive movement.",
       },
+      {
+        title: "Ball joints and bushings",
+        description:
+          "We inspect load-bearing joints and rubber components that help locate and control suspension movement.",
+      },
+      {
+        title: "Springs and ride height",
+        description:
+          "Broken or sagging springs and unusual ride height can affect handling and alignment.",
+      },

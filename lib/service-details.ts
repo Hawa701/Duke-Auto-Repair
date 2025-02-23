@@ -262,3 +262,13 @@ export const serviceDetails = {
     bookingTitle: "Arrange a battery check",
     bookingTag: "Test before replacing",
     bookingDescription:
+      "Tell us how the car behaves when you try to start it and whether it has needed a jump.",
+    relatedIds: [
+      "engine-diagnostics",
+      "oil-change",
+      "state-inspection",
+      "bg-fluids",
+    ],
+    relatedDescription: "Useful checks for dependable everyday driving.",
+  },
+  "suspension-steering": {

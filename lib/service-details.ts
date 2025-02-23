@@ -252,3 +252,13 @@ export const serviceDetails = {
         title: "Suitable replacement",
         description:
           "A replacement must match the required size, capacity and battery technology, including AGM where specified.",
+      },
+      {
+        title: "Installation requirements",
+        description:
+          "We check vehicle-specific procedures, including any battery-management reset needed after replacement.",
+      },
+    ],
+    bookingTitle: "Arrange a battery check",
+    bookingTag: "Test before replacing",
+    bookingDescription:

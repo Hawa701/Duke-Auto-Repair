@@ -272,3 +272,13 @@ export const serviceDetails = {
     relatedDescription: "Useful checks for dependable everyday driving.",
   },
   "suspension-steering": {
+    id: "suspension-steering",
+    title: "Suspension & Steering",
+    description:
+      "Get to the cause of clunks, bouncing, loose steering and changes in handling.",
+    image: "/images/about/techs-under-hood.jpg",
+    imagePosition: "center 50%",
+    introTitle: "A steadier ride starts with a proper inspection.",
+    intro:
+      "Steering and suspension components work together to control the vehicle and maintain road contact. Wear can develop gradually. We inspect the relevant parts and explain whether the concern calls for a repair, an alignment, or further testing before recommending work.",
+    signsTitle: "Signs your suspension or steering needs attention",

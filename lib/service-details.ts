@@ -311,3 +311,13 @@ export const serviceDetails = {
         description:
           "Broken or sagging springs and unusual ride height can affect handling and alignment.",
       },
+      {
+        title: "Steering assistance",
+        description:
+          "Checks depend on whether your vehicle uses hydraulic assistance, electric assistance, or another steering design.",
+      },
+      {
+        title: "Alignment after repairs",
+        description:
+          "We determine whether wheel-angle checks or adjustment are needed after replacing relevant components.",
+      },

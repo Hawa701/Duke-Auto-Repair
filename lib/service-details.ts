@@ -379,3 +379,13 @@ export const serviceDetails = {
         title: "Cabin airflow",
         description:
           "We check the cabin filter, blower operation and airflow restrictions where applicable.",
+      },
+      {
+        title: "Temperature controls",
+        description:
+          "Blend doors, actuators and relevant controls are considered when temperatures do not match the selected setting.",
+      },
+    ],
+    bookingTitle: "Arrange an A/C diagnosis",
+    bookingTag: "Comfort starts with diagnosis",
+    bookingDescription:

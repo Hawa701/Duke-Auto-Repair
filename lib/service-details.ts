@@ -389,3 +389,13 @@ export const serviceDetails = {
     bookingTitle: "Arrange an A/C diagnosis",
     bookingTag: "Comfort starts with diagnosis",
     bookingDescription:
+      "Call with your vehicle details to confirm the appropriate A/C service and availability.",
+    relatedIds: [
+      "heating-system",
+      "engine-diagnostics",
+      "battery-services",
+      "bg-fluids",
+    ],
+    relatedDescription: "Related comfort, electrical and maintenance services.",
+  },
+  "heating-system": {

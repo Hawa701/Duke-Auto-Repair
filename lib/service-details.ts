@@ -331,3 +331,12 @@ export const serviceDetails = {
       "brake-repair",
       "state-inspection",
       "engine-diagnostics",
+    ],
+    relatedDescription:
+      "Other services that support controlled, predictable handling.",
+  },
+  "air-conditioning": {
+    id: "air-conditioning",
+    title: "Air Conditioning Repair",
+    description:
+      "Cooling and airflow checks to find out why your cabin is not getting comfortable.",

@@ -370,3 +370,12 @@ export const serviceDetails = {
         description:
           "Compressor operation and its controls are checked as part of the diagnosis, rather than assuming replacement is needed.",
       },
+      {
+        title: "Condenser and fans",
+        description:
+          "Airflow through the condenser and cooling-fan operation can affect performance, particularly at low road speeds.",
+      },
+      {
+        title: "Cabin airflow",
+        description:
+          "We check the cabin filter, blower operation and airflow restrictions where applicable.",

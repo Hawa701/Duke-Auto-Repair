@@ -350,3 +350,13 @@ export const serviceDetails = {
       "Air stays warm with cooling selected",
       "Cooling fades in slow traffic",
       "Vent airflow is noticeably weak",
+      "Cabin temperature changes unexpectedly",
+      "Unusual sounds occur with A/C on",
+      "Musty odors come from the vents",
+    ],
+    checks: [
+      {
+        title: "Cooling performance",
+        description:
+          "We compare vent temperature and operating behavior with the conditions when your complaint occurs.",
+      },

@@ -340,3 +340,13 @@ export const serviceDetails = {
     title: "Air Conditioning Repair",
     description:
       "Cooling and airflow checks to find out why your cabin is not getting comfortable.",
+    image: "/images/about/diagnostics-tech.jpg",
+    imagePosition: "center 45%",
+    introTitle: "Cool air starts with finding the actual fault.",
+    intro:
+      "Warm air can come from a refrigerant leak, a control fault, restricted airflow or a component problem. We check system performance before recommending a repair. The refrigerant and service procedure must match the vehicle; adding refrigerant alone does not fix a leak.",
+    signsTitle: "Signs your A/C needs attention",
+    signs: [
+      "Air stays warm with cooling selected",
+      "Cooling fades in slow traffic",
+      "Vent airflow is noticeably weak",

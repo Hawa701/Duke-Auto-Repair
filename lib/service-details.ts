@@ -399,3 +399,13 @@ export const serviceDetails = {
     relatedDescription: "Related comfort, electrical and maintenance services.",
   },
   "heating-system": {
+    id: "heating-system",
+    title: "Heating System Service",
+    description:
+      "Restore reliable cabin heat, airflow and windshield clearing for colder days.",
+    image: "/images/about/shop-floor.jpg",
+    imagePosition: "center 50%",
+    introTitle: "Warm journeys and a clearer view ahead.",
+    intro:
+      "On many vehicles, cabin heat depends on warm engine coolant passing through a heater core. Poor heat may involve coolant flow, engine temperature or cabin-air controls. We check the cause before recommending parts, and tailor the diagnosis to your vehicle's heating system.",
+    signsTitle: "Signs your heater needs attention",

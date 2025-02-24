@@ -360,3 +360,13 @@ export const serviceDetails = {
         description:
           "We compare vent temperature and operating behavior with the conditions when your complaint occurs.",
       },
+      {
+        title: "Leaks and refrigerant",
+        description:
+          "We investigate refrigerant loss and confirm the vehicle's refrigerant type before discussing service options.",
+      },
+      {
+        title: "Compressor operation",
+        description:
+          "Compressor operation and its controls are checked as part of the diagnosis, rather than assuming replacement is needed.",
+      },

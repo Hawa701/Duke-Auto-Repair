@@ -468,3 +468,12 @@ export const serviceDetails = {
       "Wheel-angle checks and adjustments for straighter tracking and more even tread wear.",
     image: "/images/about/alignment-rig.jpg",
     imagePosition: "center 50%",
+    introTitle: "Point your wheels in the right direction.",
+    intro:
+      "Alignment adjusts wheel angles to the vehicle manufacturer's specifications. It is different from wheel balancing, and it cannot compensate for worn steering or suspension parts. We check the relevant condition first and explain what can be adjusted on your vehicle.",
+    signsTitle: "When to have alignment checked",
+    signs: [
+      "The car pulls on a level road",
+      "The steering wheel sits off-center",
+      "Tread wear is heavier on one edge",
+      "You've struck a pothole or curb",

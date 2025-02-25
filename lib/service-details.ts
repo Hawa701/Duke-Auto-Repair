@@ -438,3 +438,13 @@ export const serviceDetails = {
         description:
           "The fan, speed controls and cabin filter are checked when airflow is weak or intermittent.",
       },
+      {
+        title: "Blend doors and controls",
+        description:
+          "We check how the system routes air and responds to your temperature and outlet selections.",
+      },
+      {
+        title: "Defrost performance",
+        description:
+          "We verify air reaches the windshield outlets and discuss any related A/C or humidity-control concerns.",
+      },

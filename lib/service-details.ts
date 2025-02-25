@@ -477,3 +477,13 @@ export const serviceDetails = {
       "The steering wheel sits off-center",
       "Tread wear is heavier on one edge",
       "You've struck a pothole or curb",
+      "Steering or suspension parts were replaced",
+      "Handling has changed without a clear cause",
+    ],
+    checks: [
+      {
+        title: "Before adjustment",
+        description:
+          "Tread condition, pressures and relevant steering or suspension wear are checked before setting angles.",
+      },
+      {

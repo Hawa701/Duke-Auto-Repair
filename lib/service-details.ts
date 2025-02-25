@@ -448,3 +448,13 @@ export const serviceDetails = {
         description:
           "We verify air reaches the windshield outlets and discuss any related A/C or humidity-control concerns.",
       },
+    ],
+    bookingTitle: "Book a heating-system check",
+    bookingTag: "Heat and visibility matter",
+    bookingDescription:
+      "Tell us whether the problem is cold air, weak airflow or a windshield that will not clear.",
+    relatedIds: [
+      "air-conditioning",
+      "bg-fluids",
+      "engine-diagnostics",
+      "state-inspection",

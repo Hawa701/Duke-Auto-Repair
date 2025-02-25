@@ -428,3 +428,13 @@ export const serviceDetails = {
         description:
           "An engine that does not reach its intended operating temperature can provide weak cabin heat.",
       },
+      {
+        title: "Heater-core circulation",
+        description:
+          "We assess flow and signs of leakage before recommending cleaning, repairs or replacement.",
+      },
+      {
+        title: "Blower and airflow",
+        description:
+          "The fan, speed controls and cabin filter are checked when airflow is weak or intermittent.",
+      },

@@ -409,3 +409,13 @@ export const serviceDetails = {
     intro:
       "On many vehicles, cabin heat depends on warm engine coolant passing through a heater core. Poor heat may involve coolant flow, engine temperature or cabin-air controls. We check the cause before recommending parts, and tailor the diagnosis to your vehicle's heating system.",
     signsTitle: "Signs your heater needs attention",
+    signs: [
+      "The vents blow cold after warm-up",
+      "Heat varies between vents",
+      "The blower works only at some speeds",
+      "The windshield clears slowly",
+      "A sweet smell develops in the cabin",
+      "Coolant level repeatedly drops",
+    ],
+    checks: [
+      {

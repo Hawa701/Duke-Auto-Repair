@@ -419,3 +419,12 @@ export const serviceDetails = {
     ],
     checks: [
       {
+        title: "Coolant level and leaks",
+        description:
+          "We check coolant condition and look for leaks that can reduce circulation through the heating system.",
+      },
+      {
+        title: "Thermostat operation",
+        description:
+          "An engine that does not reach its intended operating temperature can provide weak cabin heat.",
+      },

@@ -458,3 +458,13 @@ export const serviceDetails = {
       "bg-fluids",
       "engine-diagnostics",
       "state-inspection",
+    ],
+    relatedDescription: "Other services for comfort and everyday visibility.",
+  },
+  "wheel-alignment": {
+    id: "wheel-alignment",
+    title: "Wheel Alignment",
+    description:
+      "Wheel-angle checks and adjustments for straighter tracking and more even tread wear.",
+    image: "/images/about/alignment-rig.jpg",
+    imagePosition: "center 50%",

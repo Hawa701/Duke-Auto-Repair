@@ -517,3 +517,12 @@ export const serviceDetails = {
     bookingDescription:
       "Tell us about any recent impacts, component replacements or changes in steering feel.",
     relatedIds: [
+      "suspension-steering",
+      "brake-repair",
+      "state-inspection",
+      "oil-change",
+    ],
+    relatedDescription:
+      "Related checks for handling, stopping and routine care.",
+  },
+  "engine-diagnostics": {

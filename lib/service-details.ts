@@ -497,3 +497,13 @@ export const serviceDetails = {
           "Camber describes inward or outward wheel tilt. Adjustment depends on the vehicle's suspension design.",
       },
       {
+        title: "Caster readings",
+        description:
+          "Caster relates to the steering-axis angle and is checked against the appropriate vehicle specifications.",
+      },
+      {
+        title: "Available adjustments",
+        description:
+          "We set the angles that are adjustable and explain damage or wear that prevents an acceptable result.",
+      },
+      {

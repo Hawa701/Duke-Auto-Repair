@@ -507,3 +507,13 @@ export const serviceDetails = {
           "We set the angles that are adjustable and explain damage or wear that prevents an acceptable result.",
       },
       {
+        title: "Final verification",
+        description:
+          "Final readings and steering-wheel position are reviewed, with a road check where appropriate.",
+      },
+    ],
+    bookingTitle: "Arrange a wheel alignment",
+    bookingTag: "Measured against specifications",
+    bookingDescription:
+      "Tell us about any recent impacts, component replacements or changes in steering feel.",
+    relatedIds: [

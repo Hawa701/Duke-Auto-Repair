@@ -526,3 +526,13 @@ export const serviceDetails = {
       "Related checks for handling, stopping and routine care.",
   },
   "engine-diagnostics": {
+    id: "engine-diagnostics",
+    title: "Check Engine Diagnostics",
+    description:
+      "Testing that goes beyond a code scan to understand why your warning light is on.",
+    image: "/images/about/diagnostics-portrait.jpg",
+    imagePosition: "center 40%",
+    introTitle: "Understand the warning before replacing parts.",
+    intro:
+      "A diagnostic trouble code points toward a condition or system; it does not automatically identify a failed part. We combine stored information, operating data and targeted tests to build a repair recommendation. A flashing check-engine light needs prompt attention: minimize driving and contact us about next steps.",
+    signsTitle: "Reasons to arrange a diagnostic visit",

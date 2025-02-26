@@ -487,3 +487,13 @@ export const serviceDetails = {
           "Tread condition, pressures and relevant steering or suspension wear are checked before setting angles.",
       },
       {
+        title: "Toe settings",
+        description:
+          "Toe describes how the wheels point inward or outward when viewed from above.",
+      },
+      {
+        title: "Camber readings",
+        description:
+          "Camber describes inward or outward wheel tilt. Adjustment depends on the vehicle's suspension design.",
+      },
+      {

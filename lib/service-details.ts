@@ -536,3 +536,13 @@ export const serviceDetails = {
     intro:
       "A diagnostic trouble code points toward a condition or system; it does not automatically identify a failed part. We combine stored information, operating data and targeted tests to build a repair recommendation. A flashing check-engine light needs prompt attention: minimize driving and contact us about next steps.",
     signsTitle: "Reasons to arrange a diagnostic visit",
+    signs: [
+      "The check-engine light stays on",
+      "A warning light returns after a reset",
+      "The engine runs roughly or stalls",
+      "Starting takes longer than usual",
+      "Acceleration or fuel economy changes",
+      "An emissions test reports an OBD problem",
+    ],
+    checks: [
+      {

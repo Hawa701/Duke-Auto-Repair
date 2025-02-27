@@ -546,3 +546,13 @@ export const serviceDetails = {
     ],
     checks: [
       {
+        title: "Your driving symptoms",
+        description:
+          "We ask when the concern occurs, including engine temperature, road speed and recent repair history.",
+      },
+      {
+        title: "Codes and recorded data",
+        description:
+          "Stored codes and available freeze-frame information help show the conditions present when a fault was detected.",
+      },
+      {

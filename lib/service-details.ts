@@ -556,3 +556,13 @@ export const serviceDetails = {
           "Stored codes and available freeze-frame information help show the conditions present when a fault was detected.",
       },
       {
+        title: "Live operating information",
+        description:
+          "Sensor readings and system responses help narrow the investigation under the relevant conditions.",
+      },
+      {
+        title: "Targeted component tests",
+        description:
+          "Further tests are selected from the evidence rather than treating a fault code as a parts-replacement order.",
+      },
+      {

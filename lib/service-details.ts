@@ -605,3 +605,13 @@ export const serviceDetails = {
       "Your emissions certificate is nearing expiry",
       "You're registering a vehicle in Virginia",
       "You need a reinspection after repairs",
+      "You're unsure which inspection applies",
+    ],
+    checks: [
+      {
+        title: "Brakes and steering",
+        description:
+          "The safety inspection includes required brake, steering and suspension checks under Virginia's inspection procedure.",
+      },
+      {
+        title: "Lights and visibility",

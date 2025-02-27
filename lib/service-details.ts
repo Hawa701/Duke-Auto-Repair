@@ -585,3 +585,13 @@ export const serviceDetails = {
       "battery-services",
       "oil-change",
       "bg-fluids",
+    ],
+    relatedDescription: "Other services that may follow a diagnostic visit.",
+  },
+  "state-inspection": {
+    id: "state-inspection",
+    title: "State Safety & Emissions",
+    description:
+      "Virginia safety inspections and emissions testing, with clear guidance about your vehicle's requirements.",
+    image: "/images/about/state-inspection.jpg",
+    imagePosition: "center 55%",

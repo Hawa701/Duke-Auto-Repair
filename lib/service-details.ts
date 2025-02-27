@@ -595,3 +595,13 @@ export const serviceDetails = {
       "Virginia safety inspections and emissions testing, with clear guidance about your vehicle's requirements.",
     image: "/images/about/state-inspection.jpg",
     imagePosition: "center 55%",
+    introTitle: "Two different inspections. One helpful team.",
+    intro:
+      "Virginia safety inspections assess required safety equipment. Emissions testing is a separate requirement for many eligible vehicles in Northern Virginia, including Alexandria. Eligibility depends on the vehicle and registration circumstances. Call with your vehicle details to check what is due and arrange your visit.",
+    signsTitle: "When to arrange an inspection",
+    signs: [
+      "Your safety-inspection sticker is due",
+      "DMV requests an emissions result",
+      "Your emissions certificate is nearing expiry",
+      "You're registering a vehicle in Virginia",
+      "You need a reinspection after repairs",

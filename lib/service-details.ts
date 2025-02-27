@@ -566,3 +566,12 @@ export const serviceDetails = {
           "Further tests are selected from the evidence rather than treating a fault code as a parts-replacement order.",
       },
       {
+        title: "A repair explanation",
+        description:
+          "We explain the findings and recommended next steps before you decide which work to approve.",
+      },
+      {
+        title: "Verification and readiness",
+        description:
+          "After an approved repair, we review operation and any remaining monitor-readiness requirements. Clearing codes alone is not a repair.",
+      },

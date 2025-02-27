@@ -575,3 +575,13 @@ export const serviceDetails = {
         description:
           "After an approved repair, we review operation and any remaining monitor-readiness requirements. Clearing codes alone is not a repair.",
       },
+    ],
+    bookingTitle: "Book a diagnostic visit",
+    bookingTag: "Diagnosis before replacement",
+    bookingDescription:
+      "Describe the light and any driving symptoms. If it is flashing, call before continuing your journey.",
+    relatedIds: [
+      "state-inspection",
+      "battery-services",
+      "oil-change",
+      "bg-fluids",

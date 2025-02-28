@@ -624,3 +624,13 @@ export const serviceDetails = {
           "The applicable inspection also covers items such as tires, wheels, exhaust and occupant-restraint equipment.",
       },
       {
+        title: "Emissions eligibility",
+        description:
+          "Model year, fuel type, weight and registration location can affect whether a separate emissions test is required.",
+      },
+      {
+        title: "OBD readiness",
+        description:
+          "On applicable vehicles, recently cleared codes or a disconnected battery may leave emissions monitors not ready for testing.",
+      },
+      {

@@ -644,3 +644,13 @@ export const serviceDetails = {
     bookingDescription:
       "Call to confirm inspection availability and which test your vehicle needs. An appointment does not guarantee a passing result.",
     relatedIds: [
+      "brake-repair",
+      "engine-diagnostics",
+      "suspension-steering",
+      "heating-system",
+    ],
+    relatedDescription: "Services that can help address inspection findings.",
+    helpfulLinks: [
+      {
+        label: "Virginia safety-inspection requirements",
+        href: "https://vsp.virginia.gov/public-safety-programs-center/vehicle-safety-inspection/",

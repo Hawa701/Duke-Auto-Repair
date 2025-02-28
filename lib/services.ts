@@ -8,3 +8,13 @@ type ServiceGroup = {
   image: string;
   imageAlt: string;
   imagePosition: string;
+  services: {
+    id: string;
+    name: string;
+    description: string;
+    icon: ServiceIconName;
+    href: string;
+  }[];
+};
+
+export const serviceGroups: ServiceGroup[] = [

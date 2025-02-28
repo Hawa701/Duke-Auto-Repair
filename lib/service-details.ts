@@ -634,3 +634,13 @@ export const serviceDetails = {
           "On applicable vehicles, recently cleared codes or a disconnected battery may leave emissions monitors not ready for testing.",
       },
       {
+        title: "Results and next steps",
+        description:
+          "We explain the inspection result and any recorded concerns. Passing depends on the vehicle meeting the applicable requirements.",
+      },
+    ],
+    bookingTitle: "Arrange your inspection",
+    bookingTag: "Virginia inspection requirements",
+    bookingDescription:
+      "Call to confirm inspection availability and which test your vehicle needs. An appointment does not guarantee a passing result.",
+    relatedIds: [

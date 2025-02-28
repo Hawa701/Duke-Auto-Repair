@@ -615,3 +615,12 @@ export const serviceDetails = {
       },
       {
         title: "Lights and visibility",
+        description:
+          "Required lighting, mirrors, glass, wipers and defrost equipment are among the safety items inspected.",
+      },
+      {
+        title: "Other safety equipment",
+        description:
+          "The applicable inspection also covers items such as tires, wheels, exhaust and occupant-restraint equipment.",
+      },
+      {

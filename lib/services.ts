@@ -18,3 +18,13 @@ type ServiceGroup = {
 };
 
 export const serviceGroups: ServiceGroup[] = [
+  {
+    id: "maintenance",
+    title: "Maintenance.",
+    label: "Maintenance",
+    description:
+      "Routine care that keeps small problems from becoming big ones.",
+    image: "/images/about/techs-under-hood.jpg",
+    imageAlt: "Two Duke Auto technicians working together under the hood",
+    imagePosition: "50% 40%",
+    services: [

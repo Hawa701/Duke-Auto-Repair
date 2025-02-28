@@ -654,3 +654,13 @@ export const serviceDetails = {
       {
         label: "Virginia safety-inspection requirements",
         href: "https://vsp.virginia.gov/public-safety-programs-center/vehicle-safety-inspection/",
+      },
+      {
+        label: "Virginia emissions eligibility",
+        href: "https://www.dmv.virginia.gov/vehicles/registration/emissions",
+      },
+    ],
+  },
+} satisfies Record<string, ServiceDetail>;
+
+export type ServiceDetailId = keyof typeof serviceDetails;

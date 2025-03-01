@@ -28,3 +28,13 @@ export const serviceGroups: ServiceGroup[] = [
     imageAlt: "Two Duke Auto technicians working together under the hood",
     imagePosition: "50% 40%",
     services: [
+      {
+        id: "oil-change",
+        href: "/services/oil-change",
+        name: "Oil change",
+        description:
+          "Fresh oil and a new filter to keep your engine running strong.",
+        icon: "oil",
+      },
+      {
+        id: "bg-fluids",

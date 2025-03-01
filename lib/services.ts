@@ -58,3 +58,14 @@ export const serviceGroups: ServiceGroup[] = [
     title: "Repairs.",
     label: "Repairs",
     description:
+      "Brakes, suspension, heating and cooling, all cared for under one roof.",
+    image: "/images/about/brake-tech.jpg",
+    imageAlt: "A Duke Auto technician servicing the brakes on a truck",
+    imagePosition: "35% 50%",
+    services: [
+      {
+        id: "brake-repair",
+        href: "/services/brakes",
+        name: "Brake repair",
+        description: "Free brake inspection and premium brake service.",
+        icon: "brakes",

@@ -109,3 +109,13 @@ export const serviceGroups: ServiceGroup[] = [
         href: "/services/wheel-alignment",
         name: "Wheel alignment",
         description: "Drive straight, ride smooth, and reduce uneven wear.",
+        icon: "alignment",
+      },
+    ],
+  },
+  {
+    id: "inspection",
+    title: "Diagnostics and inspections.",
+    label: "Diagnostics and inspections",
+    description:
+      "Find out what's wrong, and get your state inspection done in one stop.",

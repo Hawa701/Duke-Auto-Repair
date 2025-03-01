@@ -38,3 +38,13 @@ export const serviceGroups: ServiceGroup[] = [
       },
       {
         id: "bg-fluids",
+        href: "/services/bg-fluids",
+        name: "BG fluid services",
+        description:
+          "Professional BG fluid service to protect your engine and transmission.",
+        icon: "fluids",
+      },
+      {
+        id: "battery-services",
+        href: "/services/battery-services",
+        name: "Battery services",

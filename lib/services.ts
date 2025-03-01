@@ -48,3 +48,13 @@ export const serviceGroups: ServiceGroup[] = [
         id: "battery-services",
         href: "/services/battery-services",
         name: "Battery services",
+        description: "Testing and replacement so your car starts reliably.",
+        icon: "battery",
+      },
+    ],
+  },
+  {
+    id: "repairs",
+    title: "Repairs.",
+    label: "Repairs",
+    description:

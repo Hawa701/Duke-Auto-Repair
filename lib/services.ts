@@ -69,3 +69,13 @@ export const serviceGroups: ServiceGroup[] = [
         name: "Brake repair",
         description: "Free brake inspection and premium brake service.",
         icon: "brakes",
+      },
+      {
+        id: "suspension-steering",
+        href: "/services/suspension-steering",
+        name: "Suspension and steering",
+        description: "A smooth, safe, controlled ride.",
+        icon: "suspension",
+      },
+      {
+        id: "air-conditioning",

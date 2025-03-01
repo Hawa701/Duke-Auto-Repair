@@ -79,3 +79,13 @@ export const serviceGroups: ServiceGroup[] = [
       },
       {
         id: "air-conditioning",
+        href: "/services/air-conditioning",
+        name: "Air conditioning repair",
+        description:
+          "Professional A/C service to keep you cool through Virginia summers.",
+        icon: "air-conditioning",
+      },
+      {
+        id: "heating-system",
+        href: "/services/heating-system",
+        name: "Heating system service",

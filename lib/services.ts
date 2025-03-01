@@ -89,3 +89,13 @@ export const serviceGroups: ServiceGroup[] = [
         id: "heating-system",
         href: "/services/heating-system",
         name: "Heating system service",
+        description: "Heat and defrost that work when the cold mornings come.",
+        icon: "heating",
+      },
+    ],
+  },
+  {
+    id: "alignment",
+    title: "Wheel alignment.",
+    label: "Wheel alignment",
+    description:

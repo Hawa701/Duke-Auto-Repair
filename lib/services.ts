@@ -99,3 +99,13 @@ export const serviceGroups: ServiceGroup[] = [
     title: "Wheel alignment.",
     label: "Wheel alignment",
     description:
+      "Keep your car tracking straight for a smooth, controlled drive.",
+    image: "/images/about/alignment-tech.jpg",
+    imageAlt: "A Duke Auto technician setting up a wheel alignment",
+    imagePosition: "70% 50%",
+    services: [
+      {
+        id: "wheel-alignment",
+        href: "/services/wheel-alignment",
+        name: "Wheel alignment",
+        description: "Drive straight, ride smooth, and reduce uneven wear.",

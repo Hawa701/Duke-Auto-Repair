@@ -18,3 +18,13 @@ export default function ContactForm({ action }: ContactFormProps) {
     >
       <h2 id="contact-form-title">Contact form.</h2>
       {!action && (
+        <p id="contact-form-note" className="form-note">
+          Online messaging is coming soon. Please call{" "}
+          <a href={business.phoneHref}>{business.phoneDisplay}</a> to reach our
+          team.
+        </p>
+      )}
+      <div className="fld">
+        <label htmlFor="contact-name">Name</label>
+        <div className="in-box">
+          <input

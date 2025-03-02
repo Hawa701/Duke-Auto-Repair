@@ -59,3 +59,13 @@ export default function ContactForm({ action }: ContactFormProps) {
           </span>
           <input
             id="contact-phone"
+            type="tel"
+            name="phone"
+            autoComplete="tel-national"
+            aria-label="Phone number, country code +1"
+            placeholder="Enter your phone number"
+            maxLength={30}
+          />
+        </div>
+      </div>
+      <div className="fld">

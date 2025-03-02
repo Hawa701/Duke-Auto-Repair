@@ -49,3 +49,13 @@ export default function ContactForm({ action }: ContactFormProps) {
             required
             maxLength={254}
           />
+        </div>
+      </div>
+      <div className="fld">
+        <label htmlFor="contact-phone">Phone number</label>
+        <div className="in-box phone-input">
+          <span className="cc" aria-hidden="true">
+            US +1
+          </span>
+          <input
+            id="contact-phone"

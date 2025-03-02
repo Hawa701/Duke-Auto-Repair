@@ -69,3 +69,13 @@ export default function ContactForm({ action }: ContactFormProps) {
         </div>
       </div>
       <div className="fld">
+        <label htmlFor="contact-message">Message</label>
+        <div className="in-box ta">
+          <textarea
+            id="contact-message"
+            name="message"
+            placeholder="Enter your message"
+            required
+            rows={5}
+            maxLength={5000}
+          />

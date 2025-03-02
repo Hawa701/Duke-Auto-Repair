@@ -129,3 +129,14 @@ export const serviceGroups: ServiceGroup[] = [
         name: "Check engine diagnostics",
         description: "Computer diagnostics to find out why the light is on.",
         icon: "diagnostics",
+      },
+      {
+        id: "state-inspection",
+        href: "/services/state-inspection",
+        name: "State safety and emissions",
+        description: "State inspection and emissions testing, done on site.",
+        icon: "inspection",
+      },
+    ],
+  },
+];

@@ -119,3 +119,13 @@ export const serviceGroups: ServiceGroup[] = [
     label: "Diagnostics and inspections",
     description:
       "Find out what's wrong, and get your state inspection done in one stop.",
+    image: "/images/about/diagnostics-portrait.jpg",
+    imageAlt: "A Duke Auto technician using a diagnostic tool beside an engine",
+    imagePosition: "60% 35%",
+    services: [
+      {
+        id: "engine-diagnostics",
+        href: "/services/engine-diagnostics",
+        name: "Check engine diagnostics",
+        description: "Computer diagnostics to find out why the light is on.",
+        icon: "diagnostics",

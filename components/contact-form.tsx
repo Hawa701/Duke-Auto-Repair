@@ -8,3 +8,13 @@ type ContactFormProps = { action?: string };
 export default function ContactForm({ action }: ContactFormProps) {
   return (
     <form
+      action={action}
+      method="post"
+      aria-labelledby="contact-form-title"
+      aria-describedby={!action ? "contact-form-note" : undefined}
+      onSubmit={(event) => {
+        if (!action) event.preventDefault();
+      }}
+    >
+      <h2 id="contact-form-title">Contact form.</h2>
+      {!action && (

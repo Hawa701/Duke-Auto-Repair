@@ -38,3 +38,14 @@ export default function ContactForm({ action }: ContactFormProps) {
         </div>
       </div>
       <div className="fld">
+        <label htmlFor="contact-email">Email</label>
+        <div className="in-box">
+          <input
+            id="contact-email"
+            type="email"
+            name="email"
+            autoComplete="email"
+            placeholder="Enter your email"
+            required
+            maxLength={254}
+          />

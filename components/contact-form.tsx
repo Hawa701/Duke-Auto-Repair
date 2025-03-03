@@ -79,3 +79,14 @@ export default function ContactForm({ action }: ContactFormProps) {
             rows={5}
             maxLength={5000}
           />
+        </div>
+      </div>
+      <div className="fsub">
+        <button type="submit" className="btn btn-y" disabled={!action}>
+          Send message
+          <Icon name="arrow" />
+        </button>
+      </div>
+    </form>
+  );
+}

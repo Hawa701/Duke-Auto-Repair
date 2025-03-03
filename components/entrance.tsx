@@ -21,3 +21,14 @@ export default function Entrance({
   inView = false,
   pattern = "up",
   waitForFonts = false,
+  ...props
+}: EntranceProps) {
+  const reducedMotion = useReducedMotion();
+  const [fontsReady, setFontsReady] = useState(!waitForFonts);
+  useEffect(() => {
+    if (!waitForFonts) return;
+    let active = true;
+    const ready = () => {
+      if (active) setFontsReady(true);
+    };
+    void document.fonts.ready.then(ready, ready);

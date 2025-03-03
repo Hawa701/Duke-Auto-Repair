@@ -44,3 +44,15 @@ export default function Entrance({
       data-wait-for-fonts={waitForFonts || undefined}
       initial={{ opacity: waitForFonts ? 0 : 0.6, ...revealStart(pattern) }}
       animate={inView || !fontsReady ? undefined : visible}
+      whileInView={inView && fontsReady ? visible : undefined}
+      viewport={{ once: true, amount: "some", margin: "0px 0px -80px 0px" }}
+      transition={{
+        duration: reducedMotion ? 0 : 0.9,
+        delay: reducedMotion ? 0 : delay + (inView ? 0.08 : 0),
+        ease: [0.22, 0.61, 0.36, 1],
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+}

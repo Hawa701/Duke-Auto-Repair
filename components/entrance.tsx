@@ -32,3 +32,15 @@ export default function Entrance({
       if (active) setFontsReady(true);
     };
     void document.fonts.ready.then(ready, ready);
+    return () => {
+      active = false;
+    };
+  }, [waitForFonts]);
+  const visible = { opacity: 1, x: 0, y: 0, scale: 1 };
+  return (
+    <motion.div
+      {...props}
+      className={`entrance ${className}`}
+      data-wait-for-fonts={waitForFonts || undefined}
+      initial={{ opacity: waitForFonts ? 0 : 0.6, ...revealStart(pattern) }}
+      animate={inView || !fontsReady ? undefined : visible}

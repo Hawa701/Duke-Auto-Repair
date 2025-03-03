@@ -9,3 +9,15 @@ type EntranceProps = Omit<
   "initial" | "animate" | "whileInView" | "transition"
 > & {
   delay?: number;
+  inView?: boolean;
+  pattern?: RevealPattern;
+  waitForFonts?: boolean;
+};
+
+export default function Entrance({
+  children,
+  className = "",
+  delay = 0,
+  inView = false,
+  pattern = "up",
+  waitForFonts = false,

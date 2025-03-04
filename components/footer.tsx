@@ -18,3 +18,13 @@ export default function Footer() {
             />
             <p>
               We make it simple for car owners to find the services they need,
+              book with ease, and feel confident they&apos;re in good hands
+              every time they visit.
+            </p>
+          </div>
+          <div>
+            <h4>Quick links</h4>
+            <ul className="quick-links">
+              <li>
+                <Link href="/">Home</Link>
+              </li>

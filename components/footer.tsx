@@ -38,3 +38,13 @@ export default function Footer() {
                 <Link href="/reviews">Reviews</Link>
               </li>
               <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul className="two">
+              <li>
+                <Link href="/services/brakes">Brake service</Link>
+              </li>

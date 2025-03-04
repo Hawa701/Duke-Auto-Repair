@@ -48,3 +48,13 @@ export default function Footer() {
               <li>
                 <Link href="/services/brakes">Brake service</Link>
               </li>
+              <li>
+                <Link href="/services/bg-fluids">BG fluid services</Link>
+              </li>
+              <li>
+                <Link href="/services/wheel-alignment">Wheel alignment</Link>
+              </li>
+              <li>
+                <Link href="/services/air-conditioning">
+                  Air conditioning repair
+                </Link>

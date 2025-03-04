@@ -68,3 +68,13 @@ export default function Footer() {
                 <Link href="/services/battery-services">Battery services</Link>
               </li>
               <li>
+                <Link href="/services/state-inspection">
+                  State safety and emission inspection
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/engine-diagnostics">
+                  Check engine diagnostics
+                </Link>
+              </li>
+              <li>

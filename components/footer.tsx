@@ -58,3 +58,13 @@ export default function Footer() {
                 <Link href="/services/air-conditioning">
                   Air conditioning repair
                 </Link>
+              </li>
+              <li>
+                <Link href="/services/suspension-steering">
+                  Suspension and steering
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/battery-services">Battery services</Link>
+              </li>
+              <li>

@@ -118,3 +118,13 @@ export default function Footer() {
                 <GoogleRating variant="footer" />
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="bottom">
+          <span>© 2026 Duke Auto Repair & Service. All rights reserved.</span>
+          <div className="soc" aria-hidden="true">
+            <span>
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />

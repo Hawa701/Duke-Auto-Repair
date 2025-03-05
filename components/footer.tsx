@@ -78,3 +78,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/services/heating-system">
+                  Heating system service
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/oil-change">Oil change</Link>
+              </li>
+            </ul>
+          </div>
+          <div>

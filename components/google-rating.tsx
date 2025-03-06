@@ -48,3 +48,14 @@ export default function GoogleRating({
           <a href={link} target="_blank" rel="noopener noreferrer">
             {count ? `From ${count} reviews` : "Read customer reviews"}
           </a>
+          <span className="crew-rating__attribution">
+            {attribution}
+            {attributionLinks}
+          </span>
+        </dd>
+      </div>
+    );
+  }
+  if (variant === "stat") {
+    return (
+      <div className="st google-rating google-rating--stat">

@@ -28,3 +28,13 @@ export default function GoogleRating({
       <span
         className="google-provider-attribution"
         key={`${provider}-${index}`}
+      >
+        {uri ? (
+          <a href={uri} target="_blank" rel="noopener noreferrer">
+            {provider}
+          </a>
+        ) : (
+          provider
+        )}
+      </span>
+    ),

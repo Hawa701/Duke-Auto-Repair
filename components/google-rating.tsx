@@ -18,3 +18,13 @@ export default function GoogleRating({
     ? new Intl.NumberFormat("en-US").format(data.reviewCount)
     : null;
   const link = business.googleReviewsUrl;
+  const attribution = (
+    <span className="google-maps-attribution" translate="no">
+      Google Maps
+    </span>
+  );
+  const attributionLinks = data?.attributions.map(
+    ({ provider, uri }, index) => (
+      <span
+        className="google-provider-attribution"
+        key={`${provider}-${index}`}

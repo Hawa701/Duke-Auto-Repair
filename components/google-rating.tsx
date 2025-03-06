@@ -38,3 +38,13 @@ export default function GoogleRating({
         )}
       </span>
     ),
+  );
+
+  if (variant === "crew") {
+    return (
+      <div className="crew-rating">
+        <dt>{score ? `${score} on Google` : "Google reviews"}</dt>
+        <dd>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {count ? `From ${count} reviews` : "Read customer reviews"}
+          </a>

@@ -59,3 +59,13 @@ export default function GoogleRating({
   if (variant === "stat") {
     return (
       <div className="st google-rating google-rating--stat">
+        <dt className="l">Google rating</dt>
+        <dd className="n">{score ?? "—"}</dd>
+        <dd className="s">
+          {data && <Stars rating={data.rating} />}
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {count ? `${count} reviews on ` : "Read reviews on "}
+            {attribution}
+          </a>
+          {attributionLinks}
+        </dd>

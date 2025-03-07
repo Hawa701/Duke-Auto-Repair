@@ -109,3 +109,14 @@ export default function GoogleRating({
       {data && (
         <>
           <b>{score}</b>
+          {variant !== "footer" && <Stars rating={data.rating} />}
+        </>
+      )}
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        {count ? `${count} reviews on ` : "Read reviews on "}
+        {attribution}
+      </a>
+      {attributionLinks}
+    </span>
+  );
+}

@@ -79,3 +79,13 @@ export default function GoogleRating({
           <div className="big" aria-label="Google rating unavailable">
             —
           </div>
+        )}
+        {data && (
+          <>
+            <div className="big">{score}</div>
+            <Stars rating={data.rating} />
+          </>
+        )}
+        <p>
+          {count ? `Based on ${count} reviews on ` : "Customer reviews on "}
+          {attribution}

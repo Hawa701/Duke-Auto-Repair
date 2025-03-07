@@ -18,3 +18,13 @@ const REFRESH_INTERVAL = 15 * 60 * 1000;
 export default function GoogleReviewsProvider({
   children,
 }: {
+  children: ReactNode;
+}) {
+  const [data, setData] = useState<GoogleRatingData | null>(
+    googleReviewSnapshot,
+  );
+
+  useEffect(() => {
+    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+    if (!apiKey?.trim()) return;
+    let active = true;

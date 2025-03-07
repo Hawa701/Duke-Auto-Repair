@@ -69,3 +69,13 @@ export default function GoogleRating({
           </a>
           {attributionLinks}
         </dd>
+      </div>
+    );
+  }
+  if (variant === "score" || variant === "summary") {
+    return (
+      <div className={`google-rating google-rating--${variant}`}>
+        {!data && (
+          <div className="big" aria-label="Google rating unavailable">
+            —
+          </div>

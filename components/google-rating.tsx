@@ -89,3 +89,13 @@ export default function GoogleRating({
         <p>
           {count ? `Based on ${count} reviews on ` : "Customer reviews on "}
           {attribution}
+        </p>
+        {attributionLinks}
+        {variant === "score" && (
+          <a
+            href={link}
+            className="btn btn-n"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Google reviews

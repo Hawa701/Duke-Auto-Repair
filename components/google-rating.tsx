@@ -99,3 +99,13 @@ export default function GoogleRating({
             rel="noopener noreferrer"
           >
             Read Google reviews
+          </a>
+        )}
+      </div>
+    );
+  }
+  return (
+    <span className={`google-rating google-rating--${variant}`}>
+      {data && (
+        <>
+          <b>{score}</b>

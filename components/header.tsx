@@ -24,3 +24,16 @@ export default function Header() {
               href={business.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
+            >
+              {business.shortAddress}
+            </a>
+          </span>
+          <div className="right">
+            <GoogleRating variant="utility" />
+          </div>
+        </div>
+      </div>
+      <SiteNavigation />
+    </header>
+  );
+}

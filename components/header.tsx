@@ -11,3 +11,16 @@ export default function Header() {
     <header className="site-header">
       <a className="skip-link" href="#main-content">
         Skip to content
+      </a>
+      <div className="util">
+        <div className="wrap">
+          <span>
+            <Icon name="phone" />
+            <a href={business.phoneHref}>{business.phoneDisplay}</a>
+          </span>
+          <span>
+            <Icon name="pin" />
+            <a
+              href={business.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"

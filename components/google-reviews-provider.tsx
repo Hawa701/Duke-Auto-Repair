@@ -39,3 +39,13 @@ export default function GoogleReviewsProvider({
       try {
         const result = await Promise.race([
           loadGoogleRating(apiKey!, process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID),
+          new Promise<never>((_, reject) => {
+            timeout = setTimeout(
+              () => reject(new Error("Google request timed out.")),
+              20_000,
+            );
+          }),
+        ]);
+        if (active) setData(result);
+      } catch {
+        // Use the supplied listing snapshot until a live response is available.

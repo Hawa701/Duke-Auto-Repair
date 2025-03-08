@@ -28,3 +28,14 @@ export default function GoogleReviewsProvider({
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
     if (!apiKey?.trim()) return;
     let active = true;
+    let fetching = false;
+    let lastAttempt = 0;
+
+    async function refresh() {
+      if (fetching || document.visibilityState === "hidden") return;
+      fetching = true;
+      lastAttempt = Date.now();
+      let timeout: ReturnType<typeof setTimeout> | undefined;
+      try {
+        const result = await Promise.race([
+          loadGoogleRating(apiKey!, process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID),

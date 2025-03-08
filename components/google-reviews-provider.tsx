@@ -49,3 +49,13 @@ export default function GoogleReviewsProvider({
         if (active) setData(result);
       } catch {
         // Use the supplied listing snapshot until a live response is available.
+        if (active) setData(googleReviewSnapshot);
+      } finally {
+        clearTimeout(timeout);
+        fetching = false;
+      }
+    }
+    const onVisible = () => {
+      if (Date.now() - lastAttempt >= REFRESH_INTERVAL) void refresh();
+    };
+    void refresh();

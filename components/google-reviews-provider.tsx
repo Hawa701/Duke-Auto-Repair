@@ -69,3 +69,14 @@ export default function GoogleReviewsProvider({
       window.removeEventListener("focus", onVisible);
     };
   }, []);
+
+  return (
+    <GoogleReviewsContext.Provider value={data}>
+      {children}
+    </GoogleReviewsContext.Provider>
+  );
+}
+
+export function useGoogleRating() {
+  return useContext(GoogleReviewsContext);
+}

@@ -59,3 +59,13 @@ export default function GoogleReviewsProvider({
       if (Date.now() - lastAttempt >= REFRESH_INTERVAL) void refresh();
     };
     void refresh();
+    const interval = setInterval(onVisible, REFRESH_INTERVAL);
+    document.addEventListener("visibilitychange", onVisible);
+    window.addEventListener("focus", onVisible);
+    return () => {
+      active = false;
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", onVisible);
+      window.removeEventListener("focus", onVisible);
+    };
+  }, []);

@@ -32,3 +32,14 @@ export default function HomeAwards() {
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
             </Link>
+          </div>
+        </div>
+        <Stagger className="plaques" pattern="zoom">
+          <div className="plaque">
+            <span>Top rated</span>
+            <b>2023</b>
+            <small>Auto repair</small>
+          </div>
+          <div className="plaque">
+            <span>Top rated</span>
+            <b>2024</b>

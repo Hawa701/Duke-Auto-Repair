@@ -28,3 +28,13 @@ export default function HomeBenefits({ id }: { id?: string }) {
             </p>
             <ul className="ticks">
               <li>
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Picked up from your door
+              </li>
+              <li>
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Returned as soon as it's done

@@ -43,3 +43,15 @@ export default function HomeAwards() {
           <div className="plaque">
             <span>Top rated</span>
             <b>2024</b>
+            <small>Auto repair</small>
+          </div>
+          <div className="plaque">
+            <span>Top rated</span>
+            <b>2025</b>
+            <small>Auto repair</small>
+          </div>
+        </Stagger>
+      </div>
+    </section>
+  );
+}

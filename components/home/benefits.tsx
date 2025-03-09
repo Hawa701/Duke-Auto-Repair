@@ -18,3 +18,13 @@ export default function HomeBenefits({ id }: { id?: string }) {
           <div
             className="media"
             style={{ backgroundImage: "url(/images/home/keys.jpg)" }}
+          ></div>
+          <div className="body">
+            <span className="free">Complimentary</span>
+            <h3>Concierge vehicle pick-up and drop-off</h3>
+            <p>
+              Let us come to you. We'll pick up your vehicle, service it, and
+              return it to your door.
+            </p>
+            <ul className="ticks">
+              <li>

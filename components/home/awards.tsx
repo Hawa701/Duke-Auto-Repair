@@ -20,3 +20,15 @@ export default function HomeAwards() {
           <div className="acts">
             <a
               href={business.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-y"
+            >
+              Book an appointment
+            </a>
+            <Link href="/reviews" className="more">
+              Read our reviews
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>

@@ -38,3 +38,14 @@ export default function HomeBenefits({ id }: { id?: string }) {
                   <path d="M20 6 9 17l-5-5" />
                 </svg>
                 Returned as soon as it's done
+              </li>
+            </ul>
+            <Link href="/contact" className="btn btn-n">
+              Schedule a pick-up
+            </Link>
+          </div>
+        </Entrance>
+
+        <Entrance className="perk flip" pattern="right" inView>
+          <div
+            className="media"

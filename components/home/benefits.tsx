@@ -59,3 +59,13 @@ export default function HomeBenefits({ id }: { id?: string }) {
             <h3>Digital vehicle health inspections</h3>
             <p>
               A complete, easy-to-understand report on your vehicle's health.
+              From tire wear to brake life, we show you what's good, what needs
+              attention, and what can wait, at no cost.
+            </p>
+            <ul className="ticks">
+              <li>
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Tire wear, brake life, fluids, and more
+              </li>

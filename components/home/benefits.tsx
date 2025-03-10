@@ -49,3 +49,13 @@ export default function HomeBenefits({ id }: { id?: string }) {
         <Entrance className="perk flip" pattern="right" inView>
           <div
             className="media"
+            style={{
+              backgroundImage: "url(/images/home/tablet.jpg)",
+              backgroundPosition: "60% 55%",
+            }}
+          ></div>
+          <div className="body">
+            <span className="free">Free with every visit</span>
+            <h3>Digital vehicle health inspections</h3>
+            <p>
+              A complete, easy-to-understand report on your vehicle's health.

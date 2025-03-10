@@ -79,3 +79,14 @@ export default function HomeBenefits({ id }: { id?: string }) {
             <a
               href={business.bookingUrl}
               target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-n"
+            >
+              Book an appointment
+            </a>
+          </div>
+        </Entrance>
+      </div>
+    </section>
+  );
+}

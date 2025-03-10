@@ -69,3 +69,13 @@ export default function HomeBenefits({ id }: { id?: string }) {
                 </svg>
                 Tire wear, brake life, fluids, and more
               </li>
+              <li>
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Always free, never any obligation
+              </li>
+            </ul>
+            <a
+              href={business.bookingUrl}
+              target="_blank"

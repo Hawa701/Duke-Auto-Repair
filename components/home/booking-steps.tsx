@@ -20,3 +20,14 @@ export default function BookingSteps() {
             </p>
           </div>
           <div className="step">
+            <div className="n">2</div>
+            <h3>Drop off or wait</h3>
+            <p>
+              Bring your car in at your time. Leave it with us, or wait while we
+              work on it.
+            </p>
+          </div>
+          <div className="step">
+            <div className="n">3</div>
+            <h3>Pick it up</h3>
+            <p>

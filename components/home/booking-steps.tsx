@@ -31,3 +31,14 @@ export default function BookingSteps() {
             <div className="n">3</div>
             <h3>Pick it up</h3>
             <p>
+              We walk you through what we did, you pay, and you're back on the
+              road.
+            </p>
+          </div>
+        </div>
+        <div className="ctabar">
+          <svg
+            aria-hidden="true"
+            className="i"
+            viewBox="0 0 24 24"
+            style={{ width: "28px", height: "28px", color: "var(--navy)" }}

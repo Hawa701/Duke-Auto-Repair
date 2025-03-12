@@ -1,0 +1,10 @@
+/* Homepage experiment. Restoring hero.tsx.before removes the opt-in class and import. */
+body:has(.hero--welcoming) .site-header--overlay .util {
+  background: #e7f3f5;
+  color: #294753;
+}
+
+body:has(.hero--welcoming) .site-header--overlay .util a,
+body:has(.hero--welcoming) .site-header--overlay .util svg.i {
+  color: #294753;
+}

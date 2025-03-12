@@ -19,3 +19,14 @@ export default function Fascia() {
               className="fascia-group"
               key={String(duplicate)}
               aria-hidden={duplicate || undefined}
+            >
+              {services.map((service) => (
+                <li key={service}>{service}</li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

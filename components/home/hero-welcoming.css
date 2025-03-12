@@ -8,3 +8,13 @@ body:has(.hero--welcoming) .site-header--overlay .util a,
 body:has(.hero--welcoming) .site-header--overlay .util svg.i {
   color: #294753;
 }
+
+body:has(.hero--welcoming) .site-header--overlay .google-maps-attribution {
+  color: #1f1f1f;
+}
+
+body:has(.hero--welcoming) .site-header--overlay .site-nav {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: #e9e1c9;
+}
+

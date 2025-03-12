@@ -37,3 +37,13 @@ export default function HomeCrew() {
             <GoogleRating variant="crew" />
           </dl>
           <Link href="/about" className="btn btn-y">
+            About our shop
+            <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </Link>
+        </div>
+      </Stagger>
+    </section>
+  );
+}

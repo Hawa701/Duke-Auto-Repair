@@ -17,3 +17,13 @@ export default function HomeCrew() {
         <div>
           <h2>Meet the people who'll look after your car.</h2>
           <p className="lead">
+            Our front desk checks you in, and one of our certified technicians
+            takes it from there. Every visit includes a free digital inspection,
+            so you see what we see before you decide on anything.
+          </p>
+          <dl>
+            <div>
+              <dt>Certified technicians</dt>
+              <dd>Major and minor repairs</dd>
+            </div>
+            <div>

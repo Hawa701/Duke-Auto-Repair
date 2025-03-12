@@ -27,3 +27,13 @@ export default function HomeCrew() {
               <dd>Major and minor repairs</dd>
             </div>
             <div>
+              <dt>Same-day service</dt>
+              <dd>On most repairs and maintenance</dd>
+            </div>
+            <div>
+              <dt>Free inspection</dt>
+              <dd>A digital report with every visit</dd>
+            </div>
+            <GoogleRating variant="crew" />
+          </dl>
+          <Link href="/about" className="btn btn-y">

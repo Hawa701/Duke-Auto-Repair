@@ -8,3 +8,14 @@ const services = [
   "State inspection",
   "Suspension and steering",
 ];
+
+export default function Fascia() {
+  return (
+    <div className="fascia" role="region" aria-label="Auto repair services">
+      <div className="fascia-viewport">
+        <div className="fascia-track">
+          {[false, true].map((duplicate) => (
+            <ul
+              className="fascia-group"
+              key={String(duplicate)}
+              aria-hidden={duplicate || undefined}

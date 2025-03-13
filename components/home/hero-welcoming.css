@@ -99,3 +99,14 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 .hero.hero--welcoming .book-note > span {
   padding: 6px 10px;
   border: 1px solid #e7e5cf;
+  border-radius: 20px;
+  background: rgba(255, 253, 246, 0.94);
+}
+
+.hero.hero--welcoming .slides {
+  border-top-color: #e8dfc4;
+  background: rgba(255, 253, 246, 0.94);
+}
+
+.hero.hero--welcoming .slides .t {
+  color: #596c7d;

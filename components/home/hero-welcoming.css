@@ -18,3 +18,13 @@ body:has(.hero--welcoming) .site-header--overlay .site-nav {
   border-bottom-color: #e9e1c9;
 }
 
+body:has(.hero--welcoming) .site-header--overlay .site-nav ul {
+  color: var(--navy);
+}
+
+body:has(.hero--welcoming) .site-header--overlay .site-nav li.on,
+body:has(.hero--welcoming) .site-header--overlay .site-nav a:not(.btn):hover {
+  color: #166459;
+}
+
+body:has(.hero--welcoming) .site-header--overlay .site-nav li.on::after {

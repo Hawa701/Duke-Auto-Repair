@@ -79,3 +79,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 }
 
 .hero.hero--welcoming .rating .stars {
+  color: #8d6804;
+}
+
+.hero.hero--welcoming .book {
+  border: 1px solid #e9e0c3;
+  box-shadow: 0 16px 45px rgba(98, 83, 34, 0.12);
+}
+
+.hero.hero--welcoming .book .st i {
+  background: #e4f3ee;

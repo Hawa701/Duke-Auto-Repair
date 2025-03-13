@@ -59,3 +59,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
     );
 }
 
+.hero.hero--welcoming h1 {
+  color: var(--navy);
+}
+
+.hero.hero--welcoming .lede,
+.hero.hero--welcoming .rating,
+.hero.hero--welcoming .book-note {
+  color: #43586a;
+}
+

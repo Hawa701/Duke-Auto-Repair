@@ -89,3 +89,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 
 .hero.hero--welcoming .book .st i {
   background: #e4f3ee;
+  color: #166459;
+}
+
+.hero.hero--welcoming .book-note svg.i {
+  color: #166459;
+}
+
+.hero.hero--welcoming .book-note > span {
+  padding: 6px 10px;
+  border: 1px solid #e7e5cf;

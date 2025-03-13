@@ -69,3 +69,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
   color: #43586a;
 }
 
+.hero.hero--welcoming .lede b,
+.hero.hero--welcoming .rating b {
+  color: var(--navy);
+}
+
+.hero.hero--welcoming .google-maps-attribution {
+  color: #1f1f1f;
+}
+
+.hero.hero--welcoming .rating .stars {

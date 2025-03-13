@@ -48,3 +48,14 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
       90deg,
       #fff9e8 0%,
       rgba(255, 249, 232, 0.98) 28%,
+      rgba(255, 249, 232, 0.75) 46%,
+      rgba(255, 249, 232, 0.06) 74%
+    ),
+    linear-gradient(
+      0deg,
+      #fff9e8 0%,
+      rgba(255, 249, 232, 0.5) 12%,
+      rgba(255, 249, 232, 0) 40%
+    );
+}
+

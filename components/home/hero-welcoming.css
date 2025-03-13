@@ -28,3 +28,13 @@ body:has(.hero--welcoming) .site-header--overlay .site-nav a:not(.btn):hover {
 }
 
 body:has(.hero--welcoming) .site-header--overlay .site-nav li.on::after {
+  background: #e2c143;
+}
+
+body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
+  color: var(--navy);
+  border-color: #cbdcdd;
+  background: #f4f9f9;
+}
+
+.hero.hero--welcoming {

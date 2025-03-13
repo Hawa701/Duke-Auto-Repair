@@ -38,3 +38,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 }
 
 .hero.hero--welcoming {
+  color: var(--navy);
+  background: #fff9e8;
+}
+
+.hero.hero--welcoming .bg::after {
+  background:
+    linear-gradient(
+      90deg,
+      #fff9e8 0%,
+      rgba(255, 249, 232, 0.98) 28%,

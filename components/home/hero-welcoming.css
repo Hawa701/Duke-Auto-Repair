@@ -140,3 +140,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 .hero.hero--welcoming .slides .arrows button:hover {
   color: #fff;
   border-color: #166459;
+  background: #166459;
+}
+
+@media (max-width: 1024px) {
+  body:has(.hero--welcoming) .site-header--overlay .site-nav ul {
+    background: #fffdf6;
+    border-color: #e8dfc4;
+  }
+}
+

@@ -130,3 +130,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
   border-color: #c8d8d4;
   background: #fff;
 }
+
+.hero.hero--welcoming .slides .arrows button.next {
+  color: var(--deep);
+  border-color: var(--yellow);
+  background: var(--yellow);
+}
+
+.hero.hero--welcoming .slides .arrows button:hover {
+  color: #fff;
+  border-color: #166459;

@@ -44,3 +44,15 @@ export default function Hero() {
               <GoogleRating variant="hero" />
               <span>
                 <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Free digital inspection
+              </span>
+            </div>
+          </Entrance>
+        </div>
+      </div>
+      <Fascia />
+    </section>
+  );
+}

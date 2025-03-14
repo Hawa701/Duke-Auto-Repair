@@ -120,3 +120,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 .hero.hero--welcoming .slides .t:hover b {
   color: #166459;
 }
+
+.hero.hero--welcoming .slides .t.on::before {
+  background: linear-gradient(90deg, #e2c143 0% 42%, #dbe9e3 42%);
+}
+
+.hero.hero--welcoming .slides .arrows button {
+  color: var(--navy);
+  border-color: #c8d8d4;
+  background: #fff;
+}

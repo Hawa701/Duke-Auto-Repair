@@ -150,3 +150,14 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
   }
 }
 
+@media (max-width: 640px) {
+  .hero.hero--welcoming .bg::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(255, 249, 232, 0.98),
+        rgba(255, 249, 232, 0.82)
+      ),
+      linear-gradient(0deg, #fff9e8, rgba(255, 249, 232, 0) 65%);
+  }
+}

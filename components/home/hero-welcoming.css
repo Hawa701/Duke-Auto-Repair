@@ -110,3 +110,13 @@ body:has(.hero--welcoming) .site-header--overlay .menu-toggle {
 
 .hero.hero--welcoming .slides .t {
   color: #596c7d;
+}
+
+.hero.hero--welcoming .slides .t b {
+  color: #43586a;
+}
+
+.hero.hero--welcoming .slides .t.on b,
+.hero.hero--welcoming .slides .t:hover b {
+  color: #166459;
+}

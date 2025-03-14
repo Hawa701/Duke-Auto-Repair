@@ -21,3 +21,14 @@ export default function Hero() {
               Fast, reliable, and always affordable. From oil changes to major
               repairs, our certified technicians get you back on the road.
             </p>
+            <div className="acts">
+              <a
+                href={business.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-y"
+              >
+                Book an appointment
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>

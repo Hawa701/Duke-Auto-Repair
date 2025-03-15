@@ -10,3 +10,15 @@ export default function HomeReviews() {
         <div className="score">
           <GoogleRating variant="score" />
         </div>
+        <div className="quote">
+          <blockquote>&ldquo;{testimonial.text}&rdquo;</blockquote>
+          <div className="who">
+            <span className="avatar" aria-hidden="true">
+              {testimonial.initials}
+            </span>
+            <div>
+              <b>{testimonial.name}</b>
+              <small>Google review &middot; {testimonial.service}</small>
+            </div>
+            <a
+              className="review-source"

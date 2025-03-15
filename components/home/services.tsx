@@ -18,3 +18,13 @@ export default function HomeServices() {
           <div className="s hot" id="brake-repair">
             <div className="ic">
               <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="3.2" />
+                <path d="M12 3a9 9 0 0 1 8.5 6" />
+                <path d="M16.5 4.2 19 7.5" />
+              </svg>
+            </div>
+            <h3>Brake repair</h3>
+            <p>Free brake inspection and premium brake service.</p>
+            <Link href="/services/brakes">
+              Learn more

@@ -48,3 +48,13 @@ export default function HomeServices() {
               <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
+            </Link>
+          </div>
+          <div className="s" id="battery-services">
+            <div className="ic">
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <path d="M7 7V4.5h3V7M14 7V4.5h3V7" />
+                <path d="M7 13.5h4M9 11.5v4M14 13.5h3" />
+              </svg>
+            </div>

@@ -22,3 +22,15 @@ export default function HomeReviews() {
             </div>
             <a
               className="review-source"
+              href={business.googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read on Google
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

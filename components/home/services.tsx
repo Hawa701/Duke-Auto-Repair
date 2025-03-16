@@ -109,3 +109,13 @@ export default function HomeServices() {
               </svg>
             </div>
             <h3>Wheel alignment</h3>
+            <p>Drive straight, ride smooth, and save your tires.</p>
+            <Link href="/services/wheel-alignment">
+              Learn more
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
+          </div>
+          <div className="s" id="suspension-steering">
+            <div className="ic">

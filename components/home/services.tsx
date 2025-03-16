@@ -99,3 +99,13 @@ export default function HomeServices() {
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
             </Link>
+          </div>
+          <div className="s" id="wheel-alignment">
+            <div className="ic">
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <rect x="2" y="4" width="4.5" height="16" rx="1.2" />
+                <rect x="17.5" y="4" width="4.5" height="16" rx="1.2" />
+                <path d="M6.5 12h11M9.5 9l-3 3 3 3M14.5 9l3 3-3 3" />
+              </svg>
+            </div>
+            <h3>Wheel alignment</h3>

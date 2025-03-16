@@ -58,3 +58,13 @@ export default function HomeServices() {
                 <path d="M7 13.5h4M9 11.5v4M14 13.5h3" />
               </svg>
             </div>
+            <h3>Battery services</h3>
+            <p>Testing and replacement to keep your car starting every time.</p>
+            <Link href="/services/battery-services">
+              Learn more
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
+          </div>
+          <div className="s" id="air-conditioning">

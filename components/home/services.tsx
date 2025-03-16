@@ -68,3 +68,14 @@ export default function HomeServices() {
             </Link>
           </div>
           <div className="s" id="air-conditioning">
+            <div className="ic">
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4" />
+              </svg>
+            </div>
+            <h3>Air conditioning repair</h3>
+            <p>
+              Professional A/C service to keep you cool through Virginia
+              summers.
+            </p>
+            <Link href="/services/air-conditioning">

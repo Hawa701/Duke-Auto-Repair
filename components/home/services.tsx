@@ -180,3 +180,13 @@ export default function HomeServices() {
             </div>
             <h3>State safety and emissions</h3>
             <p>State inspection and emissions testing, done on site.</p>
+            <Link href="/services/state-inspection">
+              Learn more
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
+          </div>
+          <div className="s ask" id="service-help">
+            <div className="ic">
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">

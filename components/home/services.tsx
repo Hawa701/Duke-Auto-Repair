@@ -149,3 +149,14 @@ export default function HomeServices() {
               <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
+            </Link>
+          </div>
+          <div className="s" id="bg-fluids">
+            <div className="ic">
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M9 3h6M10 3v5l-5.5 10.5A2 2 0 0 0 6.3 21.5h11.4a2 2 0 0 0 1.8-3L14 8V3" />
+                <path d="M7 15h10" />
+              </svg>
+            </div>
+            <h3>BG fluid services</h3>
+            <p>

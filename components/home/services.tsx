@@ -160,3 +160,13 @@ export default function HomeServices() {
             </div>
             <h3>BG fluid services</h3>
             <p>
+              Protect your engine and transmission with professional BG fluid
+              service.
+            </p>
+            <Link href="/services/bg-fluids">
+              Learn more
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
+          </div>

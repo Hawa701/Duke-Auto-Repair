@@ -119,3 +119,13 @@ export default function HomeServices() {
           </div>
           <div className="s" id="suspension-steering">
             <div className="ic">
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M12 2v2.5M12 19.5V22M8 4.5h8M8 19.5h8M8 4.5l8 3-8 3 8 3-8 3 8 3" />
+              </svg>
+            </div>
+            <h3>Suspension and steering</h3>
+            <p>
+              A smooth, safe, controlled ride. Expert repairs you can trust.
+            </p>
+            <Link href="/services/suspension-steering">
+              Learn more

@@ -139,3 +139,13 @@ export default function HomeServices() {
               <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
                 <rect x="2" y="4" width="20" height="14" rx="2" />
                 <path d="M6 11h3l2-3 2 6 2-3h3" />
+                <path d="M8 21h8M12 18v3" />
+              </svg>
+            </div>
+            <h3>Check engine diagnostics</h3>
+            <p>Computer diagnostics to find out exactly why the light is on.</p>
+            <Link href="/services/engine-diagnostics">
+              Learn more
+              <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>

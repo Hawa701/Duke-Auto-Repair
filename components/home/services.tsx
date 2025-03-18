@@ -210,3 +210,13 @@ export default function HomeServices() {
         </div>
         <div className="more">
           <p>
+            <b>Every visit includes a free digital inspection,</b> so you'll
+            know what's good, what needs attention, and what can wait.
+          </p>
+          <div className="acts">
+            <Link href="/services" className="btn btn-ob">
+              View all services
+            </Link>
+            <a
+              href={business.bookingUrl}
+              target="_blank"

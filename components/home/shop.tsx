@@ -61,3 +61,13 @@ export default function HomeShop() {
               role="img"
               aria-label="Welcome to Duke Auto"
               style={{
+                backgroundImage: "url(/images/home/shop/welcome.jpg)",
+                backgroundSize: "155%",
+                backgroundPosition: "50% 28%",
+              }}
+            ></div>
+          </figure>
+        </div>
+        <div className="visit">
+          <span className="pin">
+            <svg aria-hidden="true" className="i" viewBox="0 0 24 24">

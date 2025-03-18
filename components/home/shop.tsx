@@ -19,3 +19,13 @@ export default function HomeShop() {
                 backgroundImage: "url(/images/home/shop/front-desk.jpg)",
                 backgroundPosition: "50% 30%",
               }}
+            ></div>
+            <figcaption>Our front desk team</figcaption>
+          </figure>
+          <figure className="">
+            <div
+              className="ph"
+              role="img"
+              aria-label="Checking you in"
+              style={{
+                backgroundImage: "url(/images/home/shop/check-in.jpg)",

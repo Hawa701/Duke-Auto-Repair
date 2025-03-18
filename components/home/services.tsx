@@ -190,3 +190,13 @@ export default function HomeServices() {
           <div className="s ask" id="service-help">
             <div className="ic">
               <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <path d="M12 17h.01" />
+              </svg>
+            </div>
+            <h3>Not sure what's wrong?</h3>
+            <p>
+              Tell us about the noise, the warning light or the feeling. We'll
+              find it and fix it.
+            </p>

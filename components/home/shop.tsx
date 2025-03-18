@@ -50,3 +50,14 @@ export default function HomeShop() {
               role="img"
               aria-label="Here to answer your questions"
               style={{
+                backgroundImage: "url(/images/home/shop/questions.jpg)",
+                backgroundPosition: "55% 38%",
+              }}
+            ></div>
+          </figure>
+          <figure className="">
+            <div
+              className="ph"
+              role="img"
+              aria-label="Welcome to Duke Auto"
+              style={{

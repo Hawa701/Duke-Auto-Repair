@@ -29,3 +29,14 @@ export default function HomeShop() {
               aria-label="Checking you in"
               style={{
                 backgroundImage: "url(/images/home/shop/check-in.jpg)",
+                backgroundPosition: "50% 35%",
+              }}
+            ></div>
+          </figure>
+          <figure className="">
+            <div
+              className="ph"
+              role="img"
+              aria-label="Keeping you posted"
+              style={{
+                backgroundImage: "url(/images/home/shop/updates.jpg)",

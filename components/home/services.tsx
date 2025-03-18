@@ -220,3 +220,14 @@ export default function HomeServices() {
             <a
               href={business.bookingUrl}
               target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-y"
+            >
+              Book an appointment
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

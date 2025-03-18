@@ -40,3 +40,13 @@ export default function HomeShop() {
               aria-label="Keeping you posted"
               style={{
                 backgroundImage: "url(/images/home/shop/updates.jpg)",
+                backgroundPosition: "48% 42%",
+              }}
+            ></div>
+          </figure>
+          <figure className="">
+            <div
+              className="ph"
+              role="img"
+              aria-label="Here to answer your questions"
+              style={{

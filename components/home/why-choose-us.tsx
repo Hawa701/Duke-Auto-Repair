@@ -29,3 +29,14 @@ export default function WhyChooseUs() {
             </svg>
             <h3>Plan your visit</h3>
             <p>
+              Contact our team to arrange your visit, swing by the shop, and let
+              our pros handle the rest.
+            </p>
+          </div>
+          <div>
+            <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+              <path d="M10 2h4" />
+              <path d="m12 14 3-3" />
+              <circle cx="12" cy="14" r="8" />
+            </svg>
+            <h3>Fast and reliable service</h3>

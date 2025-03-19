@@ -82,3 +82,13 @@ export default function HomeShop() {
           <a
             href={business.googleMapsUrl}
             target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-ob"
+          >
+            <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+              <path d="m3 11 19-9-9 19-2-8-8-2z" />
+            </svg>
+            Get directions
+          </a>
+          <a
+            href={business.bookingUrl}

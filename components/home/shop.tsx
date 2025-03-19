@@ -92,3 +92,14 @@ export default function HomeShop() {
           </a>
           <a
             href={business.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-y"
+          >
+            Book an appointment
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

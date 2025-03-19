@@ -19,3 +19,13 @@ export default function WhyChooseUs() {
             <p>
               From check-in to check-out, we keep things friendly, helpful, and
               hassle-free.
+            </p>
+          </div>
+          <div>
+            <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+              <rect width="18" height="18" x="3" y="4" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+              <path d="m9 16 2 2 4-4" />
+            </svg>
+            <h3>Plan your visit</h3>
+            <p>

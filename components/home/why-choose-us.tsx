@@ -50,3 +50,14 @@ export default function WhyChooseUs() {
               <circle cx="12" cy="8" r="6" />
               <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11" />
             </svg>
+            <h3>Certified technicians</h3>
+            <p>
+              Professionally trained mechanics who handle major and minor
+              repairs with precision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

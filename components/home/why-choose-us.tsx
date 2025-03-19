@@ -40,3 +40,13 @@ export default function WhyChooseUs() {
               <circle cx="12" cy="14" r="8" />
             </svg>
             <h3>Fast and reliable service</h3>
+            <p>
+              Most services are done the same day, so you&apos;re back on the
+              road quickly and safely.
+            </p>
+          </div>
+          <div>
+            <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11" />
+            </svg>

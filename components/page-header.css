@@ -1,0 +1,9 @@
+.page-header {
+  position: relative;
+  margin-top: -1px;
+  color: #fff;
+  text-align: center;
+  background: var(--navy) var(--ph) center 55% / cover no-repeat;
+  border-bottom: 8px solid var(--yellow);
+}
+.page-header:before {

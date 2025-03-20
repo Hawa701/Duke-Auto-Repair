@@ -7,3 +7,13 @@
   border-bottom: 8px solid var(--yellow);
 }
 .page-header:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 32, 74, 0.72),
+    rgba(30, 40, 69, 0.5) 70%,
+    rgba(30, 40, 69, 0.62)
+  );
+}

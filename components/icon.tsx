@@ -21,3 +21,14 @@ export default function Icon({
 }: SVGProps<SVGSVGElement> & { name: IconName }) {
   return (
     <svg className="i" viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d={paths[name]} />
+    </svg>
+  );
+}
+
+export function Stars({ rating = 5 }: { rating?: number }) {
+  return (
+    <span
+      className="stars"
+      role="img"
+      aria-label={`${rating.toFixed(1)} out of 5 stars`}

@@ -27,3 +27,13 @@
 }
 .page-header .wrap {
   position: relative;
+  z-index: 1;
+  padding: 84px 0 92px;
+}
+.page-header.has-lift .wrap {
+  padding-bottom: 210px;
+}
+.page-header__breadcrumb {
+  display: inline-flex;
+  max-width: 100%;
+  flex-wrap: wrap;

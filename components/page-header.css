@@ -86,3 +86,13 @@
   padding-block: clamp(42px, 6vw, 84px) clamp(56px, 6.5vw, 92px);
 }
 .page-header.has-lift .wrap {
+  padding-bottom: 210px;
+}
+.page-header p {
+  font-size: clamp(17px, 1.5vw, 19px);
+}
+@media (max-width: 1024px) {
+  .page-header.has-lift .wrap {
+    padding-bottom: 150px;
+  }
+}

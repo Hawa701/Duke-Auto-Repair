@@ -56,3 +56,13 @@
   color: #fff;
 }
 .page-header__breadcrumb svg.i {
+  width: 14px;
+  height: 14px;
+}
+.page-header__breadcrumb b {
+  color: var(--yellow);
+  font-weight: 700;
+}
+.page-header h1 {
+  font-size: 132px;
+  line-height: 0.82;

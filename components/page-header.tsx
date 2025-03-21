@@ -19,3 +19,14 @@ export default function PageHeader({
   breadcrumb = title,
   description,
   image,
+  imagePosition,
+  breadcrumbs = [{ href: "/", label: "Home" }],
+  hasLift = false,
+}: PageHeaderProps) {
+  return (
+    <header
+      className={`page-header${hasLift ? " has-lift" : ""}`}
+      style={
+        {
+          "--ph": `url(${image})`,
+          backgroundPosition: imagePosition,

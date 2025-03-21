@@ -8,3 +8,14 @@ type PageHeaderProps = {
   title: string;
   breadcrumb?: string;
   description: string;
+  image: string;
+  imagePosition?: string;
+  breadcrumbs?: { href: string; label: string }[];
+  hasLift?: boolean;
+};
+
+export default function PageHeader({
+  title,
+  breadcrumb = title,
+  description,
+  image,

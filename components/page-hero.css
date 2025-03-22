@@ -1,0 +1,10 @@
+.page-hero {
+  position: relative;
+  color: #fff;
+  background: var(--deep);
+  overflow: hidden;
+  border-bottom: 8px solid var(--yellow);
+}
+
+.page-hero .site-nav {
+  position: relative;

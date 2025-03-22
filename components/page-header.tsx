@@ -41,3 +41,14 @@ export default function PageHeader({
               <Link href={href}>{label}</Link>
               <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="m9 18 6-6-6-6" />
+              </svg>
+            </Fragment>
+          ))}
+          <b aria-current="page">{breadcrumb}</b>
+        </nav>
+        <h1 id="page-title">{title}</h1>
+        <p>{description}</p>
+      </Entrance>
+    </header>
+  );
+}

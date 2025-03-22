@@ -48,3 +48,13 @@
       180deg,
       rgba(var(--deep-rgb), 0.7) 0%,
       rgba(var(--deep-rgb), 0.05) 30%,
+      rgba(var(--deep-rgb), 0.25) 65%,
+      rgba(var(--deep-rgb), 0.95) 100%
+    );
+}
+
+.page-hero__inner {
+  position: relative;
+  padding: 80px 0 0;
+}
+.page-hero__breadcrumb {

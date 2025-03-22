@@ -18,3 +18,13 @@
   inset: 0;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.page-hero__right {
+  background-size: var(--page-hero-image-size, 60% auto);
+  -webkit-mask-image: var(
+    --page-hero-image-mask,
+    linear-gradient(90deg, transparent 36%, #000 56%)
+  );
+  mask-image: var(
+    --page-hero-image-mask,

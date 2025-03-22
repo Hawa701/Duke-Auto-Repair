@@ -38,3 +38,13 @@
   inset: 0;
   background:
     linear-gradient(
+      90deg,
+      rgba(var(--deep-rgb), 0.96) 0%,
+      rgba(var(--deep-rgb), 0.82) 38%,
+      rgba(var(--deep-rgb), 0.35) 70%,
+      rgba(var(--deep-rgb), 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(var(--deep-rgb), 0.7) 0%,
+      rgba(var(--deep-rgb), 0.05) 30%,

@@ -30,3 +30,14 @@ export default function PageHeader({
         {
           "--ph": `url(${image})`,
           backgroundPosition: imagePosition,
+        } as CSSProperties
+      }
+      aria-labelledby="page-title"
+    >
+      <Entrance className="wrap" pattern="up" waitForFonts>
+        <nav className="page-header__breadcrumb" aria-label="Breadcrumb">
+          {breadcrumbs.map(({ href, label }) => (
+            <Fragment key={href}>
+              <Link href={href}>{label}</Link>
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" />

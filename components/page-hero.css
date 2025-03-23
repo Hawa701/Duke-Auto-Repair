@@ -79,3 +79,13 @@
 }
 .page-hero__copy {
   margin-top: 16px;
+  padding-bottom: 40px;
+}
+.page-hero__copy h1 {
+  font-size: 150px;
+  line-height: 0.82;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.page-hero__copy p {
+  font-size: 20px;

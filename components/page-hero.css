@@ -69,3 +69,13 @@
   width: 14px;
   height: 14px;
   color: var(--mist);
+}
+.page-hero__breadcrumb span {
+  color: var(--yellow);
+  font-weight: 600;
+}
+.page-hero__breadcrumb a:hover {
+  text-decoration: underline;
+}
+.page-hero__copy {
+  margin-top: 16px;

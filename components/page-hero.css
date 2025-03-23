@@ -58,3 +58,14 @@
   padding: 80px 0 0;
 }
 .page-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #c9cedc;
+}
+.page-hero__breadcrumb svg.i {
+  width: 14px;
+  height: 14px;
+  color: var(--mist);

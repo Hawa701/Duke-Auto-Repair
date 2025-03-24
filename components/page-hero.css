@@ -129,3 +129,14 @@
   color: var(--deep);
 }
 .page-hero__jump-link.page-hero__first svg.i,
+.page-hero__jump-link:hover svg.i {
+  color: var(--deep);
+}
+.page-hero__call {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c9cedc;
+  font-size: 15px;
+  white-space: nowrap;

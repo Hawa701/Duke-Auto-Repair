@@ -150,3 +150,13 @@
   font-family: var(--font-barlow-condensed), sans-serif;
   font-size: 24px;
   font-weight: 700;
+  color: #fff;
+}
+.page-hero__call svg.i {
+  width: 20px;
+  height: 20px;
+  color: var(--yellow);
+}
+.page-hero__call:hover b {
+  color: var(--yellow);
+}

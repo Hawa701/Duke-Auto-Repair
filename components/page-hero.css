@@ -99,3 +99,13 @@
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   display: flex;
   gap: 10px;
+  align-items: center;
+  padding: 20px 0 26px;
+  flex-wrap: wrap;
+}
+.page-hero__jump-link {
+  min-block-size: 44px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;

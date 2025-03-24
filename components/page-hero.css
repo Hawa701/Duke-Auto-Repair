@@ -140,3 +140,13 @@
   color: #c9cedc;
   font-size: 15px;
   white-space: nowrap;
+}
+.page-hero__call span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-hero__call b {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: 24px;
+  font-weight: 700;

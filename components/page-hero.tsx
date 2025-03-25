@@ -18,3 +18,14 @@ type PageHeroProps = {
 };
 
 export default function PageHero({
+  title,
+  description,
+  image,
+  imagePosition = "center",
+  imagePlacement = "full",
+  imageSize,
+  imageMask,
+  links = [],
+  sectionNavigation,
+}: PageHeroProps) {
+  return (

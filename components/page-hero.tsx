@@ -8,3 +8,13 @@ import "./page-hero.css";
 type PageHeroProps = {
   title: string;
   description: string;
+  image: string;
+  imagePosition?: string;
+  imagePlacement?: "full" | "right";
+  imageSize?: string;
+  imageMask?: string;
+  links?: { href: string; label: string }[];
+  sectionNavigation?: ReactNode;
+};
+
+export default function PageHero({

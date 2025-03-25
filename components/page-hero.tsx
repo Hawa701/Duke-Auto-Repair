@@ -49,3 +49,14 @@ export default function PageHero({
             <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
             </svg>
+            <span aria-current="page">{title}</span>
+          </nav>
+          <div className="page-hero__copy">
+            <h1 id="page-title">{title}</h1>
+            <p>{description}</p>
+          </div>
+          <nav className="page-hero__jumps" aria-label={`${title} sections`}>
+            {sectionNavigation ??
+              links.map(({ href, label }, index) => (
+                <a
+                  key={href}

@@ -190,3 +190,13 @@
   }
   .page-hero__copy p {
     font-size: 18px;
+    padding-left: 16px;
+    margin-top: 24px;
+  }
+  .page-hero__copy {
+    padding-bottom: 30px;
+  }
+  .page-hero__jumps {
+    gap: 10px 8px;
+    padding: 20px 0;
+  }

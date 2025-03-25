@@ -29,3 +29,13 @@ export default function PageHero({
   sectionNavigation,
 }: PageHeroProps) {
   return (
+    <section className="page-hero" aria-labelledby="page-title">
+      <div
+        className={`page-hero__background${imagePlacement === "right" ? " page-hero__right" : ""}`}
+        style={
+          {
+            backgroundImage: `url(${image})`,
+            backgroundPosition: imagePosition,
+            "--page-hero-image-size": imageSize,
+            "--page-hero-image-mask": imageMask,
+          } as CSSProperties

@@ -170,3 +170,13 @@
   }
   .page-hero__jumps {
     flex-wrap: wrap;
+  }
+  .page-hero__call {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero__right {
+    background-size: auto 100%;
+    -webkit-mask-image: linear-gradient(90deg, transparent 5%, #000 70%);

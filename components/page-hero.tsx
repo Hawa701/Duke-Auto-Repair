@@ -39,3 +39,13 @@ export default function PageHero({
             "--page-hero-image-size": imageSize,
             "--page-hero-image-mask": imageMask,
           } as CSSProperties
+        }
+      />
+      <SiteNavigation />
+      <div className="page-hero__inner">
+        <div className="wrap">
+          <nav className="page-hero__breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" />
+            </svg>

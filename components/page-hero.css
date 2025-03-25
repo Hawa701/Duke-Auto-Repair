@@ -200,3 +200,14 @@
     gap: 10px 8px;
     padding: 20px 0;
   }
+  .page-hero__jump-link {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+  .page-hero__call {
+    min-block-size: 44px;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 12px;
+  }
+}

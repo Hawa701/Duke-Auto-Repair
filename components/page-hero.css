@@ -160,3 +160,13 @@
 .page-hero__call:hover b {
   color: var(--yellow);
 }
+
+@media (max-width: 1024px) {
+  .page-hero__inner {
+    padding-top: 60px;
+  }
+  .page-hero__copy h1 {
+    font-size: 120px;
+  }
+  .page-hero__jumps {
+    flex-wrap: wrap;

@@ -60,3 +60,13 @@ export default function PageHero({
               links.map(({ href, label }, index) => (
                 <a
                   key={href}
+                  href={href}
+                  className={`page-hero__jump-link${index === 0 ? " page-hero__first" : ""}`}
+                >
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 5v14M6 13l6 6 6-6" />
+                  </svg>
+                  {label}
+                </a>
+              ))}
+            <a href={business.phoneHref} className="page-hero__call">

@@ -27,3 +27,13 @@ export default function PageScrollbar() {
     const measure = () => {
       frame = 0;
       setGeometry(
+        scrollbarGeometry(
+          root.clientHeight,
+          root.scrollHeight,
+          window.scrollY,
+          Math.max(0, root.clientHeight - 12),
+        ),
+      );
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(measure);

@@ -17,3 +17,13 @@ export default function PageScrollbar() {
   const drag = useRef<{
     pointerId: number;
     y: number;
+    scrollTop: number;
+  } | null>(null);
+
+  useEffect(() => {
+    if (typeof ResizeObserver === "undefined") return;
+    const root = document.documentElement;
+    let frame = 0;
+    const measure = () => {
+      frame = 0;
+      setGeometry(

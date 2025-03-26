@@ -70,3 +70,14 @@ export default function PageHero({
                 </a>
               ))}
             <a href={business.phoneHref} className="page-hero__call">
+              <Icon name="phone" />
+              <span>
+                Questions? <b>{business.phoneDisplay}</b>
+              </span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  );
+}

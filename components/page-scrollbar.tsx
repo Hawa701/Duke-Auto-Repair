@@ -37,3 +37,13 @@ export default function PageScrollbar() {
     };
     const schedule = () => {
       if (!frame) frame = requestAnimationFrame(measure);
+    };
+    // Keep the native scrollbar until this enhancement has mounted. Without
+    // JavaScript visitors retain a fully functional native scrollbar.
+    root.dataset.overlayScrollbar = "true";
+    measure();
+    const observer = new ResizeObserver(schedule);
+    observer.observe(document.body);
+    observer.observe(root);
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);

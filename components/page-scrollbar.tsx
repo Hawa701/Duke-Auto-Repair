@@ -76,3 +76,13 @@ export default function PageScrollbar() {
       root.scrollHeight,
       window.scrollY,
       Math.max(0, root.clientHeight - 12),
+    );
+    window.scrollTo({
+      top: scrollAfterDrag(
+        drag.current.scrollTop,
+        event.clientY - drag.current.y,
+        current.range,
+        current.travel,
+      ),
+      behavior: "instant",
+    });

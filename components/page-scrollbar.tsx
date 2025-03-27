@@ -96,3 +96,13 @@ export default function PageScrollbar() {
   const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     const root = document.documentElement;
     const destinations: Record<string, number> = {
+      ArrowUp: window.scrollY - 48,
+      ArrowDown: window.scrollY + 48,
+      PageUp: window.scrollY - root.clientHeight * 0.9,
+      PageDown: window.scrollY + root.clientHeight * 0.9,
+      Home: 0,
+      End: root.scrollHeight - root.clientHeight,
+    };
+    if (!(event.key in destinations)) return;
+    event.preventDefault();
+    window.scrollTo({ top: destinations[event.key], behavior: "auto" });

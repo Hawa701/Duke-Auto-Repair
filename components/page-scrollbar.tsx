@@ -86,3 +86,13 @@ export default function PageScrollbar() {
       ),
       behavior: "instant",
     });
+  };
+  const endDrag = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.currentTarget.hasPointerCapture(event.pointerId))
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    drag.current = null;
+    setDragging(false);
+  };
+  const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    const root = document.documentElement;
+    const destinations: Record<string, number> = {

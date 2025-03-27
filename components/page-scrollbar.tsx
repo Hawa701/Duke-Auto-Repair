@@ -67,3 +67,12 @@ export default function PageScrollbar() {
       scrollTop: window.scrollY,
     };
     setDragging(true);
+  };
+  const moveDrag = (event: PointerEvent<HTMLDivElement>) => {
+    if (!drag.current || drag.current.pointerId !== event.pointerId) return;
+    const root = document.documentElement;
+    const current = scrollbarGeometry(
+      root.clientHeight,
+      root.scrollHeight,
+      window.scrollY,
+      Math.max(0, root.clientHeight - 12),

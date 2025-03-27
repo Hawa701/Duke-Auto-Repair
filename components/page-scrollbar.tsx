@@ -47,3 +47,13 @@ export default function PageScrollbar() {
     observer.observe(root);
     window.addEventListener("scroll", schedule, { passive: true });
     window.addEventListener("resize", schedule);
+    return () => {
+      delete root.dataset.overlayScrollbar;
+      observer.disconnect();
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      cancelAnimationFrame(frame);
+    };
+  }, []);
+
+  const startDrag = (event: PointerEvent<HTMLDivElement>) => {

@@ -57,3 +57,13 @@ export default function PageScrollbar() {
   }, []);
 
   const startDrag = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.button !== 0) return;
+    event.preventDefault();
+    event.currentTarget.focus({ preventScroll: true });
+    event.currentTarget.setPointerCapture(event.pointerId);
+    drag.current = {
+      pointerId: event.pointerId,
+      y: event.clientY,
+      scrollTop: window.scrollY,
+    };
+    setDragging(true);

@@ -38,3 +38,13 @@ function GoogleMark() {
     </svg>
   );
 }
+
+export default function ReviewsContent() {
+  const [filter, setFilter] = useState<Filter>("all");
+  const reviewsUrl = business.googleReviewsUrl;
+  const featuredReview = customerReviews[0];
+  const visibleReviews = dummyReviews.filter(
+    (review) => filter === "all" || review.topics.includes(filter),
+  );
+
+  return (

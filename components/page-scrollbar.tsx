@@ -116,3 +116,13 @@ export default function PageScrollbar() {
         data-dragging={dragging || undefined}
         role="scrollbar"
         aria-label="Page scroll"
+        aria-controls="main-content"
+        aria-orientation="vertical"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round(geometry.progress * 100)}
+        tabIndex={0}
+        style={{
+          height: geometry.height,
+          transform: `translateY(${geometry.offset}px)`,
+        }}

@@ -106,3 +106,13 @@ export default function PageScrollbar() {
     if (!(event.key in destinations)) return;
     event.preventDefault();
     window.scrollTo({ top: destinations[event.key], behavior: "auto" });
+  };
+
+  if (!geometry || !geometry.range) return null;
+  return (
+    <div className="page-scrollbar">
+      <div
+        className="page-scrollbar__thumb"
+        data-dragging={dragging || undefined}
+        role="scrollbar"
+        aria-label="Page scroll"

@@ -48,3 +48,13 @@ export default function ReviewsContent() {
   );
 
   return (
+    <>
+      <section className="revpage" aria-label="Customer feedback">
+        <div className="wrap">
+          <div className="summary" aria-label="Google review summary">
+            <div className="sc">
+              <GoogleRating variant="summary" />
+            </div>
+            <div
+              className="rating-breakdown"
+              role="img"

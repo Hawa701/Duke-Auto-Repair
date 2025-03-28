@@ -8,3 +8,13 @@ import { dummyReviews } from "@/lib/dummy-reviews";
 import {
   customerReviews,
   reviewTopics,
+  ratingDistribution,
+  type ReviewTopic,
+} from "@/lib/customer-reviews";
+import GoogleRating from "../google-rating";
+import { Stars } from "../icon";
+
+type Filter = "all" | ReviewTopic;
+
+function GoogleMark() {
+  return (

@@ -126,3 +126,13 @@ export default function PageScrollbar() {
           height: geometry.height,
           transform: `translateY(${geometry.offset}px)`,
         }}
+        onPointerDown={startDrag}
+        onPointerMove={moveDrag}
+        onPointerUp={endDrag}
+        onPointerCancel={endDrag}
+        onLostPointerCapture={endDrag}
+        onKeyDown={onKeyDown}
+      />
+    </div>
+  );
+}

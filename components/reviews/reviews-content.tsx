@@ -68,3 +68,13 @@ export default function ReviewsContent() {
                 >
                   <span>{stars}</span>
                   <span className="rating-breakdown__track">
+                    <span
+                      style={{ "--bar-width": `${width}%` } as CSSProperties}
+                    />
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="acts">
+              <a
+                href={reviewsUrl}

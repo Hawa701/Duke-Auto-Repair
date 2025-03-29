@@ -58,3 +58,13 @@ export default function ReviewsContent() {
             <div
               className="rating-breakdown"
               role="img"
+              aria-label="Rating distribution from the supplied Google listing screenshot. Most reviews are five stars."
+            >
+              {ratingDistribution.map(({ stars, width }) => (
+                <div
+                  className="rating-breakdown__row"
+                  key={stars}
+                  aria-hidden="true"
+                >
+                  <span>{stars}</span>
+                  <span className="rating-breakdown__track">

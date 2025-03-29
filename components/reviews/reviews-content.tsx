@@ -109,3 +109,13 @@ export default function ReviewsContent() {
             <div>
               <blockquote>{featuredReview.text}</blockquote>
               <div className="who">
+                <Stars rating={featuredReview.rating} />
+                <span>
+                  <b>{featuredReview.name}</b> &middot; Google review
+                </span>
+              </div>
+            </div>
+          </Entrance>
+          <div className="rv-head" id="customer-reviews">
+            <h2>What drivers are saying.</h2>
+          </div>

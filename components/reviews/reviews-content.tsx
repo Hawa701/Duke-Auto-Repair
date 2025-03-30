@@ -169,3 +169,13 @@ export default function ReviewsContent() {
               <article className="rv" key={review.id}>
                 <Stars rating={review.rating} />
                 <blockquote>{review.text}</blockquote>
+                <div className="who">
+                  <span className="av" aria-hidden="true">
+                    {review.initials}
+                  </span>
+                  <div>
+                    <b>{review.name}</b>
+                    <small>{review.service}</small>
+                  </div>
+                </div>
+              </article>

@@ -139,3 +139,13 @@ export default function ReviewsContent() {
                   key={id}
                   type="button"
                   aria-pressed={filter === id}
+                  aria-controls="review-wall"
+                  onClick={() => setFilter(id)}
+                >
+                  {label} <span className="topic-count">{count}</span>
+                </button>
+              ))}
+            </div>
+            <span className="count" role="status">
+              Showing {visibleReviews.length}{" "}
+              {visibleReviews.length === 1 ? "review" : "reviews"}

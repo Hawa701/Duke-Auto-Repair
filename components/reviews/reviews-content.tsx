@@ -119,3 +119,13 @@ export default function ReviewsContent() {
           <div className="rv-head" id="customer-reviews">
             <h2>What drivers are saying.</h2>
           </div>
+          <p className="topic-source">Popular topics on Google</p>
+          <div className="rv-tools">
+            <div
+              className="chips"
+              role="group"
+              aria-label="Google review topics"
+            >
+              <button
+                type="button"
+                aria-pressed={filter === "all"}

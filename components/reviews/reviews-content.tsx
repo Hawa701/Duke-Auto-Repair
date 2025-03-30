@@ -149,3 +149,13 @@ export default function ReviewsContent() {
             <span className="count" role="status">
               Showing {visibleReviews.length}{" "}
               {visibleReviews.length === 1 ? "review" : "reviews"}
+            </span>
+          </div>
+          <div className="wall" id="review-wall">
+            {visibleReviews.length === 0 && (
+              <p className="no-reviews">
+                Read more reviews about{" "}
+                {reviewTopics
+                  .find((topic) => topic.id === filter)
+                  ?.label.toLowerCase()}{" "}
+                on{" "}

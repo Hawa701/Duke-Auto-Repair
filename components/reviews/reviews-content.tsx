@@ -129,3 +129,13 @@ export default function ReviewsContent() {
               <button
                 type="button"
                 aria-pressed={filter === "all"}
+                aria-controls="review-wall"
+                onClick={() => setFilter("all")}
+              >
+                All reviews
+              </button>
+              {reviewTopics.map(({ id, label, count }) => (
+                <button
+                  key={id}
+                  type="button"
+                  aria-pressed={filter === id}

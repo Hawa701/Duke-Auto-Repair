@@ -159,3 +159,13 @@ export default function ReviewsContent() {
                   .find((topic) => topic.id === filter)
                   ?.label.toLowerCase()}{" "}
                 on{" "}
+                <a href={reviewsUrl} target="_blank" rel="noopener noreferrer">
+                  Google Maps
+                </a>
+                .
+              </p>
+            )}
+            {visibleReviews.map((review) => (
+              <article className="rv" key={review.id}>
+                <Stars rating={review.rating} />
+                <blockquote>{review.text}</blockquote>

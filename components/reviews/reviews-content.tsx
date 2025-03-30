@@ -179,3 +179,13 @@ export default function ReviewsContent() {
                   </div>
                 </div>
               </article>
+            ))}
+          </div>
+          <div className="more-rv">
+            <p>See every review from our customers on Google.</p>
+            <a
+              href={reviewsUrl}
+              className="btn btn-ob"
+              target="_blank"
+              rel="noopener noreferrer"
+            >

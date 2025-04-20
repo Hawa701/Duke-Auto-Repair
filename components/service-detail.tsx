@@ -28,3 +28,13 @@ export default function ServiceDetail({
           { href: "/", label: "Home" },
           { href: "/services", label: "Services" },
         ]}
+        description={service.description}
+        image={service.image}
+        imagePosition={service.imagePosition}
+      />
+      <section
+        className="service-detail"
+        aria-labelledby={`${service.id}-intro-title`}
+      >
+        <div className="wrap detail-grid">
+          <div className="detail-content">

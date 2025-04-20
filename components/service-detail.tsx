@@ -8,3 +8,13 @@ import { business } from "@/lib/business";
 import { serviceGroups } from "@/lib/services";
 import type { ServiceDetail as ServiceDetailContent } from "@/lib/service-details";
 import "@/app/services/service-detail.css";
+
+const services = serviceGroups.flatMap((group) => group.services);
+
+export default function ServiceDetail({
+  service,
+}: {
+  service: ServiceDetailContent;
+}) {
+  const relatedServices = service.relatedIds.flatMap((id) =>
+    services.filter((item) => item.id === id),

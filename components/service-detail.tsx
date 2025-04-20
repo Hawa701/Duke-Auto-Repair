@@ -48,3 +48,13 @@ export default function ServiceDetail({
               {service.signs.map((sign) => (
                 <li key={sign}>
                   <Icon name="check" />
+                  <span>{sign}</span>
+                </li>
+              ))}
+            </ul>
+            <h3 id={`${service.id}-checks-title`}>What we check and service</h3>
+            <div
+              className="detail-checks"
+              aria-labelledby={`${service.id}-checks-title`}
+            >
+              {service.checks.map((check) => (

@@ -38,3 +38,13 @@ export default function ServiceDetail({
       >
         <div className="wrap detail-grid">
           <div className="detail-content">
+            <h2 id={`${service.id}-intro-title`}>{service.introTitle}</h2>
+            <p className="detail-lead">{service.intro}</p>
+            <h3 id={`${service.id}-signs-title`}>{service.signsTitle}</h3>
+            <ul
+              className="detail-signs"
+              aria-labelledby={`${service.id}-signs-title`}
+            >
+              {service.signs.map((sign) => (
+                <li key={sign}>
+                  <Icon name="check" />

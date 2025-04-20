@@ -18,3 +18,13 @@ export default function ServiceDetail({
 }) {
   const relatedServices = service.relatedIds.flatMap((id) =>
     services.filter((item) => item.id === id),
+  );
+  return (
+    <div className={`service-detail-page ${service.id}-service-page`}>
+      <PageHeader
+        title={service.title}
+        breadcrumb={service.title}
+        breadcrumbs={[
+          { href: "/", label: "Home" },
+          { href: "/services", label: "Services" },
+        ]}

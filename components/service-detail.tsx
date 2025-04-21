@@ -119,3 +119,13 @@ export default function ServiceDetail({
               </li>
               <li>
                 <Icon name="check" />
+                Certified technicians
+              </li>
+            </ul>
+            <div className="booking-rating">
+              <GoogleRating variant="utility" />
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section

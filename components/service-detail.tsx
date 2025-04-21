@@ -109,3 +109,13 @@ export default function ServiceDetail({
               <Icon name="phone" />
               <span>
                 <small>Prefer to call?</small>
+                <b>{business.phoneDisplay}</b>
+              </span>
+            </a>
+            <ul className="booking-benefits">
+              <li>
+                <Icon name="check" />
+                Free digital inspection
+              </li>
+              <li>
+                <Icon name="check" />

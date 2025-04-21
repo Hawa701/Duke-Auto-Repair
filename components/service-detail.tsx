@@ -99,3 +99,13 @@ export default function ServiceDetail({
             <a
               href={business.bookingUrl}
               target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-y"
+            >
+              Book an appointment
+              <Icon name="arrow" />
+            </a>
+            <a className="booking-phone" href={business.phoneHref}>
+              <Icon name="phone" />
+              <span>
+                <small>Prefer to call?</small>

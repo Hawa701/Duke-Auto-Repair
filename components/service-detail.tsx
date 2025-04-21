@@ -79,3 +79,13 @@ export default function ServiceDetail({
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                      >
+                        {link.label}
+                        <Icon name="arrow" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>

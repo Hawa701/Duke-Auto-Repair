@@ -89,3 +89,13 @@ export default function ServiceDetail({
               </div>
             )}
           </div>
+          <aside
+            className="service-bookcard"
+            aria-labelledby={`${service.id}-booking-title`}
+          >
+            <span className="booking-tag">{service.bookingTag}</span>
+            <h2 id={`${service.id}-booking-title`}>{service.bookingTitle}</h2>
+            <p>{service.bookingDescription}</p>
+            <a
+              href={business.bookingUrl}
+              target="_blank"

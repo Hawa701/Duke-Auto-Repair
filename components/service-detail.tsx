@@ -68,3 +68,14 @@ export default function ServiceDetail({
                   </div>
                 </div>
               ))}
+            </div>
+            {service.helpfulLinks && (
+              <div className="detail-helpful-links">
+                <p>Check the current requirements for your vehicle:</p>
+                <ul>
+                  {service.helpfulLinks.map((link) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"

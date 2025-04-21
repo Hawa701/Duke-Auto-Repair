@@ -58,3 +58,13 @@ export default function ServiceDetail({
               aria-labelledby={`${service.id}-checks-title`}
             >
               {service.checks.map((check) => (
+                <div className="detail-check" key={check.title}>
+                  <span className="check-icon">
+                    <Icon name="check" />
+                  </span>
+                  <div>
+                    <h4>{check.title}</h4>
+                    <p>{check.description}</p>
+                  </div>
+                </div>
+              ))}

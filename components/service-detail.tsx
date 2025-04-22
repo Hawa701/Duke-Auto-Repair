@@ -149,3 +149,14 @@ export default function ServiceDetail({
                 <h3>{item.name}</h3>
                 <span className="related-more">
                   Learn more
+                  <Icon name="arrow" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <BookingCta />
+    </div>
+  );
+}

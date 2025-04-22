@@ -129,3 +129,13 @@ export default function ServiceDetail({
         </div>
       </section>
       <section
+        className="related-services"
+        aria-labelledby="related-services-title"
+      >
+        <div className="wrap">
+          <div className="sec-head">
+            <h2 id="related-services-title">Related services.</h2>
+            <p>
+              {service.relatedDescription}{" "}
+              <Link href="/services">See all services</Link>
+            </p>

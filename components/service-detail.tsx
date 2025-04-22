@@ -139,3 +139,13 @@ export default function ServiceDetail({
               {service.relatedDescription}{" "}
               <Link href="/services">See all services</Link>
             </p>
+          </div>
+          <div className="related-cards">
+            {relatedServices.map((item) => (
+              <Link href={item.href} className="related-card" key={item.id}>
+                <span className="related-icon">
+                  <ServiceIcon name={item.icon} />
+                </span>
+                <h3>{item.name}</h3>
+                <span className="related-more">
+                  Learn more

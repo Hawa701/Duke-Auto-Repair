@@ -1,0 +1,10 @@
+export type ServiceIconName =
+  | "oil"
+  | "fluids"
+  | "battery"
+  | "brakes"
+  | "suspension"
+  | "air-conditioning"
+  | "heating"
+  | "alignment"
+  | "diagnostics"

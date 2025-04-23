@@ -48,3 +48,13 @@ export default function ServiceIcon({ name }: { name: ServiceIconName }) {
         <rect x="2" y="4" width="4.5" height="16" rx="1.2" />
         <rect x="17.5" y="4" width="4.5" height="16" rx="1.2" />
         <path d="M6.5 12h11M9.5 9l-3 3 3 3M14.5 9l3 3-3 3" />
+      </>
+    ),
+    diagnostics: (
+      <>
+        <rect x="2" y="4" width="20" height="14" rx="2" />
+        <path d="M6 11h3l2-3 2 6 2-3h3M8 21h8M12 18v3" />
+      </>
+    ),
+    inspection: (
+      <>

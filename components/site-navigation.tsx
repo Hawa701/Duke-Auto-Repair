@@ -47,3 +47,13 @@ export default function SiteNavigation() {
       ref={navRef}
       className="site-nav"
       aria-label="Main navigation"
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && open) {
+          event.preventDefault();
+          setOpen(false);
+          toggleRef.current?.focus();
+        }
+      }}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+      }}

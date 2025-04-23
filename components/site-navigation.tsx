@@ -57,3 +57,13 @@ export default function SiteNavigation() {
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
       }}
+    >
+      <div className="wrap">
+        <Link
+          href="/"
+          aria-label="Duke Auto Repair home"
+          onClick={() => setOpen(false)}
+        >
+          <Image
+            className="logo"
+            src="/images/home/logo.png"

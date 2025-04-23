@@ -38,3 +38,13 @@ export default function ServiceIcon({ name }: { name: ServiceIconName }) {
       <path d="M12 2v2.5M12 19.5V22M8 4.5h8M8 19.5h8M8 4.5l8 3-8 3 8 3-8 3 8 3" />
     ),
     "air-conditioning": (
+      <path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4" />
+    ),
+    heating: (
+      <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5Z" />
+    ),
+    alignment: (
+      <>
+        <rect x="2" y="4" width="4.5" height="16" rx="1.2" />
+        <rect x="17.5" y="4" width="4.5" height="16" rx="1.2" />
+        <path d="M6.5 12h11M9.5 9l-3 3 3 3M14.5 9l3 3-3 3" />

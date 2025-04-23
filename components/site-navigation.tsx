@@ -37,3 +37,13 @@ export default function SiteNavigation() {
     document.addEventListener("pointerdown", closeOutside);
     desktop.addEventListener("change", closeOnDesktop);
     return () => {
+      document.removeEventListener("pointerdown", closeOutside);
+      desktop.removeEventListener("change", closeOnDesktop);
+    };
+  }, [open]);
+
+  return (
+    <nav
+      ref={navRef}
+      className="site-nav"
+      aria-label="Main navigation"

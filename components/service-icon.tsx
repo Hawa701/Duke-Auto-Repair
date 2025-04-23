@@ -28,3 +28,13 @@ export default function ServiceIcon({ name }: { name: ServiceIconName }) {
       </>
     ),
     brakes: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="12" r="3.2" />
+        <path d="M12 3a9 9 0 0 1 8.5 6M16.5 4.2 19 7.5" />
+      </>
+    ),
+    suspension: (
+      <path d="M12 2v2.5M12 19.5V22M8 4.5h8M8 19.5h8M8 4.5l8 3-8 3 8 3-8 3 8 3" />
+    ),
+    "air-conditioning": (

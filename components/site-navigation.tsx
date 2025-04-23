@@ -27,3 +27,13 @@ export default function SiteNavigation() {
       if (
         event.target instanceof Node &&
         !navRef.current?.contains(event.target)
+      )
+        setOpen(false);
+    };
+    const desktop = window.matchMedia("(min-width: 1025px)");
+    const closeOnDesktop = () => {
+      if (desktop.matches) setOpen(false);
+    };
+    document.addEventListener("pointerdown", closeOutside);
+    desktop.addEventListener("change", closeOnDesktop);
+    return () => {

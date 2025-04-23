@@ -58,3 +58,14 @@ export default function ServiceIcon({ name }: { name: ServiceIconName }) {
     ),
     inspection: (
       <>
+        <rect width="8" height="4" x="8" y="2" rx="1" />
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2m1 10 2 2 4-4" />
+      </>
+    ),
+  };
+  return (
+    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+      {icons[name]}
+    </svg>
+  );
+}

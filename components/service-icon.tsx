@@ -18,3 +18,13 @@ export default function ServiceIcon({ name }: { name: ServiceIconName }) {
     fluids: (
       <>
         <path d="M9 3h6M10 3v5L4.5 18.5a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8V3" />
+        <path d="M7 15h10" />
+      </>
+    ),
+    battery: (
+      <>
+        <rect x="3" y="7" width="18" height="13" rx="2" />
+        <path d="M7 7V4.5h3V7M14 7V4.5h3V7M7 13.5h4M9 11.5v4M14 13.5h3" />
+      </>
+    ),
+    brakes: (

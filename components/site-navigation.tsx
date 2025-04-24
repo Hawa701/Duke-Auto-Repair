@@ -107,3 +107,13 @@ export default function SiteNavigation() {
         <a
           href={business.bookingUrl}
           target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-y header-booking"
+          onClick={() => setOpen(false)}
+        >
+          Book an appointment
+        </a>
+      </div>
+    </nav>
+  );
+}

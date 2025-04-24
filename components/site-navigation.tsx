@@ -87,3 +87,13 @@ export default function SiteNavigation() {
         <ul id="site-navigation" className={open ? "is-open" : ""}>
           {navigation.map(({ href, label }) => {
             const current = pathname === href;
+            const active =
+              current || (href !== "/" && pathname.startsWith(`${href}/`));
+            return (
+              <li key={href} className={active ? "on" : undefined}>
+                <Link
+                  href={href}
+                  aria-current={
+                    current ? "page" : active ? "location" : undefined
+                  }
+                  onClick={() => setOpen(false)}

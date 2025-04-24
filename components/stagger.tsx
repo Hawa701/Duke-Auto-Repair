@@ -28,3 +28,13 @@ export default function Stagger({
   const [scope, animate] = useAnimate<HTMLDivElement>();
   const reducedMotion = useReducedMotion();
 
+  useEffect(() => {
+    if (reducedMotion || !scope.current) return;
+    const items = Array.from(
+      scope.current.querySelectorAll<HTMLElement>(itemsSelector),
+    );
+    if (!items.length) return;
+
+    let active = true;
+    const cleanups = new Set<() => void>();
+    const stopObserving = observeReveals(items, (visibleItems) => {

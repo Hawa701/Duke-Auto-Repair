@@ -67,3 +67,13 @@ export default function SiteNavigation() {
           <Image
             className="logo"
             src="/images/home/logo.png"
+            alt="Duke Auto Repair & Service"
+            width={1287}
+            height={339}
+            priority
+          />
+        </Link>
+        <button
+          ref={toggleRef}
+          className="menu-toggle"
+          type="button"

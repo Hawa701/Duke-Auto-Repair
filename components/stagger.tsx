@@ -18,3 +18,13 @@ type StaggerProps = ComponentPropsWithoutRef<"div"> & {
 
 export default function Stagger({
   children,
+  className = "",
+  replayKey,
+  itemsSelector = ":scope > *",
+  interval = 0.1,
+  pattern = "up",
+  ...props
+}: StaggerProps) {
+  const [scope, animate] = useAnimate<HTMLDivElement>();
+  const reducedMotion = useReducedMotion();
+

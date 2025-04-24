@@ -8,3 +8,13 @@ import {
   revealStart,
   type RevealPattern,
 } from "@/lib/reveal-patterns";
+
+type StaggerProps = ComponentPropsWithoutRef<"div"> & {
+  replayKey?: string;
+  itemsSelector?: string;
+  interval?: number;
+  pattern?: RevealPattern | "alternate";
+};
+
+export default function Stagger({
+  children,

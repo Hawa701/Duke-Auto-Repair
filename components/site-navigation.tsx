@@ -97,3 +97,13 @@ export default function SiteNavigation() {
                     current ? "page" : active ? "location" : undefined
                   }
                   onClick={() => setOpen(false)}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <a
+          href={business.bookingUrl}
+          target="_blank"

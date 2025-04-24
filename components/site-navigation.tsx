@@ -77,3 +77,13 @@ export default function SiteNavigation() {
           ref={toggleRef}
           className="menu-toggle"
           type="button"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="site-navigation"
+          onClick={() => setOpen(!open)}
+        >
+          <Icon name={open ? "close" : "menu"} />
+        </button>
+        <ul id="site-navigation" className={open ? "is-open" : ""}>
+          {navigation.map(({ href, label }) => {
+            const current = pathname === href;

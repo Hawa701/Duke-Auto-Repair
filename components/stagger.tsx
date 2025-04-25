@@ -58,3 +58,13 @@ export default function Stagger({
           item,
           {
             opacity: [0.65, 1],
+            x: [start.x, 0],
+            y: [start.y, 0],
+            scale: [start.scale, 1],
+          },
+          {
+            duration: 0.9,
+            delay: 0.08 + batchIndex * interval,
+            ease: [0.22, 0.61, 0.36, 1],
+          },
+        );

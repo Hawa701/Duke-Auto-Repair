@@ -38,3 +38,13 @@ export default function Stagger({
     let active = true;
     const cleanups = new Set<() => void>();
     const stopObserving = observeReveals(items, (visibleItems) => {
+      visibleItems.forEach((item, batchIndex) => {
+        // Retain author styles and existing hover effects after the entrance finishes.
+        const originalStyles = {
+          transform: item.style.transform,
+          opacity: item.style.opacity,
+        };
+        const restore = () => {
+          const { transform, opacity } = originalStyles;
+          if (transform) item.style.transform = transform;
+          else item.style.removeProperty("transform");

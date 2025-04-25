@@ -98,3 +98,13 @@ export default function Stagger({
   ]);
 
   return (
+    <div
+      {...props}
+      ref={scope}
+      className={`stagger-group ${className}`}
+      data-reveal-group="true"
+    >
+      {children}
+    </div>
+  );
+}

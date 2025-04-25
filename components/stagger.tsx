@@ -88,3 +88,13 @@ export default function Stagger({
       cleanups.clear();
     };
   }, [
+    animate,
+    reducedMotion,
+    replayKey,
+    itemsSelector,
+    interval,
+    pattern,
+    scope,
+  ]);
+
+  return (

@@ -1,0 +1,9 @@
+/* Desktop layout from the final supplied about.html. */
+.about-page .lift {
+  position: relative;
+  z-index: 2;
+  margin-top: -190px;
+}
+.about-page .strip {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1.35fr 1fr;

@@ -78,3 +78,13 @@ export default function Stagger({
             restore();
             cleanups.delete(cleanup);
           }
+        });
+      });
+    });
+    return () => {
+      active = false;
+      stopObserving();
+      cleanups.forEach((cleanup) => cleanup());
+      cleanups.clear();
+    };
+  }, [

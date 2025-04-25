@@ -7,3 +7,13 @@
 .about-page .strip {
   display: grid;
   grid-template-columns: 1.35fr 1fr 1.35fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.about-page .strip figure {
+  margin: 0;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--concrete);
+  box-shadow: 0 24px 48px rgba(20, 32, 74, 0.22);

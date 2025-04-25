@@ -48,3 +48,13 @@ export default function Stagger({
           const { transform, opacity } = originalStyles;
           if (transform) item.style.transform = transform;
           else item.style.removeProperty("transform");
+          if (opacity) item.style.opacity = opacity;
+          else item.style.removeProperty("opacity");
+        };
+        const start = revealStart(
+          itemRevealPattern(pattern, items.indexOf(item)),
+        );
+        const animation = animate(
+          item,
+          {
+            opacity: [0.65, 1],

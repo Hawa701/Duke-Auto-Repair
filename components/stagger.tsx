@@ -68,3 +68,13 @@ export default function Stagger({
             ease: [0.22, 0.61, 0.36, 1],
           },
         );
+        const cleanup = () => {
+          animation.stop();
+          restore();
+        };
+        cleanups.add(cleanup);
+        void animation.then(() => {
+          if (active) {
+            restore();
+            cleanups.delete(cleanup);
+          }

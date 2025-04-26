@@ -96,3 +96,13 @@
 .about-page .vals {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.about-page .val .ph {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--concrete);
+}
+.about-page .val .ph i {

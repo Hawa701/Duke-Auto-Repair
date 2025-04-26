@@ -17,3 +17,13 @@
   overflow: hidden;
   background: var(--concrete);
   box-shadow: 0 24px 48px rgba(20, 32, 74, 0.22);
+}
+.about-page .strip figure i {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.about-page .strip figure:hover i {
+  transform: scale(1.06);
+}

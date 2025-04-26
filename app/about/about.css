@@ -57,3 +57,13 @@
 .about-page .stats .st {
   padding: 56px 32px 52px;
 }
+.about-page .stats .st:first-child {
+  padding-left: 0;
+}
+.about-page .stats .st + .st {
+  border-left: 1.5px solid rgba(20, 32, 74, 0.22);
+}
+.about-page .stats .n {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 96px;

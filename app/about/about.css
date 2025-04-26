@@ -77,3 +77,12 @@
   top: 6px;
   margin-left: 2px;
 }
+.about-page .stats .l {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 19px;
+}
+.about-page .stats .s {
+  font-size: 15px;
+  color: #5a4c14;
+  margin-top: 2px;

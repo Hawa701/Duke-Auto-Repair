@@ -27,3 +27,13 @@
 .about-page .strip figure:hover i {
   transform: scale(1.06);
 }
+.about-page .strip .s1,
+.about-page .strip .s3 {
+  height: 360px;
+}
+.about-page .strip .s2,
+.about-page .strip .s4 {
+  height: 260px;
+}
+.about-page .after-lift {
+  margin-top: 80px;

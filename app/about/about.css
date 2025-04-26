@@ -37,3 +37,13 @@
 }
 .about-page .after-lift {
   margin-top: 80px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-page .strip figure i {
+    transition: none;
+  }
+  .about-page .strip figure:hover i {
+    transform: none;
+  }
+}
+.about-page .stats {

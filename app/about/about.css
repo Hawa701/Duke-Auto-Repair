@@ -47,3 +47,13 @@
   }
 }
 .about-page .stats {
+  background: var(--yellow);
+  color: var(--deep);
+}
+.about-page .stats .wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.about-page .stats .st {
+  padding: 56px 32px 52px;
+}

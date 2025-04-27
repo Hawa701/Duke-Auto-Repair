@@ -205,3 +205,13 @@
   .about-page .stop .ph i,
   .about-page .val .ph i {
     transition: none;
+  }
+  .about-page .stop:hover .ph i,
+  .about-page .val:hover .ph i {
+    transform: none;
+  }
+}
+.about-page .awards {
+  background: var(--navy);
+  color: #fff;
+  padding: 110px 0;

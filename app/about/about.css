@@ -146,3 +146,13 @@
 .about-page .val p {
   margin-top: 8px;
   color: var(--steel);
+  font-size: 17px;
+  max-width: 360px;
+}
+.about-page .tour {
+  background: var(--concrete);
+  padding: 120px 0;
+}
+.about-page .tour .sec-head {
+  grid-template-columns: 1.2fr 1fr;
+}

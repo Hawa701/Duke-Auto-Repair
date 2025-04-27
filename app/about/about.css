@@ -156,3 +156,13 @@
 .about-page .tour .sec-head {
   grid-template-columns: 1.2fr 1fr;
 }
+.about-page .stops {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.about-page .stop .ph {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 14px;
+  overflow: hidden;

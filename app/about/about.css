@@ -126,3 +126,13 @@
   font-size: 20px;
   line-height: 1;
   padding: 12px 16px 10px;
+  border-radius: 0 10px 0 0;
+  border-top: 4px solid var(--yellow);
+}
+.about-page .val h3 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.92;
+  color: var(--navy);
+  margin-top: 26px;
+  white-space: nowrap;

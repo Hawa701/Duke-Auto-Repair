@@ -185,3 +185,13 @@
   font-style: normal;
   font-family: var(--font-barlow-condensed);
   font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  background: var(--yellow);
+  color: var(--deep);
+  padding: 7px 10px 6px;
+  border-radius: 6px;
+}
+.about-page .stop h3 {
+  font-size: 30px;
+  font-weight: 800;

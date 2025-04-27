@@ -136,3 +136,13 @@
   color: var(--navy);
   margin-top: 26px;
   white-space: nowrap;
+}
+.about-page .val h4 {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 14px;
+}
+.about-page .val p {
+  margin-top: 8px;
+  color: var(--steel);

@@ -116,3 +116,13 @@
 }
 .about-page .val .ph b {
   position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: var(--ink-navy);
+  color: var(--yellow);
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+  padding: 12px 16px 10px;

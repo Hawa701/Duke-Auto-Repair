@@ -195,3 +195,13 @@
 .about-page .stop h3 {
   font-size: 30px;
   font-weight: 800;
+  margin: 20px 0 8px;
+}
+.about-page .stop p {
+  color: var(--steel);
+  font-size: 16px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-page .stop .ph i,
+  .about-page .val .ph i {
+    transition: none;

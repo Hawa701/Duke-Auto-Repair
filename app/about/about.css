@@ -245,3 +245,13 @@
   line-height: 1;
   color: #fff;
 }
+.about-page .awards .rating .stars {
+  color: var(--yellow);
+}
+.about-page .awards .rating .stars svg {
+  width: 18px;
+  height: 18px;
+}
+.about-page .awards .acts {
+  display: flex;
+  align-items: center;

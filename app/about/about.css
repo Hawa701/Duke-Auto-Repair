@@ -255,3 +255,12 @@
 .about-page .awards .acts {
   display: flex;
   align-items: center;
+  gap: 26px;
+  margin-top: 30px;
+}
+.about-page .awards .more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;

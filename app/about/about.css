@@ -264,3 +264,13 @@
   gap: 8px;
   font-weight: 700;
   font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.about-page .awards .more svg.i {
+  transition: transform 0.3s ease;
+}
+.about-page .awards .more:hover svg.i {
+  transform: translateX(5px);
+}

@@ -334,3 +334,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
+}
+.about-page .cta {
+  position: relative;
+  background: var(--navy);
+  color: #fff;
+  overflow: hidden;
+}
+.about-page .cta:after {
+  content: "";

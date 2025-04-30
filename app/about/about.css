@@ -363,3 +363,13 @@
     90deg,
     var(--navy) 0%,
     rgba(42, 82, 190, 0.45) 40%,
+    rgba(42, 82, 190, 0.12)
+  );
+}
+.about-page .cta .wrap {
+  z-index: 2;
+}
+.about-page .cta .wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;

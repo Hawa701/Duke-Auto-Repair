@@ -383,3 +383,13 @@
   max-width: 700px;
 }
 .about-page .cta p {
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  max-width: 540px;
+}
+.about-page .cta .act {
+  display: grid;
+  gap: 14px;
+  justify-items: stretch;
+  min-width: 330px;

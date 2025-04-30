@@ -373,3 +373,13 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: end;
+  padding: 110px 0;
+}
+.about-page .cta h2 {
+  font-size: 92px;
+  line-height: 0.9;
+  max-width: 700px;
+}
+.about-page .cta p {

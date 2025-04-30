@@ -432,3 +432,13 @@
 }
 .about-page .awards .google-maps-attribution {
   color: #fff;
+}
+.about-page .btn-n:hover {
+  background: var(--deep);
+}
+
+/* Responsive layouts for the photo strip, values, awards, and tour. */
+.about-page :is(.values, .tour) {
+  padding-block: clamp(56px, 8vw, 120px);
+}
+.about-page .awards {

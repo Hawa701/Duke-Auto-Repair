@@ -413,3 +413,13 @@
 .about-page .cta .phone small {
   display: block;
   color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.about-page .cta .phone b {
+  font-family: var(--font-barlow-condensed);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-page .stats .st {

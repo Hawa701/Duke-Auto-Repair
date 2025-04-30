@@ -452,3 +452,13 @@
   gap: 32px;
 }
 .about-page .sec-head h2 {
+  font-size: clamp(38px, 4.6vw, 64px);
+}
+.about-page .strip {
+  grid-template-columns:
+    minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1.35fr)
+    minmax(0, 1fr);
+}
+.about-page .stats .wrap {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}

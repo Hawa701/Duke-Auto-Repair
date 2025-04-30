@@ -393,3 +393,13 @@
   gap: 14px;
   justify-items: stretch;
   min-width: 330px;
+}
+.about-page .cta .act .btn {
+  justify-content: center;
+}
+.about-page .cta .phone {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  padding-top: 22px;

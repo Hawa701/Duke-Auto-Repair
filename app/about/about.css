@@ -442,3 +442,13 @@
   padding-block: clamp(56px, 8vw, 120px);
 }
 .about-page .awards {
+  padding-block: clamp(56px, 7.5vw, 110px);
+}
+.about-page .after-lift {
+  margin-top: clamp(48px, 6vw, 80px);
+}
+.about-page .sec-head {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 32px;
+}
+.about-page .sec-head h2 {

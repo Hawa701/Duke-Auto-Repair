@@ -423,3 +423,12 @@
 }
 
 .about-page .stats .st {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.about-page .stats .n {
+  order: -1;
+}
+.about-page .awards .google-maps-attribution {
+  color: #fff;

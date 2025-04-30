@@ -462,3 +462,13 @@
 .about-page .stats .wrap {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+.about-page .stats .n {
+  font-size: clamp(56px, 8vw, 96px);
+}
+.about-page .stats .n sup {
+  font-size: 0.5em;
+}
+.about-page .vals {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 2vw, 28px);
+}

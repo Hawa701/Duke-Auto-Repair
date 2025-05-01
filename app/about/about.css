@@ -492,3 +492,13 @@
 .about-page .awards .acts {
   flex-wrap: wrap;
   gap: 20px;
+}
+.about-page .plaques {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 1.3vw, 18px);
+}
+.about-page .plaque {
+  padding-inline: 8px;
+}
+.about-page .plaque b {
+  font-size: clamp(36px, 6vw, 84px);

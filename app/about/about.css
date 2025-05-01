@@ -551,3 +551,13 @@
   }
 }
 @media (max-width: 900px) {
+  .about-page .sec-head {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+  .about-page .sec-head p {
+    max-width: none;
+    font-size: 18px;
+  }
+}

@@ -512,3 +512,12 @@
 @media (max-width: 1050px) {
   .about-page .awards .grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .about-page .awards .copy p {
+    max-width: 700px;
+  }
+  .about-page .plaques {
+    width: 100%;
+    max-width: 760px;
+  }
+}

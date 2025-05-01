@@ -521,3 +521,13 @@
     max-width: 760px;
   }
 }
+@media (max-width: 1024px) {
+  .about-page .lift {
+    margin-top: -100px;
+  }
+  .about-page .strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .about-page .strip figure:nth-child(n) {
+    height: clamp(200px, 32vw, 320px);

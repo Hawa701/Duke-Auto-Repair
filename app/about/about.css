@@ -502,3 +502,13 @@
 }
 .about-page .plaque b {
   font-size: clamp(36px, 6vw, 84px);
+}
+.about-page .plaque span {
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+.about-page .plaque small {
+  font-size: clamp(11px, 1vw, 14px);
+}
+@media (max-width: 1050px) {
+  .about-page .awards .grid {
+    grid-template-columns: minmax(0, 1fr);

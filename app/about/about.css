@@ -472,3 +472,13 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(20px, 2vw, 28px);
 }
+.about-page .val h3 {
+  white-space: normal;
+  font-size: clamp(32px, 3.5vw, 50px);
+}
+.about-page .val p {
+  max-width: none;
+}
+.about-page .stops {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}

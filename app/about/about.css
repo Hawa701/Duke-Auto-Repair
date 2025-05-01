@@ -531,3 +531,13 @@
   }
   .about-page .strip figure:nth-child(n) {
     height: clamp(200px, 32vw, 320px);
+  }
+  .about-page .stats .wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about-page .stats .st:nth-child(n) {
+    padding: 36px 24px;
+  }
+  .about-page .stats .st:nth-child(odd) {
+    border-left: 0;
+    padding-left: 0;

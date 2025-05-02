@@ -28,3 +28,13 @@ const stats = [
     value: "10K",
     suffix: "+",
     label: "Vehicles serviced",
+    detail: "And handed back with confidence",
+  },
+  {
+    value: "98",
+    suffix: "%",
+    label: "Satisfaction rate",
+    detail: "From customers we've served",
+  },
+];
+

@@ -581,3 +581,13 @@
   }
   .about-page .stats .l {
     font-size: 17px;
+  }
+  .about-page .stats .s {
+    font-size: 14px;
+  }
+  .about-page .strip {
+    gap: 12px;
+  }
+  .about-page .strip figure:nth-child(n) {
+    height: clamp(190px, 42vw, 260px);
+  }

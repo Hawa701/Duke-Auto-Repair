@@ -38,3 +38,13 @@ const stats = [
   },
 ];
 
+export default function AboutPage() {
+  return (
+    <div className="about-page">
+      <PageHeader
+        title="About Us"
+        breadcrumb="About us"
+        description={`A locally owned repair shop in ${business.city}, built on honest, transparent service centered around you, the driver.`}
+        image="/images/about/exterior-bays.jpg"
+        hasLift
+      />

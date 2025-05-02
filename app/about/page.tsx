@@ -8,3 +8,13 @@ import "./about.css";
 
 export const metadata: Metadata = {
   title: "About",
+  description: `Meet ${business.name}, your locally owned repair shop in ${business.city}, built on honest, transparent service centered around you.`,
+};
+
+const stats = [
+  {
+    value: "10",
+    suffix: "+",
+    label: "Years of experience",
+    detail: `Serving ${business.city} drivers`,
+  },

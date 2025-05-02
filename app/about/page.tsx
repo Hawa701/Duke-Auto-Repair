@@ -48,3 +48,13 @@ export default function AboutPage() {
         image="/images/about/exterior-bays.jpg"
         hasLift
       />
+      <section className="lift" aria-label="Our shop and team">
+        <div className="wrap strip">
+          <figure className="s1">
+            <i
+              role="img"
+              aria-label="The Duke Auto storefront"
+              style={{
+                backgroundImage: "url(/images/about/storefront-square.jpg)",
+                backgroundPosition: "50% 55%",
+              }}

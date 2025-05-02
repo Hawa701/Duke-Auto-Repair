@@ -58,3 +58,13 @@ export default function AboutPage() {
                 backgroundImage: "url(/images/about/storefront-square.jpg)",
                 backgroundPosition: "50% 55%",
               }}
+            ></i>
+          </figure>
+          <figure className="s2">
+            <i
+              role="img"
+              aria-label="Three Duke Auto team members at the front desk"
+              style={{
+                backgroundImage: "url(/images/about/desk-trio.jpg)",
+                backgroundPosition: "50% 30%",
+              }}

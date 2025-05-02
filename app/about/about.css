@@ -591,3 +591,13 @@
   .about-page .strip figure:nth-child(n) {
     height: clamp(190px, 42vw, 260px);
   }
+}
+@media (max-width: 520px) {
+  .about-page .stops {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  .about-page .stop .ph {
+    aspect-ratio: 4 / 5;
+  }
+}

@@ -18,3 +18,13 @@ const stats = [
     label: "Years of experience",
     detail: `Serving ${business.city} drivers`,
   },
+  {
+    value: "10",
+    suffix: "+",
+    label: "Certified technicians",
+    detail: "Trained for major and minor repairs",
+  },
+  {
+    value: "10K",
+    suffix: "+",
+    label: "Vehicles serviced",

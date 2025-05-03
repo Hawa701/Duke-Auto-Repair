@@ -88,3 +88,13 @@ export default function AboutPage() {
                 backgroundImage: "url(/images/about/techs-under-hood.jpg)",
                 backgroundPosition: "50% 50%",
               }}
+            ></i>
+          </figure>
+        </div>
+      </section>
+      <section
+        className="stats after-lift"
+        aria-label="Duke Auto by the numbers"
+      >
+        <div>
+          <dl className="wrap">

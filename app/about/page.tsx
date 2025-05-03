@@ -78,3 +78,13 @@ export default function AboutPage() {
                 backgroundImage: "url(/images/about/diagnostics-portrait.jpg)",
                 backgroundPosition: "60% 40%",
               }}
+            ></i>
+          </figure>
+          <figure className="s4">
+            <i
+              role="img"
+              aria-label="Two technicians working together under the hood"
+              style={{
+                backgroundImage: "url(/images/about/techs-under-hood.jpg)",
+                backgroundPosition: "50% 50%",
+              }}

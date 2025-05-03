@@ -98,3 +98,13 @@ export default function AboutPage() {
       >
         <div>
           <dl className="wrap">
+            {stats.map(({ value, suffix, label, detail }) => (
+              <div className="st" key={label}>
+                <dt className="l">{label}</dt>
+                <dd className="n">
+                  {value}
+                  <sup>{suffix}</sup>
+                </dd>
+                <dd className="s">{detail}</dd>
+              </div>
+            ))}

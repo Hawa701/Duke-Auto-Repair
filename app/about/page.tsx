@@ -68,3 +68,13 @@ export default function AboutPage() {
                 backgroundImage: "url(/images/about/desk-trio.jpg)",
                 backgroundPosition: "50% 30%",
               }}
+            ></i>
+          </figure>
+          <figure className="s3">
+            <i
+              role="img"
+              aria-label="A technician running diagnostics"
+              style={{
+                backgroundImage: "url(/images/about/diagnostics-portrait.jpg)",
+                backgroundPosition: "60% 40%",
+              }}

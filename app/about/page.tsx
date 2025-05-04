@@ -138,3 +138,13 @@ export default function AboutPage() {
               <p>
                 We tell you what needs attention now and what can wait. The
                 decision is always yours.
+              </p>
+            </div>
+            <div className="val">
+              <div className="ph">
+                <i
+                  role="img"
+                  aria-label="Wheel alignment equipment showing a live reading"
+                  style={{
+                    backgroundImage: "url(/images/about/alignment-rig.jpg)",
+                    backgroundPosition: "50% 55%",

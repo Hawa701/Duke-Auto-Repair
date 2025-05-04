@@ -128,3 +128,13 @@ export default function AboutPage() {
                   aria-label="A technician checking a state inspection sticker"
                   style={{
                     backgroundImage: "url(/images/about/state-inspection.jpg)",
+                    backgroundPosition: "55% 45%",
+                  }}
+                ></i>
+                <b>01</b>
+              </div>
+              <h3>Honest.</h3>
+              <h4>No pressure, no upsell.</h4>
+              <p>
+                We tell you what needs attention now and what can wait. The
+                decision is always yours.

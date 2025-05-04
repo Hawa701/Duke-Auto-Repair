@@ -108,3 +108,13 @@ export default function AboutPage() {
                 <dd className="s">{detail}</dd>
               </div>
             ))}
+          </dl>
+        </div>
+      </section>
+      <section className="values" aria-labelledby="values-title">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2 id="values-title">What we stand for.</h2>
+            <p>
+              Three promises we make to every driver who comes through our
+              doors.

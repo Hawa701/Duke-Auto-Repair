@@ -118,3 +118,13 @@ export default function AboutPage() {
             <p>
               Three promises we make to every driver who comes through our
               doors.
+            </p>
+          </div>
+          <Stagger className="vals" pattern="alternate" interval={0.1}>
+            <div className="val">
+              <div className="ph">
+                <i
+                  role="img"
+                  aria-label="A technician checking a state inspection sticker"
+                  style={{
+                    backgroundImage: "url(/images/about/state-inspection.jpg)",

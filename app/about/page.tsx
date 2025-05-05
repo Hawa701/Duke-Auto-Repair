@@ -218,3 +218,13 @@ export default function AboutPage() {
                     backgroundPosition: "45% 30%",
                   }}
                 ></i>
+              </div>
+              <h3>The front desk</h3>
+              <p>
+                Check in with our team. Tell us what's going on, and we'll take
+                it from there.
+              </p>
+            </div>
+            <div className="stop">
+              <div className="ph">
+                <em>03</em>

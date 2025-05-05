@@ -178,3 +178,13 @@ export default function AboutPage() {
                 bring it back to your door.
               </p>
             </div>
+          </Stagger>
+        </div>
+      </section>
+      <HomeAwards />
+      <section className="tour" aria-labelledby="tour-title">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2 id="tour-title">A look around the shop.</h2>
+            <p>First time visiting? Here's what to expect when you pull in.</p>
+          </div>

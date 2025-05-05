@@ -168,3 +168,13 @@ export default function AboutPage() {
                     backgroundImage: "url(/images/about/lounge.jpg)",
                     backgroundPosition: "50% 55%",
                   }}
+                ></i>
+                <b>03</b>
+              </div>
+              <h3>Centered around&nbsp;you.</h3>
+              <h4>Your time matters.</h4>
+              <p>
+                Wait in our lounge, drop your car off, or let us pick it up and
+                bring it back to your door.
+              </p>
+            </div>

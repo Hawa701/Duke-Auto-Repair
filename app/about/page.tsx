@@ -148,3 +148,13 @@ export default function AboutPage() {
                   style={{
                     backgroundImage: "url(/images/about/alignment-rig.jpg)",
                     backgroundPosition: "50% 55%",
+                  }}
+                ></i>
+                <b>02</b>
+              </div>
+              <h3>Transparent.</h3>
+              <h4>See what we see.</h4>
+              <p>
+                Every visit comes with a free digital inspection report, so you
+                can see your car's condition for yourself.
+              </p>

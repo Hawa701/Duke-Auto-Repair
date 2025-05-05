@@ -198,3 +198,13 @@ export default function AboutPage() {
                   style={{
                     backgroundImage: "url(/images/about/owner-storefront.jpg)",
                     backgroundPosition: "50% 40%",
+                  }}
+                ></i>
+              </div>
+              <h3>Out front</h3>
+              <p>
+                Look for the blue building with the yellow trim and the Duke
+                Auto sign. Park right out front.
+              </p>
+            </div>
+            <div className="stop">

@@ -188,3 +188,13 @@ export default function AboutPage() {
             <h2 id="tour-title">A look around the shop.</h2>
             <p>First time visiting? Here's what to expect when you pull in.</p>
           </div>
+          <div className="stops">
+            <div className="stop">
+              <div className="ph">
+                <em>01</em>
+                <i
+                  role="img"
+                  aria-label="A team member welcoming you at the Duke Auto front door"
+                  style={{
+                    backgroundImage: "url(/images/about/owner-storefront.jpg)",
+                    backgroundPosition: "50% 40%",

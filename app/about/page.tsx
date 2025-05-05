@@ -208,3 +208,13 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="stop">
+              <div className="ph">
+                <em>02</em>
+                <i
+                  role="img"
+                  aria-label="Two team members at the front desk"
+                  style={{
+                    backgroundImage: "url(/images/home/shop/front-desk.jpg)",
+                    backgroundPosition: "45% 30%",
+                  }}
+                ></i>

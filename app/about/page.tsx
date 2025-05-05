@@ -158,3 +158,13 @@ export default function AboutPage() {
                 Every visit comes with a free digital inspection report, so you
                 can see your car's condition for yourself.
               </p>
+            </div>
+            <div className="val">
+              <div className="ph">
+                <i
+                  role="img"
+                  aria-label="The customer lounge with seating and coffee"
+                  style={{
+                    backgroundImage: "url(/images/about/lounge.jpg)",
+                    backgroundPosition: "50% 55%",
+                  }}

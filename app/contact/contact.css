@@ -7,3 +7,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: start;
+}
+.contact-page .cs h2 {
+  font-size: 60px;
+}
+.contact-page .cs .lead {
+  margin-top: 18px;
+  color: var(--steel);
+  font-size: 18px;
+  max-width: 480px;
+}

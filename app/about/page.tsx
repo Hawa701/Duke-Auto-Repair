@@ -228,3 +228,13 @@ export default function AboutPage() {
             <div className="stop">
               <div className="ph">
                 <em>03</em>
+                <i
+                  role="img"
+                  aria-label="Technicians working on cars in the service bays"
+                  style={{
+                    backgroundImage: "url(/images/about/shop-floor.jpg)",
+                    backgroundPosition: "45% 50%",
+                  }}
+                ></i>
+              </div>
+              <h3>The service bays</h3>

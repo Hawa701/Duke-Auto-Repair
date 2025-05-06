@@ -248,3 +248,13 @@ export default function AboutPage() {
                 <em>04</em>
                 <i
                   role="img"
+                  aria-label="A technician setting up a wheel alignment"
+                  style={{
+                    backgroundImage: "url(/images/about/alignment-tech.jpg)",
+                    backgroundPosition: "70% 50%",
+                  }}
+                ></i>
+              </div>
+              <h3>Your car, done right</h3>
+              <p>
+                We walk you through what we did and what we found, then you're

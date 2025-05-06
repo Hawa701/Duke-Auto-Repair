@@ -1,0 +1,9 @@
+/* Desktop layout from the final supplied contact.html. */
+.contact-page .cs {
+  padding: 110px 0 120px;
+}
+.contact-page .cs .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;

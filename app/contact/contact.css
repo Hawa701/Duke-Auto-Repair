@@ -27,3 +27,13 @@
   align-items: center;
   gap: 20px;
   padding: 18px 0;
+  border-bottom: 1px solid #edeff3;
+  text-decoration: none;
+  color: inherit;
+}
+.contact-page .crow:last-child {
+  border-bottom: 0;
+}
+.contact-page .crow .ic {
+  width: 56px;
+  height: 56px;

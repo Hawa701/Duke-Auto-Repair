@@ -17,3 +17,13 @@
   font-size: 18px;
   max-width: 480px;
 }
+.contact-page .rows {
+  margin-top: 40px;
+  display: grid;
+  gap: 14px;
+}
+.contact-page .crow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;

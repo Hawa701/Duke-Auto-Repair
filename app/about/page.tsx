@@ -238,3 +238,13 @@ export default function AboutPage() {
                 ></i>
               </div>
               <h3>The service bays</h3>
+              <p>
+                Oil changes, diagnostics, alignment, state inspections and more,
+                all done here under one roof.
+              </p>
+            </div>
+            <div className="stop">
+              <div className="ph">
+                <em>04</em>
+                <i
+                  role="img"

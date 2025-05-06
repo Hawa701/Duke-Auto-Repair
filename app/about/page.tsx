@@ -258,3 +258,13 @@ export default function AboutPage() {
               <h3>Your car, done right</h3>
               <p>
                 We walk you through what we did and what we found, then you're
+                back on the road.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <BookingCta />
+    </div>
+  );
+}

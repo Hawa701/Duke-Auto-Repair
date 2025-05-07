@@ -77,3 +77,12 @@
   display: block;
   font-size: 15px;
   font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-page .in-box {
+  height: 56px;
+  border: 1.5px solid #dde1ea;
+  border-radius: 10px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;

@@ -86,3 +86,13 @@
   padding: 0 18px;
   display: flex;
   align-items: center;
+  gap: 12px;
+  background: #fff;
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+.contact-page .in-box:focus-within {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 4px rgba(42, 82, 190, 0.14);
+}

@@ -106,3 +106,13 @@
   font-size: 16px;
   color: var(--ink);
   height: 100%;
+}
+.contact-page .in-box input::placeholder,
+.contact-page .in-box textarea::placeholder {
+  color: #9aa1b4;
+}
+.contact-page .in-box .cc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink);

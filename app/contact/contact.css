@@ -57,3 +57,13 @@
   font-size: 14px;
   color: var(--steel);
   margin-bottom: 2px;
+}
+.contact-page .crow b {
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-page .crow b.ph {
+  color: #9aa1b4;
+  font-style: italic;
+  font-weight: 500;
+}

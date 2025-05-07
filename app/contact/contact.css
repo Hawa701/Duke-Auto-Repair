@@ -96,3 +96,13 @@
   border-color: var(--navy);
   box-shadow: 0 0 0 4px rgba(42, 82, 190, 0.14);
 }
+.contact-page .in-box input,
+.contact-page .in-box textarea {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+  height: 100%;

@@ -156,3 +156,13 @@
   font-size: 60px;
   text-align: center;
 }
+.contact-page .fq .sub {
+  text-align: center;
+  margin-top: 14px;
+  color: var(--steel);
+  font-size: 18px;
+}
+.contact-page .fq .list {
+  max-width: 880px;
+  margin: 52px auto 0;
+  display: grid;

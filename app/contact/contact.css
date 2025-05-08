@@ -126,3 +126,13 @@
   width: 18px;
   height: 18px;
 }
+.contact-page .in-box.ta {
+  height: 150px;
+  align-items: flex-start;
+  padding-top: 16px;
+}
+.contact-page .in-box.ta textarea {
+  resize: none;
+  height: 118px;
+}
+.contact-page .fsub {

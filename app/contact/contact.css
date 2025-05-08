@@ -136,3 +136,13 @@
   height: 118px;
 }
 .contact-page .fsub {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-page .fsub button {
+  border: 0;
+  cursor: pointer;
+}
+.contact-page .fsub .btn svg.i {
+  width: 18px;

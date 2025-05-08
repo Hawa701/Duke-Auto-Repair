@@ -166,3 +166,12 @@
   max-width: 880px;
   margin: 52px auto 0;
   display: grid;
+  gap: 14px;
+}
+.contact-page .fq details {
+  background: #fff;
+  border-radius: 12px;
+  transition: box-shadow 0.3s;
+}
+.contact-page .fq details[open] {
+  box-shadow: 0 14px 30px rgba(20, 32, 74, 0.08);

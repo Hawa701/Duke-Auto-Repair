@@ -146,3 +146,13 @@
 }
 .contact-page .fsub .btn svg.i {
   width: 18px;
+  height: 18px;
+}
+.contact-page .fq {
+  background: var(--concrete);
+  padding: 110px 0 120px;
+}
+.contact-page .fq h2 {
+  font-size: 60px;
+  text-align: center;
+}

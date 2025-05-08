@@ -175,3 +175,13 @@
 }
 .contact-page .fq details[open] {
   box-shadow: 0 14px 30px rgba(20, 32, 74, 0.08);
+}
+.contact-page .fq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 26px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-barlow-condensed);

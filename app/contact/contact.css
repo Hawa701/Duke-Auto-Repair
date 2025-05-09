@@ -205,3 +205,13 @@
     background-color 0.3s,
     color 0.3s;
 }
+.contact-page .fq summary .t svg.i {
+  width: 18px;
+  height: 18px;
+}
+.contact-page .fq details[open] summary .t {
+  transform: rotate(180deg);
+  background: var(--yellow);
+  color: var(--deep);
+}
+.contact-page .fq details p {

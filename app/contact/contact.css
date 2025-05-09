@@ -215,3 +215,13 @@
   color: var(--deep);
 }
 .contact-page .fq details p {
+  padding: 0 30px 26px;
+  margin-top: -8px;
+  color: var(--steel);
+  font-size: 17px;
+  max-width: 720px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact-page .crow .ic,
+  .contact-page .fq * {
+    transition: none !important;

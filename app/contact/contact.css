@@ -185,3 +185,13 @@
   align-items: center;
   gap: 20px;
   font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 25px;
+}
+.contact-page .fq summary::-webkit-details-marker {
+  display: none;
+}
+.contact-page .fq summary .t {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;

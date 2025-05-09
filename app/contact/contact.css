@@ -225,3 +225,13 @@
   .contact-page .crow .ic,
   .contact-page .fq * {
     transition: none !important;
+  }
+}
+.contact-page .cta {
+  position: relative;
+  background: var(--navy);
+  color: #fff;
+  overflow: hidden;
+}
+.contact-page .cta:after {
+  content: "";

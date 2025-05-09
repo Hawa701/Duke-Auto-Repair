@@ -195,3 +195,13 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  background: var(--concrete);
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  flex: none;
+  transition:
+    transform 0.35s,
+    background-color 0.3s,
+    color 0.3s;
+}

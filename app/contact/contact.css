@@ -284,3 +284,13 @@
   display: grid;
   gap: 14px;
   justify-items: stretch;
+  min-width: 330px;
+}
+.contact-page .cta .act .btn {
+  justify-content: center;
+}
+.contact-page .cta .phone {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;

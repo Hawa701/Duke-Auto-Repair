@@ -294,3 +294,13 @@
   align-items: center;
   gap: 14px;
   margin-top: 10px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact-page .cta .phone svg.i {
+  color: var(--yellow);
+  width: 28px;
+  height: 28px;
+}
+.contact-page .cta .phone small {
+  display: block;

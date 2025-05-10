@@ -304,3 +304,13 @@
 }
 .contact-page .cta .phone small {
   display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.contact-page .cta .phone b {
+  font-family: var(--font-barlow-condensed);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+

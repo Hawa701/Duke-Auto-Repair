@@ -353,3 +353,13 @@
 }
 .contact-page .fq summary:focus-visible {
   outline: 3px solid var(--navy);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* Reflow the form and FAQ without reducing input text below 16px. */
+.contact-page :is(.cs, .fq) {
+  padding-block: clamp(56px, 8vw, 120px);
+}
+.contact-page .cs .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));

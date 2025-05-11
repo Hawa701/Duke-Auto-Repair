@@ -334,3 +334,13 @@
   outline: 2px solid var(--navy);
   outline-offset: 3px;
 }
+.contact-page .form-note {
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--steel);
+}
+.contact-page .form-note a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

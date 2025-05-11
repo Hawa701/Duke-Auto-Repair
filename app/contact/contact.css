@@ -344,3 +344,12 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.contact-page .fsub button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.contact-page .fsub button:disabled:hover {
+  background: var(--yellow);
+}
+.contact-page .fq summary:focus-visible {
+  outline: 3px solid var(--navy);

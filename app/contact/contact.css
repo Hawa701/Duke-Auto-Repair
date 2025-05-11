@@ -314,3 +314,13 @@
   line-height: 1;
 }
 
+.contact-page .cs .grid > *,
+.contact-page .crow > div {
+  min-width: 0;
+}
+.contact-page .crow address {
+  font-style: normal;
+}
+.contact-page .in-box input,
+.contact-page .in-box textarea {
+  min-width: 0;

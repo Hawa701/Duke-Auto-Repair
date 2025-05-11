@@ -324,3 +324,13 @@
 .contact-page .in-box input,
 .contact-page .in-box textarea {
   min-width: 0;
+  width: 100%;
+}
+.contact-page .in-box .cc {
+  flex: none;
+  white-space: nowrap;
+}
+.contact-page .in-box:focus-within {
+  outline: 2px solid var(--navy);
+  outline-offset: 3px;
+}

@@ -363,3 +363,13 @@
 }
 .contact-page .cs .grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(32px, 7vw, 100px);
+}
+.contact-page .cs h2,
+.contact-page .fq h2 {
+  font-size: clamp(40px, 4.5vw, 60px);
+}
+.contact-page .crow b {
+  overflow-wrap: anywhere;
+}
+.contact-page .in-box.ta {

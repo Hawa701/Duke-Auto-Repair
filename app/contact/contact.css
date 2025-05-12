@@ -413,3 +413,13 @@
   .contact-page .in-box {
     padding-inline: 14px;
     gap: 10px;
+  }
+  .contact-page .in-box .cc {
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .contact-page .fsub .btn {
+    width: 100%;
+  }
+  .contact-page .fq .list {
+    margin-top: 32px;

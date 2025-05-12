@@ -393,3 +393,13 @@
   }
   .contact-page .cs .lead {
     max-width: none;
+  }
+}
+@media (max-width: 640px) {
+  .contact-page .crow {
+    gap: 14px;
+  }
+  .contact-page .crow .ic {
+    width: 48px;
+    height: 48px;
+  }

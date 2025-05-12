@@ -423,3 +423,13 @@
   }
   .contact-page .fq .list {
     margin-top: 32px;
+  }
+  .contact-page .fq summary {
+    padding: 22px 20px;
+    gap: 12px;
+  }
+  .contact-page .fq details p {
+    padding-inline: 20px;
+    font-size: 16px;
+  }
+}

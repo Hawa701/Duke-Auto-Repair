@@ -60,3 +60,14 @@ export default function ContactPage() {
                   <small>Phone</small>
                   <b>{business.phoneDisplay}</b>
                 </div>
+              </a>
+              <a
+                className="crow"
+                href={business.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="ic">
+                  <Icon name="pin" />
+                </span>
+                <div>

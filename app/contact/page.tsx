@@ -29,3 +29,13 @@ const faqs = [
   {
     question: "What is a digital vehicle health inspection?",
     answer:
+      "It comes free with every visit. We check things like tire wear, brake life and fluids, then show you what's good, what needs attention, and what can wait. The decision is always yours.",
+  },
+];
+
+export default function ContactPage() {
+  return (
+    <div className="contact-page">
+      <PageHeader
+        title="Contact Us"
+        breadcrumb="Contact us"

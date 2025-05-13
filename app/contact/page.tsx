@@ -50,3 +50,13 @@ export default function ContactPage() {
               Whether you have a question, need a quote, or want to schedule a
               service, we&apos;re here to help. Fast, friendly, and ready when
               you are.
+            </p>
+            <div className="rows">
+              <a className="crow" href={business.phoneHref}>
+                <span className="ic">
+                  <Icon name="phone" />
+                </span>
+                <div>
+                  <small>Phone</small>
+                  <b>{business.phoneDisplay}</b>
+                </div>

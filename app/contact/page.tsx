@@ -71,3 +71,13 @@ export default function ContactPage() {
                   <Icon name="pin" />
                 </span>
                 <div>
+                  <small>Address</small>
+                  <address>
+                    <b>{business.shortAddress}</b>
+                  </address>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="send-message">
+            <ContactForm />

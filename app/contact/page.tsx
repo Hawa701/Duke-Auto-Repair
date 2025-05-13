@@ -18,3 +18,14 @@ const faqs = [
       "We work on everyday cars, SUVs and light trucks. If you're not sure about your vehicle, call the front desk with the make and model and we'll let you know.",
   },
   {
+    question: "Do I need an appointment for service?",
+    answer: `Call our front desk at ${business.phoneDisplay} to arrange a visit or check availability. We'll find a time that suits you.`,
+  },
+  {
+    question: "How long does a standard oil change take?",
+    answer:
+      "Most oil changes are done the same day, often while you wait in our lounge. Call the front desk and we'll give you a time for your car.",
+  },
+  {
+    question: "What is a digital vehicle health inspection?",
+    answer:

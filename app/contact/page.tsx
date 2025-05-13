@@ -39,3 +39,14 @@ export default function ContactPage() {
       <PageHeader
         title="Contact Us"
         breadcrumb="Contact us"
+        description="Call or stop by. Our front desk is here to help."
+        image="/images/about/lounge.jpg"
+      />
+      <section className="cs" aria-labelledby="contact-details-title">
+        <div className="wrap grid">
+          <div>
+            <h2 id="contact-details-title">Get in touch.</h2>
+            <p className="lead">
+              Whether you have a question, need a quote, or want to schedule a
+              service, we&apos;re here to help. Fast, friendly, and ready when
+              you are.

@@ -92,3 +92,13 @@ export default function ContactPage() {
               Quick answers to the questions drivers ask us most.
             </p>
           </div>
+          <div className="list">
+            {faqs.map(({ question, answer }) => (
+              <details key={question}>
+                <summary>
+                  {question}
+                  <span className="t">
+                    <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </span>

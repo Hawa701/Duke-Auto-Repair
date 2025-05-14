@@ -37,3 +37,13 @@ h3,
   font-family: var(--font-barlow-condensed), sans-serif;
   letter-spacing: -0.005em;
 }
+h2 {
+  font-size: 64px;
+  line-height: 0.98;
+  font-weight: 800;
+}
+svg.i {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;

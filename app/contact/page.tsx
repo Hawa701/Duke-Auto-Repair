@@ -81,3 +81,14 @@ export default function ContactPage() {
           </div>
           <div id="send-message">
             <ContactForm />
+          </div>
+        </div>
+      </section>
+      <section className="fq" id="faq" aria-labelledby="faq-title">
+        <div className="wrap">
+          <div>
+            <h2 id="faq-title">Need answers? Check out our FAQ.</h2>
+            <p className="sub">
+              Quick answers to the questions drivers ask us most.
+            </p>
+          </div>

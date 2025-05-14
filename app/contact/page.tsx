@@ -102,3 +102,14 @@ export default function ContactPage() {
                       <path d="m6 9 6 6 6-6" />
                     </svg>
                   </span>
+                </summary>
+                <p>{answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+      <BookingCta />
+    </div>
+  );
+}

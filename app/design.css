@@ -7,3 +7,13 @@
   --ink-navy: #1e2845;
   --line: #2a3a70;
   --yellow: #e2c143;
+  --yellow-d: #c9a92e;
+  --concrete: #eef0f4;
+  --paper: #fff;
+  --ink: #151b2e;
+  --steel: #5f6983;
+  --mist: #a9b1c6;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;

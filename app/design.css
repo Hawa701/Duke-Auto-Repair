@@ -1,0 +1,9 @@
+:root {
+  --primary: #2a52be;
+  --primary-rgb: 42, 82, 190;
+  --deep-rgb: 20, 32, 74;
+  --navy: var(--primary);
+  --deep: #14204a;
+  --ink-navy: #1e2845;
+  --line: #2a3a70;
+  --yellow: #e2c143;

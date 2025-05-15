@@ -57,3 +57,12 @@ svg.i {
   align-items: center;
   gap: 12px;
   font-family: var(--font-barlow);
+  font-weight: 700;
+  font-size: 17px;
+  padding: 17px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-y {
+  background: var(--yellow);

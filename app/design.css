@@ -96,3 +96,13 @@ svg.i {
   gap: 32px;
 }
 .util span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.util svg.i {
+  width: 16px;
+  height: 16px;
+  color: var(--yellow);
+}
+.util .right {

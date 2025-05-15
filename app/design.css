@@ -106,3 +106,13 @@ svg.i {
   color: var(--yellow);
 }
 .util .right {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.stars {
+  display: inline-flex;
+  gap: 2px;
+  color: var(--yellow);
+}

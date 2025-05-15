@@ -66,3 +66,13 @@ svg.i {
 }
 .btn-y {
   background: var(--yellow);
+  color: var(--deep);
+}
+.btn-o {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  padding: 15px 26px;
+}
+.btn-n {
+  background: var(--navy);
+  color: #fff;

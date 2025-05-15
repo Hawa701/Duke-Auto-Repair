@@ -76,3 +76,13 @@ svg.i {
 .btn-n {
   background: var(--navy);
   color: #fff;
+}
+.btn-on {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  padding: 15px 26px;
+}
+
+/* ---------- utility bar ---------- */
+.util {
+  background: var(--deep);

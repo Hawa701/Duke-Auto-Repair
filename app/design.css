@@ -86,3 +86,13 @@ svg.i {
 /* ---------- utility bar ---------- */
 .util {
   background: var(--deep);
+  color: #c9cedc;
+  font-size: 15px;
+}
+.util .wrap {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  gap: 32px;
+}
+.util span {

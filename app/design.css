@@ -145,3 +145,13 @@ svg.i {
 .site-nav ul {
   display: flex;
   list-style: none;
+  gap: 34px;
+  margin-left: 56px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #e4e7ef;
+}
+.site-nav li {
+  display: flex;
+  align-items: center;
+  gap: 5px;

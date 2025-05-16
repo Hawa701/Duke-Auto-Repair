@@ -155,3 +155,13 @@ svg.i {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.site-nav li.on {
+  color: var(--yellow);
+  position: relative;
+}
+.site-nav li.on:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;

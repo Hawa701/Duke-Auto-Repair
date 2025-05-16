@@ -125,3 +125,13 @@ svg.i {
 .util a {
   color: #fff;
   text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- .site-nav ---------- */
+.site-nav {
+  background: var(--navy);
+  border-bottom: 1px solid var(--line);
+}
+.site-nav .wrap {
+  display: flex;

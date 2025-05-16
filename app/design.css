@@ -135,3 +135,13 @@ svg.i {
 }
 .site-nav .wrap {
   display: flex;
+  align-items: center;
+  height: 92px;
+}
+.site-nav .logo {
+  height: 58px;
+  display: block;
+}
+.site-nav ul {
+  display: flex;
+  list-style: none;

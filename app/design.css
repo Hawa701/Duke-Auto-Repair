@@ -165,3 +165,13 @@ svg.i {
   position: absolute;
   left: 0;
   right: 0;
+  bottom: -34px;
+  height: 3px;
+  background: var(--yellow);
+}
+.site-nav li svg.i {
+  width: 15px;
+  height: 15px;
+  opacity: 0.7;
+}
+.site-nav .btn {

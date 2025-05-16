@@ -116,3 +116,12 @@ svg.i {
   gap: 2px;
   color: var(--yellow);
 }
+.stars svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+  stroke: none;
+}
+.util a {
+  color: #fff;
+  text-decoration: underline;

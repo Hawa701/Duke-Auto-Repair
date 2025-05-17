@@ -175,3 +175,13 @@ svg.i {
   opacity: 0.7;
 }
 .site-nav .btn {
+  margin-left: auto;
+  padding: 14px 22px;
+  font-size: 16px;
+}
+
+/* ---------- hero: full-bleed carousel ---------- */
+.hero {
+  position: relative;
+  color: #fff;
+  overflow: hidden;

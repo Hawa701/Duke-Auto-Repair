@@ -214,3 +214,13 @@ svg.i {
     );
 }
 .hero .site-nav {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+.hero .inner {
+  position: relative;
+  padding: 166px 0 0;
+}
+.hero .rating {
+  display: flex;

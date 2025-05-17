@@ -204,3 +204,13 @@ svg.i {
       rgba(var(--deep-rgb), 0.94) 30%,
       rgba(var(--deep-rgb), 0.5) 55%,
       rgba(var(--deep-rgb), 0.08) 82%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(var(--deep-rgb), 0.75) 0%,
+      rgba(var(--deep-rgb), 0) 22%,
+      rgba(var(--deep-rgb), 0) 55%,
+      rgba(var(--deep-rgb), 0.92) 100%
+    );
+}
+.hero .site-nav {

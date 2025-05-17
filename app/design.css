@@ -185,3 +185,12 @@ svg.i {
   position: relative;
   color: #fff;
   overflow: hidden;
+  background: var(--deep);
+}
+.hero .bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 62%;
+}
+.hero .bg:after {

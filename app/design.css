@@ -224,3 +224,13 @@ svg.i {
 }
 .hero .rating {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #c9cedc;
+}
+.hero .rating b {
+  color: #fff;
+  font-weight: 700;
+}
+.hero .rating .stars svg {

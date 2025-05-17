@@ -234,3 +234,13 @@ svg.i {
   font-weight: 700;
 }
 .hero .rating .stars svg {
+  width: 15px;
+  height: 15px;
+}
+.hero h1 {
+  font-size: 108px;
+  line-height: 0.9;
+  font-weight: 800;
+  max-width: 760px;
+  margin-top: 22px;
+}

@@ -283,3 +283,13 @@ svg.i {
   border-radius: 50%;
   background: var(--concrete);
   color: var(--navy);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.book .st b {
+  display: block;
+  font-size: 16px;

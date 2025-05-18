@@ -303,3 +303,12 @@ svg.i {
   line-height: 1.3;
   margin-top: 2px;
 }
+.book .btn {
+  border-radius: 8px;
+  padding: 0 28px;
+  font-size: 18px;
+}
+.book .btn svg.i {
+  width: 18px;
+  height: 18px;
+}

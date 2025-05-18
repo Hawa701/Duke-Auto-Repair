@@ -263,3 +263,13 @@ svg.i {
   border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(3, 1fr) auto;
+  align-items: stretch;
+  padding: 10px;
+  box-shadow: 0 24px 60px rgba(8, 12, 26, 0.45);
+}
+.book .st {
+  padding: 14px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-right: 1px solid #e3e6ee;

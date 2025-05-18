@@ -332,3 +332,13 @@ svg.i {
 /* carousel tabs */
 .slides {
   position: relative;
+  margin-top: 56px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+.slides .wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 36px;
+  align-items: stretch;
+}
+.slides .t {

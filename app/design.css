@@ -312,3 +312,13 @@ svg.i {
   width: 18px;
   height: 18px;
 }
+.book-note {
+  margin-top: 16px;
+  font-size: 15px;
+  color: #c9cedc;
+  display: flex;
+  gap: 26px;
+}
+.book-note span {
+  display: flex;
+  align-items: center;

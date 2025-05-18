@@ -244,3 +244,12 @@ svg.i {
   max-width: 760px;
   margin-top: 22px;
 }
+.hero .lede {
+  margin-top: 26px;
+  font-size: 21px;
+  color: #d3d7e2;
+  max-width: 540px;
+}
+.hero .lede b {
+  color: #fff;
+  font-weight: 600;

@@ -273,3 +273,13 @@ svg.i {
   gap: 12px;
   align-items: center;
   border-right: 1px solid #e3e6ee;
+}
+.book .st:nth-child(3) {
+  border-right: 0;
+}
+.book .st i {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--concrete);
+  color: var(--navy);

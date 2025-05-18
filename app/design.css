@@ -322,3 +322,13 @@ svg.i {
 .book-note span {
   display: flex;
   align-items: center;
+  gap: 8px;
+}
+.book-note svg.i {
+  width: 18px;
+  height: 18px;
+  color: var(--yellow);
+}
+/* carousel tabs */
+.slides {
+  position: relative;

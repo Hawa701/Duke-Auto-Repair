@@ -411,3 +411,13 @@ svg.i {
   white-space: nowrap;
   position: relative;
   z-index: 2;
+}
+.fascia .run {
+  display: flex;
+  gap: 44px;
+  padding-left: 100px;
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 25px;
+}
+.fascia .run span {

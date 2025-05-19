@@ -362,3 +362,13 @@ svg.i {
     rgba(255, 255, 255, 0.22) 42%
   );
 }
+.slides .t b {
+  display: block;
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.1;
+  color: #c9cedc;
+}
+.slides .t.on b {
+  color: #fff;

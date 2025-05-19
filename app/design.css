@@ -401,3 +401,13 @@ svg.i {
 }
 
 /* the fascia stripe: same yellow band that runs across the real shop */
+.fascia {
+  background: var(--yellow);
+  color: var(--deep);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;

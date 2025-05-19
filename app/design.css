@@ -391,3 +391,13 @@ svg.i {
   color: #fff;
 }
 .slides .arrows span.next {
+  background: #fff;
+  color: var(--navy);
+  border-color: #fff;
+}
+.slides .arrows svg.i {
+  width: 20px;
+  height: 20px;
+}
+
+/* the fascia stripe: same yellow band that runs across the real shop */

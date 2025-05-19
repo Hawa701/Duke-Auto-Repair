@@ -431,3 +431,12 @@ svg.i {
   height: 9px;
   background: var(--deep);
   transform: rotate(45deg);
+}
+
+/* ---------- differently ---------- */
+.diff {
+  background: var(--concrete);
+  padding: 120px 0;
+}
+.sec-head {
+  display: grid;

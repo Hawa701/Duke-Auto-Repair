@@ -352,3 +352,13 @@ svg.i {
   left: 0;
   right: 0;
   top: -1px;
+  height: 3px;
+  background: transparent;
+}
+.slides .t.on:before {
+  background: linear-gradient(
+    90deg,
+    var(--yellow) 0 42%,
+    rgba(255, 255, 255, 0.22) 42%
+  );
+}

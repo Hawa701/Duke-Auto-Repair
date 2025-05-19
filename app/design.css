@@ -342,3 +342,13 @@ svg.i {
   align-items: stretch;
 }
 .slides .t {
+  padding: 20px 0 24px;
+  position: relative;
+  color: var(--mist);
+}
+.slides .t:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;

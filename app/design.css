@@ -421,3 +421,13 @@ svg.i {
   font-size: 25px;
 }
 .fascia .run span {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.fascia .run span:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: var(--deep);
+  transform: rotate(45deg);

@@ -381,3 +381,13 @@ svg.i {
   gap: 10px;
   align-items: center;
 }
+.slides .arrows span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.slides .arrows span.next {

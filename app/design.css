@@ -372,3 +372,12 @@ svg.i {
 }
 .slides .t.on b {
   color: #fff;
+}
+.slides .t small {
+  font-size: 15px;
+}
+.slides .arrows {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

@@ -440,3 +440,13 @@ svg.i {
 }
 .sec-head {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+.sec-head p {
+  font-size: 20px;
+  color: var(--steel);
+  max-width: 480px;
+}

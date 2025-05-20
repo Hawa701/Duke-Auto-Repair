@@ -470,3 +470,13 @@ svg.i {
   padding: 64px 64px 60px;
 }
 .perk .free {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 22px;
+}
+.perk h3 {

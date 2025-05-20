@@ -480,3 +480,13 @@ svg.i {
   margin-bottom: 22px;
 }
 .perk h3 {
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.perk p {
+  color: var(--steel);
+  font-size: 18px;
+  max-width: 470px;
+}

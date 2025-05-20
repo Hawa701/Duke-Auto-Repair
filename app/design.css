@@ -460,3 +460,13 @@ svg.i {
 .perk + .perk {
   margin-top: 28px;
 }
+.perk .media {
+  position: relative;
+  min-height: 440px;
+  background-size: cover;
+  background-position: center;
+}
+.perk .body {
+  padding: 64px 64px 60px;
+}
+.perk .free {

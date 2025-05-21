@@ -559,3 +559,12 @@ svg.i {
   border-radius: 50%;
 }
 .ok {
+  background: #2e9f62;
+}
+.att {
+  background: #e0533d;
+}
+.wait {
+  background: #e2a72e;
+}
+em.ok {

@@ -509,3 +509,13 @@ svg.i {
   background: var(--yellow);
   border-radius: 50%;
   padding: 4px;
+  stroke-width: 3;
+}
+.perk.flip .media {
+  order: 2;
+}
+/* inspection report overlay */
+.report {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;

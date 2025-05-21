@@ -568,3 +568,13 @@ svg.i {
   background: #e2a72e;
 }
 em.ok {
+  background: #e3f4ea;
+  color: #1e7a48;
+}
+em.att {
+  background: #fbe6e2;
+  color: #b43a27;
+}
+em.wait {
+  background: #fbf1dc;
+  color: #9a6c0b;

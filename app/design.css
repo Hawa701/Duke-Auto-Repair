@@ -529,3 +529,13 @@ svg.i {
   font-family: var(--font-barlow);
   font-size: 14px;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.report h4 span {
+  color: var(--steel);
+  font-weight: 500;
+}
+.report .row {
+  display: flex;

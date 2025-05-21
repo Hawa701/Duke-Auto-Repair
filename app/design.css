@@ -578,3 +578,13 @@ em.att {
 em.wait {
   background: #fbf1dc;
   color: #9a6c0b;
+}
+.route {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  background: var(--deep);
+  color: #fff;
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: grid;

@@ -549,3 +549,13 @@ svg.i {
   margin-left: auto;
   font-style: normal;
   font-size: 13px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.ok {

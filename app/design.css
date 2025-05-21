@@ -519,3 +519,13 @@ svg.i {
   position: absolute;
   left: 32px;
   bottom: 32px;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 18px 8px;
+  box-shadow: 0 20px 44px rgba(10, 14, 28, 0.28);
+}
+.report h4 {
+  font-family: var(--font-barlow);
+  font-size: 14px;
+  font-weight: 700;

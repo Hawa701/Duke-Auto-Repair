@@ -598,3 +598,13 @@ em.wait {
   align-items: center;
 }
 .route i {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--deep);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  display: grid;
+  place-items: center;

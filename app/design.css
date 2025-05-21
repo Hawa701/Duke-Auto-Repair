@@ -588,3 +588,13 @@ em.wait {
   border-radius: 10px;
   padding: 16px 18px;
   display: grid;
+  gap: 10px;
+  font-size: 14px;
+  width: 230px;
+}
+.route div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.route i {

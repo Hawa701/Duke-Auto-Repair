@@ -608,3 +608,13 @@ em.wait {
   font-size: 12px;
   display: grid;
   place-items: center;
+}
+
+/* ---------- why ---------- */
+.why {
+  background: var(--navy);
+  color: #fff;
+  padding: 120px 0 110px;
+}
+.why .sec-head p {
+  color: var(--mist);

@@ -637,3 +637,13 @@ em.wait {
   color: var(--yellow);
   stroke-width: 1.6;
   margin-bottom: 26px;
+}
+.why-grid h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+.why-grid p {
+  color: var(--mist);
+  font-size: 17px;

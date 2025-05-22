@@ -657,3 +657,13 @@ em.wait {
   margin-bottom: 56px;
 }
 .step-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  position: relative;
+}
+.step {
+  border-top: 4px solid var(--navy);
+  padding-top: 28px;
+}
+.step .n {

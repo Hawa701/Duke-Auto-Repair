@@ -618,3 +618,12 @@ em.wait {
 }
 .why .sec-head p {
   color: var(--mist);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+}
+.why-grid div {
+  padding: 40px 32px 8px 0;
+}

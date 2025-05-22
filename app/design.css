@@ -647,3 +647,13 @@ em.wait {
 .why-grid p {
   color: var(--mist);
   font-size: 17px;
+}
+
+/* ---------- steps ---------- */
+.steps {
+  padding: 120px 0;
+}
+.steps .sec-head {
+  margin-bottom: 56px;
+}
+.step-row {

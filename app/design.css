@@ -627,3 +627,13 @@ em.wait {
 .why-grid div {
   padding: 40px 32px 8px 0;
 }
+.why-grid div + div {
+  padding-left: 32px;
+  border-left: 1px solid var(--line);
+}
+.why-grid svg.i {
+  width: 40px;
+  height: 40px;
+  color: var(--yellow);
+  stroke-width: 1.6;
+  margin-bottom: 26px;

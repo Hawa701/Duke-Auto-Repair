@@ -667,3 +667,13 @@ em.wait {
   padding-top: 28px;
 }
 .step .n {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 0.8;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--navy);
+  margin-bottom: 26px;
+}
+.step:first-child {
+  border-color: var(--yellow);

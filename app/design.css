@@ -706,3 +706,13 @@ em.wait {
 }
 .ctabar .btn {
   margin-left: auto;
+}
+
+/* ---------- services ---------- */
+.svc {
+  background: var(--concrete);
+  padding: 120px 0;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);

@@ -686,3 +686,13 @@ em.wait {
   font-size: 34px;
   font-weight: 800;
   margin-bottom: 12px;
+}
+.step p {
+  color: var(--steel);
+  max-width: 350px;
+}
+.steps .ctabar {
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+  gap: 24px;

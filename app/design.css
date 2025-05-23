@@ -716,3 +716,13 @@ em.wait {
 .board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #dde1ea;
+}
+.board .s {
+  padding: 36px 32px 34px;
+  border-right: 1px solid #e3e6ee;
+  border-bottom: 1px solid #e3e6ee;
+  display: flex;

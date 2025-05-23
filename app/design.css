@@ -696,3 +696,13 @@ em.wait {
   display: flex;
   align-items: center;
   gap: 24px;
+  background: var(--concrete);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+.ctabar p {
+  font-weight: 600;
+  font-size: 19px;
+}
+.ctabar .btn {
+  margin-left: auto;

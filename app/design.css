@@ -736,3 +736,13 @@ em.wait {
   border-bottom: 0;
 }
 .board .ic {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  background: var(--concrete);
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  margin-bottom: 30px;
+}
+.board .ic svg.i {

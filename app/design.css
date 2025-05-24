@@ -765,3 +765,13 @@ em.wait {
   margin-top: auto;
   padding-top: 22px;
   font-weight: 700;
+  font-size: 15px;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.board a svg.i {
+  width: 18px;
+  height: 18px;

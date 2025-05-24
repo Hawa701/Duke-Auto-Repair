@@ -746,3 +746,12 @@ em.wait {
   margin-bottom: 30px;
 }
 .board .ic svg.i {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.7;
+}
+.board h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.02;
+  margin-bottom: 10px;

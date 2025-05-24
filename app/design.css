@@ -805,3 +805,12 @@ em.wait {
 /* ---------- reviews ---------- */
 .rev {
   background: var(--yellow);
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+.rev .grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 90px;
+}

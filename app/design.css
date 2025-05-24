@@ -755,3 +755,13 @@ em.wait {
   font-weight: 700;
   line-height: 1.02;
   margin-bottom: 10px;
+}
+.board p {
+  color: var(--steel);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.board a {
+  margin-top: auto;
+  padding-top: 22px;
+  font-weight: 700;

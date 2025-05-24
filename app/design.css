@@ -775,3 +775,13 @@ em.wait {
 .board a svg.i {
   width: 18px;
   height: 18px;
+}
+.board .s.hot {
+  background: var(--navy);
+  color: #fff;
+}
+.board .s.hot p {
+  color: var(--mist);
+}
+.board .s.hot .ic {
+  background: var(--yellow);

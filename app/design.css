@@ -795,3 +795,13 @@ em.wait {
   align-items: center;
   margin-top: 34px;
 }
+.svc .more p {
+  color: var(--steel);
+}
+.svc .more b {
+  color: var(--ink);
+}
+
+/* ---------- reviews ---------- */
+.rev {
+  background: var(--yellow);

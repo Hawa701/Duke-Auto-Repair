@@ -785,3 +785,13 @@ em.wait {
 }
 .board .s.hot .ic {
   background: var(--yellow);
+}
+.board .s.hot a {
+  color: var(--yellow);
+}
+.svc .more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+}

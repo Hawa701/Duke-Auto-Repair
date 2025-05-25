@@ -854,3 +854,13 @@ em.wait {
   gap: 16px;
   margin-top: 40px;
 }
+.quote .who img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.quote .who b {
+  display: block;
+  font-size: 18px;
+}

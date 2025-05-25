@@ -824,3 +824,13 @@ em.wait {
 .score .stars {
   color: var(--deep);
   margin: 20px 0 10px;
+}
+.score .stars svg {
+  width: 26px;
+  height: 26px;
+}
+.score p {
+  font-weight: 600;
+  color: var(--deep);
+}
+.score .btn {

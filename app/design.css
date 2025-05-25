@@ -834,3 +834,13 @@ em.wait {
   color: var(--deep);
 }
 .score .btn {
+  margin-top: 30px;
+}
+.quote {
+  border-left: 3px solid var(--deep);
+  padding-left: 60px;
+}
+.quote blockquote {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 56px;

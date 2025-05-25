@@ -873,3 +873,13 @@ em.wait {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.quote .nav .pg {
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 10px;
+  color: var(--deep);
+}
+.quote .nav button {
+  width: 50px;
+  height: 50px;

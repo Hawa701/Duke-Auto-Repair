@@ -814,3 +814,13 @@ em.wait {
   grid-template-columns: 360px 1fr;
   gap: 90px;
 }
+.score .big {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 0.8;
+  color: var(--deep);
+}
+.score .stars {
+  color: var(--deep);
+  margin: 20px 0 10px;

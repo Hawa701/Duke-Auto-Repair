@@ -844,3 +844,13 @@ em.wait {
   font-family: var(--font-barlow-condensed);
   font-weight: 700;
   font-size: 56px;
+  line-height: 1.02;
+  color: var(--deep);
+  max-width: 740px;
+}
+.quote .who {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}

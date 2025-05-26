@@ -883,3 +883,13 @@ em.wait {
 .quote .nav button {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--deep);
+  background: transparent;
+  display: grid;
+  place-items: center;
+  color: var(--deep);
+}
+.quote .nav button.on {
+  background: var(--deep);
+  color: var(--yellow);

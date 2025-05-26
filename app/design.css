@@ -952,3 +952,13 @@ em.wait {
 .cta .act {
   display: grid;
   gap: 14px;
+  justify-items: stretch;
+  min-width: 330px;
+}
+.cta .act .btn {
+  justify-content: center;
+}
+.cta .phone {
+  display: flex;
+  align-items: center;
+  gap: 14px;

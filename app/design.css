@@ -893,3 +893,13 @@ em.wait {
 .quote .nav button.on {
   background: var(--deep);
   color: var(--yellow);
+}
+
+/* ---------- cta ---------- */
+.cta {
+  position: relative;
+  background: var(--deep);
+  color: #fff;
+  overflow: hidden;
+}
+.cta:after {

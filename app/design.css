@@ -923,3 +923,13 @@ em.wait {
   background: linear-gradient(
     90deg,
     var(--deep) 0%,
+    rgba(var(--deep-rgb), 0.55) 45%,
+    rgba(var(--deep-rgb), 0.2)
+  );
+}
+.cta .wrap {
+  z-index: 2;
+}
+.cta .wrap {
+  position: relative;
+  display: grid;

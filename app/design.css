@@ -1001,3 +1001,13 @@ footer .logo {
   display: block;
 }
 footer p {
+  font-size: 16px;
+  color: var(--mist);
+  line-height: 1.6;
+}
+footer h4 {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;

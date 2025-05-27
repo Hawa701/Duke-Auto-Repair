@@ -1021,3 +1021,13 @@ footer ul {
 footer .two {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 12px 30px;
+}
+footer .contact li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+footer .contact svg.i {
+  width: 20px;
+  height: 20px;

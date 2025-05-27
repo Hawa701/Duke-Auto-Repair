@@ -1031,3 +1031,13 @@ footer .contact li {
 footer .contact svg.i {
   width: 20px;
   height: 20px;
+  color: var(--yellow);
+  margin-top: 2px;
+}
+footer .bottom {
+  margin-top: 70px;
+  border-top: 1px solid var(--line);
+  height: 76px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;

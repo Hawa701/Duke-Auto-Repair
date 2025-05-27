@@ -972,3 +972,13 @@ em.wait {
   height: 28px;
 }
 .cta .phone small {
+  display: block;
+  color: var(--mist);
+  font-size: 14px;
+}
+.cta .phone b {
+  font-family: var(--font-barlow-condensed);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}

@@ -992,3 +992,12 @@ footer {
 }
 footer .cols {
   display: grid;
+  grid-template-columns: 300px 140px 1fr 260px;
+  gap: 48px;
+}
+footer .logo {
+  height: 70px;
+  margin-bottom: 26px;
+  display: block;
+}
+footer p {

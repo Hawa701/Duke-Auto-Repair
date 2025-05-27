@@ -1041,3 +1041,13 @@ footer .bottom {
   display: flex;
   align-items: center;
   font-size: 15px;
+  color: var(--mist);
+}
+footer .soc {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+footer .soc span {
+  width: 40px;
+  height: 40px;

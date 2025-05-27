@@ -982,3 +982,13 @@ em.wait {
   font-weight: 700;
   line-height: 1;
 }
+
+/* ---------- footer ---------- */
+footer {
+  background: var(--deep);
+  color: #c9cedc;
+  padding: 86px 0 0;
+  border-top: 10px solid var(--yellow);
+}
+footer .cols {
+  display: grid;

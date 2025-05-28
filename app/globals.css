@@ -37,3 +37,13 @@ html {
   ::-webkit-scrollbar-track,
   ::-webkit-scrollbar-track-piece,
   ::-webkit-scrollbar-corner {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--deep);

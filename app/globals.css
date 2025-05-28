@@ -7,3 +7,13 @@
   --foreground: #151b2e;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-barlow), Arial, sans-serif;
+  --font-mono: monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;

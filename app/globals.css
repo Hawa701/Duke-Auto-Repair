@@ -17,3 +17,13 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 24px;
+}
+/* Standards fallback for browsers without WebKit scrollbar selectors. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}
+/* Non-auto standard properties override these selectors in modern Chromium. */
+@supports selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: auto;

@@ -11,3 +11,16 @@ export const barlow = localFont({
   display: "block",
   preload: true,
   adjustFontFallback: "Arial",
+});
+
+export const barlowCondensed = localFont({
+  src: [
+    { path: "../public/fonts/BarlowCondensed-SemiBold.ttf", weight: "600" },
+    { path: "../public/fonts/BarlowCondensed-Bold.ttf", weight: "700" },
+    { path: "../public/fonts/BarlowCondensed-ExtraBold.ttf", weight: "800" },
+  ],
+  variable: "--font-barlow-condensed",
+  display: "block",
+  preload: true,
+  adjustFontFallback: "Arial",
+});

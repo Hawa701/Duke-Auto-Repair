@@ -1051,3 +1051,13 @@ footer .soc {
 footer .soc span {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+footer .soc svg.i {
+  width: 18px;
+  height: 18px;
+}

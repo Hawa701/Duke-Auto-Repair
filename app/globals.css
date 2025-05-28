@@ -47,3 +47,12 @@ html {
   }
   ::-webkit-scrollbar-thumb:hover {
     background: var(--deep);
+  }
+  ::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+}
+/* Overlay the page thumb so no native gutter can show a white strip. */

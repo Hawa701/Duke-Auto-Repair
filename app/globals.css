@@ -155,3 +155,12 @@ a:focus-visible {
 .btn-n:hover {
   background: #303f66;
 }
+.btn-on:hover {
+  background: var(--navy);
+  color: #fff;
+}
+.btn-o:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.site-main > h1 {
+  max-width: 1240px;

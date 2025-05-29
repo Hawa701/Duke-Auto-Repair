@@ -115,3 +115,13 @@ img {
 .book > *,
 .slides .wrap > *,
 footer .cols > * {
+  min-inline-size: 0;
+}
+p,
+blockquote,
+address {
+  overflow-wrap: break-word;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;

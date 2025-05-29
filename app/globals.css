@@ -66,3 +66,13 @@ html[data-overlay-scrollbar="true"]::-webkit-scrollbar {
   height: 0;
 }
 .page-scrollbar {
+  position: fixed;
+  inset-block: 6px;
+  inset-inline-end: 0;
+  width: 16px;
+  z-index: 100;
+  background: transparent;
+  pointer-events: none;
+}
+.page-scrollbar__thumb {
+  position: absolute;

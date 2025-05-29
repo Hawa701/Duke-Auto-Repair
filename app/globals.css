@@ -135,3 +135,13 @@ a {
   text-decoration: none;
 }
 button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #a27b00;
+  outline-offset: 5px;
+}
+.btn {
+  max-inline-size: 100%;
+  white-space: normal;
+  text-align: center;
+  min-block-size: 44px;
+  justify-content: center;

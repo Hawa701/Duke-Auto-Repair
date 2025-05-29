@@ -145,3 +145,13 @@ a:focus-visible {
   text-align: center;
   min-block-size: 44px;
   justify-content: center;
+  transition:
+    background-color 0.18s,
+    color 0.18s;
+}
+.btn-y:hover {
+  background: #f2d363;
+}
+.btn-n:hover {
+  background: #303f66;
+}

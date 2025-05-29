@@ -86,3 +86,13 @@ html[data-overlay-scrollbar="true"]::-webkit-scrollbar {
   content: "";
   position: absolute;
   inset-block: 0;
+  inset-inline: 5px;
+  border-radius: 999px;
+  background: var(--primary);
+}
+.page-scrollbar__thumb:hover::before,
+.page-scrollbar__thumb[data-dragging]::before {
+  background: var(--deep);
+}
+.page-scrollbar__thumb[data-dragging] {
+  cursor: grabbing;

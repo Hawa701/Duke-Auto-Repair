@@ -105,3 +105,13 @@ html[data-overlay-scrollbar="true"]::-webkit-scrollbar {
 body {
   min-width: 0;
 }
+img {
+  max-inline-size: 100%;
+}
+.sec-head > *,
+.perk > *,
+.step-row > *,
+.board > *,
+.book > *,
+.slides .wrap > *,
+footer .cols > * {

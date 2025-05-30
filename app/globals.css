@@ -253,3 +253,13 @@ a:focus-visible {
 }
 .slides .arrows button.next {
   background: #fff;
+  color: var(--navy);
+  border-color: #fff;
+}
+.slides .arrows button:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--deep);
+}
+.fascia .run {
+  padding-left: max(24px, calc((100vw - 1240px) / 2));

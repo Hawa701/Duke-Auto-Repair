@@ -184,3 +184,13 @@ a:focus-visible {
   width: auto;
 }
 .site-nav a:not(.btn):hover {
+  color: var(--yellow);
+}
+.site-nav .wrap {
+  position: relative;
+}
+.site-nav li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 0;

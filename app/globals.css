@@ -233,3 +233,13 @@ a:focus-visible {
 }
 .slides .t {
   border: 0;
+  background: none;
+  text-align: left;
+}
+.slides .t:hover b {
+  color: var(--yellow);
+}
+.slides .arrows button {
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  width: 50px;

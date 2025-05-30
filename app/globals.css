@@ -243,3 +243,13 @@ a:focus-visible {
   min-inline-size: 44px;
   min-block-size: 44px;
   width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: transparent;
+}
+.slides .arrows button.next {
+  background: #fff;

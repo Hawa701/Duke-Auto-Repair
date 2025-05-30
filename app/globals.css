@@ -213,3 +213,13 @@ a:focus-visible {
   padding: 12px 20px;
   background: #fff;
   color: var(--ink);
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 8px;
+}
+.hero-copy {
+  min-height: 293px;
+}
+.hero .rating a:hover {
+  text-decoration: underline;

@@ -164,3 +164,13 @@ a:focus-visible {
 }
 .site-main > h1 {
   max-width: 1240px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  min-height: 45vh;
+}
+.site-header {
+  position: relative;
+  z-index: 10;
+}
+.site-header--overlay .site-nav {
+  position: absolute;

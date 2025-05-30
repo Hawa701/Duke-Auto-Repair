@@ -174,3 +174,13 @@ a:focus-visible {
 }
 .site-header--overlay .site-nav {
   position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.site-nav .logo {
+  width: auto;
+}
+.site-nav a:not(.btn):hover {

@@ -204,3 +204,12 @@ a:focus-visible {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 6px;
+  padding: 10px;
+}
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -100px;
+  padding: 12px 20px;
+  background: #fff;
+  color: var(--ink);

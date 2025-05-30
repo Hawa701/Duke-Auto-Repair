@@ -223,3 +223,13 @@ a:focus-visible {
 }
 .hero .rating a:hover {
   text-decoration: underline;
+}
+.hero .bg {
+  transition: background-image 0.2s;
+}
+.book-note {
+  flex-wrap: wrap;
+  gap: 12px 26px;
+}
+.slides .t {
+  border: 0;

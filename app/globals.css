@@ -351,3 +351,13 @@ footer a:hover {
     gap: 12px 24px;
   }
   .site-nav li a {
+    min-block-size: 44px;
+    width: 100%;
+  }
+  .site-nav li.on:after {
+    display: none;
+  }
+  .util .right {
+    display: none;
+  }
+  .util .wrap {

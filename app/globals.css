@@ -331,3 +331,13 @@ footer a:hover {
   }
   .site-nav .header-booking {
     margin-left: 16px;
+  }
+  .site-nav ul {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 18px 24px;
+    background: var(--navy);

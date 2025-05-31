@@ -282,3 +282,13 @@ a:focus-visible {
 }
 footer .logo {
   width: auto;
+}
+footer a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.cta a.phone {
+  color: #fff;
+}
+

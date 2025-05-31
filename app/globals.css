@@ -341,3 +341,13 @@ footer a:hover {
     margin: 0;
     padding: 18px 24px;
     background: var(--navy);
+    border: 1px solid var(--line);
+    box-shadow: 0 16px 30px rgba(var(--deep-rgb), 0.15);
+    border-radius: 0 0 10px 10px;
+  }
+  .site-nav ul.is-open {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+  }
+  .site-nav li a {

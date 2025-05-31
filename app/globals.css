@@ -272,3 +272,13 @@ a:focus-visible {
 }
 .board h3 {
   overflow-wrap: anywhere;
+}
+.step p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.report {
+  max-width: calc(100% - 48px);
+}
+footer .logo {
+  width: auto;

@@ -321,3 +321,13 @@ footer a:hover {
 @media (max-width: 1024px) {
   h2 {
     font-size: 54px;
+  }
+  .site-nav .wrap {
+    height: 82px;
+  }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .site-nav .header-booking {
+    margin-left: 16px;

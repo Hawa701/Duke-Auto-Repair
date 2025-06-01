@@ -371,3 +371,12 @@ footer a:hover {
     max-width: 610px;
   }
   .hero-copy {
+    min-height: 270px;
+  }
+  .book {
+    margin-top: 36px;
+  }
+  .book .st {
+    padding: 12px;
+    gap: 8px;
+  }

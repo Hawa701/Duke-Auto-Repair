@@ -420,3 +420,12 @@ footer a:hover {
     min-height: 420px;
   }
   .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-grid div {
+    padding: 32px 24px;
+  }
+  .why-grid div + div {
+    padding-left: 24px;
+  }
+  .why-grid div:nth-child(3) {

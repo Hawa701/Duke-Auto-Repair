@@ -390,3 +390,13 @@ footer a:hover {
   .slides .t b {
     font-size: 21px;
   }
+  .slides .t small {
+    font-size: 13px;
+  }
+  .slides .arrows {
+    gap: 6px;
+  }
+  .slides .arrows button {
+    width: 42px;
+    height: 42px;
+  }

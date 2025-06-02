@@ -439,3 +439,13 @@ footer a:hover {
     gap: 18px;
   }
   .ctabar p {
+    flex: 1;
+  }
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .board .s:nth-child(n) {
+    border-right: 1px solid #e3e6ee;
+    border-bottom: 1px solid #e3e6ee;
+  }
+  .board .s:nth-child(2n) {

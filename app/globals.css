@@ -449,3 +449,13 @@ footer a:hover {
     border-bottom: 1px solid #e3e6ee;
   }
   .board .s:nth-child(2n) {
+    border-right: 0;
+  }
+  .board .s:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+  .board .s {
+    min-height: 280px;
+  }
+  .rev {
+    padding: 80px 0;

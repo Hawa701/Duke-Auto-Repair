@@ -459,3 +459,13 @@ footer a:hover {
   }
   .rev {
     padding: 80px 0;
+  }
+  .rev .grid {
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+  }
+  .quote {
+    padding-left: 32px;
+  }
+  .quote blockquote {
+    font-size: 44px;

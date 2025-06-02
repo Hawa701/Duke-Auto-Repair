@@ -429,3 +429,13 @@ footer a:hover {
     padding-left: 24px;
   }
   .why-grid div:nth-child(3) {
+    border-left: 0;
+  }
+  .why-grid div:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+  .steps .ctabar {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .ctabar p {

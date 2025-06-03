@@ -508,3 +508,13 @@ footer a:hover {
   }
   h2 {
     font-size: 44px;
+    line-height: 1;
+  }
+  .util .wrap {
+    height: 38px;
+    justify-content: center;
+  }
+  .util .wrap > span:nth-child(2) {
+    display: none;
+  }
+  .site-nav .wrap {

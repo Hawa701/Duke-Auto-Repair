@@ -518,3 +518,13 @@ footer a:hover {
     display: none;
   }
   .site-nav .wrap {
+    height: 76px;
+    gap: 12px;
+  }
+  .site-nav .logo {
+    height: 43px;
+  }
+  .site-nav .header-booking {
+    display: none;
+  }
+  .site-nav ul {

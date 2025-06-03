@@ -488,3 +488,13 @@ footer a:hover {
   }
   .cta .wrap {
     gap: 30px;
+    padding: 80px 0;
+  }
+  .cta .act {
+    min-width: 280px;
+  }
+  footer .cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}

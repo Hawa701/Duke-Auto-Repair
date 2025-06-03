@@ -469,3 +469,13 @@ footer a:hover {
   }
   .quote blockquote {
     font-size: 44px;
+  }
+  .posts {
+    gap: 18px;
+  }
+  .post .b {
+    padding: 24px 20px;
+  }
+  .post h3 {
+    font-size: 27px;
+  }

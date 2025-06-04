@@ -557,3 +557,13 @@ footer a:hover {
   }
   .hero h1 {
     font-size: clamp(54px, 13vw, 76px);
+    line-height: 0.95;
+    margin-top: 24px;
+  }
+  .hero .lede {
+    font-size: 18px;
+    margin-top: 22px;
+  }
+  .hero-copy {
+    min-height: 292px;
+  }

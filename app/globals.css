@@ -528,3 +528,12 @@ footer a:hover {
     display: none;
   }
   .site-nav ul {
+    top: 76px;
+  }
+  .hero .inner {
+    padding-top: 124px;
+  }
+  .hero .bg {
+    background-size: auto 100% !important;
+    background-position: 64% top !important;
+  }

@@ -587,3 +587,12 @@ footer a:hover {
   .book .st b {
     display: inline;
   }
+  .book .btn {
+    padding: 16px;
+  }
+  .book-note {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+  }

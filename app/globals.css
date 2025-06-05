@@ -665,3 +665,13 @@ footer a:hover {
   }
   .perk .ticks {
     gap: 14px;
+  }
+  .perk .ticks li {
+    align-items: flex-start;
+  }
+  .hero .rating,
+  .book .st small {
+    font-size: 14px;
+  }
+  .report {
+    padding-inline: 14px;

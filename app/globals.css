@@ -685,3 +685,13 @@ footer a:hover {
   .report .row em {
     white-space: nowrap;
     padding-inline: 6px;
+    font-size: 12px;
+  }
+  .route {
+    right: 20px;
+    top: 20px;
+  }
+  .report {
+    left: 20px;
+    bottom: 20px;
+    max-width: calc(100% - 40px);

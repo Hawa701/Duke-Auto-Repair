@@ -655,3 +655,13 @@ footer a:hover {
     min-height: 310px;
   }
   .perk .body {
+    padding: 30px 24px;
+  }
+  .perk h3 {
+    font-size: 36px;
+  }
+  .perk p {
+    font-size: 16px;
+  }
+  .perk .ticks {
+    gap: 14px;

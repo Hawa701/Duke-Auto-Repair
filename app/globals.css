@@ -606,3 +606,13 @@ footer a:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 14px;
   }
+  .slides .t {
+    padding: 20px 0 16px;
+  }
+  .slides .t b {
+    font-size: 19px;
+  }
+  .slides .t small {
+    display: none;
+  }
+  .slides .arrows {

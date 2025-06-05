@@ -596,3 +596,13 @@ footer a:hover {
     margin-top: 20px;
     font-size: 13px;
   }
+  .book-note span {
+    align-items: flex-start;
+  }
+  .slides {
+    margin-top: 32px;
+  }
+  .slides .wrap {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }

@@ -675,3 +675,13 @@ footer a:hover {
   }
   .report {
     padding-inline: 14px;
+  }
+  .report .row {
+    gap: 8px;
+  }
+  .report .row .dot {
+    flex-shrink: 0;
+  }
+  .report .row em {
+    white-space: nowrap;
+    padding-inline: 6px;

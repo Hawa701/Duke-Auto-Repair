@@ -636,3 +636,12 @@ footer a:hover {
   .steps,
   .svc {
     padding: 64px 0;
+  }
+  .sec-head {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 36px;
+  }
+  .sec-head p {
+    font-size: 18px;
+  }

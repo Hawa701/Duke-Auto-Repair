@@ -626,3 +626,13 @@ footer a:hover {
   .fascia .run {
     font-size: 21px;
     gap: 24px;
+    padding-left: 20px;
+  }
+  .fascia .run span {
+    gap: 24px;
+  }
+  .diff,
+  .why,
+  .steps,
+  .svc {
+    padding: 64px 0;

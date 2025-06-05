@@ -616,3 +616,13 @@ footer a:hover {
     display: none;
   }
   .slides .arrows {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+  .fascia {
+    height: 52px;
+  }
+  .fascia .run {
+    font-size: 21px;
+    gap: 24px;

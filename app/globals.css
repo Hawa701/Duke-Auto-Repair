@@ -645,3 +645,13 @@ footer a:hover {
   .sec-head p {
     font-size: 18px;
   }
+  .perk {
+    grid-template-columns: 1fr;
+  }
+  .perk.flip .media {
+    order: 0;
+  }
+  .perk .media {
+    min-height: 310px;
+  }
+  .perk .body {

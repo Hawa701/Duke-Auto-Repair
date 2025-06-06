@@ -753,3 +753,13 @@ footer a:hover {
     font-size: 27px;
   }
   .board p {
+    font-size: 15px;
+  }
+  .svc .more {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .rev {
+    padding: 64px 0;
+  }
+  .rev .grid {

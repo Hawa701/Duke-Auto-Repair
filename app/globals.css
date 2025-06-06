@@ -734,3 +734,13 @@ footer a:hover {
     display: none;
   }
   .ctabar p {
+    flex-basis: 100%;
+    font-size: 17px;
+  }
+  .ctabar .btn {
+    margin-left: 0;
+    width: 100%;
+    white-space: normal;
+  }
+  .board .s {
+    padding: 26px 18px;

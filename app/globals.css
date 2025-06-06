@@ -714,3 +714,13 @@ footer a:hover {
   }
   .step-row {
     grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .step .n {
+    font-size: 92px;
+    margin-bottom: 20px;
+  }
+  .step h3 {
+    font-size: 30px;
+  }
+  .step p {

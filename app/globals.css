@@ -724,3 +724,13 @@ footer a:hover {
     font-size: 30px;
   }
   .step p {
+    max-width: none;
+  }
+  .steps .ctabar {
+    margin-top: 36px;
+    padding: 24px;
+  }
+  .ctabar > svg {
+    display: none;
+  }
+  .ctabar p {

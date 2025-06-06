@@ -695,3 +695,12 @@ footer a:hover {
     left: 20px;
     bottom: 20px;
     max-width: calc(100% - 40px);
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-grid div:nth-child(n) {
+    padding: 28px 0;
+    border-left: 0;
+  }
+  .why-grid div + div {

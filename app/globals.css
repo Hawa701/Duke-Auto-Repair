@@ -763,3 +763,13 @@ footer a:hover {
     padding: 64px 0;
   }
   .rev .grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  .score .big {
+    font-size: 120px;
+  }
+  .score .stars {
+    margin-top: 16px;
+  }
+  .quote {

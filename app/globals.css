@@ -744,3 +744,12 @@ footer a:hover {
   }
   .board .s {
     padding: 26px 18px;
+    min-height: 300px;
+  }
+  .board .ic {
+    margin-bottom: 24px;
+  }
+  .board h3 {
+    font-size: 27px;
+  }
+  .board p {

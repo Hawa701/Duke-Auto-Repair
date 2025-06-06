@@ -704,3 +704,13 @@ footer a:hover {
     border-left: 0;
   }
   .why-grid div + div {
+    border-top: 1px solid var(--line);
+  }
+  .why-grid svg.i {
+    margin-bottom: 18px;
+  }
+  .why-grid h3 {
+    font-size: 29px;
+  }
+  .step-row {
+    grid-template-columns: 1fr;

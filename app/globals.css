@@ -773,3 +773,13 @@ footer a:hover {
     margin-top: 16px;
   }
   .quote {
+    padding-left: 24px;
+  }
+  .quote blockquote {
+    font-size: 38px;
+  }
+  .quote .who {
+    margin-top: 28px;
+  }
+  .posts {
+    grid-template-columns: 1fr;

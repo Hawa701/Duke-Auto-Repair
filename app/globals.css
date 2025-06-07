@@ -783,3 +783,13 @@ footer a:hover {
   }
   .posts {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .post h3 {
+    font-size: 30px;
+  }
+  .post .b {
+    padding: 26px;
+  }
+  .cta .wrap {
+    grid-template-columns: 1fr;

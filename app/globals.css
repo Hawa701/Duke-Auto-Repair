@@ -793,3 +793,13 @@ footer a:hover {
   }
   .cta .wrap {
     grid-template-columns: 1fr;
+    padding: 64px 0;
+    gap: 36px;
+  }
+  .cta h2 {
+    font-size: 58px;
+  }
+  .cta p {
+    font-size: 18px;
+  }
+  .cta .act {

@@ -822,3 +822,13 @@ footer a:hover {
   footer h4 {
     margin-bottom: 16px;
   }
+  footer .two {
+    gap: 12px 20px;
+  }
+  footer .bottom {
+    height: auto;
+    padding: 24px 0;
+    margin-top: 40px;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 13px;

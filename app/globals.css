@@ -803,3 +803,12 @@ footer a:hover {
     font-size: 18px;
   }
   .cta .act {
+    min-width: 0;
+  }
+  .cta:after,
+  .cta:before {
+    width: 100%;
+  }
+  footer {
+    padding-top: 56px;
+  }

@@ -812,3 +812,13 @@ footer a:hover {
   footer {
     padding-top: 56px;
   }
+  footer .cols {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  footer .logo {
+    height: 62px;
+  }
+  footer h4 {
+    margin-bottom: 16px;
+  }

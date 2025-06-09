@@ -901,3 +901,13 @@ footer a:hover {
 .google-provider-attribution {
   font-size: 12px;
   font-weight: 400;
+}
+.stars .rating-star {
+  display: inline-grid;
+}
+.stars .rating-star svg {
+  grid-area: 1 / 1;
+}
+.stars .rating-star-empty {
+  opacity: 0.25;
+}

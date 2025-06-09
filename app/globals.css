@@ -891,3 +891,13 @@ footer a:hover {
 }
 .google-rating--score {
   display: block;
+}
+.google-rating--score .btn {
+  margin-top: 30px;
+}
+.google-rating--stat .google-provider-attribution {
+  flex-basis: 100%;
+}
+.google-provider-attribution {
+  font-size: 12px;
+  font-weight: 400;

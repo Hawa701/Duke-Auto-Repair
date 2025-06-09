@@ -930,3 +930,13 @@ footer a:hover {
   margin-top: 12px;
   font-size: 13px;
   font-weight: 400;
+}
+@media (max-width: 640px) {
+  .review-intro h2 {
+    font-size: 38px;
+  }
+  .review-intro p {
+    font-size: 18px;
+  }
+}
+

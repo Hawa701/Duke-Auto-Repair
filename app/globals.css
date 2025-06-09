@@ -920,3 +920,13 @@ footer a:hover {
   font-size: 20px;
 }
 .review-intro > a {
+  display: block;
+  margin-top: 24px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.review-intro > a.google-review-policy {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 400;

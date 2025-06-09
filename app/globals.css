@@ -842,3 +842,13 @@ footer a:hover {
   .board {
     grid-template-columns: 1fr;
   }
+  .board .s:nth-child(n) {
+    border-right: 0;
+    border-bottom: 1px solid #e3e6ee;
+    min-height: 250px;
+  }
+  .board .s:last-child {
+    border-bottom: 0;
+  }
+}
+

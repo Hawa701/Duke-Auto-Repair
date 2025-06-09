@@ -832,3 +832,13 @@ footer a:hover {
     gap: 24px;
     flex-wrap: wrap;
     font-size: 13px;
+  }
+  footer .soc {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .board {
+    grid-template-columns: 1fr;
+  }

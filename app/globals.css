@@ -871,3 +871,13 @@ footer a:hover {
   flex-wrap: wrap;
 }
 .google-rating a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.google-rating .google-maps-attribution {
+  display: inline;
+  font-family: var(--font-barlow), Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;

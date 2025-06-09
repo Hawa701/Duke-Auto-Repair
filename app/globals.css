@@ -911,3 +911,12 @@ footer a:hover {
 .stars .rating-star-empty {
   opacity: 0.25;
 }
+.review-intro h2 {
+  font-size: 56px;
+  line-height: 1.02;
+}
+.review-intro p {
+  margin-top: 24px;
+  font-size: 20px;
+}
+.review-intro > a {

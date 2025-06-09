@@ -940,3 +940,13 @@ footer a:hover {
   }
 }
 
+/* Shared theme from the final homepage reference. */
+.site-header .site-nav {
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.site-header .site-nav .logo,
+.page-hero .site-nav .logo {
+  height: 48px;
+  width: auto;
+}

@@ -950,3 +950,13 @@ footer a:hover {
   height: 48px;
   width: auto;
 }
+.site-nav ul {
+  color: #fff;
+}
+@media (min-width: 1251px) {
+  .site-nav li.on:after {
+    bottom: -26px;
+  }
+}
+footer.site-footer {
+  background: #fff;

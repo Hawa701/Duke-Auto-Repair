@@ -7,3 +7,13 @@
   position: relative;
   height: max(660px, 40vw);
   background: #dde3ec url(/images/home/duke-shop.jpg) no-repeat;
+  background-size: cover;
+  background-position: 30% 40%;
+}
+.home-page .hero .shot .wrap {
+  position: relative;
+  height: 100%;
+}
+.home-page .hero .card {
+  position: absolute;
+  right: 0;

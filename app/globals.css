@@ -979,3 +979,13 @@ footer.site-footer .contact svg.i {
   color: var(--navy);
 }
 footer.site-footer .bottom {
+  border-top-color: #e3e6ee;
+  color: var(--steel);
+}
+footer.site-footer .soc span {
+  border-color: #d5dae4;
+  color: var(--navy);
+}
+footer.site-footer a:hover {
+  color: var(--navy);
+}

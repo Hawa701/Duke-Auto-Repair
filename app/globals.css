@@ -969,3 +969,13 @@ footer.site-footer .logo {
 footer.site-footer p {
   color: var(--steel);
 }
+footer.site-footer h4 {
+  color: var(--ink);
+}
+footer.site-footer ul {
+  color: #3a4360;
+}
+footer.site-footer .contact svg.i {
+  color: var(--navy);
+}
+footer.site-footer .bottom {

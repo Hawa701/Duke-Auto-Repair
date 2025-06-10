@@ -1009,3 +1009,13 @@ footer.site-footer .google-maps-attribution {
 }
 .cta.cta--final p {
   color: rgba(255, 255, 255, 0.9);
+}
+.cta.cta--final .phone {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+.cta.cta--final .phone small {
+  color: rgba(255, 255, 255, 0.8);
+}
+.cta.cta--final .btn-o {
+  border-color: rgba(255, 255, 255, 0.6);
+}

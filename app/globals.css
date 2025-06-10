@@ -960,3 +960,12 @@ footer a:hover {
 }
 footer.site-footer {
   background: #fff;
+  color: var(--ink);
+}
+footer.site-footer .logo {
+  height: 56px;
+  width: auto;
+}
+footer.site-footer p {
+  color: var(--steel);
+}

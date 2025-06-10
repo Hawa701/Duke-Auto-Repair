@@ -999,3 +999,13 @@ footer.site-footer .google-maps-attribution {
   background-image: url(/images/home/hero.jpg);
   opacity: 0.8;
 }
+.cta.cta--final:before {
+  background: linear-gradient(
+    90deg,
+    var(--navy) 0%,
+    rgba(var(--primary-rgb), 0.45) 40%,
+    rgba(var(--primary-rgb), 0.12)
+  );
+}
+.cta.cta--final p {
+  color: rgba(255, 255, 255, 0.9);

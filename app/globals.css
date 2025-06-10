@@ -989,3 +989,13 @@ footer.site-footer .soc span {
 footer.site-footer a:hover {
   color: var(--navy);
 }
+footer.site-footer .google-maps-attribution {
+  color: #1f1f1f;
+}
+.cta.cta--final {
+  background: var(--navy);
+}
+.cta.cta--final:after {
+  background-image: url(/images/home/hero.jpg);
+  opacity: 0.8;
+}

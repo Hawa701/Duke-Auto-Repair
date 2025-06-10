@@ -1,0 +1,9 @@
+/* Desktop design ported from the supplied final home.html. */
+.home-page .hero {
+  position: relative;
+  background: var(--paper);
+}
+.home-page .hero .shot {
+  position: relative;
+  height: max(660px, 40vw);
+  background: #dde3ec url(/images/home/duke-shop.jpg) no-repeat;

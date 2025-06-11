@@ -66,3 +66,13 @@
   padding-top: 20px;
   border-top: 1px solid #eceef2;
   font-size: 14px;
+  color: var(--steel);
+}
+.home-page .hero .proof span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.home-page .hero .proof b {
+  color: var(--ink);
+}

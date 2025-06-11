@@ -86,3 +86,12 @@
 .home-page .hero .proof svg.i {
   width: 17px;
   height: 17px;
+  color: var(--navy);
+}
+.home-page .fascia {
+  background: var(--yellow);
+  color: var(--deep);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;

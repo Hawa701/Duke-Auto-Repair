@@ -37,3 +37,12 @@
   width: 18px;
   height: 18px;
   color: var(--navy);
+}
+.home-page .hero h1 {
+  font-size: 70px;
+  line-height: 0.92;
+  font-weight: 800;
+  color: var(--deep);
+  margin-top: 14px;
+}
+.home-page .hero .lede {

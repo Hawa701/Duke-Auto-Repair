@@ -76,3 +76,13 @@
 .home-page .hero .proof b {
   color: var(--ink);
 }
+.home-page .hero .proof .stars svg {
+  width: 14px;
+  height: 14px;
+}
+.home-page .hero .proof .stars {
+  color: var(--yellow-d);
+}
+.home-page .hero .proof svg.i {
+  width: 17px;
+  height: 17px;

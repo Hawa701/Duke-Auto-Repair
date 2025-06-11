@@ -17,3 +17,13 @@
 .home-page .hero .card {
   position: absolute;
   right: 0;
+  bottom: 56px;
+  width: 580px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 44px 34px;
+  box-shadow: 0 24px 60px rgba(20, 32, 74, 0.22);
+  border-top: 6px solid var(--yellow);
+}
+.home-page .hero .where {
+  display: flex;

@@ -46,3 +46,13 @@
   margin-top: 14px;
 }
 .home-page .hero .lede {
+  margin-top: 16px;
+  font-size: 19px;
+  color: var(--steel);
+}
+.home-page .hero .acts {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+}
+.home-page .hero .acts .btn svg.i {

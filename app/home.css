@@ -95,3 +95,13 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+}
+.home-page .fascia .run {
+  display: flex;
+  gap: 44px;
+  padding-left: 100px;
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;

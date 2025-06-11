@@ -27,3 +27,13 @@
 }
 .home-page .hero .where {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--steel);
+}
+.home-page .hero .where svg.i {
+  width: 18px;
+  height: 18px;
+  color: var(--navy);

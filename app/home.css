@@ -105,3 +105,13 @@
   padding-left: 100px;
   font-family: var(--font-barlow-condensed);
   font-weight: 700;
+  font-size: 25px;
+}
+.home-page .fascia .run span {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.home-page .fascia .run span:after {
+  content: "";
+  width: 9px;

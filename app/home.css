@@ -193,3 +193,13 @@
   color: var(--navy);
   background: var(--yellow);
   border-radius: 50%;
+  padding: 4px;
+  stroke-width: 3;
+}
+.home-page .perk.flip .media {
+  order: 2;
+}
+.home-page .perk .btn-n {
+  background: var(--ink-navy);
+}
+.home-page .crew {

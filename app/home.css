@@ -164,3 +164,13 @@
   border-radius: 4px;
   margin-bottom: 22px;
 }
+.home-page .perk h3 {
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.home-page .perk p {
+  color: var(--steel);
+  font-size: 18px;
+  max-width: 470px;

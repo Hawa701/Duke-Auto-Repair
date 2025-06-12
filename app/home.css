@@ -174,3 +174,13 @@
   color: var(--steel);
   font-size: 18px;
   max-width: 470px;
+}
+.home-page .perk .ticks {
+  list-style: none;
+  margin: 26px 0 34px;
+  display: grid;
+  gap: 12px;
+}
+.home-page .perk .ticks li {
+  display: flex;
+  gap: 12px;

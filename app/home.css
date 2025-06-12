@@ -144,3 +144,13 @@
 }
 .home-page .perk + .perk {
   margin-top: 28px;
+}
+.home-page .perk .media {
+  position: relative;
+  min-height: 440px;
+  background-size: cover;
+  background-position: center;
+}
+.home-page .perk .body {
+  padding: 64px 64px 60px;
+}

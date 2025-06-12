@@ -154,3 +154,13 @@
 .home-page .perk .body {
   padding: 64px 64px 60px;
 }
+.home-page .perk .free {
+  display: inline-block;
+  background: var(--ink-navy);
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 22px;
+}

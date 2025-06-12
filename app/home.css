@@ -115,3 +115,13 @@
 .home-page .fascia .run span:after {
   content: "";
   width: 9px;
+  height: 9px;
+  background: var(--deep);
+  transform: rotate(45deg);
+}
+.home-page .diff {
+  background: var(--concrete);
+  padding: 120px 0;
+}
+.home-page .sec-head {
+  display: grid;

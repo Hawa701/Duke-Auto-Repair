@@ -242,3 +242,13 @@
   margin: 38px 0 40px;
 }
 .home-page .crew dl div {
+  border-top: 2px solid var(--yellow);
+  padding-top: 14px;
+}
+.home-page .crew dt {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+}
+.home-page .crew dd {

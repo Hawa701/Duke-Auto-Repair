@@ -213,3 +213,13 @@
   gap: 72px;
   align-items: center;
 }
+.home-page .crew figure {
+  margin: 0;
+}
+.home-page .crew .ph {
+  aspect-ratio: 3/2;
+  border-radius: 14px;
+  background: url(/images/home/team.jpg) 50% 88% / auto 132% no-repeat;
+}
+.home-page .crew figcaption {
+  margin-top: 14px;

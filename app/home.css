@@ -233,3 +233,12 @@
   margin-top: 22px;
   font-size: 19px;
   color: rgba(255, 255, 255, 0.88);
+  max-width: 520px;
+}
+.home-page .crew dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px 36px;
+  margin: 38px 0 40px;
+}
+.home-page .crew dl div {

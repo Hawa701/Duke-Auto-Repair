@@ -203,3 +203,13 @@
   background: var(--ink-navy);
 }
 .home-page .crew {
+  background: var(--navy);
+  color: #fff;
+  padding: 110px 0;
+}
+.home-page .crew .grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}

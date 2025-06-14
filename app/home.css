@@ -291,3 +291,13 @@
 }
 .home-page .step h3 {
   font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.home-page .step p {
+  color: var(--steel);
+  max-width: 350px;
+}
+.home-page .steps .ctabar {
+  margin-top: 56px;
+  display: flex;

@@ -311,3 +311,13 @@
   font-weight: 600;
   font-size: 19px;
 }
+.home-page .ctabar .btn {
+  margin-left: auto;
+}
+.home-page .svc {
+  background: var(--concrete);
+  padding: 120px 0;
+}
+.home-page .svc .sec-head {
+  grid-template-columns: 1.35fr 1fr;
+  gap: 60px;

@@ -301,3 +301,13 @@
 .home-page .steps .ctabar {
   margin-top: 56px;
   display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--concrete);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+.home-page .ctabar p {
+  font-weight: 600;
+  font-size: 19px;
+}

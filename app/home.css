@@ -262,3 +262,13 @@
 .home-page .steps .sec-head {
   display: block;
   margin-bottom: 84px;
+}
+.home-page .steps .sec-head p {
+  margin-top: 16px;
+}
+.home-page .step-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  position: relative;
+}

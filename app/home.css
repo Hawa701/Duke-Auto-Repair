@@ -281,3 +281,13 @@
   height: 46px;
   border-radius: 50%;
   background: var(--yellow);
+  color: var(--deep);
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  margin: -54px 0 22px;
+}
+.home-page .step h3 {
+  font-size: 32px;

@@ -272,3 +272,12 @@
   gap: 28px;
   position: relative;
 }
+.home-page .step {
+  border-top: 2px solid #dde1ea;
+  padding-top: 30px;
+}
+.home-page .step .n {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--yellow);

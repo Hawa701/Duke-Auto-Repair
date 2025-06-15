@@ -340,3 +340,13 @@
   min-height: 300px;
   background: #fff;
   color: var(--ink);
+  transition:
+    background-color 0.4s cubic-bezier(0.2, 0.7, 0.2, 1),
+    color 0.4s ease;
+}
+.home-page .board .s:nth-child(4n) {
+  border-right: 0;
+}
+.home-page .board .s:nth-child(n + 9) {
+  border-bottom: 0;
+}

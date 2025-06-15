@@ -389,3 +389,13 @@
   color: var(--navy);
   display: flex;
   align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.home-page .board a:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}

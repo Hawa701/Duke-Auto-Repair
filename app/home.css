@@ -428,3 +428,13 @@
   background: #fff;
   color: var(--ink);
 }
+.home-page .board:hover .s.hot:not(:hover) p {
+  color: var(--steel);
+}
+.home-page .board:hover .s.hot:not(:hover) .ic {
+  background: var(--concrete);
+  color: var(--navy);
+}
+.home-page .board:hover .s.hot:not(:hover) a {
+  color: var(--navy);
+}

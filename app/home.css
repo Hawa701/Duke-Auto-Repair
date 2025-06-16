@@ -458,3 +458,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
+  margin-top: 34px;
+}
+.home-page .svc .more p {
+  color: var(--steel);
+  max-width: 620px;
+}
+.home-page .svc .more b {
+  color: var(--ink);
+}

@@ -419,3 +419,12 @@
   color: var(--yellow);
 }
 .home-page .board .s:is(:hover, :focus-within) .ic {
+  transform: translateY(-4px) rotate(-6deg);
+}
+.home-page .board .s:is(:hover, :focus-within) a svg.i {
+  transform: translateX(6px);
+}
+.home-page .board:hover .s.hot:not(:hover) {
+  background: #fff;
+  color: var(--ink);
+}

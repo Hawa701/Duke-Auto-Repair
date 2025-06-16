@@ -409,3 +409,13 @@
   color: #fff;
 }
 .home-page .board .s:not(.ask):is(.hot, :hover, :focus-within) p {
+  color: rgba(255, 255, 255, 0.85);
+}
+.home-page .board .s:not(.ask):is(.hot, :hover, :focus-within) .ic {
+  background: var(--yellow);
+  color: var(--deep);
+}
+.home-page .board .s:not(.ask):is(.hot, :hover, :focus-within) a {
+  color: var(--yellow);
+}
+.home-page .board .s:is(:hover, :focus-within) .ic {

@@ -448,3 +448,13 @@
   background: var(--deep);
   color: var(--yellow);
 }
+.home-page .board .s.ask p {
+  color: #4a3f12;
+}
+.home-page .board .s.ask a {
+  color: var(--deep);
+}
+.home-page .svc .more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;

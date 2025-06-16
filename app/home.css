@@ -438,3 +438,13 @@
 .home-page .board:hover .s.hot:not(:hover) a {
   color: var(--navy);
 }
+.home-page .board .s.ask {
+  background: var(--yellow);
+}
+.home-page .board .s.ask:hover {
+  background: #ebcd55;
+}
+.home-page .board .s.ask .ic {
+  background: var(--deep);
+  color: var(--yellow);
+}

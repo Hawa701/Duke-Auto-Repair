@@ -399,3 +399,13 @@
   position: absolute;
   inset: 0;
 }
+.home-page .board a svg.i {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.home-page .board .s:not(.ask):is(.hot, :hover, :focus-within) {
+  background: var(--navy);
+  color: #fff;
+}
+.home-page .board .s:not(.ask):is(.hot, :hover, :focus-within) p {

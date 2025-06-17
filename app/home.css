@@ -507,3 +507,12 @@
 .home-page .awards .copy p {
   margin-top: 20px;
   font-size: 19px;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 470px;
+}
+.home-page .awards .rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  font-size: 16px;

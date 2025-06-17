@@ -516,3 +516,13 @@
   gap: 10px;
   margin-top: 28px;
   font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.home-page .awards .rating b {
+  font-family: var(--font-barlow-condensed);
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+.home-page .awards .rating .stars {
+  color: var(--yellow);

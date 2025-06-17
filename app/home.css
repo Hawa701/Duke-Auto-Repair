@@ -497,3 +497,13 @@
 }
 .home-page .awards .grid {
   display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 80px;
+  align-items: center;
+}
+.home-page .awards h2 {
+  font-size: 64px;
+}
+.home-page .awards .copy p {
+  margin-top: 20px;
+  font-size: 19px;

@@ -526,3 +526,13 @@
 }
 .home-page .awards .rating .stars {
   color: var(--yellow);
+}
+.home-page .awards .rating .stars svg {
+  width: 18px;
+  height: 18px;
+}
+.home-page .awards .acts {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-top: 30px;

@@ -487,3 +487,13 @@
 @media (prefers-reduced-motion: reduce) {
   .home-page .board *,
   .home-page .board .s {
+    transition: none !important;
+  }
+}
+.home-page .awards {
+  background: var(--navy);
+  color: #fff;
+  padding: 110px 0;
+}
+.home-page .awards .grid {
+  display: grid;

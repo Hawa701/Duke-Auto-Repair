@@ -468,3 +468,12 @@
 .home-page .svc .more b {
   color: var(--ink);
 }
+.home-page .svc .more .acts {
+  display: flex;
+  gap: 12px;
+}
+.home-page .btn-ob {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  padding: 15px 26px;
+  transition:

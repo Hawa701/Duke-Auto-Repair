@@ -477,3 +477,13 @@
   color: var(--navy);
   padding: 15px 26px;
   transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.home-page .btn-ob:hover {
+  background: var(--navy);
+  color: #fff;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .board *,
+  .home-page .board .s {

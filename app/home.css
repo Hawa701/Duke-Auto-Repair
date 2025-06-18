@@ -585,3 +585,13 @@
   top: 3px;
   bottom: 3px;
   border-top: 2px solid rgba(255, 255, 255, 0.55);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+}
+.home-page .plaque span {
+  display: block;
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;

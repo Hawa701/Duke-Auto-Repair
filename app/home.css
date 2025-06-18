@@ -614,3 +614,13 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
 }
+.home-page .rev {
+  background: var(--yellow);
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+.home-page .rev .grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 90px;

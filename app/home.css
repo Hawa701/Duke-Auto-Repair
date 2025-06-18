@@ -556,3 +556,12 @@
 .home-page .awards .more svg.i {
   width: 18px;
   height: 18px;
+}
+.home-page .plaques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.home-page .plaque {
+  position: relative;
+  background: var(--ink-navy);

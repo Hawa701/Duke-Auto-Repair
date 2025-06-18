@@ -624,3 +624,13 @@
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 90px;
+}
+.home-page .score .big {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 0.8;
+  color: var(--deep);
+}
+.home-page .score .stars {
+  color: var(--deep);

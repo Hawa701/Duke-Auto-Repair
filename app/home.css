@@ -703,3 +703,12 @@
   color: var(--deep);
 }
 .home-page .quote .nav button.on {
+  background: var(--deep);
+  color: var(--yellow);
+}
+.home-page .shop {
+  background: #fff;
+  padding: 120px 0;
+}
+.home-page .shop .sec-head {
+  grid-template-columns: 1.35fr 1fr;

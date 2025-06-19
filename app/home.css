@@ -663,3 +663,13 @@
 .home-page .quote .who {
   display: flex;
   align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+.home-page .quote .who img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.home-page .quote .who b {

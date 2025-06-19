@@ -644,3 +644,13 @@
   font-weight: 600;
   color: var(--deep);
 }
+.home-page .score .btn {
+  margin-top: 30px;
+  background: var(--deep);
+}
+.home-page .quote {
+  border-left: 3px solid var(--deep);
+  padding-left: 60px;
+}
+.home-page .quote blockquote {
+  font-family: var(--font-barlow-condensed);

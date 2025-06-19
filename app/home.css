@@ -673,3 +673,13 @@
   object-fit: cover;
 }
 .home-page .quote .who b {
+  display: block;
+  font-size: 18px;
+}
+.home-page .quote .who small {
+  color: #5a4c14;
+  font-size: 15px;
+}
+.home-page .quote .nav {
+  margin-left: auto;
+  display: flex;

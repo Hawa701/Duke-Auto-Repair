@@ -634,3 +634,13 @@
 }
 .home-page .score .stars {
   color: var(--deep);
+  margin: 20px 0 10px;
+}
+.home-page .score .stars svg {
+  width: 26px;
+  height: 26px;
+}
+.home-page .score p {
+  font-weight: 600;
+  color: var(--deep);
+}

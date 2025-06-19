@@ -712,3 +712,13 @@
 }
 .home-page .shop .sec-head {
   grid-template-columns: 1.35fr 1fr;
+  gap: 60px;
+}
+.home-page .gal {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 270px 270px;
+  gap: 18px;
+}
+.home-page .gal figure {
+  position: relative;

@@ -654,3 +654,12 @@
 }
 .home-page .quote blockquote {
   font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.04;
+  color: var(--deep);
+  max-width: 740px;
+}
+.home-page .quote .who {
+  display: flex;
+  align-items: center;

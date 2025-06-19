@@ -683,3 +683,13 @@
 .home-page .quote .nav {
   margin-left: auto;
   display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.home-page .quote .nav .pg {
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 10px;
+  color: var(--deep);
+}
+.home-page .quote .nav button {

@@ -751,3 +751,13 @@
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 6px;
+}
+.home-page .visit {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--concrete);
+  border-radius: 14px;
+  padding: 22px 26px;
+}

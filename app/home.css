@@ -800,3 +800,13 @@
 .home-page .cta {
   position: relative;
   background: var(--navy);
+  color: #fff;
+  overflow: hidden;
+}
+.home-page .cta:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 760px;

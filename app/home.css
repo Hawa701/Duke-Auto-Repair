@@ -791,3 +791,12 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .home-page .gal * {
+    transition: none !important;
+  }
+  .home-page .gal figure:hover .ph {
+    transform: none;
+  }
+}
+.home-page .cta {
+  position: relative;
+  background: var(--navy);

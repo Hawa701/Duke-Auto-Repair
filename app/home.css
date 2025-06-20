@@ -810,3 +810,13 @@
   bottom: 0;
   right: 0;
   width: 760px;
+  background: url(/images/home/hero.jpg) center 20% / cover;
+  opacity: 0.8;
+}
+.home-page .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 760px;

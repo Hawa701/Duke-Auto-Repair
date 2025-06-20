@@ -732,3 +732,13 @@
 }
 .home-page .gal .ph {
   position: absolute;
+  inset: 0;
+  background-size: cover;
+  transform: scale(1.001);
+  transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.home-page .gal figure:hover .ph {
+  transform: scale(1.06);
+}
+.home-page .gal figcaption {
+  position: absolute;

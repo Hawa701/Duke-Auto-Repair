@@ -742,3 +742,12 @@
 }
 .home-page .gal figcaption {
   position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;

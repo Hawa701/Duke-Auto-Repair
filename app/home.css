@@ -761,3 +761,13 @@
   border-radius: 14px;
   padding: 22px 26px;
 }
+.home-page .visit .pin {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--deep);
+  display: grid;
+  place-items: center;
+  flex: none;
+}

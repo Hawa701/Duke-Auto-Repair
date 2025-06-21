@@ -879,3 +879,13 @@
 }
 .home-page .cta .phone b {
   font-family: var(--font-barlow-condensed);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Reset the former homepage's decorative rules while retaining the reference measurements. */
+.home-page .hero {
+  color: var(--ink);
+  overflow: visible;
+}

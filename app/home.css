@@ -849,3 +849,13 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
   max-width: 540px;
+}
+.home-page .cta .act {
+  display: grid;
+  gap: 14px;
+  justify-items: stretch;
+  min-width: 330px;
+}
+.home-page .cta .act .btn {
+  justify-content: center;
+}

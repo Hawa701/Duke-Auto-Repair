@@ -889,3 +889,12 @@
   color: var(--ink);
   overflow: visible;
 }
+.home-page .hero .shot {
+  background-image: url(/images/home/duke-shop.jpg);
+}
+.home-page .hero .where {
+  white-space: nowrap;
+}
+.home-page .hero .proof {
+  gap: 18px;
+}

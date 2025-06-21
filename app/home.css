@@ -869,3 +869,13 @@
 }
 .home-page .cta .phone svg.i {
   color: var(--yellow);
+  width: 28px;
+  height: 28px;
+}
+.home-page .cta .phone small {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.home-page .cta .phone b {
+  font-family: var(--font-barlow-condensed);

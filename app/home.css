@@ -820,3 +820,13 @@
   bottom: 0;
   right: 0;
   width: 760px;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    var(--navy) 0%,
+    rgba(42, 82, 190, 0.45) 40%,
+    rgba(42, 82, 190, 0.12)
+  );
+}
+.home-page .cta .wrap {
+  z-index: 2;

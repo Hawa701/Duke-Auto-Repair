@@ -830,3 +830,13 @@
 }
 .home-page .cta .wrap {
   z-index: 2;
+}
+.home-page .cta .wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: end;
+  padding: 110px 0;
+}
+.home-page .cta h2 {

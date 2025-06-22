@@ -898,3 +898,13 @@
 .home-page .hero .proof {
   gap: 18px;
 }
+.home-page .hero .proof .google-rating {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.home-page .hero .proof .rating-star {
+  display: inline-grid;
+  gap: 0;
+}
+.home-page .hero .google-rating--hero .google-maps-attribution {
+  color: #1f1f1f;

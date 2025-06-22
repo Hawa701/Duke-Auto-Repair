@@ -957,3 +957,13 @@
 .home-page .svc .more .acts {
   flex: none;
 }
+.home-page .visit > div {
+  min-width: 0;
+}
+.home-page .visit .btn {
+  flex: none;
+}
+.home-page .btn-n:hover {
+  background: var(--deep);
+}
+.home-page .perk .btn-n:hover {

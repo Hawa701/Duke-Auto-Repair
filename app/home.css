@@ -938,3 +938,12 @@
   color: #fff;
 }
 .home-page .quote .who {
+  min-height: 58px;
+}
+.home-page .quote .avatar {
+  width: 58px;
+  height: 58px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;

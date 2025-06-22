@@ -918,3 +918,13 @@
 .home-page .step:first-child {
   border-color: #dde1ea;
 }
+.home-page .step .n {
+  -webkit-text-stroke: 0;
+}
+.home-page .board h3 {
+  overflow-wrap: normal;
+}
+.home-page .awards .google-maps-attribution {
+  color: #fff;
+}
+.home-page .crew-rating dd a:hover {

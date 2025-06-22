@@ -947,3 +947,13 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
+  background: var(--deep);
+  color: #fff;
+  font-weight: 700;
+}
+.home-page .rev .score .big {
+  display: block;
+}
+.home-page .svc .more .acts {
+  flex: none;
+}

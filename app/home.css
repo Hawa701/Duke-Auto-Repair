@@ -908,3 +908,13 @@
 }
 .home-page .hero .google-rating--hero .google-maps-attribution {
   color: #1f1f1f;
+}
+.home-page .hero .proof .google-maps-attribution {
+  font-size: inherit;
+}
+.home-page .hero .proof > span:last-child {
+  flex: none;
+}
+.home-page .step:first-child {
+  border-color: #dde1ea;
+}

@@ -928,3 +928,13 @@
   color: #fff;
 }
 .home-page .crew-rating dd a:hover {
+  text-decoration: underline;
+}
+.home-page .crew-rating__attribution {
+  display: block;
+  font-size: 12px;
+}
+.home-page .crew-rating .google-maps-attribution {
+  color: #fff;
+}
+.home-page .quote .who {

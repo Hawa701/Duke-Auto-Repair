@@ -986,3 +986,13 @@
 }
 
 /* Responsive layouts for the final homepage. */
+.home-page :is(.svc, .diff, .steps, .shop) {
+  padding-block: clamp(56px, 8vw, 120px);
+}
+.home-page :is(.crew, .awards, .rev) {
+  padding-block: clamp(56px, 7.5vw, 110px);
+}
+.home-page .hero .card {
+  width: min(580px, 100%);
+}
+.home-page .hero .where {

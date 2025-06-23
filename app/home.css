@@ -967,3 +967,13 @@
   background: var(--deep);
 }
 .home-page .perk .btn-n:hover {
+  background: #303f66;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .plaque:hover,
+  .home-page .board .s:is(:hover, :focus-within) .ic {
+    transform: none;
+  }
+}
+
+.home-page .quote .review-source {

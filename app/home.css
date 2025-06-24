@@ -1026,3 +1026,12 @@
   padding-block: 16px;
 }
 .home-page .fascia .run {
+  flex-wrap: wrap;
+  width: min(1240px, calc(100% - 32px));
+  padding-left: 0;
+  margin-inline: auto;
+  gap: 12px 28px;
+  font-size: clamp(20px, 2vw, 25px);
+}
+.home-page .fascia .run span {
+  gap: 28px;

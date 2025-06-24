@@ -1016,3 +1016,13 @@
   flex-wrap: wrap;
 }
 .home-page .hero .proof > span {
+  max-width: 100%;
+}
+.home-page .fascia {
+  height: auto;
+  min-height: 64px;
+  overflow: visible;
+  white-space: normal;
+  padding-block: 16px;
+}
+.home-page .fascia .run {

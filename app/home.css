@@ -1055,3 +1055,13 @@
   grid-column: span 2;
 }
 .home-page .board h3 {
+  overflow-wrap: anywhere;
+}
+.home-page .svc .more {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.home-page .svc .more .acts {
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  min-width: 0;

@@ -1094,3 +1094,13 @@
   font-size: clamp(11px, 1vw, 14px);
 }
 .home-page .perk {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.home-page .perk .body {
+  padding: clamp(24px, 4.5vw, 64px);
+}
+.home-page .perk h3 {
+  font-size: clamp(32px, 3.5vw, 46px);
+}
+.home-page .crew .grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);

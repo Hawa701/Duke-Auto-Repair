@@ -1075,3 +1075,12 @@
 }
 .home-page .awards .acts {
   flex-wrap: wrap;
+  gap: 20px;
+}
+.home-page .plaques {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 1.3vw, 18px);
+}
+.home-page .plaque {
+  padding-inline: 8px;
+}

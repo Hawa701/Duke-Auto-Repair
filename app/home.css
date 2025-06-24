@@ -1035,3 +1035,13 @@
 }
 .home-page .fascia .run span {
   gap: 28px;
+}
+.home-page .sec-head {
+  gap: 32px;
+}
+.home-page .sec-head h2 {
+  font-size: clamp(38px, 4.6vw, 64px);
+}
+.home-page .board {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;

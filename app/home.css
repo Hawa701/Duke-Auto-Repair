@@ -1104,3 +1104,13 @@
 }
 .home-page .crew .grid {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+}
+.home-page .crew h2 {
+  font-size: clamp(40px, 4.5vw, 60px);
+}
+.home-page .crew dl {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.home-page .step-row {

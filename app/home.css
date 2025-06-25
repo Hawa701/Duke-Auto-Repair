@@ -1163,3 +1163,13 @@
   }
   .home-page .awards .copy p {
     max-width: 700px;
+  }
+  .home-page .plaques {
+    width: 100%;
+    max-width: 760px;
+  }
+}
+@media (max-width: 1000px) {
+  .home-page .crew .grid,
+  .home-page .rev .grid {
+    grid-template-columns: minmax(0, 1fr);

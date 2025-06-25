@@ -1143,3 +1143,13 @@
 .home-page .visit {
   flex-wrap: wrap;
 }
+.home-page .visit > div {
+  flex: 1 1 240px;
+}
+.home-page .visit b {
+  font-size: clamp(21px, 2vw, 26px);
+}
+@media (max-width: 1100px) {
+  .home-page .board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }

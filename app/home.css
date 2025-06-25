@@ -1173,3 +1173,12 @@
   .home-page .crew .grid,
   .home-page .rev .grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .home-page .crew .ph {
+    aspect-ratio: 1600 / 838;
+    background-size: cover;
+    background-position: center;
+  }
+  .home-page .crew .lead {
+    max-width: none;
+  }

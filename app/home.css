@@ -1133,3 +1133,13 @@
   flex-wrap: wrap;
 }
 .home-page .quote .who > div {
+  min-width: 0;
+  flex: 1;
+}
+.home-page .quote .review-source {
+  flex-basis: 100%;
+  margin-left: 0;
+}
+.home-page .visit {
+  flex-wrap: wrap;
+}

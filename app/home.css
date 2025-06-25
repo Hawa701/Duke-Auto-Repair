@@ -1114,3 +1114,13 @@
   gap: 24px;
 }
 .home-page .step-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.home-page .steps .ctabar {
+  flex-wrap: wrap;
+}
+.home-page .rev .grid {
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 90px);
+}
+.home-page .quote {

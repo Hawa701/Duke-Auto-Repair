@@ -1182,3 +1182,13 @@
   .home-page .crew .lead {
     max-width: none;
   }
+}
+@media (max-width: 900px) {
+  .home-page .sec-head,
+  .home-page .svc .sec-head,
+  .home-page .shop .sec-head {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+  .home-page .sec-head p {

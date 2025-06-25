@@ -1124,3 +1124,12 @@
   gap: clamp(32px, 5vw, 90px);
 }
 .home-page .quote {
+  padding-left: clamp(22px, 4vw, 60px);
+}
+.home-page .quote blockquote {
+  font-size: clamp(30px, 3.5vw, 50px);
+}
+.home-page .quote .who {
+  flex-wrap: wrap;
+}
+.home-page .quote .who > div {

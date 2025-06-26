@@ -1241,3 +1241,13 @@
     font-size: 18px;
   }
   .home-page .hero .proof > span:last-child {
+    flex: 0 1 auto;
+  }
+}
+@media (max-width: 700px) {
+  .home-page .step-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 52px;
+  }
+  .home-page .steps .sec-head {
+    margin-bottom: 72px;

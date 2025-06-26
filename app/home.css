@@ -1251,3 +1251,13 @@
   }
   .home-page .steps .sec-head {
     margin-bottom: 72px;
+  }
+  .home-page .step p {
+    max-width: none;
+  }
+}
+@media (max-width: 640px) {
+  .home-page .hero .where {
+    font-size: 14px;
+  }
+  .home-page .svc .more .acts {

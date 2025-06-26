@@ -1221,3 +1221,13 @@
     margin-left: 0;
   }
 }
+@media (max-width: 760px) {
+  .home-page .hero .shot {
+    height: auto;
+    padding-top: clamp(220px, 48vw, 340px);
+    padding-bottom: 24px;
+    background-size: auto 420px;
+    background-position: 36% top;
+    background-color: var(--concrete);
+  }
+  .home-page .hero .card {

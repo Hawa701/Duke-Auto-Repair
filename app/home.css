@@ -1202,3 +1202,13 @@
     order: 0;
   }
   .home-page .perk .media {
+    min-height: clamp(250px, 45vw, 400px);
+  }
+  .home-page .gal {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 340px 230px 230px;
+  }
+  .home-page .gal figure.a {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }

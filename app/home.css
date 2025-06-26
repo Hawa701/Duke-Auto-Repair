@@ -1261,3 +1261,12 @@
     font-size: 14px;
   }
   .home-page .svc .more .acts {
+    width: 100%;
+  }
+  .home-page .svc .more .btn {
+    flex: 1 1 200px;
+  }
+  .home-page .perk .body {
+    padding: 28px 24px;
+  }
+  .home-page .crew dt {

@@ -1231,3 +1231,13 @@
     background-color: var(--concrete);
   }
   .home-page .hero .card {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    padding: clamp(24px, 5vw, 36px);
+    border-radius: 12px;
+  }
+  .home-page .hero .lede {
+    font-size: 18px;
+  }
+  .home-page .hero .proof > span:last-child {

@@ -1270,3 +1270,13 @@
     padding: 28px 24px;
   }
   .home-page .crew dt {
+    font-size: 24px;
+  }
+  .home-page .crew dd {
+    font-size: 15px;
+  }
+  .home-page .steps .ctabar {
+    padding: 24px;
+    gap: 18px;
+  }
+  .home-page .ctabar p {

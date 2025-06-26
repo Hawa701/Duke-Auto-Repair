@@ -1212,3 +1212,12 @@
     grid-row: auto;
     grid-column: 1 / -1;
   }
+}
+@media (max-width: 800px) {
+  .home-page .board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home-page .ctabar .btn {
+    margin-left: 0;
+  }
+}

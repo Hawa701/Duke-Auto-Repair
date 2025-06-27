@@ -1329,3 +1329,13 @@
   flex: 1;
   min-width: 0;
   overflow: hidden;
+}
+.home-page .fascia-track {
+  display: flex;
+  width: max-content;
+  animation: fascia-scroll 38s linear infinite;
+  will-change: transform;
+}
+.home-page .fascia-group {
+  display: flex;
+  align-items: center;

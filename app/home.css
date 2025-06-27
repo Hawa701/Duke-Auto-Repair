@@ -1300,3 +1300,13 @@
 @media (max-width: 520px) {
   .home-page .board {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .home-page .board .s.ask {
+    grid-column: auto;
+  }
+  .home-page .board .s:nth-child(n) {
+    min-height: 250px;
+  }
+  .home-page .gal {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;

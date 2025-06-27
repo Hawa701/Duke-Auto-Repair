@@ -1290,3 +1290,13 @@
     padding: 22px;
   }
   .home-page .visit > div {
+    flex: 1 1 150px;
+  }
+  .home-page .visit .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 520px) {
+  .home-page .board {
+    grid-template-columns: minmax(0, 1fr);

@@ -1349,3 +1349,13 @@
   font-family: var(--font-barlow-condensed), sans-serif;
   font-size: clamp(21px, 2vw, 25px);
   font-weight: 700;
+}
+.home-page .fascia-group li {
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 3vw, 44px);
+  white-space: nowrap;
+  flex: none;
+}
+.home-page .fascia-group li::after {
+  content: "";

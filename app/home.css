@@ -1339,3 +1339,13 @@
 .home-page .fascia-group {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex: 0 0 auto;
+  min-width: 100vw;
+  gap: clamp(28px, 3vw, 44px);
+  padding-inline: 22px;
+  margin: 0;
+  list-style: none;
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: clamp(21px, 2vw, 25px);
+  font-weight: 700;

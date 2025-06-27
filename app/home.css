@@ -1310,3 +1310,12 @@
   .home-page .gal {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: none;
+    grid-auto-rows: 300px;
+    gap: 16px;
+  }
+  .home-page .gal figure.a {
+    grid-column: auto;
+  }
+}
+
+/* Continuous, seamless service fascia. Only the decorative duplicate is hidden from assistive technology. */

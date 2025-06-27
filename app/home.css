@@ -1280,3 +1280,13 @@
     gap: 18px;
   }
   .home-page .ctabar p {
+    flex-basis: 100%;
+    font-size: 17px;
+  }
+  .home-page .ctabar .btn {
+    width: 100%;
+  }
+  .home-page .visit {
+    padding: 22px;
+  }
+  .home-page .visit > div {

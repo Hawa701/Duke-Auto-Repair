@@ -1398,3 +1398,13 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 14px 24px;
+  }
+  .home-page .fascia-group li {
+    white-space: normal;
+    gap: 24px;
+  }
+  .home-page .fascia-group[aria-hidden="true"] {
+    display: none;
+  }
+}

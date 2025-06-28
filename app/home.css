@@ -1359,3 +1359,12 @@
 }
 .home-page .fascia-group li::after {
   content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--deep);
+  transform: rotate(45deg);
+  flex: none;
+}
+@media (hover: hover) {
+  .home-page .fascia:hover .fascia-track {
+    animation-play-state: paused;

@@ -1378,3 +1378,13 @@
     transform: translateX(-50%);
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  .home-page .fascia {
+    height: auto;
+    padding-block: 16px;
+    overflow: visible;
+  }
+  .home-page .fascia-viewport {
+    overflow: visible;
+  }
+  .home-page .fascia-track {

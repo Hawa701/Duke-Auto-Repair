@@ -1388,3 +1388,13 @@
     overflow: visible;
   }
   .home-page .fascia-track {
+    width: 100%;
+    animation: none;
+    transform: none;
+    will-change: auto;
+  }
+  .home-page .fascia-group {
+    min-width: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;

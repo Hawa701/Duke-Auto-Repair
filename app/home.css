@@ -1368,3 +1368,13 @@
 @media (hover: hover) {
   .home-page .fascia:hover .fascia-track {
     animation-play-state: paused;
+  }
+}
+@keyframes fascia-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

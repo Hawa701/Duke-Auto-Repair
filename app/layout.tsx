@@ -28,3 +28,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${barlow.variable} ${barlowCondensed.variable}`}
+    >
+      <body>
+        <noscript>
+          <style>{`.entrance[data-wait-for-fonts] { opacity: 1 !important; transform: none !important; }`}</style>
+        </noscript>
+        <GoogleReviewsProvider>
+          <Header />

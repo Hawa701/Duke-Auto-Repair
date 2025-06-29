@@ -18,3 +18,13 @@ footer.site-footer .wrap {
 }
 .site-main
   :where(
+    .grid,
+    .sec-head,
+    .board,
+    .step-row,
+    .strip,
+    .vals,
+    .stops,
+    .plaques,
+    .gal,
+    .summary

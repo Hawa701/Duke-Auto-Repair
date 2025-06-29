@@ -38,3 +38,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </noscript>
         <GoogleReviewsProvider>
           <Header />
+          <main id="main-content" className="site-main" tabIndex={-1}>
+            {children}
+          </main>
+          <Footer />
+        </GoogleReviewsProvider>
+        <PageScrollbar />
+      </body>
+    </html>
+  );
+}

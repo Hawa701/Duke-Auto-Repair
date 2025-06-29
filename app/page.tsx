@@ -12,3 +12,18 @@ import "./home.css";
 
 export const metadata: Metadata = { title: "Home" };
 
+export default function HomePage() {
+  return (
+    <div className="home-page">
+      <Hero />
+      <HomeServices />
+      <HomeAwards />
+      <HomeBenefits />
+      <HomeCrew />
+      <BookingSteps />
+      <HomeReviews />
+      <HomeShop />
+      <BookingCta />
+    </div>
+  );
+}

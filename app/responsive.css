@@ -1,0 +1,10 @@
+/* Shared responsive rules for the shared site design. */
+.site-main,
+.site-header,
+footer.site-footer {
+  min-inline-size: 0;
+}
+.site-main .btn {
+  min-width: 0;
+  flex-wrap: wrap;
+}

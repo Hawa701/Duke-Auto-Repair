@@ -28,3 +28,13 @@ footer.site-footer .wrap {
     .plaques,
     .gal,
     .summary
+  )
+  > * {
+  min-inline-size: 0;
+}
+.site-header .site-nav .wrap > a:first-child {
+  min-width: 0;
+}
+.site-header .site-nav .logo {
+  max-width: 100%;
+  object-fit: contain;

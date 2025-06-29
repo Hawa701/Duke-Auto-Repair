@@ -8,3 +8,13 @@ footer.site-footer {
   min-width: 0;
   flex-wrap: wrap;
 }
+.site-main .wrap,
+.site-header .wrap,
+footer.site-footer .wrap {
+  width: min(1240px, calc(100% - clamp(16px, 3vw, 24px) * 2));
+}
+.site-main :where(h1, h2, h3, h4, p, blockquote, address, dt, dd, a) {
+  overflow-wrap: anywhere;
+}
+.site-main
+  :where(

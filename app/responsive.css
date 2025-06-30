@@ -38,3 +38,13 @@ footer.site-footer .wrap {
 .site-header .site-nav .logo {
   max-width: 100%;
   object-fit: contain;
+}
+footer.site-footer .cols > *,
+footer.site-footer .contact li > * {
+  min-width: 0;
+}
+footer.site-footer .cols {
+  grid-template-columns: 1.05fr 0.55fr 1.35fr 1fr;
+  gap: 36px;
+}
+footer.site-footer .two {

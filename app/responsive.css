@@ -89,3 +89,13 @@ footer.site-footer .bottom {
   }
 }
 @media (max-width: 1024px) {
+  .site-header .site-nav ul.is-open {
+    max-height: min(70dvh, 28rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+@media (max-width: 900px) {
+  /* Beat section-specific desktop grids on both Home and About. */
+  #main-content .sec-head {
+    display: grid;

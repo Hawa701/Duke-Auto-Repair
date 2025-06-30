@@ -48,3 +48,13 @@ footer.site-footer .cols {
   gap: 36px;
 }
 footer.site-footer .two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+footer.site-footer a {
+  overflow-wrap: anywhere;
+}
+footer.site-footer .bottom {
+  height: auto;
+  min-height: 76px;
+  padding-block: 22px;
+  flex-wrap: wrap;

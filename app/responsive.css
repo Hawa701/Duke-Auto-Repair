@@ -99,3 +99,13 @@ footer.site-footer .bottom {
   /* Beat section-specific desktop grids on both Home and About. */
   #main-content .sec-head {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  #main-content .sec-head > p {
+    max-width: none;
+    margin: 0;
+  }
+  .site-main section.cta.cta--final .wrap {

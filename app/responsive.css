@@ -109,3 +109,13 @@ footer.site-footer .bottom {
     margin: 0;
   }
   .site-main section.cta.cta--final .wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .site-main section.cta.cta--final .act {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+@media (max-width: 640px) {
+  #main-content .sec-head {
+    gap: 12px;

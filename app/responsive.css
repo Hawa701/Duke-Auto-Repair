@@ -68,3 +68,14 @@ footer.site-footer .bottom {
 .site-main section.cta.cta--final h2 {
   font-size: clamp(46px, 6.5vw, 92px);
   line-height: 1;
+}
+.site-main section.cta.cta--final .act {
+  min-width: 0;
+}
+.site-main section.cta.cta--final .phone > div {
+  min-width: 0;
+}
+.site-main section.cta.cta--final .phone b {
+  font-size: clamp(26px, 3vw, 30px);
+}
+.site-main section.cta.cta--final::before,

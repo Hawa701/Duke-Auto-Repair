@@ -220,3 +220,13 @@ footer.site-footer .bottom {
   }
   .site-header .skip-link:focus {
     top: calc(var(--mobile-utility-height) + 8px);
+  }
+  .site-header .site-nav ul {
+    top: var(--mobile-nav-height);
+  }
+  .site-header .site-nav ul.is-open {
+    /* The menu also fits when opened before the phone strip scrolls away. */
+    max-height: min(
+      70dvh,
+      calc(
+        100dvh - var(--mobile-nav-height) - var(--mobile-utility-height) - 12px

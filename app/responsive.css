@@ -139,3 +139,13 @@ footer.site-footer .bottom {
   }
   footer.site-footer .cols {
     grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  footer.site-footer .logo {
+    max-width: 100%;
+    height: auto;
+    width: min(212px, 100%);
+    margin-bottom: 16px;
+  }
+  footer.site-footer h4 {
+    margin-bottom: 12px;

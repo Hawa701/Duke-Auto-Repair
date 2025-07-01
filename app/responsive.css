@@ -210,3 +210,13 @@ footer.site-footer .bottom {
   }
   .site-header .util .wrap {
     height: var(--mobile-utility-height);
+  }
+  .site-header .site-nav {
+    position: relative;
+    background: var(--navy);
+  }
+  .site-header .site-nav .wrap {
+    height: var(--mobile-nav-height);
+  }
+  .site-header .skip-link:focus {
+    top: calc(var(--mobile-utility-height) + 8px);

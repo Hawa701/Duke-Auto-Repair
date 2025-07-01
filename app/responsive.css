@@ -160,3 +160,13 @@ footer.site-footer .bottom {
   footer.site-footer .contact {
     gap: 8px;
   }
+  footer.site-footer li a {
+    display: inline-block;
+    padding-block: 6px;
+    min-height: 44px;
+  }
+  footer.site-footer .soc {
+    margin-left: 0;
+  }
+  footer.site-footer .bottom {
+    display: grid;

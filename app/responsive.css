@@ -149,3 +149,14 @@ footer.site-footer .bottom {
   }
   footer.site-footer h4 {
     margin-bottom: 12px;
+  }
+  footer.site-footer .quick-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 20px;
+  }
+  footer.site-footer .two {
+    gap: 4px 20px;
+  }
+  footer.site-footer .contact {
+    gap: 8px;
+  }

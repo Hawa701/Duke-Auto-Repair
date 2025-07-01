@@ -119,3 +119,13 @@ footer.site-footer .bottom {
 @media (max-width: 640px) {
   #main-content .sec-head {
     gap: 12px;
+    margin-bottom: 28px;
+  }
+  .site-header .site-nav .logo {
+    height: 40px;
+  }
+  .site-header .site-nav .menu-toggle {
+    flex: none;
+    min-width: 44px;
+    min-height: 44px;
+  }

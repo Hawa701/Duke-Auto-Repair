@@ -200,3 +200,13 @@ footer.site-footer .bottom {
     position: sticky;
     /* Let the phone strip scroll away; pin just the navigation. The extra
        pixel covers subpixel seams along the viewport edge on mobile. */
+    top: calc(-1 * var(--mobile-utility-height) - 1px);
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: var(--navy);
+    box-shadow: 0 5px 20px rgba(20, 32, 74, 0.14);
+  }
+  .site-header .util .wrap {
+    height: var(--mobile-utility-height);

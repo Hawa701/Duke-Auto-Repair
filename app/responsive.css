@@ -170,3 +170,13 @@ footer.site-footer .bottom {
   }
   footer.site-footer .bottom {
     display: grid;
+    justify-items: start;
+    min-height: 0;
+    margin-top: 24px;
+    padding-block: 16px;
+    gap: 12px;
+  }
+  .site-main section.cta.cta--final p {
+    font-size: 18px;
+  }
+  .site-main section.cta.cta--final .phone {

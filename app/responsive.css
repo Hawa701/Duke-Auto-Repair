@@ -190,3 +190,13 @@ footer.site-footer .bottom {
     max-height: min(70dvh, calc(100dvh - 140px), 28rem);
   }
 }
+@media (max-width: 640px) {
+  html {
+    --mobile-utility-height: 38px;
+    --mobile-nav-height: 76px;
+    scroll-padding-top: calc(var(--mobile-nav-height) + 24px);
+  }
+  header.site-header {
+    position: sticky;
+    /* Let the phone strip scroll away; pin just the navigation. The extra
+       pixel covers subpixel seams along the viewport edge on mobile. */

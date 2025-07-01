@@ -180,3 +180,13 @@ footer.site-footer .bottom {
     font-size: 18px;
   }
   .site-main section.cta.cta--final .phone {
+    gap: 12px;
+  }
+}
+
+/* Keep mobile navigation visible without changing desktop header behavior. */
+@media (max-width: 1024px) {
+  .site-header .site-nav ul.is-open {
+    max-height: min(70dvh, calc(100dvh - 140px), 28rem);
+  }
+}

@@ -230,3 +230,14 @@ footer.site-footer .bottom {
       70dvh,
       calc(
         100dvh - var(--mobile-nav-height) - var(--mobile-utility-height) - 12px
+      ),
+      28rem
+    );
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .entrance {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

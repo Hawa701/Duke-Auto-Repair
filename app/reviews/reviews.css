@@ -17,3 +17,13 @@
   font-family: var(--font-barlow-condensed);
   font-weight: 800;
   font-size: 150px;
+  line-height: 0.78;
+}
+.reviews-page .summary .sc .stars {
+  color: var(--deep);
+  display: flex;
+  gap: 4px;
+  margin: 18px 0 8px;
+}
+.reviews-page .summary .sc .stars svg {
+  width: 26px;

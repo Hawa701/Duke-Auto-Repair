@@ -37,3 +37,12 @@
   display: grid;
   gap: 10px;
   border-left: 1.5px solid rgba(20, 32, 74, 0.25);
+  padding-left: 56px;
+}
+.reviews-page .bars div {
+  display: grid;
+  grid-template-columns: 54px 1fr 44px;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  font-size: 15px;

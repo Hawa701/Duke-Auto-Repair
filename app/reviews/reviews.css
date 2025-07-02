@@ -46,3 +46,13 @@
   gap: 14px;
   font-weight: 700;
   font-size: 15px;
+}
+.reviews-page .bars i {
+  height: 10px;
+  border-radius: 6px;
+  background: rgba(20, 32, 74, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.reviews-page .bars i:after {
+  content: "";

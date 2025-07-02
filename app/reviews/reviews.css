@@ -1,0 +1,9 @@
+/* Desktop layout from the final supplied reviews.html. */
+.reviews-page .revpage {
+  background: #fff;
+  padding: 100px 0 120px;
+}
+.reviews-page .summary {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 64px;

@@ -7,3 +7,13 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 64px;
+  align-items: center;
+  background: var(--yellow);
+  color: var(--deep);
+  border-radius: 16px;
+  padding: 46px 52px;
+}
+.reviews-page .summary .big {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 150px;

@@ -10,3 +10,16 @@ export const metadata: Metadata = {
   description: `Explore customer feedback and find ${business.name}'s Google reviews in ${business.city}, ${business.region}.`,
 };
 
+export default function ReviewsPage() {
+  return (
+    <div className="reviews-page">
+      <PageHeader
+        title="Reviews"
+        description="Real words from the drivers we look after. Read our customers' experiences on Google Maps."
+        image="/images/home/keys.jpg"
+      />
+      <ReviewsContent />
+      <BookingCta />
+    </div>
+  );
+}

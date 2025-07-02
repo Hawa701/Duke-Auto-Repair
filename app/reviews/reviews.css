@@ -27,3 +27,13 @@
 }
 .reviews-page .summary .sc .stars svg {
   width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+.reviews-page .summary .sc p {
+  font-weight: 600;
+}
+.reviews-page .bars {
+  display: grid;
+  gap: 10px;
+  border-left: 1.5px solid rgba(20, 32, 74, 0.25);

@@ -164,3 +164,13 @@
   columns: 3;
   column-gap: 32px;
 }
+.reviews-page .rv {
+  break-inside: avoid;
+  margin-bottom: 32px;
+  background: #fff;
+  border: 1px solid #e6e9ef;
+  border-radius: 14px;
+  padding: 36px 34px 32px;
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 0.45s ease,

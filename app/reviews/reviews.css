@@ -105,3 +105,13 @@
 }
 .reviews-page .hlq blockquote {
   font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.08;
+  color: var(--ink);
+  max-width: 960px;
+}
+.reviews-page .hlq .who {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;

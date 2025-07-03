@@ -125,3 +125,13 @@
 }
 .reviews-page .hlq .who .stars {
   color: var(--yellow-d);
+  display: flex;
+  gap: 2px;
+}
+.reviews-page .hlq .who .stars svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+.reviews-page .rv-head {
+  display: flex;

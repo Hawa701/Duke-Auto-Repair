@@ -135,3 +135,12 @@
 }
 .reviews-page .rv-head {
   display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 40px;
+}
+.reviews-page .rv-head h2 {
+  font-size: 52px;
+}
+.reviews-page .rv-head .sort {
+  display: flex;

@@ -115,3 +115,13 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
+  gap: 14px;
+  color: var(--steel);
+  font-size: 16px;
+}
+.reviews-page .hlq .who b {
+  color: var(--ink);
+  font-weight: 700;
+}
+.reviews-page .hlq .who .stars {
+  color: var(--yellow-d);

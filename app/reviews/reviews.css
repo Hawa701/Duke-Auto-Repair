@@ -66,3 +66,13 @@
   text-align: right;
   font-weight: 600;
   color: #5a4c14;
+}
+.reviews-page .bars div {
+  grid-template-columns: 54px 1fr 48px;
+}
+.reviews-page .summary .acts {
+  display: grid;
+  gap: 12px;
+  min-width: 250px;
+}
+.reviews-page .summary .acts .btn {

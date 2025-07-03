@@ -144,3 +144,13 @@
 }
 .reviews-page .rv-head .sort {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--steel);
+}
+.reviews-page .rv-head .sort b {
+  color: var(--ink);
+  font-weight: 600;
+  display: flex;
+  align-items: center;

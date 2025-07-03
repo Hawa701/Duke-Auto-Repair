@@ -95,3 +95,13 @@
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 20px;
+}
+.reviews-page .hlq .q {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 0.7;
+  color: var(--yellow);
+}
+.reviews-page .hlq blockquote {
+  font-family: var(--font-barlow-condensed);

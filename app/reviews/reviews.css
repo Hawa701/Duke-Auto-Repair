@@ -86,3 +86,12 @@
   background: #fff;
   color: var(--ink);
 }
+.reviews-page .btn-gl .g {
+  width: 20px;
+  height: 20px;
+}
+.reviews-page .hlq {
+  padding: 96px 0 100px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;

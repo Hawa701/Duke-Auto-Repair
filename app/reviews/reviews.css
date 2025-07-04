@@ -213,3 +213,13 @@
   background: var(--concrete);
   color: var(--navy);
   font-weight: 700;
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.reviews-page .rv .who b {
+  display: block;
+  font-size: 16px;
+}
+.reviews-page .rv .who small {

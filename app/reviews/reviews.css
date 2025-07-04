@@ -233,3 +233,12 @@
   align-items: center;
   gap: 16px;
 }
+.reviews-page .more-rv p {
+  color: var(--steel);
+  font-size: 15px;
+}
+.reviews-page .chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

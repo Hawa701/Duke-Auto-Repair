@@ -193,3 +193,13 @@
 .reviews-page .rv .stars svg {
   width: 18px;
   height: 18px;
+  fill: currentColor;
+}
+.reviews-page .rv blockquote {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #2a3249;
+}
+.reviews-page .rv .who {
+  display: flex;
+  align-items: center;

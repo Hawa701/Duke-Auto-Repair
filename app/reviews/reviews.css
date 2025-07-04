@@ -203,3 +203,13 @@
 .reviews-page .rv .who {
   display: flex;
   align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+.reviews-page .rv .av {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--concrete);
+  color: var(--navy);
+  font-weight: 700;

@@ -184,3 +184,12 @@
 .reviews-page .rv[hidden] {
   display: none;
 }
+.reviews-page .rv .stars {
+  color: var(--yellow-d);
+  display: flex;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+.reviews-page .rv .stars svg {
+  width: 18px;
+  height: 18px;

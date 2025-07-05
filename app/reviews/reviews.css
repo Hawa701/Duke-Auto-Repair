@@ -252,3 +252,13 @@
   border-radius: 30px;
   padding: 9px 18px;
   cursor: pointer;
+  transition:
+    background-color 0.25s,
+    border-color 0.25s,
+    color 0.25s;
+}
+.reviews-page .chips button:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+.reviews-page .chips button[aria-pressed="true"] {

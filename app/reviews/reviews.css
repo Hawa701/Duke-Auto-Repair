@@ -291,3 +291,13 @@
   .reviews-page .rv {
     transition: none;
   }
+  .reviews-page .rv:hover {
+    transform: none;
+  }
+}
+.reviews-page .cta {
+  position: relative;
+  background: var(--navy);
+  color: #fff;
+  overflow: hidden;
+}

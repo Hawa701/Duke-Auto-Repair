@@ -242,3 +242,13 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+.reviews-page .chips button {
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  background: #fff;
+  border: 1.5px solid #d5dae4;
+  border-radius: 30px;
+  padding: 9px 18px;
+  cursor: pointer;

@@ -262,3 +262,13 @@
   color: var(--navy);
 }
 .reviews-page .chips button[aria-pressed="true"] {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--deep);
+}
+.reviews-page .rv-head {
+  align-items: center;
+}
+.reviews-page .rv-head h2 {
+  margin-bottom: 0;
+}

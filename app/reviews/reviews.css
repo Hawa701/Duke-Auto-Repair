@@ -282,3 +282,12 @@
 .reviews-page .rv-tools .count {
   color: var(--steel);
   font-size: 15px;
+}
+.reviews-page .more-rv .btn svg.i {
+  width: 18px;
+  height: 18px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reviews-page .rv {
+    transition: none;
+  }

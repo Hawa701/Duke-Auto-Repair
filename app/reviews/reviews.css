@@ -350,3 +350,13 @@
 }
 .reviews-page .cta .act {
   display: grid;
+  gap: 14px;
+  justify-items: stretch;
+  min-width: 330px;
+}
+.reviews-page .cta .act .btn {
+  justify-content: center;
+}
+.reviews-page .cta .phone {
+  display: flex;
+  align-items: center;

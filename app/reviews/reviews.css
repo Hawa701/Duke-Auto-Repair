@@ -389,3 +389,13 @@
 .reviews-page .summary > *,
 .reviews-page .hlq > *,
 .reviews-page .rv .who > * {
+  min-width: 0;
+}
+.reviews-page .summary .google-rating--summary {
+  display: block;
+}
+.reviews-page .summary .sc p {
+  max-width: 270px;
+}
+.reviews-page .summary-copy {
+  border-left: 1.5px solid rgba(20, 32, 74, 0.25);

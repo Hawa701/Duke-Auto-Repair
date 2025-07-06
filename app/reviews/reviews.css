@@ -380,3 +380,12 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
+}
+
+/* Shared rating and review presentation. */
+.reviews-page .summary {
+  grid-template-columns: minmax(200px, auto) minmax(0, 1fr) auto;
+}
+.reviews-page .summary > *,
+.reviews-page .hlq > *,
+.reviews-page .rv .who > * {

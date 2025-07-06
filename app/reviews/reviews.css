@@ -399,3 +399,13 @@
 }
 .reviews-page .summary-copy {
   border-left: 1.5px solid rgba(20, 32, 74, 0.25);
+  padding-left: 56px;
+}
+.reviews-page .summary-copy h2 {
+  font-size: 34px;
+  line-height: 1;
+}
+.reviews-page .summary-copy p {
+  margin-top: 16px;
+  font-size: 17px;
+  color: #5a4c14;

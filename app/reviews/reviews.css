@@ -409,3 +409,13 @@
   margin-top: 16px;
   font-size: 17px;
   color: #5a4c14;
+}
+.reviews-page .summary-copy a {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.reviews-page .wall .rv {
+  display: inline-block;

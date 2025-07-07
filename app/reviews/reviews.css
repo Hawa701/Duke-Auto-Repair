@@ -419,3 +419,13 @@
 }
 .reviews-page .wall .rv {
   display: inline-block;
+  width: 100%;
+}
+.reviews-page .rv .av {
+  margin-bottom: 0;
+}
+.reviews-page .chips button {
+  min-height: 44px;
+}
+.reviews-page .btn-ob {
+  border: 2px solid var(--navy);

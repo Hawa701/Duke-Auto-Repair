@@ -438,3 +438,13 @@
 .reviews-page .btn-ob:hover {
   background: var(--navy);
   color: #fff;
+}
+.reviews-page .btn-n:hover {
+  background: var(--deep);
+}
+
+.reviews-page .rating-breakdown {
+  display: grid;
+  gap: 12px;
+  border-left: 1.5px solid rgba(20, 32, 74, 0.25);
+  padding-left: 40px;

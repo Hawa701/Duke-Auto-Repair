@@ -448,3 +448,13 @@
   gap: 12px;
   border-left: 1.5px solid rgba(20, 32, 74, 0.25);
   padding-left: 40px;
+}
+.reviews-page .rating-breakdown__row {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+.reviews-page .rating-breakdown__track {

@@ -429,3 +429,12 @@
 }
 .reviews-page .btn-ob {
   border: 2px solid var(--navy);
+  color: var(--navy);
+  padding: 15px 26px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.reviews-page .btn-ob:hover {
+  background: var(--navy);
+  color: #fff;

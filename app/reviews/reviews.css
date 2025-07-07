@@ -458,3 +458,13 @@
   font-size: 17px;
 }
 .reviews-page .rating-breakdown__track {
+  height: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+.reviews-page .rating-breakdown__track > span {
+  display: block;
+  height: 100%;
+  width: var(--bar-width);
+  min-width: 3px;

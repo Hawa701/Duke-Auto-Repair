@@ -478,3 +478,12 @@
 }
 .reviews-page .chips button {
   display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews-page .topic-count {
+  color: var(--steel);
+  font-weight: 500;
+}
+.reviews-page .rv-tools .count {
+  flex: none;

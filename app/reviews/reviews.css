@@ -468,3 +468,13 @@
   height: 100%;
   width: var(--bar-width);
   min-width: 3px;
+  border-radius: inherit;
+  background: var(--deep);
+}
+.reviews-page .topic-source {
+  color: var(--steel);
+  font-size: 14px;
+  margin: -14px 0 22px;
+}
+.reviews-page .chips button {
+  display: inline-flex;

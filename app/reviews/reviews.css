@@ -507,3 +507,13 @@
 .reviews-page .summary .acts {
   min-width: 0;
 }
+.reviews-page .summary .acts .btn {
+  padding-inline: 18px;
+}
+.reviews-page .hlq {
+  padding-block: clamp(56px, 7vw, 100px);
+}
+.reviews-page .hlq blockquote {
+  font-size: clamp(28px, 3.5vw, 44px);
+}
+.reviews-page .hlq .who {

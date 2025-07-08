@@ -497,3 +497,13 @@
 }
 .reviews-page .no-reviews a {
   color: var(--navy);
+  text-decoration: underline;
+}
+
+/* Keep rating controls, topic chips, and review columns within the viewport. */
+.reviews-page .revpage {
+  padding-block: clamp(56px, 8vw, 120px);
+}
+.reviews-page .summary .acts {
+  min-width: 0;
+}

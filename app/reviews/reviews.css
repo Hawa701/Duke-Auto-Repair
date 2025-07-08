@@ -487,3 +487,13 @@
 }
 .reviews-page .rv-tools .count {
   flex: none;
+}
+.reviews-page .no-reviews {
+  column-span: all;
+  padding: 28px;
+  border: 1px solid #e6e9ef;
+  border-radius: 14px;
+  color: var(--steel);
+}
+.reviews-page .no-reviews a {
+  color: var(--navy);

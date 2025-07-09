@@ -517,3 +517,13 @@
   font-size: clamp(28px, 3.5vw, 44px);
 }
 .reviews-page .hlq .who {
+  flex-wrap: wrap;
+}
+.reviews-page .rv-head h2 {
+  font-size: clamp(38px, 4.5vw, 52px);
+}
+.reviews-page .rv-tools {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.reviews-page .chips {

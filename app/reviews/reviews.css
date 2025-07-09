@@ -556,3 +556,13 @@
   }
   .reviews-page .rating-breakdown {
     padding-left: 24px;
+  }
+  .reviews-page .wall {
+    columns: 2;
+    column-gap: 24px;
+  }
+  .reviews-page .wall .rv {
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+}

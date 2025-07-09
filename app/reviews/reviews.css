@@ -527,3 +527,12 @@
   align-items: flex-start;
 }
 .reviews-page .chips {
+  min-width: 0;
+  max-width: 100%;
+}
+.reviews-page .chips button {
+  max-width: 100%;
+  text-align: left;
+  white-space: normal;
+}
+.reviews-page .topic-count {

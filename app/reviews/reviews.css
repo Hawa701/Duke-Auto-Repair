@@ -546,3 +546,13 @@
 }
 @media (max-width: 1100px) {
   .reviews-page .summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 36px;
+    gap: 32px;
+  }
+  .reviews-page .summary .acts {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .reviews-page .rating-breakdown {
+    padding-left: 24px;

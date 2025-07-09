@@ -585,3 +585,13 @@
     padding: 32px 24px;
     gap: 28px;
   }
+  .reviews-page .summary .acts {
+    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .reviews-page .summary .acts .btn {
+    font-size: 16px;
+  }
+  .reviews-page .summary .big {
+    font-size: 110px;
+  }

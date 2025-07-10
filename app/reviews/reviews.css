@@ -595,3 +595,13 @@
   .reviews-page .summary .big {
     font-size: 110px;
   }
+  .reviews-page .rating-breakdown {
+    border-left: 0;
+    border-top: 1.5px solid rgba(20, 32, 74, 0.25);
+    padding: 24px 0 0;
+  }
+  .reviews-page .hlq {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .reviews-page .hlq .q {

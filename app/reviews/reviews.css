@@ -615,3 +615,13 @@
     gap: 8px;
   }
   .reviews-page .chips button {
+    padding-inline: 14px;
+    font-size: 14px;
+  }
+  .reviews-page .wall .rv {
+    padding: 28px 24px;
+  }
+  .reviews-page .more-rv .btn {
+    width: 100%;
+  }
+}

@@ -605,3 +605,13 @@
     gap: 16px;
   }
   .reviews-page .hlq .q {
+    font-size: 100px;
+    height: 56px;
+  }
+  .reviews-page .rv-head {
+    margin-bottom: 32px;
+  }
+  .reviews-page .chips {
+    gap: 8px;
+  }
+  .reviews-page .chips button {

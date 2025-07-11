@@ -28,3 +28,13 @@ export default function ServicesPage() {
           <span className="jump-label">Jump to:</span>
           <div className="jump-links">
             {serviceGroups.map((group) => (
+              <a href={`#${group.id}`} key={group.id}>
+                {group.label}
+              </a>
+            ))}
+          </div>
+          <a className="jump-call" href={business.phoneHref}>
+            <Icon name="phone" />
+            {business.phoneDisplay}
+          </a>
+        </div>

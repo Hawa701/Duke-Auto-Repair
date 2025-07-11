@@ -18,3 +18,13 @@ export default function ServicesPage() {
   return (
     <div className="services-page">
       <PageHeader
+        title="Our Services"
+        breadcrumb="Services"
+        description="Everything your car needs, done right here in one garage. Every visit includes a free digital inspection."
+        image="/images/about/shop-floor.jpg"
+      />
+      <nav className="service-jump" aria-label="Service categories">
+        <div className="wrap">
+          <span className="jump-label">Jump to:</span>
+          <div className="jump-links">
+            {serviceGroups.map((group) => (

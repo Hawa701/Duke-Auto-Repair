@@ -8,3 +8,13 @@ import ServiceIcon from "@/components/service-icon";
 import { business } from "@/lib/business";
 import { serviceGroups } from "@/lib/services";
 import "./services.css";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: `Explore maintenance, repairs, wheel alignment, diagnostics and state inspections at ${business.name} in ${business.city}. Every visit includes a free digital inspection.`,
+};
+
+export default function ServicesPage() {
+  return (
+    <div className="services-page">
+      <PageHeader

@@ -49,3 +49,13 @@ export default function ServicesPage() {
             aria-labelledby={`${group.id}-title`}
           >
             <figure className="service-photo">
+              <Image
+                src={group.image}
+                alt={group.imageAlt}
+                fill
+                sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1280px) 40vw, 480px"
+                style={{ objectPosition: group.imagePosition }}
+              />
+              <figcaption>
+                {group.services.length}{" "}
+                {group.services.length === 1 ? "service" : "services"}

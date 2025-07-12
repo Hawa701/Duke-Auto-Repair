@@ -79,3 +79,14 @@ export default function ServicesPage() {
                     >
                       <span className="service-icon">
                         <ServiceIcon name={service.icon} />
+                      </span>
+                      <span className="service-text">
+                        <span className="service-name">{service.name}</span>
+                        <span className="service-description">
+                          {service.description}
+                        </span>
+                      </span>
+                      <span className="service-go">
+                        <Icon name="arrow" />
+                      </span>
+                    </Link>

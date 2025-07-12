@@ -69,3 +69,13 @@ export default function ServicesPage() {
                 <h2 id={`${group.id}-title`}>{group.title}</h2>
                 <p>{group.description}</p>
               </div>
+              <ul className="service-list">
+                {group.services.map((service) => (
+                  <li id={service.id} key={service.id}>
+                    <Link
+                      className="service-row"
+                      href={service.href}
+                      aria-label={`Learn more about ${service.name.toLowerCase()}`}
+                    >
+                      <span className="service-icon">
+                        <ServiceIcon name={service.icon} />

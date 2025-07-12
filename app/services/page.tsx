@@ -110,3 +110,13 @@ export default function ServicesPage() {
               We&apos;ll find it, show you what we found, and you decide what
               gets done.
             </p>
+          </div>
+          <div className="service-unsure-actions">
+            <a
+              href={business.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-n"
+            >
+              Book an appointment
+            </a>

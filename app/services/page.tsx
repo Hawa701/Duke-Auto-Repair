@@ -59,3 +59,13 @@ export default function ServicesPage() {
               <figcaption>
                 {group.services.length}{" "}
                 {group.services.length === 1 ? "service" : "services"}
+              </figcaption>
+            </figure>
+            <div className="service-group-content">
+              <div className="service-group-heading">
+                <span className="service-eyebrow">
+                  {String(index + 1).padStart(2, "0")} / {group.label}
+                </span>
+                <h2 id={`${group.id}-title`}>{group.title}</h2>
+                <p>{group.description}</p>
+              </div>

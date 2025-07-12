@@ -38,3 +38,14 @@ export default function ServicesPage() {
             {business.phoneDisplay}
           </a>
         </div>
+      </nav>
+
+      <div className="service-groups wrap">
+        {serviceGroups.map((group, index) => (
+          <section
+            className={`service-group${index % 2 ? " is-reversed" : ""}`}
+            id={group.id}
+            key={group.id}
+            aria-labelledby={`${group.id}-title`}
+          >
+            <figure className="service-photo">

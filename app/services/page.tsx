@@ -100,3 +100,13 @@ export default function ServicesPage() {
 
       <section
         className="service-unsure wrap"
+        aria-labelledby="service-help-title"
+      >
+        <div className="service-unsure-box">
+          <div>
+            <h2 id="service-help-title">Not sure what your car needs?</h2>
+            <p>
+              Tell us about the noise, the warning light, or the feeling.
+              We&apos;ll find it, show you what we found, and you decide what
+              gets done.
+            </p>

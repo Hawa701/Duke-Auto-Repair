@@ -47,3 +47,13 @@
   width: 24px;
   height: 24px;
   padding: 5px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--deep);
+  stroke-width: 3;
+}
+.service-detail-page .detail-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}

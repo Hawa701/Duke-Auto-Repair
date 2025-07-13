@@ -57,3 +57,13 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
+.service-detail-page .detail-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 22px 20px;
+  border: 1.5px solid #e3e6ee;
+  border-radius: 12px;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;

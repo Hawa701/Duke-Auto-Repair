@@ -1,0 +1,9 @@
+/* Brake service detail, adapted from the supplied service-brakes.html. */
+.service-detail-page .service-detail {
+  padding-block: clamp(56px, 8vw, 110px) clamp(56px, 8vw, 120px);
+}
+.service-detail-page .detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
+  align-items: start;
+  gap: clamp(32px, 5.8vw, 80px);

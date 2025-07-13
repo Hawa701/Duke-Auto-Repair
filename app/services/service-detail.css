@@ -17,3 +17,13 @@
 }
 .service-detail-page .detail-lead {
   margin-top: 20px;
+  max-width: 640px;
+  font-size: 19px;
+  color: var(--steel);
+}
+.service-detail-page .detail-content > h3 {
+  margin: 56px 0 20px;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.1;
+}

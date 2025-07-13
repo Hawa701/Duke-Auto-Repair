@@ -7,3 +7,13 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
   align-items: start;
   gap: clamp(32px, 5.8vw, 80px);
+}
+.service-detail-page .detail-grid > *,
+.service-detail-page .detail-check > div {
+  min-width: 0;
+}
+.service-detail-page .detail-content > h2 {
+  font-size: clamp(40px, 4.5vw, 60px);
+}
+.service-detail-page .detail-lead {
+  margin-top: 20px;

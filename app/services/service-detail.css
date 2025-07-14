@@ -106,3 +106,13 @@
 }
 .service-detail-page .detail-helpful-links ul {
   display: grid;
+  gap: 8px;
+  margin-top: 8px;
+  list-style: none;
+}
+.service-detail-page .detail-helpful-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--navy);
+  text-decoration: underline;

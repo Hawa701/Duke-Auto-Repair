@@ -96,3 +96,13 @@
 .service-detail-page .detail-check p {
   margin-top: 6px;
   font-size: 16px;
+  line-height: 1.5;
+  color: var(--steel);
+}
+.service-detail-page .detail-helpful-links {
+  margin-top: 24px;
+  color: var(--steel);
+  font-size: 16px;
+}
+.service-detail-page .detail-helpful-links ul {
+  display: grid;

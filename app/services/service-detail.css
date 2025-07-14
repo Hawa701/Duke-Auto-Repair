@@ -77,3 +77,12 @@
   flex: none;
   place-items: center;
   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+}
+.service-detail-page .check-icon svg.i {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;

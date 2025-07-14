@@ -67,3 +67,13 @@
   transition:
     border-color 0.3s,
     background-color 0.3s;
+}
+.service-detail-page .detail-check:hover {
+  border-color: var(--navy);
+  background: #f7f8fb;
+}
+.service-detail-page .check-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;

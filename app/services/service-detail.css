@@ -116,3 +116,13 @@
   gap: 8px;
   color: var(--navy);
   text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.service-detail-page .detail-helpful-links svg.i {
+  width: 16px;
+  height: 16px;
+}
+.service-detail-page .service-bookcard {
+  position: sticky;
+  top: 30px;
+  padding: 34px 32px 30px;

@@ -126,3 +126,13 @@
   position: sticky;
   top: 30px;
   padding: 34px 32px 30px;
+  border-top: 8px solid var(--yellow);
+  border-radius: 16px;
+  background: var(--ink-navy);
+  color: #fff;
+}
+.service-detail-page .booking-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: var(--yellow);

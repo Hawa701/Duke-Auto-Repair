@@ -136,3 +136,13 @@
   padding: 6px 12px;
   border-radius: 4px;
   background: var(--yellow);
+  color: var(--deep);
+  font-size: 14px;
+  font-weight: 700;
+}
+.service-detail-page .service-bookcard h2 {
+  margin-top: 18px;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1;
+}

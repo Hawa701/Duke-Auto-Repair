@@ -205,3 +205,13 @@
   height: 18px;
   color: var(--yellow);
 }
+.service-detail-page .booking-rating {
+  margin-top: 12px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.service-detail-page .booking-rating .stars {
+  color: var(--yellow);
+}
+.service-detail-page .related-services {
+  background: var(--concrete);

@@ -215,3 +215,13 @@
 }
 .service-detail-page .related-services {
   background: var(--concrete);
+  padding-block: clamp(56px, 8vw, 110px);
+}
+.service-detail-page .related-services .sec-head > p > a {
+  color: var(--navy);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+.service-detail-page .related-services .sec-head > p > a:hover {
+  text-decoration: underline;
+}

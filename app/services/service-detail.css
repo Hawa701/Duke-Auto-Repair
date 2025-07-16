@@ -166,3 +166,12 @@
   gap: 14px;
   margin-top: 22px;
   padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+.service-detail-page .booking-phone > span {
+  min-width: 0;
+}
+.service-detail-page .booking-phone svg.i {
+  width: 26px;
+  height: 26px;
+  color: var(--yellow);

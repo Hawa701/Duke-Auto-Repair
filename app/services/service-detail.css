@@ -175,3 +175,13 @@
   width: 26px;
   height: 26px;
   color: var(--yellow);
+}
+.service-detail-page .booking-phone small {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.service-detail-page .booking-phone b {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: 28px;
+  font-weight: 700;

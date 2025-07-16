@@ -156,3 +156,13 @@
   margin-top: 24px;
   padding-inline: 18px;
 }
+.service-detail-page .service-bookcard .btn svg.i {
+  width: 20px;
+  height: 20px;
+}
+.service-detail-page .booking-phone {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+  padding-top: 22px;

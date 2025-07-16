@@ -195,3 +195,13 @@
   font-size: 15px;
 }
 .service-detail-page .booking-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.service-detail-page .booking-benefits svg.i {
+  width: 18px;
+  height: 18px;
+  color: var(--yellow);
+}

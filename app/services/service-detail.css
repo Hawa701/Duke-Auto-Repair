@@ -255,3 +255,12 @@
 .service-detail-page .related-icon svg.i {
   width: 26px;
   height: 26px;
+  stroke-width: 1.7;
+}
+.service-detail-page .related-card h3 {
+  margin-top: 22px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+.service-detail-page .related-more {

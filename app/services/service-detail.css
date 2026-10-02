@@ -225,3 +225,13 @@
 .service-detail-page .related-services .sec-head > p > a:hover {
   text-decoration: underline;
 }
+.service-detail-page .related-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.service-detail-page .related-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 220px;

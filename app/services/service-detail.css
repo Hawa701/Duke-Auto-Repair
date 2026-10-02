@@ -235,3 +235,13 @@
   flex-direction: column;
   min-width: 0;
   min-height: 220px;
+  padding: 28px 26px 26px;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ink);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.service-detail-page .related-icon {
+  display: grid;

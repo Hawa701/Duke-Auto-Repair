@@ -324,3 +324,13 @@
     font-size: 18px;
   }
   .service-detail-page .detail-signs,
+  .service-detail-page .detail-checks,
+  .service-detail-page .related-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .service-detail-page .detail-check {
+    gap: 14px;
+    padding: 20px;
+  }
+  .service-detail-page .service-bookcard {
+    padding: 28px 24px;

@@ -314,3 +314,13 @@
   .service-detail-page .detail-checks {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+@media (max-width: 640px) {
+  .service-detail-page .detail-content > h3 {
+    margin-top: 36px;
+    font-size: 30px;
+  }
+  .service-detail-page .detail-lead {
+    font-size: 18px;
+  }
+  .service-detail-page .detail-signs,

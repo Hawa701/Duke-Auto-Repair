@@ -294,3 +294,13 @@
     gap: 32px;
   }
   .service-detail-page .detail-checks {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .service-detail-page .related-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .service-detail-page .service-bookcard {
+    padding-inline: 24px;
+  }
+}
+@media (max-width: 900px) {

@@ -334,3 +334,13 @@
   }
   .service-detail-page .service-bookcard {
     padding: 28px 24px;
+  }
+  .service-detail-page .related-card {
+    min-height: 200px;
+  }
+}
+@media (max-height: 680px) {
+  .service-detail-page .service-bookcard {
+    position: static;
+  }
+}

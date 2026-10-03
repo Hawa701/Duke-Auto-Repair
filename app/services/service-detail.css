@@ -304,3 +304,13 @@
   }
 }
 @media (max-width: 900px) {
+  .service-detail-page .detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+  .service-detail-page .service-bookcard {
+    position: static;
+  }
+  .service-detail-page .detail-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }

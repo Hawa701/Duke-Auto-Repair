@@ -284,3 +284,13 @@
 .service-detail-page .related-card:is(:hover, :focus-visible) .related-icon {
   background: var(--yellow);
   color: var(--deep);
+}
+.service-detail-page .related-card:is(:hover, :focus-visible) .related-more {
+  color: var(--yellow);
+}
+@media (max-width: 1100px) {
+  .service-detail-page .detail-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 330px);
+    gap: 32px;
+  }
+  .service-detail-page .detail-checks {

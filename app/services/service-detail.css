@@ -274,3 +274,13 @@
   font-weight: 700;
 }
 .service-detail-page .related-more svg.i {
+  width: 18px;
+  height: 18px;
+}
+.service-detail-page .related-card:is(:hover, :focus-visible) {
+  background: var(--navy);
+  color: #fff;
+}
+.service-detail-page .related-card:is(:hover, :focus-visible) .related-icon {
+  background: var(--yellow);
+  color: var(--deep);

@@ -37,3 +37,13 @@
   border: 1.5px solid #d5dae4;
   border-radius: 30px;
   font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  transition:
+    background-color 0.25s,
+    border-color 0.25s;
+}
+.services-page .jump-links a:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}

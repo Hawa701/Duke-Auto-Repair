@@ -67,3 +67,13 @@
   padding-block: clamp(56px, 8vw, 110px) clamp(40px, 5vw, 70px);
 }
 .services-page .service-group {
+  display: grid;
+  grid-template-columns: minmax(0, 480px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(28px, 5vw, 70px);
+}
+.services-page :is(.service-group, .service-list li) {
+  scroll-margin-top: var(--service-jump-offset);
+}
+.services-page .service-group > * {
+  min-width: 0;

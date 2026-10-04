@@ -7,3 +7,13 @@
   top: 0;
   z-index: 6;
   background: var(--paper);
+  border-bottom: 1px solid #e3e6ee;
+}
+.services-page .service-jump .wrap {
+  display: flex;
+  align-items: center;
+  min-height: 76px;
+  gap: 16px;
+  padding-block: 12px;
+}
+.services-page .jump-label {

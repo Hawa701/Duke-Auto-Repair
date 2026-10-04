@@ -1,0 +1,9 @@
+/* Services overview adapted from the supplied services.html. */
+.services-page {
+  --service-jump-offset: 76px;
+}
+.services-page .service-jump {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  background: var(--paper);

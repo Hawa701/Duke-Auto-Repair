@@ -17,3 +17,13 @@
   padding-block: 12px;
 }
 .services-page .jump-label {
+  flex: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--steel);
+}
+.services-page .jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  gap: 10px;

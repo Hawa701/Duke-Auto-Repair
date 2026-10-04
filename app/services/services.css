@@ -47,3 +47,13 @@
   background: var(--yellow);
   border-color: var(--yellow);
 }
+.services-page .jump-call {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  gap: 10px;
+  margin-left: auto;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 700;
+}

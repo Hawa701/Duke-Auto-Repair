@@ -87,3 +87,13 @@
 .services-page .service-photo {
   position: relative;
   height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--concrete);
+}
+.services-page .service-photo img {
+  object-fit: cover;
+}
+.services-page .service-photo figcaption {
+  position: absolute;
+  bottom: 0;

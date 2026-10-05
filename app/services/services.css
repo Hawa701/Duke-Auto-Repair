@@ -107,3 +107,13 @@
   font-size: 20px;
   font-weight: 800;
 }
+.services-page .service-eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #826300;
+}
+.services-page .service-group h2 {
+  font-size: clamp(40px, 4.6vw, 64px);
+  line-height: 1;

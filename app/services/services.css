@@ -77,3 +77,13 @@
 }
 .services-page .service-group > * {
   min-width: 0;
+}
+.services-page .service-group.is-reversed {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+}
+.services-page .service-group.is-reversed .service-photo {
+  order: 2;
+}
+.services-page .service-photo {
+  position: relative;
+  height: 520px;

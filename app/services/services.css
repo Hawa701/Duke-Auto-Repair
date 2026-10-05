@@ -137,3 +137,13 @@
   display: grid;
   grid-template-columns: 56px minmax(0, 1fr) 44px;
   align-items: center;
+  gap: 22px;
+  padding: 24px 18px 24px 0;
+  color: var(--ink);
+  transition: background-color 0.3s;
+}
+.services-page .service-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;

@@ -117,3 +117,13 @@
 .services-page .service-group h2 {
   font-size: clamp(40px, 4.6vw, 64px);
   line-height: 1;
+  margin-top: 8px;
+}
+.services-page .service-group-heading p {
+  max-width: 520px;
+  margin-top: 14px;
+  color: var(--steel);
+  font-size: 19px;
+}
+.services-page .service-list {
+  margin-top: 34px;

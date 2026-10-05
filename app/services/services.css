@@ -127,3 +127,13 @@
 }
 .services-page .service-list {
   margin-top: 34px;
+  border-top: 2px solid var(--ink);
+  list-style: none;
+}
+.services-page .service-list li {
+  border-bottom: 1px solid #dde1ea;
+}
+.services-page .service-row {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) 44px;
+  align-items: center;

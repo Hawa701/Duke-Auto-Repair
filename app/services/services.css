@@ -157,3 +157,13 @@
 .services-page .service-icon svg.i {
   width: 28px;
   height: 28px;
+  stroke-width: 1.7;
+}
+.services-page .service-text {
+  min-width: 0;
+}
+.services-page .service-name {
+  display: block;
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: 30px;
+  font-weight: 700;

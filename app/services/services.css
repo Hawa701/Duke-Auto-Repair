@@ -217,3 +217,13 @@
   font-size: clamp(36px, 3.8vw, 52px);
 }
 .services-page .service-unsure p {
+  max-width: 620px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #4a3f12;
+}
+.services-page .service-unsure-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;

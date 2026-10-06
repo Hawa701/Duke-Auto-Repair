@@ -147,3 +147,13 @@
   place-items: center;
   width: 56px;
   height: 56px;
+  border-radius: 12px;
+  background: var(--concrete);
+  color: var(--navy);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.services-page .service-icon svg.i {
+  width: 28px;
+  height: 28px;

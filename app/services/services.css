@@ -227,3 +227,13 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 12px;
+  max-width: 520px;
+}
+.services-page .service-unsure .btn {
+  padding-inline: 20px;
+  font-size: 16px;
+}
+.services-page .service-unsure .btn-n {
+  background: var(--deep);
+}
+.services-page .btn-white {

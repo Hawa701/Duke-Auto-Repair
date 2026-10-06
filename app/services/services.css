@@ -187,3 +187,13 @@
 .services-page .service-go svg.i {
   width: 20px;
   height: 20px;
+}
+.services-page .service-row:is(:hover, :focus-visible) {
+  background: var(--concrete);
+}
+.services-page .service-row:is(:hover, :focus-visible) .service-icon {
+  background: var(--navy);
+  color: var(--yellow);
+}
+.services-page .service-row:is(:hover, :focus-visible) .service-go {
+  background: var(--yellow);

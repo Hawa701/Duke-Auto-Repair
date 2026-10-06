@@ -237,3 +237,13 @@
   background: var(--deep);
 }
 .services-page .btn-white {
+  background: var(--paper);
+  color: var(--deep);
+}
+.services-page .btn-white:hover {
+  background: var(--concrete);
+}
+.services-page .service-unsure svg.i {
+  width: 18px;
+  height: 18px;
+}

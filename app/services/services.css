@@ -257,3 +257,13 @@
   }
   .services-page .service-unsure-actions {
     justify-content: flex-start;
+    max-width: none;
+  }
+}
+@media (max-width: 900px) {
+  .services-page {
+    --service-jump-offset: 0px;
+  }
+  /* Wrapped category links scroll away on smaller screens. */
+  .services-page .service-jump {
+    position: static;

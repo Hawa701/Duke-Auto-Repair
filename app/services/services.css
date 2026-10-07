@@ -327,3 +327,13 @@
     height: 24px;
   }
   .services-page .service-name {
+    font-size: 26px;
+  }
+  .services-page .service-go {
+    width: 32px;
+    height: 32px;
+  }
+  .services-page .service-go svg.i {
+    width: 16px;
+    height: 16px;
+  }

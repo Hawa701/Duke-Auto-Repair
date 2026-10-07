@@ -307,3 +307,13 @@
     font-size: 14px;
   }
   .services-page .service-group-heading p {
+    font-size: 18px;
+  }
+  .services-page .service-list {
+    margin-top: 24px;
+  }
+  .services-page .service-row {
+    grid-template-columns: 44px minmax(0, 1fr) 32px;
+    gap: 12px;
+    padding: 20px 0;
+  }

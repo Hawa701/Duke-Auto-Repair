@@ -317,3 +317,13 @@
     gap: 12px;
     padding: 20px 0;
   }
+  .services-page .service-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+  .services-page .service-icon svg.i {
+    width: 24px;
+    height: 24px;
+  }
+  .services-page .service-name {

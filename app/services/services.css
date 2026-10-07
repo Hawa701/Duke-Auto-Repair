@@ -267,3 +267,13 @@
   /* Wrapped category links scroll away on smaller screens. */
   .services-page .service-jump {
     position: static;
+  }
+  .services-page .service-group,
+  .services-page .service-group.is-reversed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .services-page .service-group.is-reversed .service-photo {
+    order: 0;
+  }
+  .services-page .service-photo {
+    height: clamp(260px, 50vw, 440px);

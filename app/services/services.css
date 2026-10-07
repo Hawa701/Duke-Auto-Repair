@@ -287,3 +287,13 @@
   .services-page .jump-label {
     padding-top: 10px;
   }
+}
+@media (max-width: 640px) {
+  .services-page .service-jump .wrap {
+    display: grid;
+    gap: 8px;
+    padding-block: 16px;
+  }
+  .services-page .jump-label {
+    padding: 0;
+  }

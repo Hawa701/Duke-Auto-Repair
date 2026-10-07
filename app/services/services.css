@@ -247,3 +247,13 @@
   width: 18px;
   height: 18px;
 }
+@media (max-width: 1100px) {
+  .services-page .jump-call {
+    display: none;
+  }
+  .services-page .service-unsure-box {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .services-page .service-unsure-actions {
+    justify-content: flex-start;

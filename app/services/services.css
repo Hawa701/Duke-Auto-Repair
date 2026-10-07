@@ -277,3 +277,13 @@
   }
   .services-page .service-photo {
     height: clamp(260px, 50vw, 440px);
+  }
+  .services-page .service-group-heading p {
+    max-width: none;
+  }
+  .services-page .service-jump .wrap {
+    align-items: flex-start;
+  }
+  .services-page .jump-label {
+    padding-top: 10px;
+  }

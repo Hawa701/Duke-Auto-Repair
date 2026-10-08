@@ -337,3 +337,13 @@
     width: 16px;
     height: 16px;
   }
+  .services-page .service-unsure-box {
+    padding: 28px 24px;
+  }
+  .services-page .service-unsure-actions {
+    display: grid;
+  }
+  .services-page .service-unsure .btn {
+    width: 100%;
+  }
+}

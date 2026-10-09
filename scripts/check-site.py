@@ -50,3 +50,13 @@ cache = {}
 
 
 def fetch(path):
+    url = urljoin(BASE + "/", path)
+    assert urlsplit(url).netloc == urlsplit(BASE).netloc, "External request blocked"
+    if url not in cache:
+        try:
+            with urlopen(url, timeout=20) as response:
+                cache[url] = (response.status, response.read(), response.headers.get("Content-Type", ""))
+        except HTTPError as error:
+            cache[url] = (error.code, error.read(), error.headers.get("Content-Type", ""))
+    return cache[url]
+

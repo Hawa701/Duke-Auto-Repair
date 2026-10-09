@@ -71,3 +71,13 @@ for route in ROUTES:
     assert len(document.tags("main")) == 1, f"{route}: expected one main landmark"
     assert any(node["text"].strip() for node in document.tags("title")), f"{route}: missing title"
     viewport = next((node["attrs"].get("content", "") for node in document.tags("meta") if node["attrs"].get("name") == "viewport"), "")
+    assert "width=device-width" in viewport, f"{route}: missing device-width viewport"
+    assert "user-scalable=no" not in viewport and "maximum-scale=1" not in viewport, f"{route}: browser zoom must remain available"
+    assert any(node["attrs"].get("name") == "description" and node["attrs"].get("content") for node in document.tags("meta")), f"{route}: missing description"
+    ids = Counter(node["attrs"]["id"] for node in document.nodes if "id" in node["attrs"])
+    assert all(count == 1 for count in ids.values()), f"{route}: duplicate IDs"
+    assert sum(node["attrs"].get("aria-label") == "Main navigation" for node in document.tags("nav")) == 1, f"{route}: navigation duplicated"
+    for node in document.tags("button"):
+        assert node["attrs"].get("aria-label") or node["text"].strip(), f"{route}: unnamed button"
+    labels = {node["attrs"].get("for") for node in document.tags("label")}
+    for node in document.nodes:

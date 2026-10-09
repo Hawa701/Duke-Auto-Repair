@@ -92,3 +92,13 @@ for route in ROUTES:
 for route, document in documents.items():
     for node in document.tags("a"):
         href = node["attrs"].get("href", "")
+        assert href and href != "#", f"{route}: empty link"
+        destination = urlsplit(urljoin(BASE + route, href))
+        if destination.netloc != urlsplit(BASE).netloc or destination.scheme not in {"http", "https"}:
+            continue
+        path = destination.path or "/"
+        assert path in documents, f"{route}: unknown internal page {href}"
+        if destination.fragment:
+            target_ids = {item["attrs"].get("id") for item in documents[path].nodes}
+            assert unquote(destination.fragment) in target_ids, f"{route}: broken section link {href}"
+    for node in document.tags("link"):

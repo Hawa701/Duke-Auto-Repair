@@ -60,3 +60,14 @@ def fetch(path):
             cache[url] = (error.code, error.read(), error.headers.get("Content-Type", ""))
     return cache[url]
 
+
+documents = {}
+for route in ROUTES:
+    status, body, _ = fetch(route)
+    assert status == 200, f"{route}: HTTP {status}"
+    document = Document(body.decode("utf-8"))
+    documents[route] = document
+    assert len(document.tags("h1")) == 1, f"{route}: expected one h1"
+    assert len(document.tags("main")) == 1, f"{route}: expected one main landmark"
+    assert any(node["text"].strip() for node in document.tags("title")), f"{route}: missing title"
+    viewport = next((node["attrs"].get("content", "") for node in document.tags("meta") if node["attrs"].get("name") == "viewport"), "")

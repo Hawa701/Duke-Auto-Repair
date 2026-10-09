@@ -18,3 +18,14 @@ class Document(HTMLParser):
         super().__init__()
         self.nodes = []
         self.stack = []
+        self.feed(html)
+
+    def handle_starttag(self, tag, attributes):
+        node = {"tag": tag, "attrs": dict(attributes), "text": ""}
+        self.nodes.append(node)
+        if tag not in VOID:
+            self.stack.append(node)
+
+    def handle_startendtag(self, tag, attributes):
+        self.handle_starttag(tag, attributes)
+        if tag not in VOID:

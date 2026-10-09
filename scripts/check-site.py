@@ -81,3 +81,14 @@ for route in ROUTES:
         assert node["attrs"].get("aria-label") or node["text"].strip(), f"{route}: unnamed button"
     labels = {node["attrs"].get("for") for node in document.tags("label")}
     for node in document.nodes:
+        if node["tag"] in {"input", "textarea", "select"} and node["attrs"].get("type") != "hidden":
+            assert node["attrs"].get("id") in labels or node["attrs"].get("aria-label"), f"{route}: unlabeled form control"
+    for image in document.tags("img"):
+        assert "alt" in image["attrs"], f"{route}: image missing alt attribute"
+        image_status, _, content_type = fetch(image["attrs"]["src"])
+        assert image_status == 200 and content_type.startswith("image/"), f"{route}: broken image"
+    print(f"PASS {route}: headings, landmarks, metadata, labels, IDs, and images")
+
+for route, document in documents.items():
+    for node in document.tags("a"):
+        href = node["attrs"].get("href", "")

@@ -29,3 +29,13 @@ class Document(HTMLParser):
     def handle_startendtag(self, tag, attributes):
         self.handle_starttag(tag, attributes)
         if tag not in VOID:
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index]["tag"] == tag:
+                del self.stack[index:]
+                break
+
+    def handle_data(self, data):
+        if not any(node["tag"] in {"script", "style"} for node in self.stack):

@@ -39,3 +39,14 @@ class Document(HTMLParser):
 
     def handle_data(self, data):
         if not any(node["tag"] in {"script", "style"} for node in self.stack):
+            for node in self.stack:
+                node["text"] += data
+
+    def tags(self, tag):
+        return [node for node in self.nodes if node["tag"] == tag]
+
+
+cache = {}
+
+
+def fetch(path):

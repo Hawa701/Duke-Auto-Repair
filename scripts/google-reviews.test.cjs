@@ -18,3 +18,13 @@ function evaluate(path, requireMock) {
     require: requireMock,
   });
   return module.exports;
+}
+
+const { business } = evaluate("lib/business.ts", () => {
+  throw new Error("Unexpected import");
+});
+const fixture = () => ({
+  rating: 4.8,
+  userRatingCount: 625,
+  formattedAddress: business.shortAddress + ", USA",
+  internationalPhoneNumber: business.phoneInternational,

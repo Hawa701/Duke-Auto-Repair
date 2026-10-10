@@ -102,3 +102,14 @@ for route, document in documents.items():
             target_ids = {item["attrs"].get("id") for item in documents[path].nodes}
             assert unquote(destination.fragment) in target_ids, f"{route}: broken section link {href}"
     for node in document.tags("link"):
+        if node["attrs"].get("rel") != "stylesheet":
+            continue
+        status, css, _ = fetch(node["attrs"]["href"])
+        assert status == 200, f"{route}: stylesheet unavailable"
+        for asset in re.findall(r"url\(\s*['\"]?(/[^\s)'\"]+)", css.decode("utf-8")):
+            assert fetch(asset)[0] == 200, f"{route}: missing CSS asset {asset}"
+
+for removed in ["/blog", "/tires", "/specials"]:
+    assert fetch(removed)[0] == 404, f"Removed {removed} route should return 404"
+print("PASS internal page/section links, stylesheets, fonts, background images, and removed Blog/Tires/Specials routes")
+print("NOTE: These are document checks, not browser viewport or visual tests.")

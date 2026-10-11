@@ -80,3 +80,13 @@ test("missing key never loads Google's SDK", async () => {
   await assert.rejects(api.loadGoogleRating(""), /not configured/);
   assert.equal(api.calls.loader, 0);
 });
+
+test("all simultaneous badges share one request", async () => {
+  const api = harness();
+  const first = api.loadGoogleRating("mock-key");
+  const second = api.loadGoogleRating("mock-key");
+  assert.equal(first, second);
+  const result = await first;
+  assert.equal(result.rating, 4.8);
+  assert.equal(result.reviewCount, 625);
+  assert.equal(result.attributions[0].provider, "Example source");

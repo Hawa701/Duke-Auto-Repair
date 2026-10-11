@@ -90,3 +90,13 @@ test("all simultaneous badges share one request", async () => {
   assert.equal(result.rating, 4.8);
   assert.equal(result.reviewCount, 625);
   assert.equal(result.attributions[0].provider, "Example source");
+  assert.equal(api.calls.searches, 1);
+  assert.equal(api.calls.details, 1);
+});
+
+test("refresh reads changed Google values and reuses only the place ID", async () => {
+  const api = harness({
+    next: (n) => ({
+      ...fixture(),
+      rating: n === 1 ? 4.8 : 4.9,
+      userRatingCount: 624 + n,

@@ -49,3 +49,13 @@ function harness(options = {}) {
     async fetchFields(request) {
       calls.details++;
       assert.ok(request.fields.includes("rating"));
+      assert.ok(request.fields.includes("userRatingCount"));
+      assert.ok(!request.fields.includes("reviews"));
+      if (options.failOnce && calls.details === 1)
+        throw new Error("Google unavailable");
+      Object.assign(
+        this,
+        options.next ? options.next(calls.details) : fixture(),
+      );
+    }
+  }

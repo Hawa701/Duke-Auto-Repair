@@ -59,3 +59,14 @@ function harness(options = {}) {
       );
     }
   }
+  const api = evaluate("lib/google-reviews.ts", (name) => {
+    if (name === "./business") return { business };
+    if (name === "@googlemaps/js-api-loader")
+      return {
+        setOptions() {},
+        async importLibrary(name) {
+          assert.equal(name, "places");
+          calls.loader++;
+          return { Place };
+        },
+      };

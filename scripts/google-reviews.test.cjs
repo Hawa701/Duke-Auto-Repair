@@ -70,3 +70,13 @@ function harness(options = {}) {
           return { Place };
         },
       };
+    throw new Error("Unexpected dependency: " + name);
+  });
+  return { ...api, calls };
+}
+
+test("missing key never loads Google's SDK", async () => {
+  const api = harness();
+  await assert.rejects(api.loadGoogleRating(""), /not configured/);
+  assert.equal(api.calls.loader, 0);
+});

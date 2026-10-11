@@ -28,3 +28,14 @@ const fixture = () => ({
   userRatingCount: 625,
   formattedAddress: business.shortAddress + ", USA",
   internationalPhoneNumber: business.phoneInternational,
+  googleMapsURI: business.googleMapsUrl,
+  attributions: [
+    { provider: "Example source", providerURI: "https://example.com" },
+  ],
+});
+
+function harness(options = {}) {
+  const calls = { searches: 0, details: 0, loader: 0 };
+  class Place {
+    constructor({ id }) {
+      this.id = id;

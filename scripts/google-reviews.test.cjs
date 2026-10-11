@@ -39,3 +39,13 @@ function harness(options = {}) {
   class Place {
     constructor({ id }) {
       this.id = id;
+    }
+    static async searchByText(request) {
+      calls.searches++;
+      assert.equal(request.textQuery, business.googlePlaceQuery);
+      assert.equal(JSON.stringify(request.fields), '["id"]');
+      return { places: options.empty ? [] : [{ id: "verified-place-id" }] };
+    }
+    async fetchFields(request) {
+      calls.details++;
+      assert.ok(request.fields.includes("rating"));

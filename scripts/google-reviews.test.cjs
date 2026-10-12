@@ -111,3 +111,13 @@ test("refresh reads changed Google values and reuses only the place ID", async (
 });
 
 test("a configured place ID avoids search", async () => {
+  const api = harness();
+  await api.loadGoogleRating("mock-key", "configured-place-id");
+  assert.equal(api.calls.searches, 0);
+});
+
+test("wrong listing or invalid Google values cannot reach the badges", () => {
+  const api = harness();
+  for (const changes of [
+    { internationalPhoneNumber: "+1 555 555 5555" },
+    { formattedAddress: "5220 Duke St, Another City, VA" },

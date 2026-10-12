@@ -8,3 +8,14 @@ function harness(supported = true) {
   let observer;
   class MockObserver {
     observed = new Set();
+    constructor(callback, options) {
+      this.callback = callback;
+      this.options = options;
+      observer = this;
+    }
+    observe(item) {
+      this.observed.add(item);
+    }
+    unobserve(item) {
+      this.observed.delete(item);
+    }

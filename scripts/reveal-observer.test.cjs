@@ -19,3 +19,14 @@ function harness(supported = true) {
     unobserve(item) {
       this.observed.delete(item);
     }
+    disconnect() {
+      this.observed.clear();
+    }
+    send(entries) {
+      this.callback(entries);
+    }
+  }
+  const module = { exports: {} };
+  const code = ts.transpileModule(
+    fs.readFileSync("lib/observe-reveals.ts", "utf8"),
+    { compilerOptions: { module: ts.ModuleKind.CommonJS } },

@@ -121,3 +121,13 @@ test("wrong listing or invalid Google values cannot reach the badges", () => {
   for (const changes of [
     { internationalPhoneNumber: "+1 555 555 5555" },
     { formattedAddress: "5220 Duke St, Another City, VA" },
+    { rating: NaN },
+    { rating: 6 },
+    { userRatingCount: -1 },
+    { userRatingCount: 1.5 },
+  ])
+    assert.throws(() => api.readGoogleRating({ ...fixture(), ...changes }));
+});
+
+test("a failed request can recover on a later refresh", async () => {
+  const api = harness({ failOnce: true });

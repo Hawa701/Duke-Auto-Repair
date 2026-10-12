@@ -131,3 +131,14 @@ test("wrong listing or invalid Google values cannot reach the badges", () => {
 
 test("a failed request can recover on a later refresh", async () => {
   const api = harness({ failOnce: true });
+  await assert.rejects(api.loadGoogleRating("mock-key"), /Google unavailable/);
+  const result = await api.loadGoogleRating("mock-key");
+  assert.equal(result.rating, 4.8);
+  assert.equal(api.calls.details, 2);
+});
+
+test("no search result produces an error instead of invented numbers", async () => {
+  const api = harness({ empty: true });
+  await assert.rejects(api.loadGoogleRating("mock-key"), /could not be found/);
+  assert.equal(api.calls.details, 0);
+});

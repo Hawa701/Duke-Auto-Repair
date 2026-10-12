@@ -100,3 +100,14 @@ test("refresh reads changed Google values and reuses only the place ID", async (
       ...fixture(),
       rating: n === 1 ? 4.8 : 4.9,
       userRatingCount: 624 + n,
+    }),
+  });
+  await api.loadGoogleRating("mock-key");
+  const updated = await api.loadGoogleRating("mock-key");
+  assert.equal(updated.rating, 4.9);
+  assert.equal(updated.reviewCount, 626);
+  assert.equal(api.calls.details, 2);
+  assert.equal(api.calls.searches, 1);
+});
+
+test("a configured place ID avoids search", async () => {

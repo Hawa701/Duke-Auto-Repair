@@ -51,3 +51,14 @@ const entry = (target, visible = true, ratio = visible ? 0.5 : 0) => ({
 });
 
 test("later rows wait for their own viewport entry and reveal only once", () => {
+  const api = harness();
+  const first = {},
+    second = {},
+    later = {};
+  const batches = [];
+  api.observe([first, second, later], (items) =>
+    batches.push(Array.from(items)),
+  );
+  api.observer.send([entry(first), entry(second), entry(later, false)]);
+  assert.deepEqual(batches, [[first, second]]);
+  assert.deepEqual(Array.from(api.observer.observed), [later]);

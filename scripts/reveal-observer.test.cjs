@@ -30,3 +30,14 @@ function harness(supported = true) {
   const code = ts.transpileModule(
     fs.readFileSync("lib/observe-reveals.ts", "utf8"),
     { compilerOptions: { module: ts.ModuleKind.CommonJS } },
+  ).outputText;
+  vm.runInNewContext(code, {
+    module,
+    exports: module.exports,
+    ...(supported ? { IntersectionObserver: MockObserver } : {}),
+  });
+  return {
+    observe: module.exports.observeReveals,
+    get observer() {
+      return observer;
+    },

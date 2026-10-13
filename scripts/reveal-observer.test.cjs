@@ -73,3 +73,14 @@ test("edge contact waits for visible content, including very tall cards", () => 
   const tall = {};
   const batches = [];
   api.observe([tall], (items) => batches.push(Array.from(items)));
+  api.observer.send([entry(tall, true, 0)]);
+  assert.equal(batches.length, 0);
+  api.observer.send([entry(tall, true, 0.01)]);
+  assert.deepEqual(batches, [[tall]]);
+});
+
+test("cleanup cancels pending reveals when filters change or the page unmounts", () => {
+  const api = harness();
+  const item = {};
+  let count = 0;
+  const stop = api.observe([item], () => count++);

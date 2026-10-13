@@ -84,3 +84,14 @@ test("cleanup cancels pending reveals when filters change or the page unmounts",
   const item = {};
   let count = 0;
   const stop = api.observe([item], () => count++);
+  stop();
+  assert.equal(api.observer.observed.size, 0);
+  api.observer.send([entry(item)]);
+  assert.equal(count, 0);
+});
+
+test("unsupported observers leave content untouched", () => {
+  const api = harness(false);
+  const stop = api.observe([{}], () => assert.fail("Unexpected reveal"));
+  assert.doesNotThrow(stop);
+});

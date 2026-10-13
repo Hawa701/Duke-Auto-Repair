@@ -41,3 +41,13 @@ function harness(supported = true) {
     get observer() {
       return observer;
     },
+  };
+}
+
+const entry = (target, visible = true, ratio = visible ? 0.5 : 0) => ({
+  target,
+  isIntersecting: visible,
+  intersectionRatio: ratio,
+});
+
+test("later rows wait for their own viewport entry and reveal only once", () => {

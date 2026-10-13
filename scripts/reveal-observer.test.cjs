@@ -62,3 +62,14 @@ test("later rows wait for their own viewport entry and reveal only once", () => 
   api.observer.send([entry(first), entry(second), entry(later, false)]);
   assert.deepEqual(batches, [[first, second]]);
   assert.deepEqual(Array.from(api.observer.observed), [later]);
+  api.observer.send([entry(later)]);
+  api.observer.send([entry(first), entry(later)]);
+  assert.deepEqual(batches, [[first, second], [later]]);
+  assert.equal(api.observer.options.rootMargin, "0px 0px -80px 0px");
+});
+
+test("edge contact waits for visible content, including very tall cards", () => {
+  const api = harness();
+  const tall = {};
+  const batches = [];
+  api.observe([tall], (items) => batches.push(Array.from(items)));

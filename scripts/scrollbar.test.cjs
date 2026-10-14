@@ -33,3 +33,15 @@ test("minimum thumb size stays usable and dragging clamps at page boundaries", (
   assert.equal(scrollAfterDrag(100, 1000, page.range, page.travel), 99400);
   assert.equal(scrollbarGeometry(600, 100000, -50, 588).progress, 0);
   assert.equal(scrollbarGeometry(600, 100000, 200000, 588).progress, 1);
+});
+
+test("short pages and resized viewports do not produce invalid thumb positions", () => {
+  const fits = scrollbarGeometry(900, 500, 0, 888);
+  assert.equal(fits.range, 0);
+  assert.equal(fits.height, 888);
+  assert.equal(fits.travel, 0);
+  assert.equal(scrollAfterDrag(0, 100, 0, 0), 0);
+  const resized = scrollbarGeometry(400, 8000, 3800, 388);
+  assert.equal(resized.progress, 0.5);
+  assert.equal(resized.offset, resized.travel / 2);
+});

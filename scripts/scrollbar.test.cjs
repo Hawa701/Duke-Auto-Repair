@@ -21,3 +21,15 @@ test("thumb reaches the track bottom exactly at the end of a long page", () => {
   assert.equal(bottom.offset + bottom.height, 788);
   assert.equal(bottom.progress, 1);
   assert.ok(
+    Math.abs(scrollAfterDrag(0, top.travel, top.range, top.travel) - 7200) <
+      0.000001,
+  );
+});
+
+test("minimum thumb size stays usable and dragging clamps at page boundaries", () => {
+  const page = scrollbarGeometry(600, 100000, 100, 588);
+  assert.equal(page.height, 44);
+  assert.equal(scrollAfterDrag(100, -1000, page.range, page.travel), 0);
+  assert.equal(scrollAfterDrag(100, 1000, page.range, page.travel), 99400);
+  assert.equal(scrollbarGeometry(600, 100000, -50, 588).progress, 0);
+  assert.equal(scrollbarGeometry(600, 100000, 200000, 588).progress, 1);

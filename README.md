@@ -39,3 +39,13 @@ Official references:
 - [Maps API key setup and restrictions](https://developers.google.com/maps/documentation/javascript/get-api-key)
 - [Places data fields](https://developers.google.com/maps/documentation/javascript/reference/place)
 - [Attribution and policies](https://developers.google.com/maps/documentation/javascript/policies)
+
+## Checks
+
+All ten service detail pages use the approved brake-page layout, including the white checkmarks on blue circles. Each has separate content in `lib/service-details.ts`. See [service content sources](docs/service-content-sources.md) for the research and editorial scope. The Services overview, homepage cards, footer links and related-service cards lead to the individual pages.
+
+The Reviews page list currently uses six fictional development entries from `lib/dummy-reviews.ts`. Replace these before launch. The featured review and homepage testimonial use the supplied Jennie Dunnavant review from `lib/customer-reviews.ts`; the Google rating snapshot is maintained separately there.
+
+```powershell
+npm run test:google-reviews
+npm run test:reveals

@@ -18,3 +18,14 @@ The site uses Google's official Maps JavaScript API Places library in the browse
 The pages can remain statically rendered: no Next.js API route or application server is needed for ratings.
 
 1. Create a Google Cloud project and enable billing. Enable **Maps JavaScript API** and **Places API (New)**.
+2. Create a browser API key. Apply **Websites / HTTP referrer restrictions** for your production domain and `http://localhost:3000/*`. Restrict API access to the two APIs above.
+3. Copy `.env.example` to `.env.local`, then set `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` locally. Do not paste keys into chat or commit `.env.local`.
+4. Optionally set `NEXT_PUBLIC_GOOGLE_PLACE_ID`. Otherwise the app uses an exact business name/address search requesting only the ID, then verifies the returned phone and address before displaying the rating.
+5. Restart `npm run dev`. Production builds need these public variables set at build time; rebuild after changing them.
+
+`NEXT_PUBLIC_` values are visible to website visitors. This is intentional for a referrer-restricted browser key. Never use an unrestricted key or a server secret here.
+
+All rating displays use one shared request per page session, then refresh every 15 minutes while visible or when the visitor returns to an older page. Only the place ID is reused between refreshes. Ratings and review counts are not persisted to disk or browser storage. Google determines when its underlying data updates; this is not an instantaneous push feed.
+
+Without a key or when a live request fails, the site uses the manually supplied Google listing snapshot: 4.8 stars and 765 reviews. These fallback values, topic mention counts, and the transcribed customer review are maintained in `lib/customer-reviews.ts`. They do not update automatically. Successful API responses replace the fallback overall rating and total count. The distribution bars reproduce approximate visual lengths from the supplied screenshot; they do not claim exact percentages or star counts.
+

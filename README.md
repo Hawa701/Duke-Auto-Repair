@@ -29,3 +29,13 @@ All rating displays use one shared request per page session, then refresh every 
 
 Without a key or when a live request fails, the site uses the manually supplied Google listing snapshot: 4.8 stars and 765 reviews. These fallback values, topic mention counts, and the transcribed customer review are maintained in `lib/customer-reviews.ts`. They do not update automatically. Successful API responses replace the fallback overall rating and total count. The distribution bars reproduce approximate visual lengths from the supplied screenshot; they do not claim exact percentages or star counts.
 
+Fetching `rating` and `userRatingCount` uses **Place Details Enterprise**. Google's global price list currently includes 1,000 monthly requests, then $20 per 1,000 at the first paid tier. Pricing and allowances can change. Configure API quotas in Google Cloud to limit usage; budget alerts alone do not cap charges. No billing account or key is created or activated by this code.
+
+Before launch, include the Google-required terms/privacy references in the site's published policies. Google Maps attribution and a link explaining Google reviews are included alongside the rating displays.
+
+Official references:
+
+- [Google pricing](https://developers.google.com/maps/billing-and-pricing/pricing)
+- [Maps API key setup and restrictions](https://developers.google.com/maps/documentation/javascript/get-api-key)
+- [Places data fields](https://developers.google.com/maps/documentation/javascript/reference/place)
+- [Attribution and policies](https://developers.google.com/maps/documentation/javascript/policies)

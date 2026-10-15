@@ -49,3 +49,14 @@ The Reviews page list currently uses six fictional development entries from `lib
 ```powershell
 npm run test:google-reviews
 npm run test:reveals
+npm run test:scrollbar
+npm run build
+```
+
+The rating tests use mocked Google responses and make no live API calls. A real key and browser are needed to verify live Google responses.
+
+The reveal tests verify that offscreen cards wait for their own viewport entry, animate once, and cancel pending observations when a filter changes or a page unmounts. Motion respects the device's reduced-motion preference.
+
+The page scrollbar overlays a draggable, keyboard-accessible thumb on the content, with no painted track or arrows. Wheel and touch scrolling remain native. The scrollbar tests cover thumb sizing, drag limits, page-end alignment, and viewport resizing; browser checks are still needed for its appearance and pointer interaction.
+
+With the local server running, use `python scripts/check-site.py` (Python 3) to check all fifteen pages, internal links, section anchors, metadata, form labels, and local assets. These document checks do not replace browser checks at mobile, tablet, and desktop widths.

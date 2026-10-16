@@ -28,3 +28,13 @@ const slides = [
     caption: "See what needs attention",
   },
   {
+    title: "Car care that comes to you.",
+    lead: "Complimentary concierge service.",
+    description:
+      "We pick up your vehicle, service it, and return it to your door.",
+    image: "/images/keys_xl.jpg",
+    position: "right 62%",
+    size: "100% auto",
+    label: "Concierge pick-up",
+    caption: "We come to you",
+  },

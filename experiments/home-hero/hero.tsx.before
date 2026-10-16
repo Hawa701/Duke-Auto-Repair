@@ -18,3 +18,13 @@ const slides = [
   },
   {
     title: "Know your car’s health. Free.",
+    lead: "A digital inspection comes with every visit.",
+    description:
+      "We show you what’s good, what needs attention, and what can wait.",
+    image: "/images/tablet_xl.jpg",
+    position: "right 35%",
+    size: "76% auto",
+    label: "Free health inspection",
+    caption: "See what needs attention",
+  },
+  {

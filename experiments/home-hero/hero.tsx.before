@@ -38,3 +38,13 @@ const slides = [
     label: "Concierge pick-up",
     caption: "We come to you",
   },
+];
+
+const services = [
+  "Brake repair",
+  "Oil change",
+  "Tires and flats",
+  "A/C repair",
+  "Wheel alignment",
+  "Check engine diagnostics",
+  "Battery service",

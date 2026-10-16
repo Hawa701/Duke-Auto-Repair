@@ -78,3 +78,13 @@ export default function Hero() {
           <div className="hero-copy" aria-live="polite" aria-atomic="true">
             <h1>{slide.title}</h1>
             <p className="lede">
+              <b>{slide.lead}</b> {slide.description}
+            </p>
+          </div>
+          <div className="book">
+            <div className="st">
+              <i>1</i>
+              <div>
+                <b>Pick services</b>
+                <small>Oil, brakes, tires</small>
+              </div>

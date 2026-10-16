@@ -58,3 +58,13 @@ export default function Hero() {
   return (
     <section
       className="hero"
+      aria-label="Featured auto care services"
+      aria-roledescription="carousel"
+    >
+      <div
+        className="bg"
+        style={{
+          backgroundImage: `url(${slide.image})`,
+          backgroundPosition: slide.position,
+          backgroundSize: slide.size,
+          backgroundRepeat: "no-repeat",

@@ -8,3 +8,13 @@ import GoogleRating from "../google-rating";
 const slides = [
   {
     title: "Expert auto care you can count on.",
+    lead: "Fast, reliable, and always affordable.",
+    description: "Pick your services and book a time online in a few steps.",
+    image: "/images/team_xl.jpg",
+    position: "right bottom",
+    size: "auto 108%",
+    label: "Expert auto care",
+    caption: "Fast, reliable, always affordable",
+  },
+  {
+    title: "Know your car’s health. Free.",

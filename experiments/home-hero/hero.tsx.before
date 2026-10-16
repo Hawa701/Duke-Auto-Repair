@@ -68,3 +68,13 @@ export default function Hero() {
           backgroundPosition: slide.position,
           backgroundSize: slide.size,
           backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div className="inner">
+        <div className="wrap">
+          <div className="rating">
+            <GoogleRating variant="hero" />
+          </div>
+          <div className="hero-copy" aria-live="polite" aria-atomic="true">
+            <h1>{slide.title}</h1>
+            <p className="lede">

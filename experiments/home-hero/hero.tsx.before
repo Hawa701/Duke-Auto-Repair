@@ -98,3 +98,13 @@ export default function Hero() {
             </div>
             <div className="st">
               <i>3</i>
+              <div>
+                <b>Choose a time</b>
+                <small>Confirm by phone</small>
+              </div>
+            </div>
+            <Link href="/contact" className="btn btn-y">
+              Book appointment
+              <Icon name="arrow" />
+            </Link>
+          </div>

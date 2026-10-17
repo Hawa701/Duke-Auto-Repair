@@ -128,3 +128,13 @@ export default function Hero() {
             {slides.map((item, itemIndex) => (
               <button
                 key={item.label}
+                type="button"
+                className={`t${itemIndex === index ? " on" : ""}`}
+                aria-pressed={itemIndex === index}
+                onClick={() => setIndex(itemIndex)}
+              >
+                <b>{item.label}</b>
+                <small>{item.caption}</small>
+              </button>
+            ))}
+            <div className="arrows">

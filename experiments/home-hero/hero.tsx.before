@@ -118,3 +118,13 @@ export default function Hero() {
               Not sure what&apos;s wrong? Describe it when you book
             </span>
             <span>
+              <Icon name="check" />
+              Certified technicians
+            </span>
+          </div>
+        </div>
+        <div className="slides">
+          <div className="wrap">
+            {slides.map((item, itemIndex) => (
+              <button
+                key={item.label}

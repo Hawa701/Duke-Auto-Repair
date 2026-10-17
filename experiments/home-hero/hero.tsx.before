@@ -138,3 +138,13 @@ export default function Hero() {
               </button>
             ))}
             <div className="arrows">
+              <button
+                type="button"
+                aria-label="Previous slide"
+                onClick={() =>
+                  setIndex((index + slides.length - 1) % slides.length)
+                }
+              >
+                <Icon name="back" />
+              </button>
+              <button

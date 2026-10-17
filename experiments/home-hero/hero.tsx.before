@@ -108,3 +108,13 @@ export default function Hero() {
               <Icon name="arrow" />
             </Link>
           </div>
+          <div className="book-note">
+            <span>
+              <Icon name="check" />
+              Free digital inspection with every visit
+            </span>
+            <span>
+              <Icon name="check" />
+              Not sure what&apos;s wrong? Describe it when you book
+            </span>
+            <span>

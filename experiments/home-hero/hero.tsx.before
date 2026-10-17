@@ -88,3 +88,13 @@ export default function Hero() {
                 <b>Pick services</b>
                 <small>Oil, brakes, tires</small>
               </div>
+            </div>
+            <div className="st">
+              <i>2</i>
+              <div>
+                <b>Drop off or wait</b>
+                <small>Your choice</small>
+              </div>
+            </div>
+            <div className="st">
+              <i>3</i>

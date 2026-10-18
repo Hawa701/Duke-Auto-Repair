@@ -11,13 +11,13 @@ function evaluate(path, requireMock) {
       target: ts.ScriptTarget.ES2022,
     },
   }).outputText;
-  const module = { exports: {} };
+  const sandboxModule = { exports: {} };
   vm.runInNewContext(code, {
-    module,
-    exports: module.exports,
+    module: sandboxModule,
+    exports: sandboxModule.exports,
     require: requireMock,
   });
-  return module.exports;
+  return sandboxModule.exports;
 }
 
 const { business } = evaluate("lib/business.ts", () => {

@@ -7,11 +7,11 @@ export default function HomeServices() {
     <section className="svc" id="services">
       <div className="wrap">
         <Entrance className="sec-head" inView>
-          <h2>Whatever your car needs, we've got it covered.</h2>
+          <h2>Whatever your car needs, we&apos;ve got it covered.</h2>
           <p>
             From a quick oil change to brakes, diagnostics and state
-            inspections, it's all done here in one garage. No running from shop
-            to shop.
+            inspections, it&apos;s all done here in one garage. No running from
+            shop to shop.
           </p>
         </Entrance>
         <div className="board">
@@ -195,10 +195,10 @@ export default function HomeServices() {
                 <path d="M12 17h.01" />
               </svg>
             </div>
-            <h3>Not sure what's wrong?</h3>
+            <h3>Not sure what&apos;s wrong?</h3>
             <p>
-              Tell us about the noise, the warning light or the feeling. We'll
-              find it and fix it.
+              Tell us about the noise, the warning light or the feeling.
+              We&apos;ll find it and fix it.
             </p>
             <a href={business.phoneHref}>
               Call {business.phoneDisplay}
@@ -210,8 +210,9 @@ export default function HomeServices() {
         </div>
         <div className="more">
           <p>
-            <b>Every visit includes a free digital inspection,</b> so you'll
-            know what's good, what needs attention, and what can wait.
+            <b>Every visit includes a free digital inspection,</b> so
+            you&apos;ll know what&apos;s good, what needs attention, and what
+            can wait.
           </p>
           <div className="acts">
             <Link href="/services" className="btn btn-ob">

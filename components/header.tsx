@@ -1,5 +1,3 @@
-"use client";
-
 import { business } from "@/lib/business";
 
 import Icon from "./icon";

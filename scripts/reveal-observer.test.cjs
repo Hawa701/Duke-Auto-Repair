@@ -5,13 +5,12 @@ const vm = require("node:vm");
 const ts = require("typescript");
 
 function harness(supported = true) {
-  let observer;
   class MockObserver {
     observed = new Set();
     constructor(callback, options) {
       this.callback = callback;
       this.options = options;
-      observer = this;
+      MockObserver.instance = this;
     }
     observe(item) {
       this.observed.add(item);
@@ -26,20 +25,20 @@ function harness(supported = true) {
       this.callback(entries);
     }
   }
-  const module = { exports: {} };
+  const sandboxModule = { exports: {} };
   const code = ts.transpileModule(
     fs.readFileSync("lib/observe-reveals.ts", "utf8"),
     { compilerOptions: { module: ts.ModuleKind.CommonJS } },
   ).outputText;
   vm.runInNewContext(code, {
-    module,
-    exports: module.exports,
+    module: sandboxModule,
+    exports: sandboxModule.exports,
     ...(supported ? { IntersectionObserver: MockObserver } : {}),
   });
   return {
-    observe: module.exports.observeReveals,
+    observe: sandboxModule.exports.observeReveals,
     get observer() {
-      return observer;
+      return MockObserver.instance;
     },
   };
 }

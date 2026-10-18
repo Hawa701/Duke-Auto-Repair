@@ -156,7 +156,7 @@ export default function AboutPage() {
               <h4>See what we see.</h4>
               <p>
                 Every visit comes with a free digital inspection report, so you
-                can see your car's condition for yourself.
+                can see your car&apos;s condition for yourself.
               </p>
             </div>
             <div className="val">
@@ -186,7 +186,9 @@ export default function AboutPage() {
         <div className="wrap">
           <div className="sec-head">
             <h2 id="tour-title">A look around the shop.</h2>
-            <p>First time visiting? Here's what to expect when you pull in.</p>
+            <p>
+              First time visiting? Here&apos;s what to expect when you pull in.
+            </p>
           </div>
           <div className="stops">
             <div className="stop">
@@ -221,8 +223,8 @@ export default function AboutPage() {
               </div>
               <h3>The front desk</h3>
               <p>
-                Check in with our team. Tell us what's going on, and we'll take
-                it from there.
+                Check in with our team. Tell us what&apos;s going on, and
+                we&apos;ll take it from there.
               </p>
             </div>
             <div className="stop">
@@ -257,8 +259,8 @@ export default function AboutPage() {
               </div>
               <h3>Your car, done right</h3>
               <p>
-                We walk you through what we did and what we found, then you're
-                back on the road.
+                We walk you through what we did and what we found, then
+                you&apos;re back on the road.
               </p>
             </div>
           </div>

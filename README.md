@@ -1,62 +1,152 @@
 # Duke Auto Repair
 
-Next.js website for Duke Auto Repair & Service in Alexandria, Virginia.
-Contact details are maintained in `lib/business.ts`.
+A responsive website for Duke Auto Repair & Service in Alexandria, Virginia. Visitors can explore services, meet the team, read customer feedback, find contact details, and book appointments through ShopGenie.
 
-## Local development
+The site includes Home, About, Services, Reviews, Contact, and ten individual service pages. It uses local photography and fonts, shared page layouts, and selective entrance animations.
 
-```powershell
-npm install
+## Tech stack
+
+- Next.js 16 with the App Router
+- React 19 and TypeScript
+- Tailwind CSS 4 tooling with shared and page-specific CSS
+- Motion for entrance animations
+- ESLint and Node's built-in test runner
+
+## Requirements
+
+- Node.js **20.9 or newer**, with npm
+- Git
+- Python 3, optional, for the site verification script
+
+## Getting started
+
+Clone the repository and install the locked dependencies:
+
+```sh
+git clone https://github.com/Hawa701/Duke-Auto-Repair.git
+cd Duke-Auto-Repair
+npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. Run `npm run build` for a production build.
+Open [http://localhost:3000](http://localhost:3000). Run these commands from the project root, where `package.json` lives. Changes to application files update automatically during development.
 
-## Live Google rating and review count
+### Environment configuration
 
-The site uses Google's official Maps JavaScript API Places library in the browser.
-The pages can remain statically rendered: no Next.js API route or application server is needed for ratings.
+The default demo works without environment variables. If you need optional integrations, copy `.env.example` to `.env.local` and follow the comments in that file.
 
-1. Create a Google Cloud project and enable billing. Enable **Maps JavaScript API** and **Places API (New)**.
-2. Create a browser API key. Apply **Websites / HTTP referrer restrictions** for your production domain and `http://localhost:3000/*`. Restrict API access to the two APIs above.
-3. Copy `.env.example` to `.env.local`, then set `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` locally. Do not paste keys into chat or commit `.env.local`.
-4. Optionally set `NEXT_PUBLIC_GOOGLE_PLACE_ID`. Otherwise the app uses an exact business name/address search requesting only the ID, then verifies the returned phone and address before displaying the rating.
-5. Restart `npm run dev`. Production builds need these public variables set at build time; rebuild after changing them.
+Keep `.env.local` out of Git. Variables prefixed with `NEXT_PUBLIC_` are visible in the browser and are included at build time. Restart the development server after changing environment values; rebuild when changing them for production.
 
-`NEXT_PUBLIC_` values are visible to website visitors. This is intentional for a referrer-restricted browser key. Never use an unrestricted key or a server secret here.
+## Commands
 
-All rating displays use one shared request per page session, then refresh every 15 minutes while visible or when the visitor returns to an older page. Only the place ID is reused between refreshes. Ratings and review counts are not persisted to disk or browser storage. Google determines when its underlying data updates; this is not an instantaneous push feed.
+| Command | Purpose |
+| --- | --- |
+| `npm ci` | Install dependencies exactly as recorded in `package-lock.json` |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create the production build and check TypeScript |
+| `npm start` | Serve an existing production build |
+| `npm run lint` | Check application code and test scripts with ESLint |
+| `npm run test:google-reviews` | Test the review integration using mocked responses |
+| `npm run test:reveals` | Test viewport observation and animation cleanup |
+| `npm run test:scrollbar` | Test scrollbar sizing and drag calculations |
 
-Without a key or when a live request fails, the site uses the manually supplied Google listing snapshot: 4.8 stars and 765 reviews. These fallback values, topic mention counts, and the transcribed customer review are maintained in `lib/customer-reviews.ts`. They do not update automatically. Successful API responses replace the fallback overall rating and total count. The distribution bars reproduce approximate visual lengths from the supplied screenshot; they do not claim exact percentages or star counts.
+## Project structure
 
-Fetching `rating` and `userRatingCount` uses **Place Details Enterprise**. Google's global price list currently includes 1,000 monthly requests, then $20 per 1,000 at the first paid tier. Pricing and allowances can change. Configure API quotas in Google Cloud to limit usage; budget alerts alone do not cap charges. No billing account or key is created or activated by this code.
+```text
+app/
+  layout.tsx             Shared layout, metadata, providers, header and footer
+  page.tsx               Home page
+  about/                 About page and its styles
+  contact/               Contact page and its styles
+  reviews/               Reviews page and its styles
+  services/              Services overview and individual service routes
+  design.css             Base theme and shared component styles
+  globals.css            Global behavior, accessibility and shared overrides
+  responsive.css         Shared responsive rules
+  home.css               Home page styles
+  fonts.ts               Local font configuration
+  manifest.ts            Device shortcut metadata and icons
+components/              Reusable layouts, navigation and UI components
+  home/                  Home page sections
+  reviews/               Review summary, list and filtering
+lib/                     Business details, service content and shared helpers
+public/                  Images, fonts and browser/device icons
+scripts/                 Automated tests and local site checks
+docs/                    Service content research and editorial notes
+```
 
-Before launch, include the Google-required terms/privacy references in the site's published policies. Google Maps attribution and a link explaining Google reviews are included alongside the rating displays.
+Files in `public/` are served from the site root: `public/images/about/lounge.jpg`, for example, is available at `/images/about/lounge.jpg`.
 
-Official references:
+## Updating the site
 
-- [Google pricing](https://developers.google.com/maps/billing-and-pricing/pricing)
-- [Maps API key setup and restrictions](https://developers.google.com/maps/documentation/javascript/get-api-key)
-- [Places data fields](https://developers.google.com/maps/documentation/javascript/reference/place)
-- [Attribution and policies](https://developers.google.com/maps/documentation/javascript/policies)
+| Change | Where to work |
+| --- | --- |
+| Business name, address, phone, booking URL and map links | [lib/business.ts](lib/business.ts) |
+| Service groups and destination links | [lib/services.ts](lib/services.ts) |
+| Individual service copy, photos, checklists and related services | [lib/service-details.ts](lib/service-details.ts) |
+| Shared service page layout | [components/service-detail.tsx](components/service-detail.tsx) |
+| Featured customer review, displayed rating and review topics | [lib/customer-reviews.ts](lib/customer-reviews.ts) |
+| Sample review cards | [lib/dummy-reviews.ts](lib/dummy-reviews.ts) |
+| Navigation and footer | [components/site-navigation.tsx](components/site-navigation.tsx), [components/footer.tsx](components/footer.tsx) |
+| Shared page headings and breadcrumbs | [components/page-header.tsx](components/page-header.tsx) |
+| Default page titles, descriptions and favicon links | [app/layout.tsx](app/layout.tsx) |
+| Apple and device shortcut icons | `public/` and [app/manifest.ts](app/manifest.ts) |
 
-## Checks
+### Adding a service
 
-All ten service detail pages use the approved brake-page layout, including the white checkmarks on blue circles. Each has separate content in `lib/service-details.ts`. See [service content sources](docs/service-content-sources.md) for the research and editorial scope. The Services overview, homepage cards, footer links and related-service cards lead to the individual pages.
+1. Add the service to `lib/services.ts` and its detailed content to `lib/service-details.ts`.
+2. Create `app/services/<slug>/page.tsx`, following an existing route such as [the brake page](app/services/brakes/page.tsx). Set its metadata and render `ServiceDetail` with the corresponding content.
+3. Update related services, home page cards and footer links where appropriate. The home and footer service links are maintained in their own components.
+4. Add the new route to `ROUTES` in `scripts/check-site.py`, then run the checks below.
 
-The Reviews page list currently uses six fictional development entries from `lib/dummy-reviews.ts`. Replace these before launch. The featured review and homepage testimonial use the supplied Jennie Dunnavant review from `lib/customer-reviews.ts`; the Google rating snapshot is maintained separately there.
+See [service content sources](docs/service-content-sources.md) for the background research. Confirm service claims with the shop when changing customer-facing copy.
 
-```powershell
+### Styling and interaction
+
+Keep page-specific styles scoped under that page's wrapper class, such as `.home-page` or `.reviews-page`. Shared theme colors live in `app/design.css`; shared responsive behavior lives in `app/responsive.css`.
+
+Pages and layouts use Server Components by default. Add `"use client"` where state, effects or browser APIs are needed. Reuse `Entrance` and `Stagger` for selective animation; these components support reduced-motion preferences. Fonts are loaded locally through `app/fonts.ts`.
+
+The header sticks on mobile only. The home page service stripe scrolls automatically and pauses on hover. Preserve these behaviors when changing navigation or responsive styles.
+
+## Verification
+
+Before sharing a demo or deploying a change, run:
+
+```sh
+npm run lint
 npm run test:google-reviews
 npm run test:reveals
 npm run test:scrollbar
 npm run build
 ```
 
-The rating tests use mocked Google responses and make no live API calls. A real key and browser are needed to verify live Google responses.
+With the site running in another terminal, check pages, links, metadata, form labels and assets:
 
-The reveal tests verify that offscreen cards wait for their own viewport entry, animate once, and cancel pending observations when a filter changes or a page unmounts. Motion respects the device's reduced-motion preference.
+```sh
+python scripts/check-site.py
+```
 
-The page scrollbar overlays a draggable, keyboard-accessible thumb on the content, with no painted track or arrows. Wheel and touch scrolling remain native. The scrollbar tests cover thumb sizing, drag limits, page-end alignment, and viewport resizing; browser checks are still needed for its appearance and pointer interaction.
+The checker defaults to `http://localhost:3000`. Pass a different local base URL if needed:
 
-With the local server running, use `python scripts/check-site.py` (Python 3) to check all fifteen pages, internal links, section anchors, metadata, form labels, and local assets. These document checks do not replace browser checks at mobile, tablet, and desktop widths.
+```sh
+python scripts/check-site.py http://localhost:3001
+```
+
+The script covers all 15 pages and confirms the removed Blog, Tires and Specials routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
+
+## Running a demo or production build
+
+```sh
+npm run build
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000). For hosting, configure a Next.js-compatible Node environment with `npm ci` as the install command, `npm run build` as the build command, and `npm start` as the start command. The generated `.next/` directory is build output and stays out of Git.
+
+### Current demo behavior
+
+- Appointment buttons open the ShopGenie booking URL in a new tab. Update that URL once in `lib/business.ts`.
+- The review list contains six fictional sample entries. The featured testimonial is maintained separately. Replace sample entries with approved content before a public launch.
+- The contact form has no submission backend. Its send button is disabled, and visitors are directed to call. Connect a working endpoint before enabling submissions.
+- No database or account system is required to run the current site.

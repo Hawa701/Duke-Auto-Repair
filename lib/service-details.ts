@@ -662,5 +662,3 @@ export const serviceDetails = {
     ],
   },
 } satisfies Record<string, ServiceDetail>;
-
-export type ServiceDetailId = keyof typeof serviceDetails;

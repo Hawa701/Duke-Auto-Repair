@@ -4,8 +4,7 @@ import { business } from "@/lib/business";
 import { useGoogleRating } from "./google-reviews-provider";
 import { Stars } from "./icon";
 
-type Variant =
-  "utility" | "hero" | "footer" | "score" | "stat" | "summary" | "crew";
+type Variant = "utility" | "hero" | "footer" | "score" | "summary" | "crew";
 
 export default function GoogleRating({
   variant = "footer",
@@ -52,22 +51,6 @@ export default function GoogleRating({
             {attribution}
             {attributionLinks}
           </span>
-        </dd>
-      </div>
-    );
-  }
-  if (variant === "stat") {
-    return (
-      <div className="st google-rating google-rating--stat">
-        <dt className="l">Google rating</dt>
-        <dd className="n">{score ?? "—"}</dd>
-        <dd className="s">
-          {data && <Stars rating={data.rating} />}
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            {count ? `${count} reviews on ` : "Read reviews on "}
-            {attribution}
-          </a>
-          {attributionLinks}
         </dd>
       </div>
     );

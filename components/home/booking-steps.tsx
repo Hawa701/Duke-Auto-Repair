@@ -5,7 +5,7 @@ export default function BookingSteps() {
     <section className="steps">
       <div className="wrap">
         <div className="sec-head">
-          <h2>Getting your car fixed couldn't be easier.</h2>
+          <h2>Getting your car fixed couldn&apos;t be easier.</h2>
           <p>
             Arrange your visit with our team. Most cars are ready the same day.
           </p>
@@ -31,8 +31,8 @@ export default function BookingSteps() {
             <div className="n">3</div>
             <h3>Pick it up</h3>
             <p>
-              We walk you through what we did, you pay, and you're back on the
-              road.
+              We walk you through what we did, you pay, and you&apos;re back on
+              the road.
             </p>
           </div>
         </div>

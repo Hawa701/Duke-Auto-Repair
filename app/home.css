@@ -99,26 +99,6 @@
   position: relative;
   z-index: 2;
 }
-.home-page .fascia .run {
-  display: flex;
-  gap: 44px;
-  padding-left: 100px;
-  font-family: var(--font-barlow-condensed);
-  font-weight: 700;
-  font-size: 25px;
-}
-.home-page .fascia .run span {
-  display: flex;
-  align-items: center;
-  gap: 44px;
-}
-.home-page .fascia .run span:after {
-  content: "";
-  width: 9px;
-  height: 9px;
-  background: var(--deep);
-  transform: rotate(45deg);
-}
 .home-page .diff {
   background: var(--concrete);
   padding: 120px 0;
@@ -680,32 +660,6 @@
   color: #5a4c14;
   font-size: 15px;
 }
-.home-page .quote .nav {
-  margin-left: auto;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.home-page .quote .nav .pg {
-  font-weight: 700;
-  font-size: 15px;
-  margin-right: 10px;
-  color: var(--deep);
-}
-.home-page .quote .nav button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid var(--deep);
-  background: transparent;
-  display: grid;
-  place-items: center;
-  color: var(--deep);
-}
-.home-page .quote .nav button.on {
-  background: var(--deep);
-  color: var(--yellow);
-}
 .home-page .shop {
   background: #fff;
   padding: 120px 0;
@@ -1024,17 +978,6 @@
   overflow: visible;
   white-space: normal;
   padding-block: 16px;
-}
-.home-page .fascia .run {
-  flex-wrap: wrap;
-  width: min(1240px, calc(100% - 32px));
-  padding-left: 0;
-  margin-inline: auto;
-  gap: 12px 28px;
-  font-size: clamp(20px, 2vw, 25px);
-}
-.home-page .fascia .run span {
-  gap: 28px;
 }
 .home-page .sec-head {
   gap: 32px;

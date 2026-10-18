@@ -15,7 +15,7 @@ export default function HomeCrew() {
           <figcaption>The Duke Auto team, outside the service bays.</figcaption>
         </figure>
         <div>
-          <h2>Meet the people who'll look after your car.</h2>
+          <h2>Meet the people who&apos;ll look after your car.</h2>
           <p className="lead">
             Our front desk checks you in, and one of our certified technicians
             takes it from there. Every visit includes a free digital inspection,

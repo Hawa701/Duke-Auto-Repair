@@ -9,7 +9,7 @@ export default function HomeBenefits({ id }: { id?: string }) {
         <div className="sec-head">
           <h2>We just do auto care differently.</h2>
           <p>
-            Two things most shops don't offer, and neither one costs you
+            Two things most shops don&apos;t offer, and neither one costs you
             anything.
           </p>
         </div>
@@ -23,8 +23,8 @@ export default function HomeBenefits({ id }: { id?: string }) {
             <span className="free">Complimentary</span>
             <h3>Concierge vehicle pick-up and drop-off</h3>
             <p>
-              Let us come to you. We'll pick up your vehicle, service it, and
-              return it to your door.
+              Let us come to you. We&apos;ll pick up your vehicle, service it,
+              and return it to your door.
             </p>
             <ul className="ticks">
               <li>
@@ -37,7 +37,7 @@ export default function HomeBenefits({ id }: { id?: string }) {
                 <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
                   <path d="M20 6 9 17l-5-5" />
                 </svg>
-                Returned as soon as it's done
+                Returned as soon as it&apos;s done
               </li>
             </ul>
             <Link href="/contact" className="btn btn-n">
@@ -58,9 +58,9 @@ export default function HomeBenefits({ id }: { id?: string }) {
             <span className="free">Free with every visit</span>
             <h3>Digital vehicle health inspections</h3>
             <p>
-              A complete, easy-to-understand report on your vehicle's health.
-              From tire wear to brake life, we show you what's good, what needs
-              attention, and what can wait, at no cost.
+              A complete, easy-to-understand report on your vehicle&apos;s
+              health. From tire wear to brake life, we show you what&apos;s
+              good, what needs attention, and what can wait, at no cost.
             </p>
             <ul className="ticks">
               <li>

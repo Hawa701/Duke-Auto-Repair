@@ -53,3 +53,12 @@ export const ratingDistribution = [
   { stars: 2, width: 1 },
   { stars: 1, width: 4 },
 ] as const;
+
+/** "Ana María López" -> "AL": avatar fallback when Google has no photo. */
+export const initialsOf = (name: string) => {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  const letters = [parts[0], parts.length > 1 ? parts[parts.length - 1] : undefined]
+    .map((part) => part?.[0] ?? "")
+    .join("");
+  return letters.toUpperCase() || "G";
+};

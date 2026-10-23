@@ -441,31 +441,7 @@ const groups: ServiceGroup[] = [
     image: "/images/about/techs-under-hood.jpg",
     imageAlt: "Two Duke Auto technicians working together under the hood",
     imagePosition: "50% 40%",
-    services: [
-      {
-        id: "oil-change",
-        href: "/services/oil-change",
-        name: "Oil change",
-        description:
-          "Fresh oil and a new filter to keep your engine running strong.",
-        icon: "oil",
-      },
-      {
-        id: "bg-fluids",
-        href: "/services/bg-fluids",
-        name: "BG fluid services",
-        description:
-          "Professional BG fluid service to protect your engine and transmission.",
-        icon: "fluids",
-      },
-      {
-        id: "battery-services",
-        href: "/services/battery-services",
-        name: "Battery services",
-        description: "Testing and replacement so your car starts reliably.",
-        icon: "battery",
-      },
-    ],
+    slugs: ["oil-change-service", "wheel-alignment", "tire-shop-alexandria", "auto-tune-up"],
   },
   {
     id: "repairs",

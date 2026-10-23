@@ -11,15 +11,13 @@ export const googleReviewSnapshot: GoogleRatingData = {
 
 // Topic mention counts from the supplied Google screenshot, not local card counts.
 export const reviewTopics = [
-  { id: "safety-inspection", label: "Safety inspection", count: 80 },
-  { id: "emissions-test", label: "Emissions test", count: 13 },
-  { id: "check-engine", label: "Check engine light diagnostics", count: 8 },
-  { id: "fair-pricing", label: "Fair pricing", count: 63 },
-  { id: "kind-staff", label: "Kind staff", count: 42 },
-  { id: "friendly-technicians", label: "Friendly technicians", count: 12 },
-  { id: "rotor-replacement", label: "Rotor replacement", count: 3 },
-  { id: "honest-staff", label: "Honest staff", count: 17 },
-  { id: "battery-replacement", label: "Battery replacement", count: 2 },
+  { id: "safety-inspection", label: "Safety inspection", count: 80, match: /\binspect/i },
+  { id: "emissions-test", label: "Emissions test", count: 13, match: /\bemission/i },
+  { id: "check-engine", label: "Check engine light diagnostics", count: 8, match: /check engine|engine light|diagnos/i },
+  { id: "fair-pricing", label: "Fair pricing", count: 63, match: /\bpric|\bfair\b|reasonabl|affordab|\bcheap|\bcost/i },
+  { id: "kind-staff", label: "Kind staff", count: 42, match: /\bkind\b|friendly|courteous|\bnice\b|welcoming/i },
+  { id: "friendly-technicians", label: "Friendly technicians", count: 12, match: /technician|mechanic/i },
+  { id: "honest-staff", label: "Honest staff", count: 17, match: /\bhonest|trustworth|\btrust/i },
 ] as const;
 
 export type ReviewTopic = (typeof reviewTopics)[number]["id"];

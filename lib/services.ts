@@ -448,60 +448,11 @@ const groups: ServiceGroup[] = [
     title: "Repairs.",
     label: "Repairs",
     description:
-      "Brakes, suspension, heating and cooling, all cared for under one roof.",
+      "Brakes, suspension, climate control and drivetrain, all under one roof.",
     image: "/images/about/brake-tech.jpg",
     imageAlt: "A Duke Auto technician servicing the brakes on a truck",
     imagePosition: "35% 50%",
-    services: [
-      {
-        id: "brake-repair",
-        href: "/services/brakes",
-        name: "Brake repair",
-        description: "Free brake inspection and premium brake service.",
-        icon: "brakes",
-      },
-      {
-        id: "suspension-steering",
-        href: "/services/suspension-steering",
-        name: "Suspension and steering",
-        description: "A smooth, safe, controlled ride.",
-        icon: "suspension",
-      },
-      {
-        id: "air-conditioning",
-        href: "/services/air-conditioning",
-        name: "Air conditioning repair",
-        description:
-          "Professional A/C service to keep you cool through Virginia summers.",
-        icon: "air-conditioning",
-      },
-      {
-        id: "heating-system",
-        href: "/services/heating-system",
-        name: "Heating system service",
-        description: "Heat and defrost that work when the cold mornings come.",
-        icon: "heating",
-      },
-    ],
-  },
-  {
-    id: "alignment",
-    title: "Wheel alignment.",
-    label: "Wheel alignment",
-    description:
-      "Keep your car tracking straight for a smooth, controlled drive.",
-    image: "/images/about/alignment-tech.jpg",
-    imageAlt: "A Duke Auto technician setting up a wheel alignment",
-    imagePosition: "70% 50%",
-    services: [
-      {
-        id: "wheel-alignment",
-        href: "/services/wheel-alignment",
-        name: "Wheel alignment",
-        description: "Drive straight, ride smooth, and reduce uneven wear.",
-        icon: "alignment",
-      },
-    ],
+    slugs: ["mechanic-alexandria-va", "brake-repair", "suspension-repair", "car-ac-repair", "transmission-repair", "auto-electrical-repair"],
   },
   {
     id: "inspection",

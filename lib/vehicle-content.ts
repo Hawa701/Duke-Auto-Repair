@@ -52,3 +52,58 @@ export const vehicleContent: Record<
         title: "Honda Dashboard Warning Lights & Diagnostics",
         body: `Frequent Honda warning lights are triggered by misfires, VTEC solenoid pressure issues, or VVT system faults. Duke Auto Repair provides comprehensive computer [diagnostics](${DIAGNOSTICS}) and transparent flat-rate pricing to accurately identify the issue and perform reliable repairs.`,
       },
+    ],
+  },
+  nissan: {
+    intro:
+      `Skip the long waits and inflated prices at the local Nissan dealership. Duke Auto Repair provides expert Nissan repairs in Alexandria. Whether you drive an Altima, Sentra, Rogue, Pathfinder, or Frontier, trust our [ASE-certified mechanics](${MECHANICS}) to keep your Nissan running safely and smoothly.`,
+    sections: [
+      {
+        title: "Trustworthy Nissan Auto Repair",
+        body: `Because Nissan relies heavily on Continuously Variable Transmissions (CVT), strict maintenance is absolutely critical. Our technicians specialize in Nissan CVT [fluid exchanges](${TRANSMISSION}) and diagnostics to prevent premature transmission failure.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Nissan",
+        body: `We utilize factory-specified NS-2 and NS-3 CVT fluids and high-quality OEM-equivalent parts. We provide transparent estimates and clear explanations of what needs immediate attention versus what can wait. Need a major CVT [transmission repair](${TRANSMISSION})?`,
+      },
+      {
+        title: "Nissan Dashboard Warning Lights & Diagnostics",
+        body: `An illuminated CVT transmission warning light requires immediate attention. Our [ASE-certified mechanics](${MECHANICS}) run full diagnostic scans to resolve mass airflow sensor failures or early CVT performance issues quickly.`,
+      },
+    ],
+  },
+  ford: {
+    intro:
+      "From the hardworking F-150 to versatile SUVs like the Explorer and Escape, Ford builds vehicles designed to endure. At Duke Auto Repair, we provide Ford owners with expert maintenance and heavy-duty repairs at competitive flat-rate prices.",
+    sections: [
+      {
+        title: "Trustworthy Ford Auto Repair",
+        body: `Our mechanics are highly experienced with complex diagnostics for EcoBoost engines. We expertly handle common Ford repairs, such as replacing timing chains, addressing water pump failures, and performing heavy-duty [brake and suspension repairs](${SUSPENSION}) for F-Series trucks.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Ford",
+        body: "We focus on durable repairs using high-quality Motorcraft OEM parts. With our heavy-duty lifts and advanced diagnostic equipment, we deliver dealership-level capabilities without the dealership price tag or extended wait times. We also offer secure after-hours drop-off and Text-to-Pay for ultimate convenience.",
+      },
+      {
+        title: "Ford Dashboard Warning Lights & Diagnostics",
+        body: "Common issues in EcoBoost engines and F-Series trucks include turbocharger boost sensor faults and EVAP system leaks. We use advanced diagnostic scanners and provide photo updates directly to your phone.",
+      },
+    ],
+  },
+  hyundai: {
+    intro:
+      "Duke Auto Repair is dedicated to providing exceptional, cost-effective care for your Elantra, Sonata, Tucson, or Santa Fe in Alexandria, VA as your premier dealership alternative.",
+    sections: [
+      {
+        title: "Trustworthy Hyundai Auto Repair",
+        body: "Many Hyundai models utilize Gasoline Direct Injection (GDI) engines. We specialize in GDI carbon cleanings, monitoring engine oil consumption in older Theta II engines, and replacing faulty sensors.",
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Hyundai",
+        body: "We provide dealership-level expertise with the honest, transparent flat-rate pricing of a locally owned business.",
+      },
+      {
+        title: "Hyundai Dashboard Warning Lights & Diagnostics",
+        body: `Hyundai GDI engines frequently trigger codes related to intake valve carbon buildup. Duke Auto Repair delivers fast, precise [diagnostic evaluations](${DIAGNOSTICS}).`,
+      },
+    ],

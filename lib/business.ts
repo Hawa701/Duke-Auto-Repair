@@ -1,5 +1,7 @@
 export const business = {
   name: "Duke Auto Repair & Service",
+  shortName: "Duke Auto Repair",
+  siteUrl: "https://www.dukeautorepair.com",
   street: "5220 Duke St",
   city: "Alexandria",
   region: "VA",

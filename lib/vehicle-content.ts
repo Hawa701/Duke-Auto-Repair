@@ -107,3 +107,58 @@ export const vehicleContent: Record<
         body: `Hyundai GDI engines frequently trigger codes related to intake valve carbon buildup. Duke Auto Repair delivers fast, precise [diagnostic evaluations](${DIAGNOSTICS}).`,
       },
     ],
+  },
+  chevrolet: {
+    intro:
+      "Whether you rely on a Chevy Silverado for heavy towing or an Equinox, Tahoe, or Malibu for the family commute, Duke Auto Repair delivers the absolute best Chevrolet repairs and maintenance services in Alexandria, VA.",
+    sections: [
+      {
+        title: "Trustworthy Chevy Auto Repair",
+        body: `We expertly address common issues like [transmission shudder](${TRANSMISSION}) in 6-speed and 8-speed automatic transmissions, Active Fuel Management (AFM) lifter issues in Silverado V8 engines, and timing chain wear in the Chevy Equinox.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Chevy",
+        body: "We use top-tier AC Delco OEM parts. We are fully equipped to handle the heavy-duty suspension demands of Chevy trucks.",
+      },
+      {
+        title: "Chevy Dashboard Warning Lights & Diagnostics",
+        body: `When your StabiliTrak warning or check engine light comes on, trust Duke Auto Repair for precise [diagnostic testing](${DIAGNOSTICS}) with full DVI transparency.`,
+      },
+    ],
+  },
+  bmw: {
+    intro:
+      "Duke Auto Repair provides expert, independent BMW and MINI Cooper service and maintenance in Alexandria, VA. Skip the three-week waitlist at the local dealership. Trust our highly trained mechanics to provide exceptional care for your 3 Series, 5 Series, X3, X5, or MINI.",
+    sections: [
+      {
+        title: "Trustworthy BMW & MINI Auto Repair",
+        body: `We have a team of technicians exceptionally well-versed in the complexities of German engineering. From strict adherence to BMW's Condition Based Service (CBS) intervals and MINI Cooper [oil change services](${OIL}), to tackling common BMW issues like leaking valve cover gaskets, VANOS system faults, and electronic water pump replacements, we keep your vehicle performing flawlessly.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your BMW",
+        body: "Our goal is to ensure that every customer receives the high-quality, professional European service they expect from a dealership, combined with the honest, transparent flat-rate pricing of a locally owned shop. We use premium Liqui Moly synthetic oils.",
+      },
+      {
+        title: "BMW Dashboard Warning Lights & Diagnostics",
+        body: `BMW and MINI vehicles feature complex onboard diagnostic systems. We utilize advanced European [diagnostic equipment](${DIAGNOSTICS}) to accurately read system codes and send you full Digital Vehicle Inspection (DVI) reports.`,
+      },
+    ],
+  },
+  "mercedes-benz": {
+    intro:
+      "Mercedes-Benz vehicles are engineered for uncompromising luxury and performance. At Duke Auto Repair, we provide independent, dealership-level Mercedes-Benz service in Alexandria without the premium luxury markup.",
+    sections: [
+      {
+        title: "Mercedes Service A & B Flat-Rate Menu",
+        body: `We expertly execute your routine Service A and Service B maintenance schedules to keep your warranty intact, utilizing a highly transparent Mercedes Service A & B Flat-Rate Menu. Our diagnostic team is fully equipped to handle complex Mercedes repairs, including AIRMATIC [air suspension failures](${SUSPENSION}), brake pad and sensor replacements, and advanced electrical system troubleshooting.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Mercedes-Benz",
+        body: "We reset your ASSYST PLUS maintenance computer and perform services using premium, factory-approved synthetic oils.",
+      },
+      {
+        title: "Mercedes-Benz Dashboard Warning Lights & Diagnostics",
+        body: `If your Mercedes-Benz displays an AIRMATIC suspension alert or ASSYST PLUS service indicator, specialized [diagnostics](${DIAGNOSTICS}) are essential. Our technicians perform dealer-level diagnostic scans to resolve issues without the dealership fees.`,
+      },
+    ],
+  },

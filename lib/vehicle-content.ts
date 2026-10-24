@@ -162,3 +162,58 @@ export const vehicleContent: Record<
       },
     ],
   },
+  jeep: {
+    intro:
+      "Duke Auto Repair provides Jeep owners in Alexandria with the absolute best heavy-duty repairs and maintenance services at competitive flat-rate prices for your Wrangler, Grand Cherokee, Cherokee, or Compass.",
+    sections: [
+      {
+        title: "Trustworthy Jeep Auto Repair",
+        body: `Our [ASE-certified mechanics](${MECHANICS}) specialize in diagnosing and repairing complex Jeep [front-end suspension and steering issues](${SUSPENSION})—including track bars and ball joints to eliminate the dreaded solid-axle "death wobble."`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Jeep",
+        body: "We utilize high-quality OEM Mopar and heavy-duty aftermarket components. We provide clear Digital Vehicle Inspections (DVI) and upfront transparent estimates before performing any work.",
+      },
+      {
+        title: "Jeep Dashboard Warning Lights & Diagnostics",
+        body: "Jeep models frequently generate diagnostic codes for oil filter housing sensor leaks and EVAP leaks. Duke Auto Repair delivers accurate diagnostic troubleshooting.",
+      },
+    ],
+  },
+  lexus: {
+    intro:
+      "Experience premium Japanese luxury service without the premium luxury price tag. At Duke Auto Repair, we provide Lexus owners with independent, expert repairs and maintenance services in Alexandria, VA.",
+    sections: [
+      {
+        title: "Trustworthy Lexus Auto Repair",
+        body: `Are you searching for a [certified lexus mechanic near me](${DIAGNOSTICS})? We provide comprehensive Lexus Hybrid Drive system checks, routine V6 timing belt services, precision [brake alignments](${BRAKES}) for a vibration-free ride, and advanced check engine light diagnostics.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Lexus",
+        body: "Our goal is to ensure you receive the white-glove, professional service you expect from a Lexus dealership, combined with transparent flat-rate estimates.",
+      },
+      {
+        title: "Lexus Dashboard Warning Lights & Diagnostics",
+        body: `When a warning light appears on your Lexus dashboard, accurate [diagnostics](${DIAGNOSTICS}) ensure your vehicle maintains its smooth ride. We provide thorough diagnostic evaluations and DVI photo updates to keep your Lexus in peak condition.`,
+      },
+    ],
+  },
+  audi: {
+    intro:
+      "You bought an Audi for its precision engineering, responsive quattro all-wheel drive, and sophisticated European luxury. Duke Auto Repair provides expert, independent Audi service in Alexandria as your premier dealership alternative.",
+    sections: [
+      {
+        title: "Trustworthy Audi Auto Repair",
+        body: `We have a complete team of technicians exceptionally well-versed in repairing the European Audi lineup. From routine scheduled maintenance and resolving direct-injection engine carbon buildup, to complex electrical diagnostics and specialized DSG [transmission fluid flushes](${TRANSMISSION}), we help you take the best care of your vehicle.`,
+      },
+      {
+        title: "Why Choose Duke Auto Repair For Your Audi",
+        body: "Our goal is to ensure that every customer receives the high-quality European service they expect from a dealership, without the inflated dealership prices.",
+      },
+      {
+        title: "Audi Dashboard Warning Lights & Diagnostics",
+        body: "An illuminated EPC (Electronic Power Control) light or Quattro system warning on your Audi requires specialized attention. Our ASE-certified technicians run detailed diagnostic scans and send complete Digital Vehicle Inspections directly to your phone.",
+      },
+    ],
+  },
+};

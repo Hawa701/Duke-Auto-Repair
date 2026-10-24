@@ -768,3 +768,38 @@ export const articles: Article[] = [
   },
 ];
 
+export type PublishedArticle = Article &
+  Required<Pick<Article, "body" | "subheading" | "image" | "date">>;
+
+export const isPublished = (article: Article): article is PublishedArticle =>
+  Boolean(
+    article.body?.length && article.subheading && article.image && article.date,
+  );
+
+export const publishedArticles = articles.filter(isPublished);
+
+export const findArticle = (slug: string) =>
+  articles.find((article) => article.slug === slug);
+
+export const articleHref = (article: Article) =>
+  article.root ? `/${article.slug}` : `/car-tips/${article.slug}`;
+
+/** "11-11-2026", the date style used in the content guide. */
+export const formatArticleDate = (iso: string) => {
+  const [year, month, day] = iso.split("-");
+  return `${month}-${day}-${year}`;
+};
+
+// "Services by Location" tab on the Car Tips hub. The content guide plans
+// SEO pages per neighbourhood (e.g. "Brake Repair in Old Town Alexandria");
+// until those are written the tab lists the areas served.
+export const serviceAreas = [
+  "Old Town Alexandria",
+  "Landmark",
+  "West End",
+  "Seminary Hill",
+  "Del Ray",
+  "Fairlington",
+  "Bradlee",
+  "Lincolnia",
+];

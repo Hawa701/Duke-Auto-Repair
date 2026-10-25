@@ -94,3 +94,53 @@ export function loadGoogleRating(
   });
   return inFlight;
 }
+
+export type GoogleReview = {
+  id: string;
+  name: string;
+  photo: string | null;
+  profileUrl: string | null;
+  rating: number;
+  text: string;
+  when: string;
+};
+
+/**
+ * Up to five reviews chosen by Google (the Places API limit). Kept separate
+ * from loadGoogleRating so only the Reviews page asks for review text.
+ */
+export async function loadGoogleReviews(
+  apiKey: string,
+  placeId?: string,
+): Promise<GoogleReview[]> {
+  // Resolves (and verifies) the listing through the shared rating request.
+  await loadGoogleRating(apiKey, placeId);
+  const { importLibrary } = await import("@googlemaps/js-api-loader");
+  const { Place } = await importLibrary("places");
+  const place = new Place({ id: resolvedPlaceId! });
+  await place.fetchFields({ fields: ["reviews"] });
+  return readGoogleReviews(place);
+}
+
+export function readGoogleReviews(
+  place: google.maps.places.Place,
+): GoogleReview[] {
+  return (place.reviews ?? []).flatMap((review, index) => {
+    const text = review.text?.trim();
+    const name = review.authorAttribution?.displayName?.trim();
+    const rating = review.rating;
+    if (!text || !name || typeof rating !== "number" || rating < 1 || rating > 5)
+      return [];
+    return [
+      {
+        id: `${name}-${review.publishTime?.getTime() ?? index}`,
+        name,
+        photo: review.authorAttribution?.photoURI ?? null,
+        profileUrl: review.authorAttribution?.uri ?? null,
+        rating,
+        text,
+        when: review.relativePublishTimeDescription ?? "",
+      },
+    ];
+  });
+}

@@ -59,3 +59,62 @@ export const business = {
   googlePlaceQuery:
     "Duke Auto Repair and Service, 5220 Duke St, Alexandria, VA 22304",
 } as const;
+
+// Content & UX Guide (revised), section 2: Meet The Team.
+export const team = [
+  { name: "Simon Gebrehiwot", role: "Founder" },
+  { name: "Yoseph Beyene", role: "General Manager" },
+  { name: "Sophia Gebrehiwot", role: "Administration Head" },
+  { name: "Julio Hernandez", role: "Service Manager" },
+  { name: "Hans Degraaf", role: "Management Advisor" },
+];
+
+// Content & UX Guide (revised), section 2: Our Certifications & Awards.
+export const certifications = [
+  "ASE Certified Technicians",
+  "DEQ Certified Emissions Repair Facility",
+  "VA State Safety Inspection Certified Station",
+  "VA Emissions Inspection Certified Station",
+  "Top Rated Business by CARFAX (2022–2025)",
+];
+
+/**
+ * Third-party slots. Anything left empty stays hidden on the site, so these
+ * can be filled in later without touching any component.
+ */
+export const integrations: {
+  /** Google Tag Manager container (GA4, Meta Pixel and Google Ads run inside it). */
+  gtmId: string;
+  /** Shopgenie customer history portal ("Customer Dashboard" link). */
+  customerPortalUrl: string;
+  /**
+   * Shopgenie embed (searchgenie.js), from the shop's Shopgenie dashboard:
+   * opens the booking tool in a popup for buttons tagged
+   * `shopgenie-book-appt-btn`, and shows the "Text us" (Jasmine webchat)
+   * bubble bottom-right. `shop` is the data-shop value from that code.
+   */
+  shopgenie: { src: string; shop: string } | null;
+  /**
+   * Open the booking tool in Shopgenie's popup instead of following the
+   * button's link. Shopgenie's popup builds its own booking address and
+   * ignores the link, so with this on the tracking links (bookingUrl and the
+   * coupon links) are not used. Off: buttons open the tracking link in a new
+   * tab. The "Text us" chat bubble works either way.
+   */
+  bookingPopup: boolean;
+  /** Where the Request a Quote form posts: public/send-quote.php emails it to the shop. */
+  quoteFormAction: string;
+} = {
+  gtmId: "GTM-WTM6LHS2",
+  customerPortalUrl: "",
+  shopgenie: {
+    src: "https://embed.shopgenie.io/searchgenie.js",
+    shop: "duke-auto-repair-service-3821814384",
+  },
+  bookingPopup: false,
+  quoteFormAction: "/send-quote.php",
+};
+
+/** Class list for a "Book an Appointment" link, adding Shopgenie's popup hook when enabled. */
+export const withBookingPopup = (className: string) =>
+  integrations.bookingPopup ? `${className} shopgenie-book-appt-btn` : className;

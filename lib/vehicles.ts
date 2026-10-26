@@ -58,3 +58,44 @@ export type Vehicle = Omit<Brand, "seo"> & {
   banner: string;
 };
 
+export const vehicles: Vehicle[] = brands.map(({ seo, ...brand }) => {
+  const { name } = brand;
+  // Brands in the Vehicle Content guide use its copy; the rest use the template.
+  const content = vehicleContent[brand.slug];
+  return {
+    ...brand,
+    slug: seo?.path ?? brand.slug,
+    href: seo ? `/${seo.path}` : `/vehicles/${brand.slug}`,
+    heading: seo?.heading ?? `${name} Repair & Service in Alexandria, VA`,
+    metaTitle: seo?.metaTitle,
+    metaDescription: seo?.metaDescription,
+    imageAlt: seo?.imageAlt ?? `${name} service at Duke Auto Repair in Alexandria, VA`,
+    intro: content?.intro ?? `At Duke Auto Repair, we provide ${name} owners with the absolute best repairs and maintenance services at competitive prices. We are dedicated to providing exceptional care for your ${listModels(brand.models)} in Alexandria, VA. Trust our ASE-certified mechanics to ensure your ${name}’s optimal performance and legendary reliability.`,
+    sections: content?.sections ?? [
+      {
+        title: `Trustworthy ${name} Auto Repair`,
+        body: `We have a complete team of technicians who are exceptionally well-versed in repairing the entire ${name} lineup. From routine factory scheduled maintenance on a newer ${brand.newer} to complex engine diagnostics on an older ${brand.older}, let the team at Duke Auto Repair help you take the best care of your vehicle.`,
+      },
+      {
+        title: `Why Choose Duke Auto Repair For Your ${name}`,
+        body: `Our goal is to ensure that every customer is satisfied and receives the high-quality, professional service they expect from a dealership, without the inflated dealership prices. Our mechanics easily perform a massive range of services using high-quality OEM and premium aftermarket parts. When you bring your ${name} to us on Duke Street, we treat it as if it were our own. We work efficiently to minimize your downtime because we know having a dependable vehicle is a priority for our customers.`,
+      },
+      {
+        title: `${name} Service Near Me`,
+        body: `To schedule your ${name} service appointment in Alexandria, VA, simply give us a call at ${business.phoneLocal} or book online today. We look forward to serving you at Duke Auto Repair, proudly serving Alexandria and the surrounding areas.`,
+      },
+    ],
+    banner: `Precision Performance – ${name} Care at Duke Auto Repair.`,
+  };
+});
+
+export const findVehicle = (slug: string) =>
+  vehicles.find((item) => item.slug === slug);
+
+/**
+ * Blueprint brands, served from the site root (see app/[slug]). Only the 11
+ * brands in the Vehicle Content guide are listed; the other makes were removed
+ * at the shop's request and their old /vehicles/<brand> URLs redirect to
+ * /vehicles/ (public/.htaccess).
+ */
+export const rootVehicles = vehicles.filter((item) => !item.href.startsWith("/vehicles/"));

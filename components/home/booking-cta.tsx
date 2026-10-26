@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { business } from "@/lib/business";
+import { business, withBookingPopup } from "@/lib/business";
 
 export default function BookingCta({
   servicesHref = "/services",

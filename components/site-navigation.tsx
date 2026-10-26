@@ -43,20 +43,35 @@ export default function SiteNavigation() {
       if (
         event.target instanceof Node &&
         !navRef.current?.contains(event.target)
-      )
+      ) {
         setOpen(false);
+        setMenu(null);
+      }
     };
-    const desktop = window.matchMedia("(min-width: 1025px)");
-    const closeOnDesktop = () => {
-      if (desktop.matches) setOpen(false);
+    const desktop = window.matchMedia(DESKTOP);
+    const onBreakpoint = () => {
+      setOpen(false);
+      setMenu(null);
     };
     document.addEventListener("pointerdown", closeOutside);
-    desktop.addEventListener("change", closeOnDesktop);
+    desktop.addEventListener("change", onBreakpoint);
     return () => {
       document.removeEventListener("pointerdown", closeOutside);
-      desktop.removeEventListener("change", closeOnDesktop);
+      desktop.removeEventListener("change", onBreakpoint);
     };
-  }, [open]);
+  }, [open, menu]);
+
+  useEffect(() => () => window.clearTimeout(closeTimer.current), []);
+
+  const isDesktop = () => window.matchMedia(DESKTOP).matches;
+
+  const hover = (id: MenuId | null) => {
+    if (!isDesktop()) return;
+    window.clearTimeout(closeTimer.current);
+    if (id) setMenu(id);
+    // A short delay lets the pointer cross the gap into the panel.
+    else closeTimer.current = window.setTimeout(() => setMenu(null), 140);
+  };
 
   return (
     <nav

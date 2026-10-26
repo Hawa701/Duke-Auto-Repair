@@ -1,6 +1,9 @@
 "use client";
 
-import { business } from "@/lib/business";
+import { business, withBookingPopup } from "@/lib/business";
+import { mainNavigation, type NavItem } from "@/lib/navigation";
+import { services } from "@/lib/services";
+import { vehicles } from "@/lib/vehicles";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

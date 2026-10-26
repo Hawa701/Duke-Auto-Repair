@@ -9,23 +9,36 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import Icon from "./icon";
+import ServiceIcon from "./service-icon";
 
-const navigation = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About us" },
-  { href: "/services", label: "Services" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/contact", label: "Contact" },
-];
+type MenuId = NonNullable<NavItem["menu"]>;
+
+// Must match the desktop breakpoint in header.css.
+const DESKTOP = "(min-width: 800px)";
 
 export default function SiteNavigation() {
-  const pathname = usePathname();
+  const pathname = usePathname().replace(/\/$/, "") || "/";
   const [open, setOpen] = useState(false);
+  const [menu, setMenu] = useState<MenuId | null>(null);
   const navRef = useRef<HTMLElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
+  const closeTimer = useRef<number | undefined>(undefined);
+
+  const closeAll = () => {
+    setOpen(false);
+    setMenu(null);
+  };
+
+  // Close menus after navigating.
+  const [lastPath, setLastPath] = useState(pathname);
+  if (lastPath !== pathname) {
+    setLastPath(pathname);
+    setOpen(false);
+    setMenu(null);
+  }
 
   useEffect(() => {
-    if (!open) return;
+    if (!open && !menu) return;
     const closeOutside = (event: PointerEvent) => {
       if (
         event.target instanceof Node &&

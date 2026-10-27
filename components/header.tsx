@@ -16,11 +16,7 @@ export default function Header() {
       </a>
       <div className="util">
         <div className="wrap">
-          <span>
-            <Icon name="phone" />
-            <a href={business.phoneHref}>{business.phoneDisplay}</a>
-          </span>
-          <span>
+          <span className="util-address">
             <Icon name="pin" />
             <a
               href={business.googleMapsUrl}

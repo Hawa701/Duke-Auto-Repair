@@ -2,9 +2,9 @@
 
 import Entrance from "@/components/entrance";
 
-import { useState, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
+import { loadGoogleReviews, type GoogleReview } from "@/lib/google-reviews";
 import { business } from "@/lib/business";
-import { dummyReviews } from "@/lib/dummy-reviews";
 import {
   customerReviews,
   reviewTopics,

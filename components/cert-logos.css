@@ -1,0 +1,26 @@
+.cert-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  list-style: none;
+}
+.cert-logos .cert-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 84px;
+  padding: 8px;
+  border: 1px solid #e3e6ee;
+  border-radius: 12px;
+  background: #fff;
+}
+.cert-logos .cert-logo img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.cert-logos .cert-logo--air-check {
+  padding-inline: 12px;
+}

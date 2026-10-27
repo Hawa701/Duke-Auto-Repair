@@ -1,12 +1,16 @@
-import { business } from "@/lib/business";
+"use client";
+
+import { usePathname } from "next/navigation";
+import { business, integrations } from "@/lib/business";
 
 import Icon from "./icon";
-import GoogleRating from "./google-rating";
 import SiteNavigation from "./site-navigation";
+import "./header.css";
 
 export default function Header() {
+  const home = usePathname() === "/";
   return (
-    <header className="site-header">
+    <header className={`site-header${home ? " site-header--home" : ""}`}>
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>

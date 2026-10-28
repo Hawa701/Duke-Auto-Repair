@@ -10,6 +10,7 @@ import {
   reviewTopics,
   ratingDistribution,
   type ReviewTopic,
+  initialsOf,
 } from "@/lib/customer-reviews";
 import GoogleRating from "../google-rating";
 import { Stars } from "../icon";

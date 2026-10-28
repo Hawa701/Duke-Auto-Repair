@@ -93,7 +93,7 @@ export default function SiteNavigation() {
         }
       }}
       onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+        if (!event.currentTarget.contains(event.relatedTarget)) closeAll();
       }}
     >
       <div className="wrap">

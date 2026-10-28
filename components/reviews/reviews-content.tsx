@@ -40,12 +40,75 @@ function GoogleMark() {
   );
 }
 
+// Long Google reviews start shortened so one review can't fill a whole column.
+const PREVIEW_CHARS = 360;
+
+function LongText({ id, text }: { id: string; text: string }) {
+  const [open, setOpen] = useState(false);
+  const long = text.length > PREVIEW_CHARS + 60;
+  const shown =
+    !long || open
+      ? text
+      : `${text.slice(0, text.lastIndexOf(" ", PREVIEW_CHARS)).trimEnd()}…`;
+  const bodyId = `review-text-${id.replace(/[^\w-]/g, "")}`;
+  return (
+    <>
+      <blockquote id={bodyId} className="rv-text">
+        {shown}
+      </blockquote>
+      {long && (
+        <button
+          type="button"
+          className="rv-more"
+          aria-expanded={open}
+          aria-controls={bodyId}
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "Show less" : "Read more"}
+        </button>
+      )}
+    </>
+  );
+}
+
 export default function ReviewsContent() {
   const [filter, setFilter] = useState<Filter>("all");
   const reviewsUrl = business.googleReviewsUrl;
+  // Featured quote: a real review supplied by the shop. The wall shows the
+  // (up to five) reviews Google returns live for the listing.
   const featuredReview = customerReviews[0];
-  const visibleReviews = dummyReviews.filter(
-    (review) => filter === "all" || review.topics.includes(filter),
+  const [live, setLive] = useState<{
+    status: "loading" | "ready" | "unavailable";
+    reviews: GoogleReview[];
+  }>({ status: "loading", reviews: [] });
+
+  useEffect(() => {
+    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+    let active = true;
+    if (!apiKey?.trim()) {
+      queueMicrotask(() => {
+        if (active) setLive({ status: "unavailable", reviews: [] });
+      });
+    } else {
+      loadGoogleReviews(apiKey, process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID)
+        .then((reviews) => {
+          if (active) setLive({ status: "ready", reviews });
+        })
+        .catch(() => {
+          if (active) setLive({ status: "unavailable", reviews: [] });
+        });
+    }
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const wallReviews = live.reviews.filter(
+    (review) => review.name !== featuredReview.name,
+  );
+  const topic = reviewTopics.find((item) => item.id === filter);
+  const visibleReviews = wallReviews.filter(
+    (review) => !topic || topic.match.test(review.text),
   );
 
   return (

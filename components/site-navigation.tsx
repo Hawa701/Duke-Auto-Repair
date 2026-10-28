@@ -112,6 +112,94 @@ export default function SiteNavigation() {
             priority
           />
         </Link>
+        <ul id="site-navigation" className={open ? "is-open" : undefined}>
+          {mainNavigation.map((item) => {
+            const current = pathname === item.href;
+            // Service and blueprint vehicle pages live at the site root, so
+            // their menu tab is matched by the page list, not the URL prefix.
+            const inMenu =
+              (item.menu === "services" &&
+                services.some((service) => service.href === pathname)) ||
+              (item.menu === "vehicles" &&
+                vehicles.some((vehicle) => vehicle.href === pathname));
+            const active =
+              current ||
+              inMenu ||
+              (item.href !== "/" && pathname.startsWith(`${item.href}/`));
+            const link = (
+              <Link
+                href={item.href}
+                aria-current={
+                  current ? "page" : active ? "location" : undefined
+                }
+                onClick={closeAll}
+              >
+                {item.short ? (
+                  <>
+                    <span className="lbl-full">{item.label}</span>
+                    <span className="lbl-short">{item.short}</span>
+                  </>
+                ) : (
+                  item.label
+                )}
+              </Link>
+            );
+            if (!item.menu)
+              return (
+                <li key={item.href} className={active ? "on" : undefined}>
+                  {link}
+                </li>
+              );
+            const id = item.menu;
+            const expanded = menu === id;
+            return (
+              <li
+                key={item.href}
+                className={`has-menu${active ? " on" : ""}${expanded ? " is-expanded" : ""}`}
+                onMouseEnter={() => hover(id)}
+                onMouseLeave={() => hover(null)}
+              >
+                <div className="nav-top">
+                  {link}
+                  <button
+                    type="button"
+                    className="sub-toggle"
+                    aria-expanded={expanded}
+                    aria-controls={`mega-${id}`}
+                    aria-label={`${expanded ? "Hide" : "Show"} ${item.label} menu`}
+                    onClick={() => setMenu(expanded ? null : id)}
+                  >
+                    <Icon name="chevron" />
+                  </button>
+                </div>
+                <div className="mega" id={`mega-${id}`}>
+                  {id === "services" ? (
+                    <ServicesMenu onNavigate={closeAll} />
+                  ) : (
+                    <VehiclesMenu onNavigate={closeAll} />
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+        <a
+          className="nav-call"
+          href={business.phoneHref}
+          aria-label={`Call ${business.phoneDisplay}`}
+        >
+          <Icon name="phone" />
+        </a>
+        <a
+          href={business.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={withBookingPopup("btn btn-y header-booking")}
+          onClick={closeAll}
+        >
+          <span className="lbl-full">Book an Appointment</span>
+          <span className="lbl-short">Book Now</span>
+        </a>
         <button
           ref={toggleRef}
           className="menu-toggle"

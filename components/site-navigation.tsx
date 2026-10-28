@@ -99,8 +99,9 @@ export default function SiteNavigation() {
       <div className="wrap">
         <Link
           href="/"
+          className="nav-logo"
           aria-label="Duke Auto Repair home"
-          onClick={() => setOpen(false)}
+          onClick={closeAll}
         >
           <Image
             className="logo"

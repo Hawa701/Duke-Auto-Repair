@@ -79,8 +79,15 @@ export default function SiteNavigation() {
       className="site-nav"
       aria-label="Main navigation"
       onKeyDown={(event) => {
-        if (event.key === "Escape" && open) {
-          event.preventDefault();
+        if (event.key !== "Escape" || (!open && !menu)) return;
+        event.preventDefault();
+        if (menu) {
+          const trigger = navRef.current?.querySelector<HTMLButtonElement>(
+            `[aria-controls="mega-${menu}"]`,
+          );
+          setMenu(null);
+          trigger?.focus();
+        } else {
           setOpen(false);
           toggleRef.current?.focus();
         }

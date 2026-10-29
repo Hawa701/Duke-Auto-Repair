@@ -116,3 +116,62 @@ export default function ArticleView({
                     <li key={item.label ?? item.text}>
                       {block.ordered ? (
                         <span className="article-num" aria-hidden="true">
+                          {itemIndex + 1}
+                        </span>
+                      ) : (
+                        <Icon name="check" />
+                      )}
+                      <span>
+                        {item.label && <b>{item.label}: </b>}
+                        <RichText text={item.text} />
+                      </span>
+                    </li>
+                  ))}
+                </List>
+              );
+            })}
+          </div>
+          <div className="article-cta">
+            <p>Have a question about your car? Talk directly to the mechanic.</p>
+            <a
+              href={business.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={withBookingPopup("btn btn-y")}
+            >
+              Book an Appointment
+            </a>
+          </div>
+        </article>
+        {related.length > 0 && (
+          <aside className="similar" aria-labelledby="similar-title">
+            <h2 id="similar-title">Similar articles</h2>
+            <ul>
+              {related.map((item) => (
+                <li key={item.slug}>
+                  {item.date && (
+                    <time dateTime={item.date}>
+                      {formatArticleDate(item.date)}
+                    </time>
+                  )}
+                  {isPublished(item) ? (
+                    <Link href={articleHref(item)}>{item.title}</Link>
+                  ) : (
+                    <span>
+                      {item.title} <em>Coming soon</em>
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <Link className="similar-all" href="/car-tips">
+              All car tips
+              <Icon name="arrow" />
+            </Link>
+          </aside>
+        )}
+      </div>
+      <BookingCta />
+    </div>
+  );
+}

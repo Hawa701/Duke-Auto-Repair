@@ -218,3 +218,58 @@ export default function SiteNavigation() {
     </nav>
   );
 }
+
+function ServicesMenu({ onNavigate }: { onNavigate: () => void }) {
+  return (
+    <div className="mega-inner">
+      <ul className="mega-services">
+        {services.map((service) => (
+          <li key={service.slug}>
+            <Link href={service.href} onClick={onNavigate}>
+              <span className="mega-icon">
+                <ServiceIcon name={service.icon} />
+              </span>
+              <span>
+                <b>{service.name}</b>
+                <small>{service.summary}</small>
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="mega-foot">
+        <Link href="/services" onClick={onNavigate}>
+          View all services
+          <Icon name="arrow" />
+        </Link>
+        <Link href="/quote" onClick={onNavigate}>
+          Request a quote
+          <Icon name="arrow" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function VehiclesMenu({ onNavigate }: { onNavigate: () => void }) {
+  return (
+    <div className="mega-inner">
+      <ul className="mega-vehicles">
+        {vehicles.map((vehicle) => (
+          <li key={vehicle.slug}>
+            <Link href={vehicle.href} onClick={onNavigate}>
+              {vehicle.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="mega-foot">
+        <Link href="/vehicles" onClick={onNavigate}>
+          All vehicles we service
+          <Icon name="arrow" />
+        </Link>
+        <span>Domestic &amp; Asian imports, cars, SUVs and light trucks.</span>
+      </div>
+    </div>
+  );
+}

@@ -26,9 +26,35 @@ export default function Header() {
               {business.shortAddress}
             </a>
           </span>
-          <div className="right">
-            <GoogleRating variant="utility" />
-          </div>
+          <span className="util-inspection">
+            <Icon name="clock" />
+            <span>
+              {business.inspectionHours}
+              <span className="util-sep" aria-hidden="true">
+                {" "}
+                |{" "}
+              </span>
+              <strong>Walk-ins Welcome</strong>
+            </span>
+          </span>
+          <span className="util-contact">
+            <span>
+              <Icon name="phone" />
+              <a href={business.phoneHref}>{business.phoneDisplay}</a>
+            </span>
+            {integrations.customerPortalUrl && (
+              <span>
+                <Icon name="user" />
+                <a
+                  href={integrations.customerPortalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Customer Dashboard
+                </a>
+              </span>
+            )}
+          </span>
         </div>
       </div>
       <SiteNavigation />

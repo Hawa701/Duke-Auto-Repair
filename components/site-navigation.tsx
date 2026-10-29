@@ -207,39 +207,13 @@ export default function SiteNavigation() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           aria-controls="site-navigation"
-          onClick={() => setOpen(!open)}
+          onClick={() => {
+            setOpen(!open);
+            setMenu(null);
+          }}
         >
           <Icon name={open ? "close" : "menu"} />
         </button>
-        <ul id="site-navigation" className={open ? "is-open" : ""}>
-          {navigation.map(({ href, label }) => {
-            const current = pathname === href;
-            const active =
-              current || (href !== "/" && pathname.startsWith(`${href}/`));
-            return (
-              <li key={href} className={active ? "on" : undefined}>
-                <Link
-                  href={href}
-                  aria-current={
-                    current ? "page" : active ? "location" : undefined
-                  }
-                  onClick={() => setOpen(false)}
-                >
-                  {label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-        <a
-          href={business.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-y header-booking"
-          onClick={() => setOpen(false)}
-        >
-          Book an appointment
-        </a>
       </div>
     </nav>
   );

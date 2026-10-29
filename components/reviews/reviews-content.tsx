@@ -277,6 +277,14 @@ export default function ReviewsContent() {
               </article>
             ))}
           </div>
+          {wallReviews.length > 0 && (
+            <p className="rv-source">
+              Recent reviews selected by{" "}
+              <span className="google-maps-attribution" translate="no">
+                Google Maps
+              </span>
+            </p>
+          )}
           <div className="more-rv">
             <p>See every review from our customers on Google.</p>
             <a

@@ -238,14 +238,40 @@ export default function ReviewsContent() {
             {visibleReviews.map((review) => (
               <article className="rv" key={review.id}>
                 <Stars rating={review.rating} />
-                <blockquote>{review.text}</blockquote>
+                <LongText id={review.id} text={review.text} />
                 <div className="who">
-                  <span className="av" aria-hidden="true">
-                    {review.initials}
-                  </span>
+                  {review.photo ? (
+                    // Google-hosted author photo; next/image can't optimize it on a static export.
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      className="av"
+                      src={review.photo}
+                      alt=""
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      referrerPolicy="no-referrer"
+                    />
+                  ) : (
+                    <span className="av" aria-hidden="true">
+                      {initialsOf(review.name)}
+                    </span>
+                  )}
                   <div>
-                    <b>{review.name}</b>
-                    <small>{review.service}</small>
+                    {review.profileUrl ? (
+                      <a
+                        href={review.profileUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <b>{review.name}</b>
+                      </a>
+                    ) : (
+                      <b>{review.name}</b>
+                    )}
+                    <small>
+                      {review.when ? `${review.when} · ` : ""}Google review
+                    </small>
                   </div>
                 </div>
               </article>

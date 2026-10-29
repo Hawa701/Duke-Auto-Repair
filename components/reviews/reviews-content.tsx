@@ -210,18 +210,24 @@ export default function ReviewsContent() {
                 </button>
               ))}
             </div>
-            <span className="count" role="status">
-              Showing {visibleReviews.length}{" "}
-              {visibleReviews.length === 1 ? "review" : "reviews"}
-            </span>
+            {wallReviews.length > 0 && (
+              <span className="count" role="status">
+                Showing {visibleReviews.length}{" "}
+                {visibleReviews.length === 1 ? "review" : "reviews"}
+              </span>
+            )}
           </div>
-          <div className="wall" id="review-wall">
-            {visibleReviews.length === 0 && (
-              <p className="no-reviews">
-                Read more reviews about{" "}
-                {reviewTopics
-                  .find((topic) => topic.id === filter)
-                  ?.label.toLowerCase()}{" "}
+          <div className="wall" id="review-wall" aria-busy={live.status === "loading"}>
+            {live.status === "loading" && (
+              <p className="no-reviews" role="status">
+                Loading the latest reviews from Google&hellip;
+              </p>
+            )}
+            {live.status !== "loading" && visibleReviews.length === 0 && (
+              <p className="no-reviews" role="status">
+                {topic
+                  ? `Read more reviews about ${topic.label.toLowerCase()} `
+                  : "Read what our customers say "}
                 on{" "}
                 <a href={reviewsUrl} target="_blank" rel="noopener noreferrer">
                   Google Maps

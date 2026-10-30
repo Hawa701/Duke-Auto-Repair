@@ -169,3 +169,61 @@ export default function QuoteForm({ newestYear }: { newestYear: number }) {
           </div>
         </div>
         <div className="qf-field">
+          <label htmlFor="quote-symptoms">What&apos;s going on?</label>
+          <textarea
+            id="quote-symptoms"
+            name="symptoms"
+            rows={5}
+            required
+            maxLength={4000}
+            placeholder="Describe the symptoms, noises, warning lights, or the service you need."
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>How we reach you</legend>
+        <div className="qf-row qf-row--3">
+          <div className="qf-field">
+            <label htmlFor="quote-name">Name</label>
+            <input
+              id="quote-name"
+              name="name"
+              autoComplete="name"
+              required
+              maxLength={120}
+            />
+          </div>
+          <div className="qf-field">
+            <label htmlFor="quote-phone">Phone</label>
+            <input
+              id="quote-phone"
+              type="tel"
+              name="phone"
+              autoComplete="tel"
+              required
+              maxLength={30}
+            />
+          </div>
+          <div className="qf-field">
+            <label htmlFor="quote-email">Email (optional)</label>
+            <input
+              id="quote-email"
+              type="email"
+              name="email"
+              autoComplete="email"
+              maxLength={254}
+            />
+          </div>
+        </div>
+      </fieldset>
+      <button
+        type="submit"
+        className="btn btn-y"
+        disabled={!action || status.state === "sending"}
+      >
+        {status.state === "sending" ? "Sending…" : "Send quote request"}
+        <Icon name="arrow" />
+      </button>
+    </form>
+  );
+}

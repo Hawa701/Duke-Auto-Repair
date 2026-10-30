@@ -112,3 +112,60 @@ export default function QuoteForm({ newestYear }: { newestYear: number }) {
       <div aria-live="polite">
         {status.state === "sent" && (
           <div ref={messageRef} tabIndex={-1} className="qf-status qf-status--ok">
+            <b>Thanks, your quote request was sent.</b> A service advisor will
+            get back to you soon. Need it sooner? Call{" "}
+            <a href={business.phoneHref}>{business.phoneLocal}</a>.
+          </div>
+        )}
+        {status.state === "error" && (
+          <div ref={messageRef} tabIndex={-1} className="qf-status qf-status--error">
+            <b>{status.message}</b> Please try again, or call{" "}
+            <a href={business.phoneHref}>{business.phoneLocal}</a>.
+          </div>
+        )}
+      </div>
+      {/* Spam trap: hidden from people, filled in by bots. */}
+      <div className="qf-trap" aria-hidden="true">
+        <label htmlFor="quote-company">Company</label>
+        <input id="quote-company" name="company" tabIndex={-1} autoComplete="off" />
+      </div>
+      <input ref={startedRef} type="hidden" name="started" defaultValue="" />
+      <fieldset>
+        <legend>Your vehicle</legend>
+        <div className="qf-row qf-row--3">
+          <div className="qf-field">
+            <label htmlFor="quote-year">Year</label>
+            <select id="quote-year" name="year" required defaultValue="">
+              <option value="" disabled>
+                Select year
+              </option>
+              {years.map((year) => (
+                <option key={year}>{year}</option>
+              ))}
+              <option value="older">Older</option>
+            </select>
+          </div>
+          <div className="qf-field">
+            <label htmlFor="quote-make">Make</label>
+            <select id="quote-make" name="make" required defaultValue="">
+              <option value="" disabled>
+                Select make
+              </option>
+              {vehicles.map((vehicle) => (
+                <option key={vehicle.slug}>{vehicle.name}</option>
+              ))}
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div className="qf-field">
+            <label htmlFor="quote-model">Model</label>
+            <input
+              id="quote-model"
+              name="model"
+              placeholder="e.g. Camry"
+              required
+              maxLength={80}
+            />
+          </div>
+        </div>
+        <div className="qf-field">

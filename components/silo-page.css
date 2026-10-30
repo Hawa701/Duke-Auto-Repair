@@ -1,0 +1,155 @@
+/* Service and vehicle silo pages. */
+.silo {
+  padding-block: clamp(48px, 7vw, 96px);
+}
+.silo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+.silo-grid > * {
+  min-width: 0;
+}
+.silo-side {
+  order: -1;
+  position: sticky;
+  top: calc(var(--sticky-offset) + 24px);
+  display: grid;
+  gap: 20px;
+}
+.silo-main {
+  display: grid;
+  gap: clamp(32px, 4vw, 48px);
+  max-width: 760px;
+}
+.silo-main h2 {
+  font-size: clamp(32px, 3.4vw, 44px);
+  line-height: 1.05;
+  font-weight: 800;
+}
+.silo-main h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: 2px;
+  background: var(--yellow);
+}
+.silo-main p {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #3a4360;
+}
+
+.side-card {
+  padding: 26px 24px;
+  border-radius: 14px;
+}
+.side-card h2 {
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+.side-links {
+  border: 1.5px solid #e3e6ee;
+  background: #fff;
+}
+.side-links ul {
+  display: grid;
+  margin-top: 12px;
+  list-style: none;
+}
+.side-links li + li {
+  border-top: 1px solid #eef0f4;
+}
+.side-links ul a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding-block: 8px;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.side-links ul a svg.i {
+  width: 16px;
+  height: 16px;
+  color: var(--navy);
+  opacity: 0.5;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+.side-links ul a:hover {
+  color: var(--navy);
+}
+.side-links ul a:hover svg.i {
+  opacity: 1;
+  transform: translateX(3px);
+}
+.side-links .side-all {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+.side-contact {
+  border-top: 6px solid var(--yellow);
+  background: var(--ink-navy);
+  color: #fff;
+}
+.side-contact ul {
+  display: grid;
+  gap: 14px;
+  margin: 16px 0 22px;
+  list-style: none;
+  font-size: 16px;
+}
+.side-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.side-contact li svg.i {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  color: var(--yellow);
+}
+.side-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.side-contact li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.side-hours {
+  display: block;
+}
+.side-contact .btn {
+  width: 100%;
+  justify-content: center;
+}
+.side-contact .side-quote {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--yellow);
+  font-size: 15px;
+  font-weight: 700;
+}
+.side-contact .side-quote svg.i {
+  width: 16px;
+  height: 16px;
+}
+

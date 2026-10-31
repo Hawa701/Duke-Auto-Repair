@@ -66,6 +66,27 @@ export default function ServiceIcon({ name }: { name: ServiceIconName }) {
         <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2m1 10 2 2 4-4" />
       </>
     ),
+    tire: (
+      <>
+        <circle cx="12" cy="12" r="9.5" />
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2.5V8M12 16v5.5M2.5 12H8M16 12h5.5" />
+      </>
+    ),
+    wrench: (
+      <path d="M14.7 6.3a4 4 0 0 0-5.3 5.3L3 18l3 3 6.4-6.4a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.6-.6-2.4Z" />
+    ),
+    "tune-up": <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />,
+    transmission: (
+      <>
+        <circle cx="5" cy="5" r="2" />
+        <circle cx="12" cy="5" r="2" />
+        <circle cx="19" cy="5" r="2" />
+        <circle cx="5" cy="19" r="2" />
+        <circle cx="12" cy="19" r="2" />
+        <path d="M5 7v10M12 7v10M19 7v5H5" />
+      </>
+    ),
   };
   return (
     <svg className="i" viewBox="0 0 24 24" aria-hidden="true">

@@ -316,3 +316,44 @@
   cursor: pointer;
 }
 
+/* $20 offer card */
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: clamp(24px, 3vw, 34px);
+  border: 2.5px dashed var(--deep);
+  border-radius: 16px;
+  background: var(--yellow);
+  color: var(--deep);
+}
+.offer-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.offer-tag svg.i {
+  width: 18px;
+  height: 18px;
+}
+.offer-card h2 {
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1;
+  font-weight: 800;
+}
+.offer-card h2 b {
+  display: block;
+  font-size: 1.6em;
+}
+.offer-card p {
+  font-size: 16px;
+}
+.offer-card .btn {
+  margin-top: auto;
+}
+

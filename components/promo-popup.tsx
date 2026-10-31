@@ -62,3 +62,39 @@ export default function PromoPopup() {
     // Only on the first page of the visit; later navigation finds the flag.
   }, [pathname]);
 
+  const close = () => dialogRef.current?.close();
+
+  return (
+    <dialog
+      ref={dialogRef}
+      className="promo-popup"
+      aria-label="Winter Deals"
+      onClick={(event) => {
+        // A click on the dimmed backdrop lands on the dialog element itself.
+        if (event.target === event.currentTarget) close();
+      }}
+    >
+      <div className="promo-popup__box">
+        <button
+          type="button"
+          className="promo-popup__close"
+          aria-label="Close"
+          onClick={close}
+          autoFocus
+        >
+          <Icon name="close" />
+        </button>
+        <Link className="promo-popup__link" href={promo.href} onClick={close}>
+          {/* Plain <img>: the export serves files as-is (images.unoptimized). */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={promo.image}
+            width={promo.width}
+            height={promo.height}
+            alt={promo.alt}
+          />
+        </Link>
+      </div>
+    </dialog>
+  );
+}

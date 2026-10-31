@@ -8,7 +8,11 @@ export type ServiceIconName =
   | "heating"
   | "alignment"
   | "diagnostics"
-  | "inspection";
+  | "inspection"
+  | "tire"
+  | "transmission"
+  | "wrench"
+  | "tune-up";
 
 export default function ServiceIcon({ name }: { name: ServiceIconName }) {
   const icons = {

@@ -56,3 +56,52 @@ const badges: Badge[] = [
   },
 ];
 
+export default function TrustBadges({
+  tone = "dark",
+}: {
+  tone?: "dark" | "light";
+}) {
+  return (
+    <ul
+      className={`trust-badges trust-badges--${tone}`}
+      aria-label="Certifications and warranty"
+    >
+      {badges.map((badge) => {
+        const content = (
+          <>
+            <span className="tb-seal" aria-hidden="true">
+              {badge.image ? (
+                <Image src={badge.image} alt="" width={96} height={96} />
+              ) : (
+                <Icon name={badge.icon ?? "check"} />
+              )}
+            </span>
+            <span className="tb-text">
+              <b>
+                {badge.top}
+                {badge.brand && (
+                  <>
+                    {" "}
+                    <span className="tb-brand">{badge.brand}</span>
+                  </>
+                )}
+              </b>
+              <span>{badge.bottom}</span>
+            </span>
+          </>
+        );
+        return (
+          <li key={badge.id} className={`tb tb--${badge.id}`}>
+            {badge.href ? (
+              <Link className="tb-link" href={badge.href}>
+                {content}
+              </Link>
+            ) : (
+              content
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}

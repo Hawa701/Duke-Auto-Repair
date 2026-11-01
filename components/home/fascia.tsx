@@ -1,22 +1,53 @@
+import Link from "next/link";
+import ServiceIcon from "../service-icon";
+
 const services = [
-  "Brake repair",
-  "Oil change",
-  "A/C repair",
-  "Wheel alignment",
-  "Check engine diagnostics",
-  "Battery service",
-  "State inspection",
-  "Suspension and steering",
-];
+  {
+    title: "Engine Repair",
+    description: "Diagnostics & repair",
+    href: "/check-engine-light-diagnostic",
+    icon: "diagnostics",
+  },
+  {
+    title: "Brakes",
+    description: "Pads, rotors & more",
+    href: "/brake-repair",
+    icon: "brakes",
+  },
+  {
+    title: "Oil Change",
+    description: "Quick & professional",
+    href: "/oil-change-service",
+    icon: "oil",
+  },
+  {
+    title: "Tires & Alignment",
+    description: "Laser wheel alignment",
+    href: "/wheel-alignment",
+    icon: "tire",
+  },
+  {
+    title: "State Inspections",
+    description: "Walk-ins welcome",
+    href: "/emissions-test",
+    icon: "inspection",
+  },
+  {
+    title: "A/C & Heating",
+    description: "Diagnostics & repair",
+    href: "/car-ac-repair",
+    icon: "air-conditioning",
+  },
+] as const;
 
 export default function Fascia() {
   return (
-    <div className="fascia" role="region" aria-label="Auto repair services">
-      <div className="fascia-viewport">
-        <div className="fascia-track">
+    <section className="xstrip" aria-label="Explore our auto repair services">
+      <div className="wrap home-strip-viewport">
+        <div className="home-strip-track">
           {[false, true].map((duplicate) => (
             <ul
-              className="fascia-group"
+              className="home-strip-group"
               key={String(duplicate)}
               aria-hidden={duplicate || undefined}
             >

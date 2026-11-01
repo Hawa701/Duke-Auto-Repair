@@ -1,7 +1,26 @@
 import type { SVGProps } from "react";
 
 type IconName =
-  "arrow" | "back" | "check" | "phone" | "pin" | "clock" | "menu" | "close";
+  | "arrow"
+  | "back"
+  | "check"
+  | "phone"
+  | "pin"
+  | "clock"
+  | "menu"
+  | "close"
+  | "calendar"
+  | "shield"
+  | "car"
+  | "chevron"
+  | "user"
+  | "chat"
+  | "tag"
+  | "key"
+  | "wrench"
+  | "link"
+  | "scissors"
+  | "award";
 
 const paths: Record<IconName, string> = {
   arrow: "M5 12h14M13 6l6 6-6 6",

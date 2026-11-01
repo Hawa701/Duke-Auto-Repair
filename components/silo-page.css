@@ -357,3 +357,90 @@
   margin-top: auto;
 }
 
+@media (max-width: 900px) {
+  .silo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .silo-side {
+    order: 0;
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+  .silo-widgets .wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .silo-side {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .silo-main p {
+    font-size: 17px;
+  }
+  .silo-banner-acts,
+  .silo-banner-acts .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Certification logos (State Inspections page). */
+.side-certs {
+  border: 1.5px solid #e3e6ee;
+  background: #fff;
+}
+.side-certs .cert-logos {
+  margin-top: 16px;
+}
+.side-certs .cert-logo {
+  flex: 1 1 auto;
+  height: 96px;
+}
+
+/* "In the shop" photos under the service copy. Three photos: one wide on
+   top, two below. Two photos: side by side. */
+.silo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+.silo-gallery-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 4 / 3;
+  background: var(--concrete);
+}
+.silo-gallery-grid figure:first-child:nth-last-child(3) {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 7;
+}
+.silo-gallery-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 520px) {
+  .silo-gallery-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .silo-gallery-grid figure,
+  .silo-gallery-grid figure:first-child:nth-last-child(3) {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Internal links inside the page copy (bolded keywords). */
+.silo-main p a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.silo-main p a:hover {
+  text-decoration-color: currentColor;
+}

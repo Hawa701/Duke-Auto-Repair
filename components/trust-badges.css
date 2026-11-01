@@ -1,0 +1,95 @@
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+.trust-badges .tb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px 10px 10px;
+  border-radius: 999px;
+}
+.trust-badges .tb-seal {
+  position: relative;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--deep);
+  box-shadow:
+    0 0 0 3px var(--deep),
+    0 0 0 5px var(--yellow);
+}
+/* Seals with supplied artwork: the logo sits on a plain white disc. */
+.trust-badges .tb-seal:has(img) {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
+}
+.trust-badges .tb-seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.trust-badges .tb--ase .tb-seal img {
+  padding: 3px;
+}
+.trust-badges .tb--carfax .tb-seal img {
+  padding: 4px 6px;
+}
+.trust-badges .tb--businessrate .tb-seal {
+  background: #111;
+}
+.trust-badges .tb--businessrate .tb-seal img {
+  object-fit: cover;
+}
+.trust-badges--light .tb-seal:has(img) {
+  box-shadow: 0 0 0 1.5px #e3e6ee;
+}
+.trust-badges .tb-seal svg.i {
+  width: 26px;
+  height: 26px;
+  stroke-width: 2.2;
+}
+.trust-badges .tb-text {
+  display: grid;
+  line-height: 1.15;
+}
+.trust-badges .tb-text b {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.trust-badges .tb-text span {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.trust-badges--dark .tb {
+  background: rgba(8, 22, 56, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+.trust-badges--light .tb {
+  background: #fff;
+  border: 1.5px solid #e3e6ee;
+  color: var(--ink);
+}
+@media (max-width: 640px) {
+  .trust-badges {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+  .trust-badges .tb {
+    border-radius: 14px;
+  }
+}
+

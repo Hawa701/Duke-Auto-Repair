@@ -1,0 +1,68 @@
+/* Seasonal promo popup (components/promo-popup.tsx). */
+.promo-popup {
+  width: min(880px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+.promo-popup::backdrop {
+  background: rgba(8, 22, 56, 0.72);
+}
+.promo-popup__box {
+  position: relative;
+}
+.promo-popup__link {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+.promo-popup__link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100dvh - 32px);
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.promo-popup__link:hover img {
+  transform: scale(1.015);
+}
+.promo-popup__link:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+.promo-popup__close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--deep, #0a1e4a);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+.promo-popup__close svg {
+  width: 20px;
+  height: 20px;
+}
+.promo-popup__close:hover {
+  background: #fff;
+  color: var(--deep, #0a1e4a);
+}
+.promo-popup__close:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+

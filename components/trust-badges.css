@@ -93,3 +93,39 @@
   }
 }
 
+/* "BusinessRate" keeps the brand's own spelling: not bold, not in capitals. */
+.trust-badges .tb-text b .tb-brand {
+  font-family: var(--font-barlow), sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Award badges link to the home page's awards section. The link fills the pill. */
+.trust-badges .tb-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: -10px -16px -10px -10px;
+  padding: 10px 16px 10px 10px;
+  border-radius: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.trust-badges .tb:has(.tb-link) {
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+.trust-badges--dark .tb:has(.tb-link:hover) {
+  border-color: var(--yellow);
+  background: rgba(8, 22, 56, 0.75);
+}
+.trust-badges--light .tb:has(.tb-link:hover) {
+  border-color: var(--yellow);
+}
+.trust-badges .tb-link:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}

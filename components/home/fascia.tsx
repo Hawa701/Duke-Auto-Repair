@@ -52,7 +52,19 @@ export default function Fascia() {
               aria-hidden={duplicate || undefined}
             >
               {services.map((service) => (
-                <li key={service}>{service}</li>
+                <li key={service.href}>
+                  <Link
+                    className="sv"
+                    href={service.href}
+                    tabIndex={duplicate ? -1 : undefined}
+                  >
+                    <ServiceIcon name={service.icon} />
+                    <span>
+                      <b>{service.title}</b>
+                      <small>{service.description}</small>
+                    </span>
+                  </Link>
+                </li>
               ))}
             </ul>
           ))}

@@ -3,8 +3,14 @@
   margin-top: -1px;
   color: #fff;
   text-align: center;
-  background: var(--navy) var(--ph) center 55% / cover no-repeat;
+  background: var(--navy);
   border-bottom: 8px solid var(--yellow);
+  isolation: isolate;
+}
+/* The header photo is a real <img> (for its alt text), kept behind the tint. */
+.page-header .page-header__img {
+  z-index: -1;
+  object-fit: cover;
 }
 .page-header:before {
   content: "";

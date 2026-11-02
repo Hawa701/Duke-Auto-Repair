@@ -1,0 +1,230 @@
+/* Site header: utility bar, sticky navigation and mega-menus.
+   This file is the single owner of header styles. Desktop nav ≥800px (compact 800–1280px);
+   below that the links collapse into the menu panel. */
+:root {
+  --util-h: 40px;
+  --nav-h: 84px;
+  --sticky-offset: calc(var(--util-h) + var(--nav-h));
+}
+@media (max-width: 799px) {
+  :root {
+    --nav-h: 78px;
+    /* The utility bar scrolls away; only the navigation stays pinned. */
+    --sticky-offset: var(--nav-h);
+  }
+}
+@media (max-width: 640px) {
+  :root {
+    /* Two lines: the inspection hours wrap under the label on phones. */
+    --util-h: 46px;
+    --nav-h: 70px;
+  }
+}
+html {
+  scroll-padding-top: calc(var(--sticky-offset) + 16px);
+}
+
+.site-header {
+  --hdr-bg: var(--navy);
+  --hdr-util: var(--deep);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--hdr-bg);
+  box-shadow: 0 6px 20px rgba(20, 32, 74, 0.14);
+}
+.site-header.site-header--home {
+  --hdr-bg: #123a8c;
+  --hdr-util: #0a1e4a;
+}
+@media (max-width: 799px) {
+  .site-header {
+    top: calc(-1 * var(--util-h) - 1px);
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -100px;
+  padding: 12px 20px;
+  background: #fff;
+  color: var(--ink);
+  z-index: 100;
+}
+.skip-link:focus {
+  top: calc(var(--util-h) + 8px);
+}
+
+/* ---------- utility bar ---------- */
+.site-header .util {
+  background: var(--hdr-util);
+  color: #fff;
+  font-size: 13.5px;
+}
+.site-header .util .wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: var(--util-h);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.site-header .util .wrap > span,
+.site-header .util-contact > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.site-header .util svg.i {
+  width: 15px;
+  height: 15px;
+  color: var(--yellow);
+}
+.site-header .util a {
+  color: #fff;
+  text-decoration: none;
+}
+.site-header .util a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-header .util-inspection {
+  flex: 1;
+  justify-content: center;
+  font-weight: 600;
+}
+.site-header .util-inspection strong {
+  color: var(--yellow);
+  font-weight: 700;
+}
+.site-header .util-sep {
+  opacity: 0.5;
+}
+.site-header .util-contact {
+  gap: 18px;
+  font-weight: 700;
+}
+.site-header .util-contact > span + span {
+  padding-left: 18px;
+  border-left: 1px solid #ffffff40;
+}
+
+/* ---------- navigation bar ---------- */
+.site-nav {
+  background: var(--hdr-bg);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.site-nav .wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: var(--nav-h);
+}
+.site-nav .nav-logo {
+  flex: none;
+  min-width: 0;
+}
+.site-nav .logo {
+  display: block;
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.site-nav ul {
+  list-style: none;
+}
+.site-nav #site-navigation {
+  display: flex;
+  align-self: stretch;
+  gap: 16px;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+.site-nav #site-navigation > li {
+  display: flex;
+  align-items: center;
+}
+.site-nav .nav-top {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.site-nav #site-navigation > li > a,
+.site-nav .nav-top > a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  color: #e9ecf4;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-nav #site-navigation > li > a:hover,
+.site-nav .nav-top > a:hover,
+.site-nav li.on > a,
+.site-nav li.on .nav-top > a {
+  color: var(--yellow);
+}
+.site-nav li.on > a::after,
+.site-nav li.on .nav-top > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc((40px - var(--nav-h)) / 2);
+  height: 3px;
+  background: var(--yellow);
+}
+.site-nav .sub-toggle {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.site-nav .sub-toggle svg.i {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+.site-nav li.is-expanded .sub-toggle svg.i {
+  transform: rotate(180deg);
+}
+.site-nav .sub-toggle:focus-visible,
+.site-nav .menu-toggle:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+.site-nav .header-booking {
+  flex: none;
+  margin-left: 6px;
+  padding: 14px 20px;
+  font-size: 16px;
+  box-shadow: 0 6px 16px #00000026;
+}
+.site-nav .nav-call {
+  display: none;
+}
+.site-nav .menu-toggle {
+  display: none;
+  flex: none;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+}
+

@@ -39,3 +39,45 @@
   width: 32px;
   height: 32px;
   margin-right: 6px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.coupon-sticker button:hover {
+  background: rgba(20, 32, 74, 0.12);
+}
+.coupon-sticker button svg.i {
+  width: 16px;
+  height: 16px;
+}
+.coupon-sticker :focus-visible {
+  outline: 2px solid var(--deep);
+  outline-offset: 2px;
+}
+@keyframes sticker-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) rotate(-3deg);
+  }
+}
+@media (max-width: 640px) {
+  .coupon-sticker {
+    left: 12px;
+    bottom: 12px;
+  }
+  .coupon-sticker a {
+    padding: 8px 4px 8px 12px;
+  }
+  }
+@media (prefers-reduced-motion: reduce) {
+  .coupon-sticker {
+    animation: none;
+  }
+}
+@media print {
+  .coupon-sticker {
+    display: none;
+  }
+}

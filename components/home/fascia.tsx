@@ -70,6 +70,6 @@ export default function Fascia() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

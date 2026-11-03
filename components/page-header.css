@@ -82,6 +82,15 @@
   font-size: 19px;
   color: rgba(255, 255, 255, 0.92);
 }
+.page-header p a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-underline-offset: 3px;
+}
+.page-header p a:hover {
+  color: var(--yellow);
+}
 
 /* Fluid type and spacing keep the banner readable without clipping. */
 .page-header h1 {

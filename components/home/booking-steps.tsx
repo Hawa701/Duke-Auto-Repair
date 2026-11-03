@@ -6,9 +6,7 @@ export default function BookingSteps() {
       <div className="wrap">
         <div className="sec-head">
           <h2>Getting your car fixed couldn&apos;t be easier.</h2>
-          <p>
-            Arrange your visit with our team. Most cars are ready the same day.
-          </p>
+          <p>Book in a couple of minutes. Most cars are ready the same day.</p>
         </div>
         <div className="step-row">
           <div className="step">

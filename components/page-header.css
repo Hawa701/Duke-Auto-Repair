@@ -111,3 +111,16 @@
     padding-bottom: 150px;
   }
 }
+
+/* Long SEO headings (service, vehicle and article pages). */
+.page-header.page-header--compact h1 {
+  max-width: 980px;
+  margin-inline: auto;
+  font-size: clamp(38px, 5.2vw, 72px);
+  line-height: 1;
+  text-wrap: balance;
+}
+.page-header.page-header--compact p {
+  max-width: 780px;
+  text-wrap: pretty;
+}

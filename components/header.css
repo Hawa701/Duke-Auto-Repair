@@ -358,3 +358,114 @@ html {
   }
 }
 
+/* ---------- small laptops: full menu, tighter spacing ---------- */
+@media (min-width: 1025px) and (max-width: 1320px) {
+  .site-nav .wrap {
+    gap: 12px;
+  }
+  .site-nav .logo {
+    height: 42px;
+  }
+  .site-nav #site-navigation {
+    gap: 14px;
+    font-size: 15px;
+  }
+  .site-nav .header-booking {
+    margin-left: 4px;
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+  .site-header .util .wrap {
+    gap: 16px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1140px) {
+  .site-nav #site-navigation {
+    gap: 10px;
+    font-size: 14.5px;
+  }
+  .site-nav .sub-toggle {
+    width: 20px;
+  }
+  .site-header .util .wrap > .util-address {
+    display: none;
+  }
+}
+
+/* Short labels ("Vehicles", "Quote", "Book Now") only on narrow desktop widths. */
+.site-nav .lbl-short {
+  display: none;
+}
+@media (min-width: 800px) and (max-width: 1180px) {
+  .site-nav .lbl-full {
+    display: none;
+  }
+  .site-nav .lbl-short {
+    display: inline;
+  }
+}
+@media (min-width: 800px) and (max-width: 1024px) {
+  .site-nav .wrap {
+    gap: 10px;
+  }
+  .site-nav .logo {
+    height: 34px;
+  }
+  .site-nav #site-navigation {
+    gap: 12px;
+    font-size: 14.5px;
+  }
+  .site-nav .sub-toggle {
+    width: 18px;
+  }
+  .site-nav .header-booking {
+    margin-left: 2px;
+    padding: 10px 14px;
+    font-size: 14.5px;
+  }
+  .site-nav .mega-services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .site-nav .mega-vehicles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .site-nav .wrap {
+    gap: 8px;
+  }
+  .site-nav .logo {
+    height: 30px;
+  }
+  .site-nav #site-navigation {
+    gap: 6px;
+    font-size: 14px;
+  }
+  .site-nav .sub-toggle {
+    width: 16px;
+  }
+  .site-nav .header-booking {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- tablet & mobile ---------- */
+@media (max-width: 799px) {
+  .site-header .util .wrap > .util-address {
+    display: none;
+  }
+  .site-header .util-inspection {
+    justify-content: flex-start;
+  }
+  .site-nav .logo {
+    height: 46px;
+  }
+  .site-nav .nav-call {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;

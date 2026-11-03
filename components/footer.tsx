@@ -1,4 +1,6 @@
-import { business } from "@/lib/business";
+import { business, integrations } from "@/lib/business";
+import { mainNavigation } from "@/lib/navigation";
+import { services } from "@/lib/services";
 import Image from "next/image";
 import Link from "next/link";
 import GoogleRating from "./google-rating";

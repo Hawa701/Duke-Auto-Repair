@@ -3,13 +3,17 @@
 import { business } from "@/lib/business";
 import { useGoogleRating } from "./google-reviews-provider";
 import { Stars } from "./icon";
+import GoogleMark from "./google-mark";
 
-type Variant = "utility" | "hero" | "footer" | "score" | "summary" | "crew";
+type Variant =
+  "utility" | "hero" | "footer" | "score" | "summary" | "crew" | "home-hero";
 
 export default function GoogleRating({
   variant = "footer",
+  brandMark = false,
 }: {
   variant?: Variant;
+  brandMark?: boolean;
 }) {
   const data = useGoogleRating();
   const score = data?.rating.toFixed(1);

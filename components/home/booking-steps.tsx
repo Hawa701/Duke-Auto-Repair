@@ -13,8 +13,8 @@ export default function BookingSteps() {
             <div className="n">1</div>
             <h3>Book a time</h3>
             <p>
-              Book online or call our front desk to arrange a time that suits
-              you.
+              Pick your service and a time that suits you, online whenever you
+              like, or call the front desk.
             </p>
           </div>
           <div className="step">

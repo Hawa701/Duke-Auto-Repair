@@ -43,6 +43,27 @@ export default function GoogleRating({
     ),
   );
 
+  if (variant === "home-hero") {
+    return (
+      <div className="home-rating">
+        <GoogleMark />
+        <div>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-rating__score"
+          >
+            {data && <Stars rating={data.rating} />}
+            <b>{score ?? "Google reviews"}</b>
+            {count && <span>({count} reviews)</span>}
+          </a>
+          <small>on {attribution}</small>
+          {attributionLinks}
+        </div>
+      </div>
+    );
+  }
   if (variant === "crew") {
     return (
       <div className="crew-rating">

@@ -469,3 +469,161 @@ html {
     width: 44px;
     height: 44px;
     margin-left: auto;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+  }
+  .site-nav .nav-call svg.i {
+    width: 20px;
+    height: 20px;
+  }
+  .site-nav .header-booking {
+    margin-left: 0;
+  }
+  .site-nav .menu-toggle {
+    display: block;
+  }
+  .site-nav #site-navigation {
+    display: none;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 12px 20px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-top: 0;
+    border-radius: 0 0 12px 12px;
+    background: var(--hdr-bg);
+    box-shadow: 0 16px 30px rgba(20, 32, 74, 0.25);
+    max-height: calc(100dvh - var(--nav-h) - 12px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    font-size: 17px;
+  }
+  .site-nav #site-navigation.is-open {
+    display: block;
+  }
+  .site-nav #site-navigation > li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .site-nav #site-navigation > li:last-child {
+    border-bottom: 0;
+  }
+  .site-nav #site-navigation > li > a,
+  .site-nav .nav-top > a {
+    flex: 1;
+    min-height: 48px;
+  }
+  .site-nav li.on > a::after,
+  .site-nav li.on .nav-top > a::after {
+    display: none;
+  }
+  .site-nav .sub-toggle {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .site-nav .sub-toggle svg.i {
+    width: 20px;
+    height: 20px;
+  }
+  .site-nav .mega-inner {
+    padding: 4px 0 16px;
+  }
+  .site-nav .mega-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .site-nav .mega-services a {
+    align-items: center;
+    padding: 8px 10px;
+  }
+  .site-nav .mega-services small {
+    display: none;
+  }
+  .site-nav .mega-icon {
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--yellow);
+  }
+  .site-nav .mega-icon svg.i {
+    width: 18px;
+    height: 18px;
+  }
+  .site-nav .mega-vehicles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2px;
+  }
+  .site-nav .mega-vehicles a {
+    padding: 8px 10px;
+    font-weight: 500;
+  }
+  .site-nav .mega a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--yellow);
+  }
+  .site-nav .mega-foot {
+    margin-top: 8px;
+    padding-inline: 10px;
+    color: var(--yellow);
+    font-size: 15px;
+  }
+  .site-nav .mega-foot span {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .site-header .util .wrap > .util-contact {
+    display: none;
+  }
+  .site-header .util-inspection {
+    justify-content: center;
+  }
+  .site-nav .mega-services {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .site-nav .mega-vehicles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .site-header .util {
+    font-size: 12px;
+  }
+  .site-header .util .wrap {
+    white-space: normal;
+  }
+  .site-header .util-inspection {
+    text-align: center;
+    line-height: 1.3;
+  }
+  .site-nav .wrap {
+    gap: 10px;
+  }
+  .site-nav .logo {
+    width: 170px;
+    height: auto;
+  }
+  .site-nav .header-booking {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .site-header .util-inspection > svg.i {
+    display: none;
+  }
+  .site-header .util {
+    font-size: 11.5px;
+  }
+  .site-header .util .wrap {
+    gap: 0;
+  }
+  .site-nav .logo {
+    width: 150px;
+  }
+  .site-nav .mega-vehicles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

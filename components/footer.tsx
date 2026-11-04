@@ -27,21 +27,22 @@ export default function Footer() {
           <div>
             <h4>Quick links</h4>
             <ul className="quick-links">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About us</Link>
-              </li>
-              <li>
-                <Link href="/services">Services</Link>
-              </li>
-              <li>
-                <Link href="/reviews">Reviews</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
+              {mainNavigation.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              ))}
+              {integrations.customerPortalUrl && (
+                <li>
+                  <a
+                    href={integrations.customerPortalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Customer Login
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
           <div>

@@ -81,6 +81,24 @@ export default function Footer() {
               </li>
               <li>
                 <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm18 2-10 7L2 6" />
+                </svg>
+                <a href={business.emailHref}>{business.email}</a>
+              </li>
+              <li>
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
+                  <path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0M12 6v6l4 2" />
+                </svg>
+                <span>
+                  {business.hours.map((row) => (
+                    <span className="footer-hours" key={row.short}>
+                      {row.short}: {row.time}
+                    </span>
+                  ))}
+                </span>
+              </li>
+              <li>
+                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
                 <GoogleRating variant="footer" />

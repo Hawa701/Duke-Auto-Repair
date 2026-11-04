@@ -48,46 +48,11 @@ export default function Footer() {
           <div>
             <h4>Services</h4>
             <ul className="two">
-              <li>
-                <Link href="/services/brakes">Brake service</Link>
-              </li>
-              <li>
-                <Link href="/services/bg-fluids">BG fluid services</Link>
-              </li>
-              <li>
-                <Link href="/services/wheel-alignment">Wheel alignment</Link>
-              </li>
-              <li>
-                <Link href="/services/air-conditioning">
-                  Air conditioning repair
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/suspension-steering">
-                  Suspension and steering
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/battery-services">Battery services</Link>
-              </li>
-              <li>
-                <Link href="/services/state-inspection">
-                  State safety and emission inspection
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/engine-diagnostics">
-                  Check engine diagnostics
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/heating-system">
-                  Heating system service
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/oil-change">Oil change</Link>
-              </li>
+              {services.map((service) => (
+                <li key={service.slug}>
+                  <Link href={service.href}>{service.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

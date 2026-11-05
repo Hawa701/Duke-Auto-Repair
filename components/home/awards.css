@@ -1,0 +1,68 @@
+/* Awards section (Home, About, Reviews). Page stylesheets may refine the
+   section shell; the award wall itself is styled only here. */
+.awards {
+  background: var(--navy);
+  color: #fff;
+  padding-block: clamp(56px, 7.5vw, 110px);
+}
+.awards .grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+}
+.awards h2 {
+  font-size: clamp(40px, 4.6vw, 64px);
+}
+.awards .copy p {
+  margin-top: 20px;
+  max-width: 520px;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.88);
+}
+.awards .rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.awards .rating b {
+  font-family: var(--font-barlow-condensed);
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+.awards .rating .stars svg {
+  width: 18px;
+  height: 18px;
+}
+.awards .google-maps-attribution {
+  color: inherit;
+}
+.awards .acts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 26px;
+  margin-top: 30px;
+}
+.awards .more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.awards .more svg.i {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+.awards .more:hover svg.i {
+  transform: translateX(5px);
+}
+

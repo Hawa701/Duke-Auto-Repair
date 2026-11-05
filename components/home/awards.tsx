@@ -1,18 +1,30 @@
-import { business } from "@/lib/business";
+import { business, withBookingPopup } from "@/lib/business";
 import Stagger from "@/components/stagger";
+import Image from "next/image";
 import Link from "next/link";
 import GoogleRating from "../google-rating";
+import "./awards.css";
+
+// Award artwork supplied by the shop (public/images/awards).
+const carfax = [
+  { year: 2025, featured: true },
+  { year: 2024, featured: false },
+  { year: 2023, featured: false },
+];
 
 export default function HomeAwards() {
   return (
-    <section className="awards">
+    <section id="awards" className="awards" aria-labelledby="awards-title">
       <div className="wrap grid">
         <div className="copy">
-          <h2>Top rated three years running.</h2>
+          {/* Content & UX Guide (revised), section 1: Awards Banner Update. */}
+          <h2 id="awards-title">Top rated four years running.</h2>
           <p>
-            Duke Auto was named a top-rated auto repair shop in 2023, 2024 and
-            2025. Thank you to the drivers who keep coming back, and to the
-            friends they send our way.
+            Duke Auto Repair &amp; Service is a CARFAX Top-Rated Service Center
+            for 2022, 2023, 2024, and 2025, and was named BusinessRate Best of
+            2025 for car repair and maintenance in {business.city}, based on
+            Google reviews. Thank you to the drivers who keep coming back, and
+            to the friends they send our way.
           </p>
           <div className="rating">
             <GoogleRating variant="utility" />

@@ -1,91 +1,50 @@
-import { business } from "@/lib/business";
-import Entrance from "@/components/entrance";
-import Link from "next/link";
+import Stagger from "@/components/stagger";
+import Icon from "@/components/icon";
 
-export default function HomeBenefits({ id }: { id?: string }) {
+// "The Duke Difference": Content & UX Guide (revised), section 1.1.
+const features = [
+  {
+    icon: "chat",
+    title: "Collaborative Customer Communication",
+    body: "Our experienced service advisors and certified technicians work together to provide clear explanations, transparent estimates, and timely updates throughout the repair process. We help customers understand what needs immediate attention and what can be safely planned for a future visit.",
+  },
+  {
+    icon: "tag",
+    title: "Transparent Pricing",
+    body: "Get premium, dealership-level diagnostics and repairs without the inflated dealership markup. We emphasize transparency by providing a detailed, itemized estimate of parts and labor before any authorization. No hidden fees, no surprise charges.",
+  },
+  {
+    icon: "car",
+    title: "Free 5-Mile Local Shuttle",
+    body: "We know that being without your vehicle is a massive disruption to your daily routine. That is why we offer a fast, complimentary local shuttle service within a 5-mile radius.",
+  },
+  {
+    icon: "wrench",
+    title: "Complete Automotive Care Under One Roof",
+    body: "From oil changes to complex engine and transmission repairs, our experienced team provides comprehensive automotive maintenance, diagnostics, and mechanical repairs.",
+  },
+] as const;
+
+export default function HomeBenefits() {
   return (
-    <section className="diff" id={id}>
+    <section className="duke-diff" aria-labelledby="duke-diff-title">
       <div className="wrap">
         <div className="sec-head">
-          <h2>We just do auto care differently.</h2>
-          <p>
-            Two things most shops don&apos;t offer, and neither one costs you
-            anything.
-          </p>
+          <h2 id="duke-diff-title">
+            Why Alexandria Drivers Choose Duke Auto Repair
+          </h2>
         </div>
-
-        <Entrance className="perk" pattern="left" inView>
-          <div
-            className="media"
-            style={{ backgroundImage: "url(/images/home/keys.jpg)" }}
-          ></div>
-          <div className="body">
-            <span className="free">Complimentary</span>
-            <h3>Concierge vehicle pick-up and drop-off</h3>
-            <p>
-              Let us come to you. We&apos;ll pick up your vehicle, service it,
-              and return it to your door.
-            </p>
-            <ul className="ticks">
-              <li>
-                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-                Picked up from your door
-              </li>
-              <li>
-                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-                Returned as soon as it&apos;s done
-              </li>
-            </ul>
-            <Link href="/contact" className="btn btn-n">
-              Schedule a pick-up
-            </Link>
-          </div>
-        </Entrance>
-
-        <Entrance className="perk flip" pattern="right" inView>
-          <div
-            className="media"
-            style={{
-              backgroundImage: "url(/images/home/tablet.jpg)",
-              backgroundPosition: "60% 55%",
-            }}
-          ></div>
-          <div className="body">
-            <span className="free">Free with every visit</span>
-            <h3>Digital vehicle health inspections</h3>
-            <p>
-              A complete, easy-to-understand report on your vehicle&apos;s
-              health. From tire wear to brake life, we show you what&apos;s
-              good, what needs attention, and what can wait, at no cost.
-            </p>
-            <ul className="ticks">
-              <li>
-                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-                Tire wear, brake life, fluids, and more
-              </li>
-              <li>
-                <svg aria-hidden="true" className="i" viewBox="0 0 24 24">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-                Always free, never any obligation
-              </li>
-            </ul>
-            <a
-              href={business.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-n"
-            >
-              Book an appointment
-            </a>
-          </div>
-        </Entrance>
+        <Stagger className="diff-grid" pattern="alternate" interval={0.08}>
+          {features.map((feature) => (
+            <article className="diff-card" key={feature.title}>
+              <span className="diff-icon" aria-hidden="true">
+                <Icon name={feature.icon} />
+              </span>
+              <h3>{feature.title}</h3>
+              <p>{feature.body}</p>
+            </article>
+          ))}
+        </Stagger>
       </div>
     </section>
   );

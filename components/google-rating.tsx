@@ -125,6 +125,7 @@ export default function GoogleRating({
         {attribution}
       </a>
       {attributionLinks}
+      {brandMark && <GoogleMark />}
     </span>
   );
 }

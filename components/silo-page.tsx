@@ -185,3 +185,21 @@ export default function SiloPage({
   );
 }
 
+export function OfferCard() {
+  return (
+    <aside className="offer-card" aria-labelledby="offer-card-title">
+      <span className="offer-tag">
+        <Icon name="scissors" />
+        Digital coupon
+      </span>
+      <h2 id="offer-card-title">
+        <b>Up to $50 Off</b> Your First Visit
+      </h2>
+      <p>Show this offer on your phone at checkout. No printing required.</p>
+      <Link href="/promotions" className="btn btn-n">
+        See all coupons
+        <Icon name="arrow" />
+      </Link>
+    </aside>
+  );
+}

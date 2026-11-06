@@ -10,9 +10,13 @@ type PageHeaderProps = {
   breadcrumb?: string;
   description: string;
   image: string;
+  /** Describes the header photo. Leave empty for a purely decorative photo. */
+  imageAlt?: string;
   imagePosition?: string;
   breadcrumbs?: { href: string; label: string }[];
   hasLift?: boolean;
+  /** Smaller title for long, SEO-style headings. */
+  compact?: boolean;
 };
 
 export default function PageHeader({

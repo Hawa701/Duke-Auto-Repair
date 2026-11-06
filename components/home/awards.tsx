@@ -46,22 +46,34 @@ export default function HomeAwards() {
             </Link>
           </div>
         </div>
-        <Stagger className="plaques" pattern="zoom">
-          <div className="plaque">
-            <span>Top rated</span>
-            <b>2023</b>
-            <small>Auto repair</small>
-          </div>
-          <div className="plaque">
-            <span>Top rated</span>
-            <b>2024</b>
-            <small>Auto repair</small>
-          </div>
-          <div className="plaque">
-            <span>Top rated</span>
-            <b>2025</b>
-            <small>Auto repair</small>
-          </div>
+        <Stagger className="award-wall" pattern="zoom">
+          <figure className="award award--plaque">
+            <Image
+              src="/images/awards/businessrate-best-of-2025.jpg"
+              alt="BusinessRate Best of 2025 plaque: Duke Auto Repair & Service, Car Repair and Maintenance Service, Alexandria, Virginia, based on Google reviews, August 2025"
+              width={640}
+              height={801}
+              sizes="(max-width: 1050px) 50vw, 300px"
+            />
+          </figure>
+          {carfax.map(({ year, featured }) => (
+            <figure
+              className={`award award--carfax${featured ? " is-featured" : ""}`}
+              key={year}
+            >
+              <Image
+                src={`/images/awards/carfax-top-rated-${year}.jpg`}
+                alt={`CARFAX ${year} Top-Rated Service Center badge for Duke Auto Repair & Service`}
+                width={600}
+                height={600}
+                sizes={
+                  featured
+                    ? "(max-width: 1050px) 40vw, 260px"
+                    : "(max-width: 1050px) 20vw, 130px"
+                }
+              />
+            </figure>
+          ))}
         </Stagger>
       </div>
     </section>

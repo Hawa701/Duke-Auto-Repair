@@ -57,7 +57,9 @@ export default function PageHeader({
           <b aria-current="page">{breadcrumb}</b>
         </nav>
         <h1 id="page-title">{title}</h1>
-        <p>{description}</p>
+        <p>
+          <RichText text={description} />
+        </p>
       </Entrance>
     </header>
   );

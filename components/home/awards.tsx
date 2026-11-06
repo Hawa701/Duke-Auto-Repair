@@ -34,7 +34,7 @@ export default function HomeAwards() {
               href={business.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-y"
+              className={withBookingPopup("btn btn-y")}
             >
               Book an appointment
             </a>

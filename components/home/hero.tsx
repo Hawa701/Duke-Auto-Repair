@@ -1,6 +1,9 @@
-import { business } from "@/lib/business";
+import Image from "next/image";
+import { business, withBookingPopup } from "@/lib/business";
 import GoogleRating from "../google-rating";
 import Entrance from "../entrance";
+import Icon from "../icon";
+import TrustBadges from "../trust-badges";
 import Fascia from "./fascia";
 
 export default function Hero() {

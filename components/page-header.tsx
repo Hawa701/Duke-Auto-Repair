@@ -24,21 +24,26 @@ export default function PageHeader({
   breadcrumb = title,
   description,
   image,
-  imagePosition,
+  imageAlt = "",
+  imagePosition = "center 55%",
   breadcrumbs = [{ href: "/", label: "Home" }],
   hasLift = false,
+  compact = false,
 }: PageHeaderProps) {
   return (
     <header
-      className={`page-header${hasLift ? " has-lift" : ""}`}
-      style={
-        {
-          "--ph": `url(${image})`,
-          backgroundPosition: imagePosition,
-        } as CSSProperties
-      }
+      className={`page-header${hasLift ? " has-lift" : ""}${compact ? " page-header--compact" : ""}`}
       aria-labelledby="page-title"
     >
+      <Image
+        className="page-header__img"
+        src={image}
+        alt={imageAlt}
+        fill
+        priority
+        sizes="100vw"
+        style={{ objectPosition: imagePosition }}
+      />
       <Entrance className="wrap" pattern="up" waitForFonts>
         <nav className="page-header__breadcrumb" aria-label="Breadcrumb">
           {breadcrumbs.map(({ href, label }) => (

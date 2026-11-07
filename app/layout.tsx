@@ -11,6 +11,7 @@ import "./globals.css";
 import "./responsive.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(business.siteUrl),
   title: {
     default: "Duke Auto Repair",
     template: "%s | Duke Auto Repair",

@@ -31,13 +31,6 @@ footer.site-footer .wrap {
   > * {
   min-inline-size: 0;
 }
-.site-header .site-nav .wrap > a:first-child {
-  min-width: 0;
-}
-.site-header .site-nav .logo {
-  max-width: 100%;
-  object-fit: contain;
-}
 footer.site-footer .cols > *,
 footer.site-footer .contact li > * {
   min-width: 0;

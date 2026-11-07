@@ -59,3 +59,64 @@ export default function ServiceCarousel({ cards }: { cards: Card[] }) {
     });
   }
 
+  return (
+    <div
+      className="carousel"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Our services"
+    >
+      <ul
+        className="track"
+        id="home-service-track"
+        ref={track}
+        tabIndex={0}
+        aria-label="Browse services; use the arrow buttons or swipe"
+      >
+        {cards.map((card) => (
+          <li className="service-slide" key={card.id}>
+            <Link className="card" href={card.href}>
+              <span
+                className="ph"
+                role="img"
+                aria-label={card.title + " at Duke Auto"}
+                style={{
+                  backgroundImage: `url(${card.image})`,
+                  backgroundPosition: card.imagePosition,
+                }}
+              />
+              <span className="b">
+                <b>{card.title}</b>
+                <span>{card.description}</span>
+                <em>
+                  Learn more
+                  <Icon name="arrow" />
+                </em>
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <button
+        type="button"
+        className="nx prev"
+        onClick={() => move(-1)}
+        disabled={edges.start}
+        aria-label="Previous services"
+        aria-controls="home-service-track"
+      >
+        <Icon name="back" />
+      </button>
+      <button
+        type="button"
+        className="nx next"
+        onClick={() => move(1)}
+        disabled={edges.end}
+        aria-label="More services"
+        aria-controls="home-service-track"
+      >
+        <Icon name="arrow" />
+      </button>
+    </div>
+  );
+}

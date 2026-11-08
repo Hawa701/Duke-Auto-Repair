@@ -16,8 +16,7 @@ export const metadata: Metadata = {
     default: "Duke Auto Repair",
     template: "%s | Duke Auto Repair",
   },
-  description:
-    "Expert auto care, complimentary digital inspections, and concierge vehicle pick-up and drop-off at Duke Auto Repair & Service.",
+  description: `Trusted auto repair in ${business.city}, ${business.region}. ASE-certified mechanics, transparent estimates, and a ${business.warranty.long}.`,
   icons: {
     icon: [
       { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },

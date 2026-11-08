@@ -156,57 +156,6 @@ footer.site-footer .bottom {
   }
 }
 
-/* Keep mobile navigation visible without changing desktop header behavior. */
-@media (max-width: 1024px) {
-  .site-header .site-nav ul.is-open {
-    max-height: min(70dvh, calc(100dvh - 140px), 28rem);
-  }
-}
-@media (max-width: 640px) {
-  html {
-    --mobile-utility-height: 38px;
-    --mobile-nav-height: 76px;
-    scroll-padding-top: calc(var(--mobile-nav-height) + 24px);
-  }
-  header.site-header {
-    position: sticky;
-    /* Let the phone strip scroll away; pin just the navigation. The extra
-       pixel covers subpixel seams along the viewport edge on mobile. */
-    top: calc(-1 * var(--mobile-utility-height) - 1px);
-    z-index: 50;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: var(--navy);
-    box-shadow: 0 5px 20px rgba(20, 32, 74, 0.14);
-  }
-  .site-header .util .wrap {
-    height: var(--mobile-utility-height);
-  }
-  .site-header .site-nav {
-    position: relative;
-    background: var(--navy);
-  }
-  .site-header .site-nav .wrap {
-    height: var(--mobile-nav-height);
-  }
-  .site-header .skip-link:focus {
-    top: calc(var(--mobile-utility-height) + 8px);
-  }
-  .site-header .site-nav ul {
-    top: var(--mobile-nav-height);
-  }
-  .site-header .site-nav ul.is-open {
-    /* The menu also fits when opened before the phone strip scrolls away. */
-    max-height: min(
-      70dvh,
-      calc(
-        100dvh - var(--mobile-nav-height) - var(--mobile-utility-height) - 12px
-      ),
-      28rem
-    );
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   .entrance {
     opacity: 1 !important;

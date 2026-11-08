@@ -166,51 +166,6 @@ a:focus-visible {
   padding: 80px 24px;
   min-height: 45vh;
 }
-.site-header {
-  position: relative;
-  z-index: 10;
-}
-.site-nav .logo {
-  width: auto;
-}
-.site-nav a:not(.btn):hover {
-  color: var(--yellow);
-}
-.site-nav .wrap {
-  position: relative;
-}
-.site-nav li a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 0;
-}
-.site-nav li.on:after {
-  bottom: -26px;
-}
-.menu-toggle {
-  display: none;
-  background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
-  padding: 10px;
-}
-.skip-link {
-  position: absolute;
-  left: 20px;
-  top: -100px;
-  padding: 12px 20px;
-  background: #fff;
-  color: var(--ink);
-  z-index: 100;
-}
-.skip-link:focus {
-  top: 8px;
-}
-.hero .rating a:hover {
-  text-decoration: underline;
-}
 .svc .more {
   gap: 28px;
 }

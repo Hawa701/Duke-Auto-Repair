@@ -106,19 +106,6 @@ footer.site-footer .bottom {
     gap: 12px;
     margin-bottom: 28px;
   }
-  .site-header .site-nav .logo {
-    height: 40px;
-  }
-  .site-header .site-nav .menu-toggle {
-    flex: none;
-    min-width: 44px;
-    min-height: 44px;
-  }
-  .site-header .site-nav ul.is-open {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 4px;
-    padding: 14px 18px;
-  }
   footer.site-footer {
     padding-block: 36px 0;
   }

@@ -205,51 +205,6 @@ footer a:hover {
   h2 {
     font-size: 54px;
   }
-  .site-nav .wrap {
-    height: 82px;
-  }
-  .menu-toggle {
-    display: block;
-    margin-left: auto;
-  }
-  .site-nav .header-booking {
-    margin-left: 16px;
-  }
-  .site-nav ul {
-    display: none;
-    position: absolute;
-    top: 82px;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 18px 24px;
-    background: var(--navy);
-    border: 1px solid var(--line);
-    box-shadow: 0 16px 30px rgba(var(--deep-rgb), 0.15);
-    border-radius: 0 0 10px 10px;
-  }
-  .site-nav ul.is-open {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px 24px;
-  }
-  .site-nav li a {
-    min-block-size: 44px;
-    width: 100%;
-  }
-  .site-nav li.on:after {
-    display: none;
-  }
-  .util .right {
-    display: none;
-  }
-  .util .wrap {
-    justify-content: space-between;
-  }
-  .hero h1 {
-    font-size: 86px;
-    max-width: 610px;
-  }
   .sec-head {
     gap: 40px;
     margin-bottom: 44px;

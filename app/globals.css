@@ -286,44 +286,6 @@ footer a:hover {
     font-size: 44px;
     line-height: 1;
   }
-  .util .wrap {
-    height: 38px;
-    justify-content: center;
-  }
-  .util .wrap > span:nth-child(2) {
-    display: none;
-  }
-  .site-nav .wrap {
-    height: 76px;
-    gap: 12px;
-  }
-  .site-nav .logo {
-    height: 43px;
-  }
-  .site-nav .header-booking {
-    display: none;
-  }
-  .site-nav ul {
-    top: 76px;
-  }
-  .hero .rating {
-    font-size: 12px;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .hero .rating .stars svg {
-    width: 12px;
-    height: 12px;
-  }
-  .hero h1 {
-    font-size: clamp(54px, 13vw, 76px);
-    line-height: 0.95;
-    margin-top: 24px;
-  }
-  .hero .lede {
-    font-size: 18px;
-    margin-top: 22px;
-  }
   .fascia {
     height: 52px;
   }

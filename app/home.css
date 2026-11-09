@@ -206,12 +206,6 @@
   background: var(--navy);
   color: #fff;
 }
-@media (prefers-reduced-motion: reduce) {
-  .home-page .board *,
-  .home-page .board .s {
-    transition: none !important;
-  }
-}
 .home-page .awards {
   background: var(--navy);
   color: #fff;
@@ -278,63 +272,6 @@
 .home-page .awards .more svg.i {
   width: 18px;
   height: 18px;
-}
-.home-page .plaques {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.home-page .plaque {
-  position: relative;
-  background: var(--ink-navy);
-  color: #fff;
-  text-align: center;
-  padding: 34px 12px 30px;
-  border-radius: 6px;
-  border-top: 9px solid var(--yellow);
-  border-bottom: 9px solid var(--yellow);
-  box-shadow: 0 22px 44px rgba(10, 16, 40, 0.35);
-  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
-.home-page .plaque:hover {
-  transform: translateY(-6px);
-}
-.home-page .plaque:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 3px;
-  bottom: 3px;
-  border-top: 2px solid rgba(255, 255, 255, 0.55);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.55);
-  pointer-events: none;
-}
-.home-page .plaque span {
-  display: block;
-  font-family: var(--font-barlow-condensed);
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--yellow);
-}
-.home-page .plaque b {
-  display: block;
-  font-family: var(--font-barlow-condensed);
-  font-weight: 800;
-  font-size: 84px;
-  line-height: 0.9;
-  margin-top: 10px;
-}
-.home-page .plaque small {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
 }
 .home-page .rev {
   background: var(--yellow);

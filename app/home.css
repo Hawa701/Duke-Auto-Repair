@@ -518,44 +518,11 @@
 }
 
 /* Reset the former homepage's decorative rules while retaining the reference measurements. */
-.home-page .hero {
-  color: var(--ink);
-  overflow: visible;
-}
-.home-page .hero .shot {
-  background-image: url(/images/home/duke-shop.jpg);
-}
-.home-page .hero .where {
-  white-space: nowrap;
-}
-.home-page .hero .proof {
-  gap: 18px;
-}
-.home-page .hero .proof .google-rating {
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.home-page .hero .proof .rating-star {
-  display: inline-grid;
-  gap: 0;
-}
-.home-page .hero .google-rating--hero .google-maps-attribution {
-  color: #1f1f1f;
-}
-.home-page .hero .proof .google-maps-attribution {
-  font-size: inherit;
-}
-.home-page .hero .proof > span:last-child {
-  flex: none;
-}
 .home-page .step:first-child {
   border-color: #dde1ea;
 }
 .home-page .step .n {
   -webkit-text-stroke: 0;
-}
-.home-page .board h3 {
-  overflow-wrap: normal;
 }
 .home-page .awards .google-maps-attribution {
   color: #fff;

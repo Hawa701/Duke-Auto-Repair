@@ -155,6 +155,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </main>
           <Footer />
         </GoogleReviewsProvider>
+        <FloatingWidgets />
+        <PromoPopup />
         <PageScrollbar />
       </body>
     </html>

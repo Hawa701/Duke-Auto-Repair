@@ -102,7 +102,49 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${barlow.variable} ${barlowCondensed.variable}`}
     >
+      <head>
+        {integrations.gtmId && (
+          // Google's standard GTM install snippet, as high in <head> as possible.
+          // Kept inline (not @next/third-parties) so it runs before hydration.
+          // eslint-disable-next-line @next/next/next-script-for-ga
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',${JSON.stringify(integrations.gtmId)});`,
+            }}
+          />
+        )}
+        {integrations.shopgenie && (
+          <>
+            <script dangerouslySetInnerHTML={{ __html: viewportGuard }} />
+            {/* Shopgenie embed code, as supplied by the shop. Deferred so the
+                page body exists when it adds the booking popup and chat bubble. */}
+            <script
+              defer
+              src={integrations.shopgenie.src}
+              data-shop={integrations.shopgenie.shop}
+              data-searchgenie="true"
+              data-heap-track="true"
+            />
+          </>
+        )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      </head>
       <body>
+        {integrations.gtmId && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${integrations.gtmId}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        )}
         <noscript>
           <style>{`.entrance[data-wait-for-fonts] { opacity: 1 !important; transform: none !important; }`}</style>
         </noscript>

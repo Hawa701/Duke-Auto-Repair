@@ -28,6 +28,73 @@ export const metadata: Metadata = {
   },
 };
 
+// Local business structured data (Web Audit, Part 1 §4).
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  name: business.name,
+  image: `${business.siteUrl}/images/home/logo.png`,
+  "@id": business.siteUrl,
+  url: business.siteUrl,
+  telephone: business.phoneE164,
+  email: business.email,
+  paymentAccepted: business.paymentMethods.join(", "),
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: business.street,
+    addressLocality: business.city,
+    addressRegion: business.region,
+    postalCode: business.postalCode,
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: business.geo.latitude,
+    longitude: business.geo.longitude,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "08:00",
+      closes: "16:00",
+    },
+  ],
+};
+
+/*
+ * Runs before Shopgenie's searchgenie.js. That script deletes the page's
+ * viewport <meta> (which React owns) and adds its own with
+ * user-scalable=no, and blocks iOS pinch gestures. Deleting React's node made
+ * the next page change crash ("removeChild" of null): the URL changed but the
+ * page didn't. So: put React's original node back where it was, drop
+ * Shopgenie's copy, and keep normal zoom (WCAG 1.4.4). Shopgenie only does
+ * this once, so the watcher stops after the first fix (or after 60 s).
+ */
+const viewportGuard = `(function(){
+var v="width=device-width, initial-scale=1";
+var o=document.querySelector('meta[name="viewport"]');
+if(!o)return;
+window.addEventListener("gesturestart",function(e){e.stopPropagation()},true);
+var restored=false,dropped=false;
+var w=new MutationObserver(function(rs){
+for(var i=0;i<rs.length;i++){var r=rs[i],k;
+for(k=0;k<r.removedNodes.length;k++){if(r.removedNodes[k]===o&&!o.isConnected){var n=r.nextSibling;if(n&&n.parentNode===r.target)r.target.insertBefore(o,n);else r.target.insertBefore(o,r.target.firstChild);restored=true}}
+for(k=0;k<r.addedNodes.length;k++){var a=r.addedNodes[k];if(a!==o&&a.nodeType===1&&a.matches('meta[name="viewport"]')){a.remove();dropped=true}}}
+if(o.content!==v)o.content=v;
+if(restored&&dropped)w.disconnect();
+});
+w.observe(document.documentElement,{childList:true,subtree:true});
+setTimeout(function(){w.disconnect()},60000);
+})();`;
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html

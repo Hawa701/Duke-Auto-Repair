@@ -326,9 +326,6 @@ footer a:hover {
   .perk .ticks li {
     align-items: flex-start;
   }
-  .hero .rating {
-    font-size: 14px;
-  }
   .step-row {
     grid-template-columns: 1fr;
     gap: 36px;

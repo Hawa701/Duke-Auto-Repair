@@ -660,10 +660,6 @@
   .home-page .awards .copy p {
     max-width: 700px;
   }
-  .home-page .plaques {
-    width: 100%;
-    max-width: 760px;
-  }
 }
 @media (max-width: 1000px) {
   .home-page .crew .grid,
@@ -681,7 +677,6 @@
 }
 @media (max-width: 900px) {
   .home-page .sec-head,
-  .home-page .svc .sec-head,
   .home-page .shop .sec-head {
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;

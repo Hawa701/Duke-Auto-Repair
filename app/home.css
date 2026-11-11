@@ -1181,33 +1181,309 @@
     transform: translateX(-50%);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .home-page .fascia {
-    height: auto;
-    padding-block: 16px;
-    overflow: visible;
+.home-page .xsvc .wrap {
+  grid-template-columns: minmax(0, 410px) minmax(0, 1fr);
+}
+.home-page .xsvc .intro {
+  min-width: 0;
+}
+.home-page .track {
+  list-style: none;
+  align-items: stretch;
+}
+.home-page .track:focus-visible {
+  outline-offset: -2px;
+}
+.home-page .service-slide {
+  min-width: 0;
+  display: flex;
+}
+.home-page .card {
+  width: 100%;
+}
+.home-page .card .ph {
+  flex: none;
+}
+.home-page .card:focus-visible {
+  outline-offset: -3px;
+}
+.home-page .nx {
+  z-index: 1;
+}
+.home-page .nx[disabled] {
+  visibility: hidden;
+}
+.home-page .perk .btn-n {
+  background: var(--ink-navy);
+}
+.home-page .score .btn-n {
+  background: var(--deep);
+}
+@media (min-width: 1600px) {
+  .home-page .xhero .xhero-img {
+    object-position: center 62%;
   }
-  .home-page .fascia-viewport {
-    overflow: visible;
-  }
-  .home-page .fascia-track {
-    width: 100%;
-    animation: none;
-    transform: none;
-    will-change: auto;
-  }
-  .home-page .fascia-group {
-    min-width: 0;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px 24px;
-  }
-  .home-page .fascia-group li {
-    white-space: normal;
-    gap: 24px;
-  }
-  .home-page .fascia-group[aria-hidden="true"] {
-    display: none;
+  .home-page .xhero .wrap {
+    padding-block: 100px 40px;
   }
 }
+@media (max-width: 1100px) {
+  .home-page .xsvc .wrap {
+    grid-template-columns: minmax(0, 330px) minmax(0, 1fr);
+    gap: 32px;
+  }
+  .home-page .track {
+    grid-auto-columns: calc((100% - 16px) / 2);
+  }
+  .home-page .xhero h1 {
+    font-size: 50px;
+  }
+  .home-page .xhero .trust {
+    gap: 24px;
+  }
+  .home-page .xhero .t {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .home-page .xhero .xhero-img {
+    object-position: 62% center;
+  }
+  .home-page .xhero::before {
+    background:
+      linear-gradient(90deg, #081638ed 0%, #081638c9 55%, #08163866),
+      linear-gradient(0deg, #081638e0, transparent 60%);
+  }
+  .home-page .xhero .wrap {
+    padding-block: 60px 32px;
+  }
+  .home-page .xhero h1 {
+    font-size: clamp(34px, 7vw, 52px);
+  }
+  .home-page .xhero .kick {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+  }
+  .home-page .xhero .lede {
+    font-size: 19px;
+    max-width: 530px;
+  }
+  .home-page .xhero .acts {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .home-page .xhero .trust {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 36px;
+  }
+  .home-page .home-rating__score {
+    font-size: 14px;
+    gap: 4px;
+  }
+  .home-page .home-rating__score .stars {
+    flex-basis: 100%;
+  }
+  .home-page .xsvc {
+    padding-block: 56px;
+  }
+  .home-page .xsvc .wrap {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  .home-page .xsvc .intro {
+    max-width: 650px;
+  }
+  .home-page .xsvc h2 {
+    font-size: 36px;
+  }
+  .home-page .track {
+    grid-auto-columns: calc((100% - 32px) / 3);
+  }
+  .home-page .nx.next {
+    right: -12px;
+  }
+  .home-page .nx.prev {
+    left: -12px;
+  }
+}
+@media (max-width: 640px) {
+  .home-page .xhero .wrap {
+    padding-block: 44px 28px;
+  }
+  .home-page .xhero .acts {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 420px;
+    margin-top: 26px;
+  }
+  .home-page .xhero .xbtn.lg {
+    padding: 16px;
+    font-size: 16px;
+    gap: 10px;
+  }
+  .home-page .xhero .trust {
+    gap: 22px 16px;
+  }
+  .home-page .xhero .t {
+    min-width: 0;
+    flex: initial;
+    font-size: 13px;
+    gap: 10px;
+  }
+  .home-page .xhero .t svg.i {
+    width: 28px;
+    height: 28px;
+  }
+  .home-page .xhero .home-rating {
+    gap: 10px;
+  }
+  .home-page .home-rating .google-mark {
+    width: 28px;
+    height: 28px;
+  }
+  .home-page .home-rating small {
+    font-size: 12px;
+  }
+  .home-page .home-rating__score .stars svg {
+    width: 15px;
+    height: 15px;
+  }
+  .home-page .xsvc h2 {
+    font-size: 34px;
+  }
+  .home-page .xsvc .intro .xbtn {
+    white-space: normal;
+  }
+  .home-page .track {
+    grid-auto-columns: minmax(220px, 82%);
+    padding-block: 6px 16px;
+  }
+  .home-page .card .ph {
+    height: 210px;
+  }
+  .home-page .xstrip .sv {
+    padding-block: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .home-page .xhero .trust {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-page .home-rating__score .stars {
+    flex-basis: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .home-strip-track {
+    animation: none;
+  }
+  .home-page .home-strip-viewport {
+    overflow-x: auto;
+  }
+  .home-page .home-strip-group[aria-hidden] {
+    display: none;
+  }
+  .home-page .track {
+    scroll-behavior: auto;
+  }
+}
+
+.home-page :is(.diff, .steps, .shop) {
+  padding-block: clamp(56px, 8vw, 120px);
+}
+
+/* Hero: full H1 with kicker, trust badges under the buttons (Web Audit §2). */
+.home-page .xhero .kick + h1 {
+  margin-top: 0;
+}
+.home-page .xhero h1 .kick {
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+/* Five trust badges (revised guide order): three across on wide screens. */
+.home-page .xhero .trust-badges {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  margin-top: 26px;
+}
+@media (max-width: 1100px) {
+  .home-page .xhero .trust-badges {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+@media (max-width: 640px) {
+  .home-page .xhero .trust-badges {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.home-page .xhero .trust {
+  margin-top: 28px;
+}
+@media (max-width: 640px) {
+  .home-page .xhero .trust-badges {
+    max-width: 420px;
+  }
+}
+
+/* The Duke Difference */
+.home-page .duke-diff {
+  background: var(--concrete);
+  padding-block: clamp(56px, 8vw, 110px);
+}
+.home-page .duke-diff .sec-head h2 {
+  max-width: 760px;
+}
+.home-page .diff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  list-style: none;
+}
+.home-page .diff-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px 24px;
+  border-top: 5px solid var(--yellow);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(20, 32, 74, 0.07);
+}
+.home-page .diff-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: var(--navy);
+  color: #fff;
+}
+.home-page .diff-icon svg.i {
+  width: 28px;
+  height: 28px;
+}
+.home-page .diff-card h3 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+.home-page .diff-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a4360;
+}
+@media (max-width: 1100px) {
+  .home-page .diff-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .home-page .diff-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+

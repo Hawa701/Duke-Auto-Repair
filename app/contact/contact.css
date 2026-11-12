@@ -433,3 +433,72 @@
     font-size: 16px;
   }
 }
+
+/* Hours and map (content guide §6). */
+.contact-page .crow-hours {
+  align-items: flex-start;
+}
+.contact-page .crow-hours:hover .ic {
+  transform: none;
+}
+.contact-page .contact-hours {
+  display: grid;
+  gap: 4px;
+  font-size: 18px;
+}
+.contact-page .contact-hours > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+.contact-page .contact-hours dt {
+  min-width: 150px;
+  font-weight: 600;
+}
+.contact-page .contact-hours dd {
+  color: #3a4360;
+}
+.contact-page .contact-hours-note {
+  margin-top: 6px;
+  font-size: 15px;
+  font-style: italic;
+  color: #3a4360;
+}
+.contact-page .contact-map {
+  padding-block: 0 clamp(56px, 8vw, 100px);
+}
+.contact-page .contact-map h2 {
+  font-size: clamp(36px, 4vw, 52px);
+}
+.contact-page .map-frame {
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1.5px solid #e3e6ee;
+  aspect-ratio: 16 / 7;
+  min-height: 320px;
+  background: var(--concrete);
+}
+.contact-page .map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.contact-page .map-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--navy);
+  font-weight: 700;
+}
+.contact-page .map-directions svg.i {
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 640px) {
+  .contact-page .map-frame {
+    aspect-ratio: 4 / 5;
+  }
+}

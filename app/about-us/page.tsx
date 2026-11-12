@@ -90,3 +90,95 @@ export default function AboutPage() {
         imagePosition="center 78%"
         hasLift
       />
+      <section className="lift" aria-label="Our shop and team">
+        <div className="wrap strip">
+          <figure className="s1">
+            <i
+              role="img"
+              aria-label="The Duke Auto storefront"
+              style={{
+                backgroundImage: "url(/images/about/storefront-square.jpg)",
+                backgroundPosition: "50% 55%",
+              }}
+            ></i>
+          </figure>
+          <figure className="s2">
+            <i
+              role="img"
+              aria-label="Three Duke Auto team members at the front desk"
+              style={{
+                backgroundImage: "url(/images/about/desk-trio.jpg)",
+                backgroundPosition: "50% 30%",
+              }}
+            ></i>
+          </figure>
+          <figure className="s3">
+            <i
+              role="img"
+              aria-label="A technician running diagnostics"
+              style={{
+                backgroundImage: "url(/images/about/diagnostics-portrait.jpg)",
+                backgroundPosition: "60% 40%",
+              }}
+            ></i>
+          </figure>
+          <figure className="s4">
+            <i
+              role="img"
+              aria-label="Two technicians working together under the hood"
+              style={{
+                backgroundImage: "url(/images/about/techs-under-hood.jpg)",
+                backgroundPosition: "50% 50%",
+              }}
+            ></i>
+          </figure>
+        </div>
+      </section>
+      <section
+        className="stats after-lift"
+        aria-label="Duke Auto by the numbers"
+      >
+        <div>
+          <dl className="wrap">
+            {stats.map(({ value, suffix, label, detail }) => (
+              <div className="st" key={label}>
+                <dt className="l">{label}</dt>
+                <dd className="n">
+                  {value}
+                  <sup>{suffix}</sup>
+                </dd>
+                <dd className="s">{detail}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+      <section className="story" aria-labelledby="story-title">
+        <div className="wrap">
+          <h2 id="story-title">Our story.</h2>
+          {/* Content & UX Guide (revised), section 2. */}
+          <p>
+            Duke Auto Repair &amp; Service began over 20 years ago when our
+            founder, Simon Gebrehiwot, built the business from the ground up.
+            Starting with a single service bay, the business grew to three bays
+            and eventually expanded into our current 10-bay facility in
+            Alexandria, Virginia. Today, we combine decades of hands-on
+            experience with modern diagnostic equipment and comprehensive
+            automotive services. Our shop has grown, but our commitment remains
+            the same: honest service, quality workmanship, and treating every
+            customer like family.
+          </p>
+        </div>
+      </section>
+      <section className="values" aria-labelledby="values-title">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2 id="values-title">What we stand for.</h2>
+            <p>
+              The promises we make to every driver who comes through our doors.
+            </p>
+          </div>
+          <Stagger className="vals" pattern="alternate" interval={0.1}>
+            {values.map((value, index) => (
+              <div className="val" key={value.title}>
+                <div className="ph">

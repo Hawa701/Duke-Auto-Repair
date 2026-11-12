@@ -159,3 +159,35 @@
   }
 }
 
+/* Result message after sending (send-quote.php). */
+.quote-form .qf-status {
+  padding: 14px 18px;
+  border-left: 4px solid;
+  border-radius: 6px;
+  color: #23304f;
+  outline: none;
+}
+.quote-form .qf-status--ok {
+  border-color: #2e8b57;
+  background: #e8f6ee;
+}
+.quote-form .qf-status--error {
+  border-color: #c0392b;
+  background: #fdecea;
+}
+.quote-form .qf-status a {
+  color: var(--navy);
+  font-weight: 700;
+}
+/* Spam trap field: off-screen, never seen or tabbed to. */
+.quote-form .qf-trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* "What to expect": one-line items. */
+.quote-aside li {
+  align-items: center;
+}

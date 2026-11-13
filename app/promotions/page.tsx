@@ -114,3 +114,62 @@ export default function CouponsPage() {
       <section className="coupons" aria-labelledby="coupons-title">
         <div className="wrap">
           <h2 id="coupons-title" className="coupons-title">
+            <Icon name="scissors" />
+            Digital coupons &amp; local offers
+          </h2>
+          <ul className="coupon-list">
+            {coupons.map((coupon) => (
+              <li
+                className={`coupon${coupon.theme ? ` coupon--${coupon.theme}` : ""}`}
+                id={`coupon-${coupon.id}`}
+                key={coupon.id}
+              >
+                <div className="coupon-value">
+                  <span>{coupon.value}</span>
+                </div>
+                <div className="coupon-body">
+                  <h3>{coupon.title}</h3>
+                  <p>{coupon.detail}</p>
+                  {coupon.expires && (
+                    <p className="coupon-expires">Expires {coupon.expires}</p>
+                  )}
+                  <small>
+                    {business.name} · {business.shortAddress} ·{" "}
+                    {business.phoneLocal}.{coupon.terms && ` ${coupon.terms}`}{" "}
+                    Show a screenshot or printed copy of this coupon at
+                    checkout. One coupon per visit.
+                  </small>
+                  <a
+                    href={coupon.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={withBookingPopup("btn btn-y coupon-book")}
+                    aria-label={`Book an Appointment: ${coupon.value} ${coupon.title}`}
+                  >
+                    Book an Appointment
+                    <Icon name="arrow" />
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className="coupon-help">
+            <p>
+              <b>No printing required.</b> Take a screenshot of the coupon you
+              want and show it when you check out.
+            </p>
+            <a
+              href={business.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={withBookingPopup("btn btn-n")}
+            >
+              Book an Appointment
+              <Icon name="arrow" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

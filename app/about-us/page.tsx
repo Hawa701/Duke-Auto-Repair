@@ -182,3 +182,95 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <div className="val" key={value.title}>
                 <div className="ph">
+                  <i
+                    role="img"
+                    aria-label={value.imageAlt}
+                    style={{
+                      backgroundImage: `url(${value.image})`,
+                      backgroundPosition: value.imagePosition,
+                    }}
+                  ></i>
+                  <b>{String(index + 1).padStart(2, "0")}</b>
+                </div>
+                <h3>{value.title}</h3>
+                <p>{value.text}</p>
+              </div>
+            ))}
+          </Stagger>
+        </div>
+      </section>
+      <section className="people" aria-labelledby="people-title">
+        <div className="wrap people-grid">
+          <div>
+            <h2 id="people-title">Meet the team.</h2>
+            <figure className="team-photo">
+              <Image
+                src="/images/about/team-front-desk.jpg"
+                alt="Members of the Duke Auto Repair team at the front desk"
+                width={1600}
+                height={742}
+                sizes="(max-width: 900px) 100vw, 640px"
+              />
+            </figure>
+            <ul className="team-list">
+              {team.map((person) => (
+                <li key={person.name}>
+                  <span className="team-initials" aria-hidden="true">
+                    {person.name
+                      .split(" ")
+                      .map((part) => part[0])
+                      .join("")}
+                  </span>
+                  <span>
+                    <b>{person.name}</b>
+                    <small>{person.role}</small>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="cert-card">
+            <h3>Our Certifications &amp; Awards</h3>
+            <CertLogos />
+            <ul>
+              {certifications.map((item) => (
+                <li key={item}>
+                  <Icon name="check" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="warranty" aria-labelledby="warranty-title">
+        <div className="wrap">
+          <div className="warranty-shield" aria-hidden="true">
+            <svg viewBox="0 0 200 230">
+              <path
+                className="ws-outer"
+                d="M100 6 188 38v70c0 62-44 100-88 116C56 208 12 170 12 108V38Z"
+              />
+              <path
+                className="ws-inner"
+                d="M100 22 172 48v60c0 52-36 84-72 98-36-14-72-46-72-98V48Z"
+              />
+              <text x="100" y="98" className="ws-big">
+                24
+              </text>
+              <text x="100" y="124" className="ws-small">
+                MONTH / 24K MILE
+              </text>
+              <text x="100" y="150" className="ws-small">
+                PARTS
+              </text>
+            </svg>
+          </div>
+          <div className="warranty-copy">
+            <span className="warranty-tag">Our Warranty Promise</span>
+            <h2 id="warranty-title">Our Parts &amp; Labor Warranty</h2>
+            <p>
+              We stand behind our repairs with a{" "}
+              {business.warranty.parts} and a {business.warranty.labor},
+              subject to applicable terms and conditions.
+            </p>

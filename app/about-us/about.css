@@ -617,3 +617,129 @@
   }
 }
 
+/* Four values: two per row on wide screens. */
+@media (min-width: 761px) {
+  .about-page .vals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(28px, 3vw, 44px);
+  }
+  .about-page .val .ph {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Team and certifications (shop's Website Information Request). */
+.about-page .people {
+  padding-block: 0 clamp(56px, 8vw, 110px);
+}
+.about-page .people-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+.about-page .people h2 {
+  font-size: clamp(40px, 4.6vw, 60px);
+}
+.about-page .team-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+  list-style: none;
+}
+.about-page .team-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1.5px solid #e3e6ee;
+  border-radius: 12px;
+}
+.about-page .team-initials {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+}
+.about-page .team-list b {
+  display: block;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.about-page .team-list small {
+  display: block;
+  margin-top: 2px;
+  color: var(--steel);
+  font-size: 15px;
+}
+.about-page .cert-card {
+  padding: 28px 26px;
+  border-top: 6px solid var(--yellow);
+  border-radius: 14px;
+  background: var(--concrete);
+}
+.about-page .cert-card h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.about-page .cert-card .cert-logos {
+  margin-top: 16px;
+}
+.about-page .cert-card ul:not(.cert-logos) {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  list-style: none;
+}
+.about-page .cert-card li:not(.cert-logo) {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.about-page .cert-card svg.i {
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--deep);
+  stroke-width: 3;
+}
+@media (max-width: 900px) {
+  .about-page .people-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+/* An odd card out on the last row sits centered under the pair above. */
+@media (min-width: 521px) {
+  .about-page .team-list li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 7px);
+  }
+}
+@media (max-width: 520px) {
+  .about-page .team-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Team photo above the name cards (revised guide: Meet The Team). */
+.about-page .team-photo {
+  margin: 20px 0 0;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.about-page .team-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

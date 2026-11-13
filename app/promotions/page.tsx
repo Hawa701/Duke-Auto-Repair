@@ -100,3 +100,17 @@ const coupons: {
   },
 ];
 
+export default function CouponsPage() {
+  return (
+    <div className="coupons-page">
+      <PageHeader
+        title="Alexandria Auto Repair Deals & Offers"
+        breadcrumb="Promotions"
+        description="Show these digital coupons on your phone to your service advisor at checkout."
+        image="/images/about/shop-floor.jpg"
+        imageAlt="Duke Auto Repair service bay in Alexandria VA"
+        compact
+      />
+      <section className="coupons" aria-labelledby="coupons-title">
+        <div className="wrap">
+          <h2 id="coupons-title" className="coupons-title">

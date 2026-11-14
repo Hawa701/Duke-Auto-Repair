@@ -10,7 +10,12 @@ import HomeReviews from "@/components/home/reviews";
 import BookingCta from "@/components/home/booking-cta";
 import "./home.css";
 
-export const metadata: Metadata = { title: "Home" };
+// Title and description: Master SEO Blueprint, section 1.
+export const metadata: Metadata = {
+  title: { absolute: "Auto Repair Shop in Alexandria, VA | Duke Auto Repair" },
+  description:
+    "Trusted auto repair shop in Alexandria, VA for over 20 years. ASE-certified mechanics, transparent flat-rate estimates & 24-month warranty. Book today!",
+};
 
 export default function HomePage() {
   return (

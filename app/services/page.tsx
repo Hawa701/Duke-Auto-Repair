@@ -11,7 +11,7 @@ import "./services.css";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: `Explore maintenance, repairs, wheel alignment, diagnostics and state inspections at ${business.name} in ${business.city}. Every visit includes a free digital inspection.`,
+  description: `Brakes, engine diagnostics, Virginia state inspections, tires and alignment, maintenance, AC and heating, suspension and transmission repair at ${business.name} in ${business.city}, ${business.region}.`,
 };
 
 export default function ServicesPage() {

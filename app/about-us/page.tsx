@@ -274,3 +274,96 @@ export default function AboutPage() {
               {business.warranty.parts} and a {business.warranty.labor},
               subject to applicable terms and conditions.
             </p>
+            <TrustBadges tone="light" />
+          </div>
+        </div>
+      </section>
+      <HomeAwards />
+      <section className="tour" aria-labelledby="tour-title">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2 id="tour-title">A look around the shop.</h2>
+            <p>
+              First time visiting? Here&apos;s what to expect when you pull in.
+            </p>
+          </div>
+          <div className="stops">
+            <div className="stop">
+              <div className="ph">
+                <em>01</em>
+                <i
+                  role="img"
+                  aria-label="A team member welcoming you at the Duke Auto front door"
+                  style={{
+                    backgroundImage: "url(/images/about/owner-storefront.jpg)",
+                    backgroundPosition: "50% 40%",
+                  }}
+                ></i>
+              </div>
+              <h3>Out front</h3>
+              <p>
+                Look for the blue building with the yellow trim and the Duke
+                Auto sign. Park right out front.
+              </p>
+            </div>
+            <div className="stop">
+              <div className="ph">
+                <em>02</em>
+                <i
+                  role="img"
+                  aria-label="Two team members at the front desk"
+                  style={{
+                    backgroundImage: "url(/images/home/shop/front-desk.jpg)",
+                    backgroundPosition: "45% 30%",
+                  }}
+                ></i>
+              </div>
+              <h3>The front desk</h3>
+              <p>
+                Check in with our team. Tell us what&apos;s going on, and
+                we&apos;ll take it from there.
+              </p>
+            </div>
+            <div className="stop">
+              <div className="ph">
+                <em>03</em>
+                <i
+                  role="img"
+                  aria-label="Technicians working on cars in the service bays"
+                  style={{
+                    backgroundImage: "url(/images/about/shop-floor.jpg)",
+                    backgroundPosition: "45% 50%",
+                  }}
+                ></i>
+              </div>
+              <h3>The service bays</h3>
+              <p>
+                Oil changes, diagnostics, alignment, state inspections and more,
+                all done here under one roof.
+              </p>
+            </div>
+            <div className="stop">
+              <div className="ph">
+                <em>04</em>
+                <i
+                  role="img"
+                  aria-label="A technician setting up a wheel alignment"
+                  style={{
+                    backgroundImage: "url(/images/about/alignment-tech.jpg)",
+                    backgroundPosition: "70% 50%",
+                  }}
+                ></i>
+              </div>
+              <h3>Your car, done right</h3>
+              <p>
+                We walk you through what we did and what we found, then
+                you&apos;re back on the road.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <BookingCta />
+    </div>
+  );
+}

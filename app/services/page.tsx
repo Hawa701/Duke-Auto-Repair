@@ -5,7 +5,7 @@ import PageHeader from "@/components/page-header";
 import BookingCta from "@/components/home/booking-cta";
 import Icon from "@/components/icon";
 import ServiceIcon from "@/components/service-icon";
-import { business } from "@/lib/business";
+import { business, withBookingPopup } from "@/lib/business";
 import { serviceGroups } from "@/lib/services";
 import "./services.css";
 

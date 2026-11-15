@@ -4,7 +4,7 @@
 }
 .services-page .service-jump {
   position: sticky;
-  top: 0;
+  top: var(--sticky-offset);
   z-index: 6;
   background: var(--paper);
   border-bottom: 1px solid #e3e6ee;

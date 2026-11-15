@@ -73,7 +73,7 @@
   gap: clamp(28px, 5vw, 70px);
 }
 .services-page :is(.service-group, .service-list li) {
-  scroll-margin-top: var(--service-jump-offset);
+  scroll-margin-top: calc(var(--sticky-offset) + var(--service-jump-offset));
 }
 .services-page .service-group > * {
   min-width: 0;

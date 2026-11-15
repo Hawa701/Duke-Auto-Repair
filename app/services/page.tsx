@@ -18,9 +18,10 @@ export default function ServicesPage() {
   return (
     <div className="services-page">
       <PageHeader
-        title="Our Services"
+        title="Complete Automotive Care Under One Roof"
         breadcrumb="Services"
-        description="Everything your car needs, done right here in one garage. Every visit includes a free digital inspection."
+        description="From oil changes to complex engine and transmission repairs, our experienced team provides comprehensive automotive maintenance, diagnostics, and mechanical repairs."
+        compact
         image="/images/about/shop-floor.jpg"
       />
       <nav className="service-jump" aria-label="Service categories">

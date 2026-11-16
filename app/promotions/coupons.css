@@ -107,3 +107,53 @@
   }
 }
 
+.coupons-page .coupon-expires {
+  margin-top: 6px;
+  font-weight: 700;
+  color: var(--ink);
+}
+/* Linked from the Honda page (#coupon-honda): clear the sticky header. */
+.coupons-page .coupon {
+  scroll-margin-top: calc(var(--sticky-offset) + 24px);
+}
+
+/* Per-offer booking button (Shopgenie tracking link for that coupon). */
+.coupons-page .coupon-book {
+  align-self: stretch;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+/* Holiday (winter deals) coupons: red, to match the shop's holiday artwork. */
+.coupons-page .coupon--holiday {
+  --holiday: #b3121a;
+  --holiday-d: #7d0a0f;
+  border-color: var(--holiday-d);
+}
+.coupons-page .coupon--holiday::before,
+.coupons-page .coupon--holiday::after {
+  border-color: var(--holiday-d);
+}
+.coupons-page .coupon--holiday .coupon-value {
+  background: radial-gradient(
+    circle at 50% 40%,
+    #d8222a 0%,
+    var(--holiday) 55%,
+    var(--holiday-d) 100%
+  );
+  color: #fff;
+  border-bottom-color: var(--holiday-d);
+}
+.coupons-page .coupon--holiday .coupon-value span {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.coupons-page .coupon--holiday h3 {
+  color: var(--holiday);
+}
+.coupons-page .coupon--holiday .coupon-book {
+  background: var(--holiday);
+  color: #fff;
+}
+.coupons-page .coupon--holiday .coupon-book:hover {
+  background: var(--holiday-d);
+}

@@ -72,11 +72,11 @@ export default function ServicesPage() {
               </div>
               <ul className="service-list">
                 {group.services.map((service) => (
-                  <li id={service.id} key={service.id}>
+                  <li key={service.slug}>
                     <Link
                       className="service-row"
                       href={service.href}
-                      aria-label={`Learn more about ${service.name.toLowerCase()}`}
+                      aria-label={`Learn more about ${service.name}`}
                     >
                       <span className="service-icon">
                         <ServiceIcon name={service.icon} />

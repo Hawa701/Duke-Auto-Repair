@@ -84,7 +84,7 @@ export default function ServicesPage() {
                       <span className="service-text">
                         <span className="service-name">{service.name}</span>
                         <span className="service-description">
-                          {service.description}
+                          {service.summary}
                         </span>
                       </span>
                       <span className="service-go">

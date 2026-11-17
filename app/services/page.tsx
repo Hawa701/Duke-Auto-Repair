@@ -117,7 +117,7 @@ export default function ServicesPage() {
               href={business.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-n"
+              className={withBookingPopup("btn btn-n")}
             >
               Book an appointment
             </a>

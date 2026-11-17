@@ -1,0 +1,68 @@
+.vehicles-page .vehicle-index {
+  padding-block: clamp(56px, 8vw, 110px);
+}
+.vehicles-page .vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  list-style: none;
+}
+.vehicles-page .vehicle-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+  padding: 22px 22px 18px;
+  border: 1.5px solid #e3e6ee;
+  border-radius: 14px;
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    border-color 0.25s,
+    background-color 0.25s,
+    transform 0.25s;
+}
+.vehicles-page .vehicle-grid a:hover,
+.vehicles-page .vehicle-grid a:focus-visible {
+  border-color: var(--navy);
+  background: #f7f8fb;
+  transform: translateY(-2px);
+}
+.vehicles-page .vehicle-grid b {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+}
+.vehicles-page .vehicle-grid span {
+  color: var(--steel);
+  font-size: 15px;
+}
+.vehicles-page .vehicle-grid em {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 10px;
+  color: var(--navy);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+.vehicles-page .vehicle-grid em svg.i {
+  width: 16px;
+  height: 16px;
+}
+.vehicles-page .vehicle-note {
+  margin-top: 32px;
+  color: var(--steel);
+}
+.vehicles-page .vehicle-note a {
+  color: var(--navy);
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: reduce) {
+  .vehicles-page .vehicle-grid a {
+    transition: none;
+  }
+}

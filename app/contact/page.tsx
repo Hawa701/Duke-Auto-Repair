@@ -6,30 +6,46 @@ import BookingCta from "@/components/home/booking-cta";
 import Icon from "@/components/icon";
 import "./contact.css";
 
+// Title, description, H1 and header alt text: Master SEO Blueprint, section 1.
 export const metadata: Metadata = {
-  title: "Contact",
-  description: `Contact ${business.name} in ${business.city} for vehicle care questions, quotes, and service appointments. Call ${business.phoneDisplay} or visit ${business.shortAddress}.`,
+  title: {
+    absolute: "Contact Us & Reviews | Duke Auto Repair Alexandria, VA",
+  },
+  description:
+    "Visit Duke Auto Repair at 5220 Duke St, Alexandria, VA or call (703) 212-0608. Walk-in VA state inspections Mon–Sat & 24/7 after-hours key drop-off.",
 };
 
+// Contact & FAQ: Content & UX Guide (revised), section 7. The payment
+// question comes from the shop's Website Information Request answers.
 const faqs = [
   {
-    question: "What types of vehicles do you service?",
+    question: "What vehicles do you service?",
     answer:
-      "We work on everyday cars, SUVs and light trucks. If you're not sure about your vehicle, call the front desk with the make and model and we'll let you know.",
+      "Most domestic, Asian, and European cars, SUVs, and light-duty trucks.",
   },
   {
-    question: "Do I need an appointment for service?",
-    answer: `Call our front desk at ${business.phoneDisplay} to arrange a visit or check availability. We'll find a time that suits you.`,
+    question: "Do you accept walk-ins?",
+    answer:
+      "Yes. Virginia safety and emissions inspections are first-come, first-served. Appointments are recommended for other services.",
   },
   {
-    question: "How long does a standard oil change take?",
+    question: "How will I know exactly what needs to be fixed?",
     answer:
-      "Most oil changes are done the same day, often while you wait in our lounge. Call the front desk and we'll give you a time for your car.",
+      "We believe in complete transparency. With every routine service, our ASE-certified mechanics perform a comprehensive Digital Vehicle Inspection (DVI). We will text you photos, videos, and detailed notes of your engine, brakes, and suspension so you can see exactly what we see before approving any flat-rate estimate.",
   },
   {
-    question: "What is a digital vehicle health inspection?",
+    question: "Can I drop my car off and get a ride to work/home?",
     answer:
-      "It comes free with every visit. We check things like tire wear, brake life and fluids, then show you what's good, what needs attention, and what can wait. The decision is always yours.",
+      "Yes! We want to make your auto repair experience as frictionless as possible. We offer a complimentary local shuttle service within a 5-mile radius of the shop. For our European and luxury vehicle clients, we also offer complimentary VIP Uber rides.",
+  },
+  {
+    question: "How long does an oil change take?",
+    answer:
+      "Service times vary by vehicle and shop availability. Contact us for an estimated wait time.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: `${business.paymentMethods.slice(0, -1).join(", ")}, and ${business.paymentMethods[business.paymentMethods.length - 1].toLowerCase()}.`,
   },
 ];
 

@@ -1,0 +1,41 @@
+# Duke Auto Repair static site (Next.js export). Ships inside the build, so
+# replacing the site's files with a new build needs no manual server changes.
+
+# Serve the exported index.html pages and the site's own 404 page.
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Permanent redirects for retired URLs: the 2026 restructure and the page
+# URLs set by the Master SEO Blueprint. Each old URL goes straight to its
+# final page (no chains). The export uses trailing slashes.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Core pages
+  RewriteRule ^about/?$ /about-us/ [R=301,L]
+  RewriteRule ^(coupons|specials)/?$ /promotions/ [R=301,L]
+
+  # Service pages
+  RewriteRule ^services/brakes/?$ /brake-repair/ [R=301,L]
+  RewriteRule ^services/engine-diagnostics/?$ /check-engine-light-diagnostic/ [R=301,L]
+  RewriteRule ^services/state-inspection/?$ /emissions-test/ [R=301,L]
+  RewriteRule ^services/(tires-wheels|wheel-alignment)/?$ /wheel-alignment/ [R=301,L]
+  RewriteRule ^services/(maintenance|oil-change|bg-fluids|battery-services)/?$ /oil-change-service/ [R=301,L]
+  RewriteRule ^services/(ac-heating|air-conditioning|heating-system)/?$ /car-ac-repair/ [R=301,L]
+  RewriteRule ^services/suspension-steering/?$ /suspension-repair/ [R=301,L]
+  RewriteRule ^services/transmission/?$ /transmission-repair/ [R=301,L]
+
+  # Vehicle pages that moved to the site root
+  RewriteRule ^vehicles/toyota/?$ /toyota-mechanic/ [R=301,L]
+  RewriteRule ^vehicles/honda/?$ /honda-repairs/ [R=301,L]
+  RewriteRule ^vehicles/nissan/?$ /nissan-repair-shop/ [R=301,L]
+  RewriteRule ^vehicles/ford/?$ /ford-service/ [R=301,L]
+  RewriteRule ^vehicles/hyundai/?$ /hyundai-maintenance/ [R=301,L]
+  RewriteRule ^vehicles/chevrolet/?$ /chevy-repair/ [R=301,L]
+  RewriteRule ^vehicles/jeep/?$ /jeep-repair-shop/ [R=301,L]
+  RewriteRule ^vehicles/lexus/?$ /lexus-mechanic/ [R=301,L]
+  # The Vehicle Content guide moved BMW from /bmw-repair/ to /bmw-service/.
+  RewriteRule ^bmw-repair/?$ /bmw-service/ [R=301,L]
+  # Makes the shop no longer lists go to the Vehicles page.
+  RewriteRule ^vehicles/(subaru|kia|acura|mazda|gmc|cadillac|dodge|ram|chrysler)/?$ /vehicles/ [R=301,L]
+</IfModule>

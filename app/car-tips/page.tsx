@@ -57,3 +57,63 @@ export default function CarTipsPage() {
                                 {formatArticleDate(article.date)}
                               </time>
                             ) : (
+                              <span className="tips-nodate" aria-hidden="true" />
+                            )}
+                            {isPublished(article) ? (
+                              <Link href={articleHref(article)}>
+                                {article.title}
+                                <Icon name="arrow" />
+                              </Link>
+                            ) : (
+                              <span className="tips-soon">
+                                {article.title}
+                                <em>Coming soon</em>
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                    </ul>
+                  </section>
+                )),
+              },
+              {
+                id: "locations",
+                label: "Services by Location",
+                content: (
+                  <section className="tips-areas">
+                    <h2>Serving drivers across Alexandria</h2>
+                    <p>
+                      Duke Auto Repair is on Duke Street, minutes from these
+                      neighborhoods. Every service we offer is available to
+                      drivers throughout the area.
+                    </p>
+                    <ul className="area-list">
+                      {serviceAreas.map((area) => (
+                        <li key={area}>
+                          <Icon name="pin" />
+                          {area}
+                        </li>
+                      ))}
+                    </ul>
+                    <h3>Our services</h3>
+                    <ul className="area-services">
+                      {services.map((service) => (
+                        <li key={service.slug}>
+                          <Link href={service.href}>
+                            {service.name}
+                            <Icon name="arrow" />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                ),
+              },
+            ]}
+          />
+        </div>
+      </section>
+      <BookingCta />
+    </div>
+  );
+}

@@ -53,10 +53,12 @@ export default function ContactPage() {
   return (
     <div className="contact-page">
       <PageHeader
-        title="Contact Us"
+        title="Contact Duke Auto Repair in Alexandria, VA"
         breadcrumb="Contact us"
         description="Call or stop by. Our front desk is here to help."
-        image="/images/about/lounge.jpg"
+        image="/images/about/storefront-square.jpg"
+        imageAlt="Duke Auto Repair storefront at 5220 Duke Street Alexandria VA"
+        compact
       />
       <section className="cs" aria-labelledby="contact-details-title">
         <div className="wrap grid">

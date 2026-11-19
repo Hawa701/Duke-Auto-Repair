@@ -106,6 +106,26 @@ export default function ContactPage() {
                   </address>
                 </div>
               </a>
+              <div className="crow crow-hours">
+                <span className="ic">
+                  <Icon name="clock" />
+                </span>
+                <div>
+                  <small>Operating hours</small>
+                  <dl className="contact-hours">
+                    {business.hours.map((row) => (
+                      <div key={row.days}>
+                        <dt>{row.days}</dt>
+                        <dd>{row.time}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <p className="contact-hours-note">
+                    (Saturday inspections: {business.saturdayInspections},
+                    subject to availability)
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div id="send-message">

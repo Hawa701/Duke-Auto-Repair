@@ -15,11 +15,14 @@ export default function ReviewsPage() {
   return (
     <div className="reviews-page">
       <PageHeader
-        title="Reviews"
-        description="Real words from the drivers we look after. Read our customers' experiences on Google Maps."
+        title="Don't Just Take Our Word For It"
+        breadcrumb="Reviews"
+        description="See why Alexandria drivers trust Duke Auto Repair with a 4.8-Star rating across hundreds of reviews."
         image="/images/home/keys.jpg"
+        compact
       />
       <ReviewsContent />
+      <HomeAwards />
       <BookingCta />
     </div>
   );

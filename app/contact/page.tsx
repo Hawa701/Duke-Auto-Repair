@@ -133,6 +133,29 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <section className="contact-map" aria-labelledby="contact-map-title">
+        <div className="wrap">
+          <h2 id="contact-map-title">Find us on Duke Street.</h2>
+          <div className="map-frame">
+            <iframe
+              title={`Map showing ${business.name} at ${business.shortAddress}`}
+              src={business.googleMapsEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+          <a
+            className="map-directions"
+            href={business.googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get directions
+            <Icon name="arrow" />
+          </a>
+        </div>
+      </section>
       <section className="fq" id="faq" aria-labelledby="faq-title">
         <div className="wrap">
           <div>

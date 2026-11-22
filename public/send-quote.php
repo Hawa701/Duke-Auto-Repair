@@ -64,3 +64,68 @@ $email    = field('email', 254);
 $symptoms = mb_substr(trim(str_replace("\r", '', (string) ($_POST['symptoms'] ?? ''))), 0, 4000);
 $symptoms = preg_replace('/[\x00-\x08\x0B-\x1F\x7F]+/u', ' ', $symptoms) ?? '';
 
+if ($year === '' || $make === '' || $model === '' || $symptoms === '' || $name === '' || $phone === '') {
+    finish(false, 'Please fill in all required fields.', 422);
+}
+if (!preg_match('/\d{7,}/', preg_replace('/\D+/', '', $phone))) {
+    finish(false, 'Please enter a valid phone number.', 422);
+}
+if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    finish(false, 'Please enter a valid email address.', 422);
+}
+
+// Simple per-IP limit, kept in the server's temp folder.
+$ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+$log = rtrim(sys_get_temp_dir(), '/\\') . '/duke-quote-' . md5($ip);
+$recent = [];
+if (is_readable($log)) {
+    $recent = array_filter(
+        array_map('intval', explode("\n", (string) file_get_contents($log))),
+        fn ($t) => $t > time() - 3600
+    );
+}
+if (count($recent) >= MAX_PER_HOUR) {
+    finish(false, 'Too many requests from this device.', 429);
+}
+
+$subject = "Quote request: {$year} {$make} {$model} ({$name})";
+$body = implode("\n", [
+    'New quote request from dukeautorepair.com',
+    '',
+    "Vehicle: {$year} {$make} {$model}",
+    '',
+    "What's going on:",
+    $symptoms,
+    '',
+    "Name:  {$name}",
+    "Phone: {$phone}",
+    'Email: ' . ($email !== '' ? $email : '(not given)'),
+    '',
+    'Sent ' . date('D, M j, Y g:i A T'),
+]);
+
+$headers = [
+    'From: Duke Auto Repair Website <' . QUOTE_FROM . '>',
+    'MIME-Version: 1.0',
+    'Content-Type: text/plain; charset=UTF-8',
+    'Content-Transfer-Encoding: 8bit',
+];
+if ($email !== '') {
+    $headers[] = 'Reply-To: ' . $email;
+}
+
+$sent = mail(
+    QUOTE_TO,
+    '=?UTF-8?B?' . base64_encode($subject) . '?=',
+    $body,
+    implode("\r\n", $headers),
+    '-f' . QUOTE_FROM
+);
+
+if (!$sent) {
+    finish(false, 'We could not send your request.', 500);
+}
+
+$recent[] = time();
+@file_put_contents($log, implode("\n", $recent), LOCK_EX);
+finish(true);

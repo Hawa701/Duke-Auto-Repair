@@ -2,7 +2,7 @@
 
 A responsive website for Duke Auto Repair & Service in Alexandria, Virginia. Visitors can explore services, meet the team, read customer feedback, find contact details, and book appointments through ShopGenie.
 
-The site includes Home, About, Services, Reviews, Contact, and ten individual service pages. It uses local photography and fonts, shared page layouts, and selective entrance animations.
+The site includes Home, About, Services (8 service pages), Vehicles We Service (17 brand pages), Reviews, Contact, Coupons, Car Tips (with articles) and Request a Quote. It uses local photography and fonts, shared page layouts, and selective entrance animations.
 
 ## Tech stack
 

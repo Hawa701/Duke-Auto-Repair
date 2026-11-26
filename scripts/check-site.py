@@ -104,7 +104,7 @@ for route, document in documents.items():
         destination = urlsplit(urljoin(BASE + route, href))
         if destination.netloc != urlsplit(BASE).netloc or destination.scheme not in {"http", "https"}:
             continue
-        path = destination.path or "/"
+        path = destination.path.rstrip("/") or "/"
         assert path in documents, f"{route}: unknown internal page {href}"
         if destination.fragment:
             target_ids = {item["attrs"].get("id") for item in documents[path].nodes}

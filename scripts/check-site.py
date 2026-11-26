@@ -117,7 +117,8 @@ for route, document in documents.items():
         for asset in re.findall(r"url\(\s*['\"]?(/[^\s)'\"]+)", css.decode("utf-8")):
             assert fetch(asset)[0] == 200, f"{route}: missing CSS asset {asset}"
 
-for removed in ["/blog", "/tires", "/specials"]:
+# Old URLs: no page in the build (on the live server .htaccess 301s them).
+for removed in ["/blog", "/tires", "/about", "/coupons", "/services/brakes", "/services/oil-change", "/vehicles/toyota", "/bmw-repair", "/vehicles/subaru", "/vehicles/chrysler"]:
     assert fetch(removed)[0] == 404, f"Removed {removed} route should return 404"
-print("PASS internal page/section links, stylesheets, fonts, background images, and removed Blog/Tires/Specials routes")
+print("PASS internal page/section links, stylesheets, fonts, background images, and removed routes")
 print("NOTE: These are document checks, not browser viewport or visual tests.")

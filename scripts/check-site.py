@@ -9,7 +9,15 @@ from urllib.parse import unquote, urljoin, urlsplit
 from urllib.request import urlopen
 
 BASE = (sys.argv[1] if len(sys.argv) > 1 else "http://localhost:3000").rstrip("/")
-ROUTES = ['/', '/about', '/services', '/services/oil-change', '/services/bg-fluids', '/services/battery-services', '/services/brakes', '/services/suspension-steering', '/services/air-conditioning', '/services/heating-system', '/services/wheel-alignment', '/services/engine-diagnostics', '/services/state-inspection', '/reviews', '/contact']
+ROUTES = (
+    ['/', '/about-us', '/services', '/vehicles', '/reviews', '/contact', '/promotions', '/car-tips', '/quote']
+    # Root-level pages from the Master SEO Blueprint.
+    + ['/brake-repair', '/check-engine-light-diagnostic', '/emissions-test', '/wheel-alignment', '/oil-change-service', '/car-ac-repair', '/suspension-repair', '/transmission-repair', '/tire-shop-alexandria', '/mechanic-alexandria-va', '/auto-electrical-repair', '/auto-tune-up']
+    + ['/toyota-mechanic', '/honda-repairs', '/nissan-repair-shop', '/ford-service', '/hyundai-maintenance', '/chevy-repair', '/bmw-service', '/mercedes-service', '/jeep-repair-shop', '/lexus-mechanic', '/audi-repair']
+    + [f'/car-tips/{slug}' for slug in ['diagnosing-vehicle-alignment-issues', 'winter-driving-tips-northern-virginia', 'what-your-check-engine-light-means']]
+    # Car Tips articles at the site root (Master SEO Blueprint, section 4).
+    + ['/how-long-do-brake-pads-last', '/gas-cap-is-loose', '/tires-balding', '/why-does-my-car-shake-when-i-brake', '/why-are-my-brakes-squeaking', '/why-is-my-check-engine-light-flashing', '/why-is-my-oil-light-on', '/how-often-should-i-change-my-transmission-fluid', '/clicking-sound-when-trying-to-start-the-car', '/why-is-my-car-ac-blowing-hot-air', '/how-long-does-a-wheel-alignment-take', '/what-is-a-wheel-alignment', '/how-long-does-an-oil-change-take', '/when-to-get-a-brake-pad-replacement']
+)
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
 

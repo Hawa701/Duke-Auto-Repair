@@ -43,8 +43,7 @@ Keep `.env.local` out of Git. Variables prefixed with `NEXT_PUBLIC_` are visible
 | --- | --- |
 | `npm ci` | Install dependencies exactly as recorded in `package-lock.json` |
 | `npm run dev` | Start the development server |
-| `npm run build` | Create the production build and check TypeScript |
-| `npm start` | Serve an existing production build |
+| `npm run build` | Export the static site to `out/` and check TypeScript |
 | `npm run lint` | Check application code and test scripts with ESLint |
 | `npm run test:google-reviews` | Test the review integration using mocked responses |
 | `npm run test:reveals` | Test viewport observation and animation cleanup |

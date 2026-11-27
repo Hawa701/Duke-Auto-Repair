@@ -55,10 +55,14 @@ Keep `.env.local` out of Git. Variables prefixed with `NEXT_PUBLIC_` are visible
 app/
   layout.tsx             Shared layout, metadata, providers, header and footer
   page.tsx               Home page
-  about/                 About page and its styles
+  [slug]/                Root-level SEO pages: services (/brake-repair/),
+                         blueprint brands (/toyota-mechanic/) and blueprint articles
+  about-us/              About page and its styles
   contact/               Contact page and its styles
   reviews/               Reviews page and its styles
-  services/              Services overview and individual service routes
+  services/              Services overview
+  vehicles/              Vehicles overview (brand pages live in app/[slug])
+  promotions/ car-tips/ quote/  Coupons, Car Tips hub + articles, Request a Quote
   design.css             Base theme and shared component styles
   globals.css            Global behavior, accessibility and shared overrides
   responsive.css         Shared responsive rules

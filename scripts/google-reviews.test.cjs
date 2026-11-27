@@ -47,6 +47,13 @@ function harness(options = {}) {
       return { places: options.empty ? [] : [{ id: "verified-place-id" }] };
     }
     async fetchFields(request) {
+      if (request.fields.includes("reviews")) {
+        calls.reviews++;
+        assert.equal(this.id, "verified-place-id");
+        assert.equal(JSON.stringify(request.fields), '["reviews"]');
+        this.reviews = options.reviews ?? [];
+        return;
+      }
       calls.details++;
       assert.ok(request.fields.includes("rating"));
       assert.ok(request.fields.includes("userRatingCount"));

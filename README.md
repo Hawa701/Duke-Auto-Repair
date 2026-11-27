@@ -139,16 +139,29 @@ The checker defaults to `http://localhost:3000`. Pass a different local base URL
 python scripts/check-site.py http://localhost:3001
 ```
 
-The script covers all 15 pages and confirms the removed Blog, Tires and Specials routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
+The script covers all 37 pages and confirms removed routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
 
-## Running a demo or production build
+## Static build and SiteGround deployment
 
 ```sh
 npm run build
-npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000). For hosting, configure a Next.js-compatible Node environment with `npm ci` as the install command, `npm run build` as the build command, and `npm start` as the start command. The generated `.next/` directory is build output and stays out of Git.
+The current configuration exports HTML, CSS, JavaScript and assets into `out/`. Routes use directory indexes, such as `out/about-us/index.html`, so they work on a static web server. Images are served as local files, and the manifest is generated at build time.
+
+To preview the exported site locally with Python 3:
+
+```sh
+python -m http.server 3001 --directory out
+```
+
+Open [http://localhost:3001](http://localhost:3001). Use `python scripts/check-site.py http://localhost:3001` to verify this exported version. `npm start` uses the Next.js server and does not serve an `output: "export"` build.
+
+For SiteGround, follow [HOW-TO-DEPLOY.txt](HOW-TO-DEPLOY.txt): delete the old files in `public_html`, then upload and extract a zip of the **contents of `out/`**. The export includes `public/.htaccess` (404 page and redirects for retired URLs), so no server configuration is needed.
+
+In detail: upload the **contents of `out/`** to the target domain's `public_html` folder through Site Tools > Site > File Manager. If using a ZIP, extract it and move its contents into `public_html` if extraction creates an enclosing folder. The final path must be `public_html/index.html`, alongside `_next/`, `images/`, `services/` and the other exported files. Back up any existing site files before replacing them.
+
+Test the deployment on a temporary or test domain first, including direct visits to `/about-us/` and `/brake-repair/`, image loading and booking links. This export needs no Node.js process on the host. Keep `out/` and `.next/` out of Git, and rebuild and upload a fresh export after changes.
 
 ### Current demo behavior
 

@@ -33,8 +33,9 @@ export default function PromoPopup() {
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!dialog) return;
-    // Not on the coupons page itself, and not after the promo ends.
-    if (pathname.replace(/\/$/, "") === promo.href) return;
+    // Not on the coupons or thank-you pages, and not after the promo ends.
+    const path = pathname.replace(/\/$/, "");
+    if (path === promo.href || path === "/thank-you-coupons") return;
     if (Date.now() > Date.parse(`${promo.endsOn}T23:59:59-05:00`)) return;
     try {
       if (window.sessionStorage.getItem(SEEN_KEY) === "1") return;

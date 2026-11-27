@@ -1,0 +1,96 @@
+{
+  "_comment": "The 7 coupons (Coupon Cards, Thank-You Page & Email Copy Guide). Used by the coupons page, the claim pop-up, the thank-you page (lib/coupons.ts) and the coupon email (public/send-coupons.php), so edit offers here only. Set expires to null for no expiration. group: winter (red, top row), winter-driving (middle row), evergreen (bottom row).",
+  "coupons": [
+    {
+      "id": "winter-safety",
+      "code": "WINTER49",
+      "group": "winter",
+      "value": "$49.95",
+      "title": "Winter Safety Check",
+      "label": "Winter Safety Check ($49.95)",
+      "detail": "Battery & charging system test, coolant freeze protection test, brake & tire inspection, wheel alignment check, heating/defrost check, wipers/lights/belts/hoses check, tire rotation & balance, and complete Digital Vehicle Inspection (DVI). Save $40.00 (regularly $89.95). Get this deal by December 30, 2026.",
+      "expires": "February 27, 2027",
+      "terms": "Inspection, rotation & balance package; oil change not included.",
+      "booking": "In the booking menu, select \"Winter Safety Check ($49.95)\".",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23lpk4"
+    },
+    {
+      "id": "winter-package",
+      "code": "WINTER99",
+      "group": "winter",
+      "value": "$99.99",
+      "title": "Complete Winter Package",
+      "label": "Complete Winter Package ($99.99)",
+      "detail": "Everything in the Winter Safety Package, PLUS full synthetic oil & filter change (up to 5 quarts), tire rotation, fluid level check & basic top-off, and engine/cabin air filter inspection. Save $30.00 (regularly $129.99). Get this deal by December 30, 2026.",
+      "expires": "February 27, 2027",
+      "terms": "Up to 5 quarts full synthetic oil; extra quarts & specialty filters additional.",
+      "booking": "In the booking menu, select \"Complete Winter Package ($99.99)\".",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23lfk8"
+    },
+    {
+      "id": "wheel-alignment",
+      "code": "ALIGN50",
+      "group": "winter-driving",
+      "value": "$50 Off",
+      "title": "Wheel Alignment Special",
+      "label": "Wheel Alignment Special ($50 Off)",
+      "detail": "Save $50.00 on a precision 4-wheel alignment for most passenger cars. Protect your tires and improve winter road handling.",
+      "expires": "February 27, 2027",
+      "terms": "Valid for most passenger vehicles. Cannot be combined with other offers.",
+      "booking": "Book the standard \"Alignments\" service and show this coupon at check-in.",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23ldgo"
+    },
+    {
+      "id": "inspection",
+      "code": "VAINSP5",
+      "group": "winter-driving",
+      "value": "$5 Off",
+      "title": "VA State Safety Inspection",
+      "label": "VA State Safety Inspection ($5 Off)",
+      "detail": "Save $5.00 on your Virginia State Safety Inspection. Beat the end-of-the-month rush—walk-ins welcome Monday–Saturday!",
+      "expires": "February 27, 2027",
+      "terms": "Applies to combined VA state Safety inspection visits.",
+      "booking": "Book the standard \"Safety Inspection\" service and show this coupon at check-in.",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23ldju"
+    },
+    {
+      "id": "first-visit-25",
+      "code": "FIRST25",
+      "group": "evergreen",
+      "value": "$25 Off",
+      "title": "First Visit",
+      "label": "First Visit ($25 Off, Min. $150)",
+      "detail": "Save $25.00 on your first visit at Duke Auto Repair & Service (minimum $150.00 service required).",
+      "expires": null,
+      "terms": "New customers only; minimum $150 service before tax. Cannot be combined with other offers.",
+      "booking": "Book the repair or maintenance service you need and show this coupon at check-in.",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23ldi4"
+    },
+    {
+      "id": "first-visit-50",
+      "code": "FIRST50",
+      "group": "evergreen",
+      "value": "$50 Off",
+      "title": "First Visit",
+      "label": "First Visit ($50 Off, Min. $500)",
+      "detail": "Save $50.00 on your first visit at Duke Auto Repair & Service (minimum $500.00 service required).",
+      "expires": null,
+      "terms": "New customers only; minimum $500 service before tax. Cannot be combined with other offers.",
+      "booking": "Book the repair or maintenance service you need and show this coupon at check-in.",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23ldj4"
+    },
+    {
+      "id": "honda",
+      "code": "HONDA25",
+      "group": "evergreen",
+      "value": "$25 Off",
+      "title": "Honda Maintenance",
+      "label": "Honda Maintenance ($25 Off)",
+      "detail": "Save $25.00 on any scheduled Honda maintenance or repair service (minimum $150.00 service).",
+      "expires": null,
+      "terms": "Valid for Honda vehicles; minimum $150 service before tax. Cannot be combined with other offers.",
+      "booking": "Book the Honda maintenance or repair service you need and show this coupon at check-in.",
+      "bookingUrl": "https://booking.shopgenie.io/?r=23ldjv"
+    }
+  ]
+}

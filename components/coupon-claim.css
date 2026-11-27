@@ -1,0 +1,181 @@
+/* Claim pop-up on the coupons page (components/coupon-claim.tsx). */
+.coupon-claim {
+  width: min(620px, calc(100% - 24px));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  overscroll-behavior: contain;
+}
+.coupon-claim::backdrop {
+  background: rgba(8, 22, 56, 0.72);
+}
+.coupon-claim__box {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  padding: clamp(22px, 4vw, 34px);
+}
+.coupon-claim h2 {
+  padding-right: 40px;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+.coupon-claim__lead {
+  color: #3a4360;
+}
+.coupon-claim__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--concrete);
+  color: var(--deep);
+  cursor: pointer;
+}
+.coupon-claim__close svg {
+  width: 20px;
+  height: 20px;
+}
+.coupon-claim__close:hover {
+  background: var(--deep);
+  color: #fff;
+}
+.coupon-claim :focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
+.coupon-claim fieldset {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1.5px solid #d5dae4;
+  border-radius: 10px;
+}
+.coupon-claim legend {
+  padding: 0 6px;
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.coupon-claim__group {
+  display: grid;
+  gap: 4px;
+}
+.coupon-claim__group-title {
+  color: var(--steel);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.coupon-claim__offer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.coupon-claim__offer:hover {
+  background: var(--concrete);
+}
+.coupon-claim__offer input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  accent-color: var(--navy);
+}
+.coupon-claim__fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.coupon-claim__field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.coupon-claim__field label {
+  font-size: 15px;
+  font-weight: 700;
+}
+.coupon-claim__field input {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1.5px solid #d5dae4;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 17px;
+}
+.coupon-claim__field input:focus {
+  border-color: var(--navy);
+  outline: 2px solid rgba(var(--primary-rgb), 0.25);
+  outline-offset: 0;
+}
+.coupon-claim__error {
+  padding: 12px 16px;
+  border-left: 4px solid #c0392b;
+  border-radius: 6px;
+  background: #fdecea;
+  color: #23304f;
+}
+.coupon-claim__error a {
+  color: var(--navy);
+  font-weight: 700;
+}
+.coupon-claim__submit {
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+}
+.coupon-claim__submit:disabled {
+  cursor: progress;
+  opacity: 0.6;
+}
+.coupon-claim__fine {
+  color: var(--steel);
+  font-size: 13px;
+  text-align: center;
+}
+.coupon-claim__trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+@media (max-width: 560px) {
+  .coupon-claim__fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .coupon-claim[open] {
+    animation: coupon-claim-in 0.25s ease-out;
+  }
+}
+@keyframes coupon-claim-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+}

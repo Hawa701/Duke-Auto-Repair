@@ -149,3 +149,32 @@ test("no search result produces an error instead of invented numbers", async () 
   await assert.rejects(api.loadGoogleRating("mock-key"), /could not be found/);
   assert.equal(api.calls.details, 0);
 });
+
+test("Google reviews load only for the verified listing and skip empty ones", async () => {
+  const author = (name) => ({
+    displayName: name,
+    photoURI: "https://example.com/" + name + ".png",
+    uri: "https://example.com/" + name,
+  });
+  const api = harness({
+    reviews: [
+      { authorAttribution: author("Ana"), rating: 5, text: " Great shop. ", relativePublishTimeDescription: "a week ago", publishTime: new Date(1) },
+      { authorAttribution: author("Ben"), rating: 4, text: "", relativePublishTimeDescription: "a month ago" },
+      { authorAttribution: author("Cy"), rating: 9, text: "Bad data" },
+    ],
+  });
+  const reviews = await api.loadGoogleReviews("mock-key");
+  assert.equal(api.calls.details, 1);
+  assert.equal(api.calls.reviews, 1);
+  assert.equal(reviews.length, 1);
+  assert.equal(reviews[0].name, "Ana");
+  assert.equal(reviews[0].text, "Great shop.");
+  assert.equal(reviews[0].profileUrl, "https://example.com/Ana");
+  assert.equal(reviews[0].when, "a week ago");
+});
+
+test("reviews are not requested when the listing check fails", async () => {
+  const api = harness({ next: () => ({ ...fixture(), internationalPhoneNumber: "+1 555 555 5555" }) });
+  await assert.rejects(api.loadGoogleReviews("mock-key"), /different business/);
+  assert.equal(api.calls.reviews, 0);
+});

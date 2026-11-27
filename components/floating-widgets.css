@@ -81,3 +81,9 @@
     display: none;
   }
 }
+
+/* Shopgenie's chat script adds a "Need help?" speech bubble above its
+   "Text us" button. The shop asked for it to go; the button stays. */
+.chat-bubble-message {
+  display: none !important;
+}

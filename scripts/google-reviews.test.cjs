@@ -35,7 +35,7 @@ const fixture = () => ({
 });
 
 function harness(options = {}) {
-  const calls = { searches: 0, details: 0, loader: 0 };
+  const calls = { searches: 0, details: 0, loader: 0, reviews: 0 };
   class Place {
     constructor({ id }) {
       this.id = id;

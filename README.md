@@ -157,7 +157,7 @@ python -m http.server 3001 --directory out
 
 Open [http://localhost:3001](http://localhost:3001). Use `python scripts/check-site.py http://localhost:3001` to verify this exported version. `npm start` uses the Next.js server and does not serve an `output: "export"` build.
 
-For SiteGround, follow [HOW-TO-DEPLOY.txt](HOW-TO-DEPLOY.txt): delete the old files in `public_html`, then upload and extract a zip of the **contents of `out/`**. The export includes `public/.htaccess` (404 page and redirects for retired URLs), so no server configuration is needed.
+For SiteGround (Site Tools > Site > File Manager): delete the old files in `public_html` (show hidden files so `.htaccess` goes too), then upload and extract a zip of the **contents of `out/`**. The export includes `public/.htaccess` (404 page and redirects for retired URLs), so no server configuration is needed.
 
 In detail: upload the **contents of `out/`** to the target domain's `public_html` folder through Site Tools > Site > File Manager. If using a ZIP, extract it and move its contents into `public_html` if extraction creates an enclosing folder. The final path must be `public_html/index.html`, alongside `_next/`, `images/`, `services/` and the other exported files. Back up any existing site files before replacing them.
 

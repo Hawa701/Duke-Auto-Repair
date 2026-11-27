@@ -85,11 +85,14 @@ Files in `public/` are served from the site root: `public/images/about/lounge.jp
 | Change | Where to work |
 | --- | --- |
 | Business name, address, phone, booking URL and map links | [lib/business.ts](lib/business.ts) |
-| Service groups and destination links | [lib/services.ts](lib/services.ts) |
-| Individual service copy, photos, checklists and related services | [lib/service-details.ts](lib/service-details.ts) |
-| Shared service page layout | [components/service-detail.tsx](components/service-detail.tsx) |
+| Shopgenie chat script, customer portal link, quote form endpoint (hidden while empty) | `integrations` in [lib/business.ts](lib/business.ts) |
+| Service page copy, photos and overview groups | [lib/services.ts](lib/services.ts) |
+| Vehicle brand pages | [lib/vehicles.ts](lib/vehicles.ts) |
+| Car Tips articles (titles without copy show as "Coming soon") | [lib/articles.ts](lib/articles.ts) |
+| Shared service/vehicle page layout | [components/silo-page.tsx](components/silo-page.tsx) |
+| Main menu items | [lib/navigation.ts](lib/navigation.ts) |
 | Featured customer review, displayed rating and review topics | [lib/customer-reviews.ts](lib/customer-reviews.ts) |
-| Sample review cards | [lib/dummy-reviews.ts](lib/dummy-reviews.ts) |
+| Customer review cards (real Google reviews only) | [lib/customer-reviews.ts](lib/customer-reviews.ts) |
 | Navigation and footer | [components/site-navigation.tsx](components/site-navigation.tsx), [components/footer.tsx](components/footer.tsx) |
 | Shared page headings and breadcrumbs | [components/page-header.tsx](components/page-header.tsx) |
 | Default page titles, descriptions and favicon links | [app/layout.tsx](app/layout.tsx) |

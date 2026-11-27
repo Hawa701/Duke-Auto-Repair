@@ -31,7 +31,9 @@ export default function FloatingWidgets() {
     () => true,
   );
   const [dismissed, setDismissed] = useState(false);
-  const onCoupons = pathname.replace(/\/$/, "") === "/promotions";
+  const onCoupons = ["/promotions", "/thank-you-coupons"].includes(
+    pathname.replace(/\/$/, ""),
+  );
 
   return (
     <>

@@ -2,7 +2,7 @@
 
 A responsive website for Duke Auto Repair & Service in Alexandria, Virginia. Visitors can explore services, meet the team, read customer feedback, find contact details, and book appointments through ShopGenie.
 
-The site includes Home, About, Services (8 service pages), Vehicles We Service (17 brand pages), Reviews, Contact, Coupons, Car Tips (with articles) and Request a Quote. It uses local photography and fonts, shared page layouts, and selective entrance animations.
+The site includes Home, About, Services (8 service pages), Vehicles We Service (17 brand pages), Reviews, Contact, Coupons (with a claim-and-email coupon funnel), Car Tips (with articles) and Request a Quote. It uses local photography and fonts, shared page layouts, and selective entrance animations.
 
 ## Tech stack
 
@@ -63,6 +63,7 @@ app/
   services/              Services overview
   vehicles/              Vehicles overview (brand pages live in app/[slug])
   promotions/ car-tips/ quote/  Coupons, Car Tips hub + articles, Request a Quote
+  thank-you-coupons/     Printable coupons shown after a visitor claims them
   design.css             Base theme and shared component styles
   globals.css            Global behavior, accessibility and shared overrides
   responsive.css         Shared responsive rules
@@ -90,6 +91,8 @@ Files in `public/` are served from the site root: `public/images/about/lounge.jp
 | Vehicle brand pages | [lib/vehicles.ts](lib/vehicles.ts) |
 | Car Tips articles (titles without copy show as "Coming soon") | [lib/articles.ts](lib/articles.ts) |
 | Shared service/vehicle page layout | [components/silo-page.tsx](components/silo-page.tsx) |
+| Coupon offers, promo codes, expiry dates and booking links (website and email) | [public/coupon-offers.json](public/coupon-offers.json) |
+| Coupon email sender, BCC lead inbox and email layout | [public/send-coupons.php](public/send-coupons.php) |
 | Main menu items | [lib/navigation.ts](lib/navigation.ts) |
 | Featured customer review, displayed rating and review topics | [lib/customer-reviews.ts](lib/customer-reviews.ts) |
 | Customer review cards (real Google reviews only) | [lib/customer-reviews.ts](lib/customer-reviews.ts) |
@@ -139,7 +142,7 @@ The checker defaults to `http://localhost:3000`. Pass a different local base URL
 python scripts/check-site.py http://localhost:3001
 ```
 
-The script covers all 37 pages and confirms removed routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
+The script covers all 38 pages and confirms removed routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
 
 ## Static build and SiteGround deployment
 
@@ -162,6 +165,15 @@ For SiteGround (Site Tools > Site > File Manager): delete the old files in `publ
 In detail: upload the **contents of `out/`** to the target domain's `public_html` folder through Site Tools > Site > File Manager. If using a ZIP, extract it and move its contents into `public_html` if extraction creates an enclosing folder. The final path must be `public_html/index.html`, alongside `_next/`, `images/`, `services/` and the other exported files. Back up any existing site files before replacing them.
 
 Test the deployment on a temporary or test domain first, including direct visits to `/about-us/` and `/brake-repair/`, image loading and booking links. This export needs no Node.js process on the host. Keep `out/` and `.next/` out of Git, and rebuild and upload a fresh export after changes.
+
+### Coupon funnel
+
+1. **/promotions/** shows the 7 coupons (2 red winter specials, 2 winter driving & inspection specials, 3 first-visit/everyday coupons). "Claim Coupon" opens one pop-up form with that coupon already ticked; visitors can tick more. It asks for name and email, with optional phone and vehicle, and sends any `utm_*` tags from the landing URL (e.g. `/promotions/?utm_campaign=winter`).
+2. The form posts to **public/send-coupons.php**, which emails the voucher (subject "Your Duke Auto Repair Coupons Inside!") from `service@dukeautorepair.com` with a blind copy to the shop (`LEAD_BCC`). The shop's copy carries `X-Duke-Coupons` and `X-Duke-Lead-Source` headers for inbox rules. It is rate-limited per visitor and per email address and has the same spam traps as the quote form.
+3. The visitor lands on **/thank-you-coupons/?c=CODE,CODE** with only the coupons they chose, their promo codes, the ShopGenie booking instructions, a "Schedule Your Appointment Now" button, and a "Print Your Coupon" button under each card that prints just that card. If the email fails they still get this page, with a note to print or screenshot.
+4. GTM receives `coupon_claim` and `coupon_thank_you` events for tracking.
+
+`service@dukeautorepair.com` must be a mailbox (or alias) on the SiteGround account so its mail server accepts it as the sender. The thank-you page's hero banner uses the shop photo until the client's banner artwork is added (`banner` in `app/thank-you-coupons/page.tsx`). Emails only send on the PHP host, not under `npm run dev`.
 
 ### Current demo behavior
 

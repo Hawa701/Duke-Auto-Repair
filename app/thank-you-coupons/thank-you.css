@@ -1,0 +1,149 @@
+/* Thank-you & printable coupon page (/thank-you-coupons/). */
+.thank-you-page .ty-section {
+  --coupon-bg: var(--concrete);
+  padding-block: clamp(40px, 6vw, 80px);
+  background: var(--concrete);
+}
+.thank-you-page .ty-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.thank-you-page .ty-banner__text {
+  padding-block: 28px 8px;
+}
+.thank-you-page .ty-banner__text h1 {
+  font-size: clamp(34px, 4.4vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+.thank-you-page .ty-banner__text p {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #3a4360;
+}
+.thank-you-page .ty-loading {
+  min-height: 420px;
+}
+.thank-you-page .ty-greeting {
+  max-width: 820px;
+  font-size: 19px;
+  color: #3a4360;
+}
+.thank-you-page .ty-callout {
+  max-width: 900px;
+  margin-top: 26px;
+  padding: 22px 26px;
+  border: 2px solid var(--yellow-d);
+  border-left-width: 8px;
+  border-radius: 10px;
+  background: #fff8dc;
+}
+.thank-you-page .ty-callout h2 {
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.thank-you-page .ty-callout ol {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+  padding-left: 22px;
+  color: #23304f;
+  font-size: 17px;
+}
+.thank-you-page .ty-cta {
+  margin-top: 22px;
+}
+.thank-you-page .ty-cta .btn {
+  font-size: 19px;
+}
+.thank-you-page .ty-list-title {
+  margin-top: clamp(36px, 5vw, 56px);
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 800;
+}
+.thank-you-page .ty-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 30px 22px;
+  margin-top: 18px;
+  list-style: none;
+}
+.thank-you-page .ty-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.thank-you-page .ty-item .coupon {
+  align-self: stretch;
+  height: auto;
+  flex: 1;
+}
+.thank-you-page .ty-print {
+  justify-content: center;
+  margin-top: 6px;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.thank-you-page .ty-helper {
+  color: var(--steel);
+  font-size: 15px;
+  font-style: italic;
+}
+.thank-you-page .ty-empty {
+  display: grid;
+  justify-items: start;
+  gap: 18px;
+  max-width: 640px;
+  font-size: 19px;
+}
+
+@media print {
+  /* Printing the whole page: just the coupons and instructions. */
+  body:has(.thank-you-page) > :not(main),
+  .thank-you-page .page-header,
+  .thank-you-page .ty-banner img,
+  .thank-you-page .ty-cta,
+  .thank-you-page .ty-print,
+  .thank-you-page .ty-helper {
+    display: none !important;
+  }
+  .thank-you-page .ty-section {
+    padding: 0;
+    background: #fff;
+    --coupon-bg: #fff;
+  }
+  .thank-you-page .ty-item {
+    break-inside: avoid;
+  }
+
+  /* "Print Your Coupon": only that card. */
+  html.printing-coupon body *:not(:has(.is-print-target)):not(.is-print-target):not(.is-print-target *) {
+    display: none !important;
+  }
+  html.printing-coupon body *:has(.is-print-target) {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    max-width: none !important;
+    min-height: 0 !important;
+  }
+  html.printing-coupon .is-print-target {
+    display: block;
+    max-width: 520px;
+    margin: 0 auto !important;
+  }
+  html.printing-coupon .is-print-target .coupon {
+    --coupon-bg: #fff;
+  }
+  html.printing-coupon .is-print-target :is(.ty-print, .ty-helper) {
+    display: none !important;
+  }
+}

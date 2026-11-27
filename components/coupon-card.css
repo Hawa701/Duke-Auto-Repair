@@ -12,6 +12,32 @@
   scroll-margin-top: calc(var(--sticky-offset, 0px) + 24px);
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
+  /* Cut real holes for the side notches so the card's own dashed border
+     doesn't run through them. Centred on the notch circles below
+     (top 130px + 3px card border + 14px radius = 147px, on the card's outer edge;
+     the hole is the circle's inside, so its 3px dashed ring stays visible). */
+  --notch-y: 147px;
+  --notch-hole: radial-gradient(
+    circle at 0 var(--notch-y),
+    transparent 11px,
+    #000 11.5px
+  );
+  -webkit-mask:
+    var(--notch-hole) left / 51% 100% no-repeat,
+    radial-gradient(
+        circle at 100% var(--notch-y),
+        transparent 11px,
+        #000 11.5px
+      )
+      right / 51% 100% no-repeat;
+  mask:
+    var(--notch-hole) left / 51% 100% no-repeat,
+    radial-gradient(
+        circle at 100% var(--notch-y),
+        transparent 11px,
+        #000 11.5px
+      )
+      right / 51% 100% no-repeat;
 }
 .coupon::before,
 .coupon::after {

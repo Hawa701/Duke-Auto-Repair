@@ -113,7 +113,7 @@ Keep page-specific styles scoped under that page's wrapper class, such as `.home
 
 Pages and layouts use Server Components by default. Add `"use client"` where state, effects or browser APIs are needed. Reuse `Entrance` and `Stagger` for selective animation; these components support reduced-motion preferences. Fonts are loaded locally through `app/fonts.ts`.
 
-The header sticks on mobile only. The home page service stripe scrolls automatically and pauses on hover. Preserve these behaviors when changing navigation or responsive styles.
+The header is sticky; on tablet and mobile the utility bar scrolls away and only the navigation stays pinned. Header styles live in `components/header.css`. The home page service stripe scrolls automatically and pauses on hover. Preserve these behaviors when changing navigation or responsive styles.
 
 ## Verification
 

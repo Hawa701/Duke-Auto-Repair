@@ -173,7 +173,7 @@ Test the deployment on a temporary or test domain first, including direct visits
 3. The visitor lands on **/thank-you-coupons/?c=CODE,CODE** with only the coupons they chose, their promo codes, the ShopGenie booking instructions, a "Schedule Your Appointment Now" button, and a "Print Your Coupon" button under each card that prints just that card. If the email fails they still get this page, with a note to print or screenshot.
 4. GTM receives `coupon_claim` and `coupon_thank_you` events for tracking.
 
-`service@dukeautorepair.com` must be a mailbox (or alias) on the SiteGround account so its mail server accepts it as the sender. The thank-you page's hero banner uses the shop photo until the client's banner artwork is added (`banner` in `app/thank-you-coupons/page.tsx`). Emails only send on the PHP host, not under `npm run dev`.
+`service@dukeautorepair.com` must be a mailbox (or alias) on the SiteGround account so its mail server accepts it as the sender. The thank-you page's hero banner is the client's artwork in `public/images/promotions/` (set in `banner` in `app/thank-you-coupons/page.tsx`). Emails only send on the PHP host, not under `npm run dev`.
 
 ### Current demo behavior
 

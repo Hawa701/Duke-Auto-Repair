@@ -13,12 +13,24 @@ export const metadata: Metadata = {
 };
 
 /**
- * Hero banner. The client's banner artwork (sent separately) goes here:
- * copy it into public/images/promotions/ and set `banner` to its path and
- * size. While it's null, the shop photo header is used.
+ * Hero banner: the client's artwork (public/images/promotions/). It already
+ * shows the headline, so the page title under it is for screen readers and
+ * search only. Set to null to fall back to the shop photo header.
  */
-const banner: { src: string; width: number; height: number; alt: string } | null =
-  null;
+const banner: {
+  src: string;
+  /** Smaller copy for phones. */
+  srcSmall: string;
+  width: number;
+  height: number;
+  alt: string;
+} | null = {
+  src: "/images/promotions/thank-you-banner.webp",
+  srcSmall: "/images/promotions/thank-you-banner-900.webp",
+  width: 1672,
+  height: 941,
+  alt: "Duke Auto Repair & Service shop on Duke Street with a Service Savings coupon",
+};
 
 export default function ThankYouCouponsPage() {
   return (
@@ -29,11 +41,14 @@ export default function ThankYouCouponsPage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={banner.src}
+            srcSet={`${banner.srcSmall} 900w, ${banner.src} ${banner.width}w`}
+            sizes="100vw"
             width={banner.width}
             height={banner.height}
             alt={banner.alt}
+            fetchPriority="high"
           />
-          <div className="wrap ty-banner__text">
+          <div className="ty-banner__text">
             <h1 id="page-title">Thank You for Claiming Your Coupons!</h1>
             <p>Print or screenshot your coupon(s) below</p>
           </div>

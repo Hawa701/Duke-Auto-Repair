@@ -167,5 +167,5 @@ Test the deployment on a temporary or test domain first, including direct visits
 
 - Appointment buttons open the ShopGenie booking URL in a new tab. Update that URL once in `lib/business.ts`.
 - The review list contains six fictional sample entries. The featured testimonial is maintained separately. Replace sample entries with approved content before a public launch.
-- The contact form has no submission backend. Its send button is disabled, and visitors are directed to call. Connect a working endpoint before enabling submissions.
+- The contact and quote forms have no submission backend. Their send buttons are disabled, and visitors are directed to call. Set `integrations.quoteFormAction` (and connect the contact form) before enabling submissions.
 - No database or account system is required to run the current site.

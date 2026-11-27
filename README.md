@@ -100,10 +100,10 @@ Files in `public/` are served from the site root: `public/images/about/lounge.jp
 
 ### Adding a service
 
-1. Add the service to `lib/services.ts` and its detailed content to `lib/service-details.ts`.
-2. Create `app/services/<slug>/page.tsx`, following an existing route such as [the brake page](app/services/brakes/page.tsx). Set its metadata and render `ServiceDetail` with the corresponding content.
-3. Update related services, home page cards and footer links where appropriate. The home and footer service links are maintained in their own components.
-4. Add the new route to `ROUTES` in `scripts/check-site.py`, then run the checks below.
+1. Add the service, with its copy, to `services` in `lib/services.ts`. Its page, menu entry, footer link and sidebar links are generated from that list.
+2. Add it to a group in the same file so it appears on the Services overview, and add a short blurb in `components/home/services.tsx` for the home carousel.
+3. Add the new route to `ROUTES` in `scripts/check-site.py`, then run the checks below.
+4. If a public URL is retired or renamed, add a redirect to `public/.htaccess`.
 
 See [service content sources](docs/service-content-sources.md) for the background research. Confirm service claims with the shop when changing customer-facing copy.
 

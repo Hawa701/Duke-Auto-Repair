@@ -82,14 +82,51 @@
   border: 1.5px solid #e3e6ee;
   color: var(--ink);
 }
+/* Phones: compact tiles, two per row, the warranty across the bottom
+   (client's recommended layout), so the badges take far less height. */
 @media (max-width: 640px) {
   .trust-badges {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
   }
   .trust-badges .tb {
-    border-radius: 14px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 8px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .trust-badges .tb--warranty {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    gap: 10px;
+    padding: 8px 12px;
+  }
+  .trust-badges .tb--warranty .tb-text {
+    text-align: left;
+  }
+  .trust-badges .tb-seal {
+    width: 34px;
+    height: 34px;
+    box-shadow:
+      0 0 0 2px var(--deep),
+      0 0 0 3.5px var(--yellow);
+  }
+  .trust-badges .tb-seal svg.i {
+    width: 19px;
+    height: 19px;
+  }
+  .trust-badges .tb-text {
+    gap: 2px;
+  }
+  .trust-badges .tb-text b {
+    font-size: 16px;
+  }
+  .trust-badges .tb-text span {
+    font-size: 12px;
+    line-height: 1.2;
   }
 }
 
@@ -124,6 +161,17 @@
 }
 .trust-badges--light .tb:has(.tb-link:hover) {
   border-color: var(--yellow);
+}
+@media (max-width: 640px) {
+  .trust-badges .tb-text b .tb-brand {
+    font-size: 15px;
+  }
+  .trust-badges .tb-link {
+    flex-direction: column;
+    gap: 6px;
+    margin: -10px -8px;
+    padding: 10px 8px;
+  }
 }
 .trust-badges .tb-link:focus-visible {
   outline: 3px solid var(--yellow);

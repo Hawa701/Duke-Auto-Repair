@@ -248,7 +248,7 @@ export const articles: Article[] = [
       },
       {
         "type": "p",
-        "text": "Pull over, unscrew the gas cap, and tighten it until it clicks at least three times. The check engine light may not turn off immediately—it can take 10 to 20 miles of driving for the system to reset. If the light stays on, you might have a real mechanical issue. If you need a diagnostic check or are looking for a [virginia state vehicle inspection near me](/emissions-test/), bring your car into Duke Auto Repair so we can pull the codes and get you back on the road."
+        "text": "Pull over, unscrew the gas cap, and tighten it until it clicks at least three times. The check engine light may not turn off immediately—it can take 10 to 20 miles of driving for the system to reset. If the light stays on, you might have a real mechanical issue. If you need a diagnostic check or are looking for a [virginia state vehicle inspection near me](/virginia-safety-inspection/), bring your car into Duke Auto Repair so we can pull the codes and get you back on the road."
       }
     ],
     related: ["why-is-my-check-engine-light-flashing", "why-is-my-oil-light-on"],
@@ -418,7 +418,7 @@ export const articles: Article[] = [
       },
       {
         "type": "p",
-        "text": "Pull over to a safe area immediately and turn off the engine. Do not attempt to drive the car at highway speeds or tow heavy loads. Have the vehicle towed to a repair shop. Whether you need an emergency diagnostic or just need to pass your [virginia state vehicle inspection near me](/emissions-test/), Duke Auto Repair can accurately diagnose the misfire and repair the root cause."
+        "text": "Pull over to a safe area immediately and turn off the engine. Do not attempt to drive the car at highway speeds or tow heavy loads. Have the vehicle towed to a repair shop. Whether you need an emergency diagnostic or just need to pass your [virginia state vehicle inspection near me](/virginia-safety-inspection/), Duke Auto Repair can accurately diagnose the misfire and repair the root cause."
       }
     ],
     related: ["gas-cap-is-loose", "why-is-my-oil-light-on"],

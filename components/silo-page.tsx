@@ -5,11 +5,33 @@ import ReviewsSlider from "./reviews-slider";
 import Icon from "./icon";
 import RichText from "./rich-text";
 import CertLogos, { type CertLogoId } from "./cert-logos";
+import type { GalleryPhoto } from "@/lib/services";
 import { business, withBookingPopup } from "@/lib/business";
 import type { SiloSection } from "@/lib/services";
 import "./silo-page.css";
 
 type SiloLink = { href: string; label: string };
+
+/**
+ * Two photos per row. With an odd number, the first landscape photo runs
+ * full width on top so the grid has no gap. When every photo is portrait,
+ * they get tall frames instead (three across when there are three).
+ */
+function galleryLayout(gallery: GalleryPhoto[]) {
+  const isTall = (photo: GalleryPhoto) =>
+    (photo.height ?? 739) > (photo.width ?? 1600);
+  const allTall = gallery.length > 1 && gallery.every(isTall);
+  let featured: string | undefined;
+  let photos = gallery;
+  if (!allTall && gallery.length % 2 === 1 && gallery.length > 1) {
+    const wide = gallery.find((photo) => !isTall(photo));
+    if (wide) {
+      featured = wide.src;
+      photos = [wide, ...gallery.filter((photo) => photo !== wide)];
+    }
+  }
+  return { photos, featured, allTall };
+}
 
 /**
  * Shared layout for the service and vehicle "silo" pages in the content
@@ -45,8 +67,9 @@ export default function SiloPage({
   /** Certification logos shown in the sidebar (e.g. on the inspection page). */
   logos?: CertLogoId[];
   /** Extra shop photos shown under the page copy. */
-  gallery?: { src: string; alt: string }[];
+  gallery?: GalleryPhoto[];
 }) {
+  const layout = galleryLayout(gallery ?? []);
   return (
     <div className="silo-page">
       <PageHeader
@@ -73,15 +96,29 @@ export default function SiloPage({
             {gallery && gallery.length > 0 && (
               <section className="silo-gallery" aria-labelledby="silo-gallery-title">
                 <h2 id="silo-gallery-title">In the shop</h2>
-                <div className="silo-gallery-grid">
-                  {gallery.map((photo) => (
-                    <figure key={photo.src}>
+                <div
+                  className={`silo-gallery-grid${layout.allTall ? " silo-gallery-grid--tall" : ""}${layout.allTall && gallery.length % 3 === 0 ? " silo-gallery-grid--thirds" : ""}`}
+                >
+                  {layout.photos.map((photo) => (
+                    <figure
+                      key={photo.src}
+                      className={photo.src === layout.featured ? "is-wide" : undefined}
+                    >
                       <Image
                         src={photo.src}
                         alt={photo.alt}
-                        width={1600}
-                        height={739}
-                        sizes="(max-width: 900px) 100vw, 420px"
+                        width={photo.width ?? 1600}
+                        height={photo.height ?? 739}
+                        sizes={
+                          photo.src === layout.featured
+                            ? "(max-width: 900px) 100vw, 860px"
+                            : "(max-width: 520px) 100vw, (max-width: 900px) 50vw, 420px"
+                        }
+                        style={
+                          photo.position
+                            ? { objectPosition: photo.position }
+                            : undefined
+                        }
                       />
                     </figure>
                   ))}

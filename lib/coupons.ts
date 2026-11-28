@@ -44,7 +44,8 @@ export const couponGroups: {
   holiday?: boolean;
 }[] = [
   { id: "winter", title: "Winter Campaign Specials", holiday: true },
-  { id: "winter-driving", title: "Winter Driving & Inspection Specials" },
+  // Red like the top row, at the client's request (Nov 2026 change list).
+  { id: "winter-driving", title: "Winter Driving & Inspection Specials", holiday: true },
   { id: "evergreen", title: "First-Visit & Everyday Coupons" },
 ];
 

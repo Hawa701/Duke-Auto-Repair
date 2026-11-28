@@ -18,12 +18,23 @@ ErrorDocument 404 /404.html
   # Service pages
   RewriteRule ^services/brakes/?$ /brake-repair/ [R=301,L]
   RewriteRule ^services/engine-diagnostics/?$ /check-engine-light-diagnostic/ [R=301,L]
-  RewriteRule ^services/state-inspection/?$ /emissions-test/ [R=301,L]
+  RewriteRule ^services/state-inspection/?$ /virginia-safety-inspection/ [R=301,L]
   RewriteRule ^services/(tires-wheels|wheel-alignment)/?$ /wheel-alignment/ [R=301,L]
   RewriteRule ^services/(maintenance|oil-change|bg-fluids|battery-services)/?$ /oil-change-service/ [R=301,L]
-  RewriteRule ^services/(ac-heating|air-conditioning|heating-system)/?$ /car-ac-repair/ [R=301,L]
+  RewriteRule ^services/(ac-heating|air-conditioning)/?$ /car-ac-repair/ [R=301,L]
+  RewriteRule ^services/heating-system/?$ /car-heater-repair/ [R=301,L]
   RewriteRule ^services/suspension-steering/?$ /suspension-repair/ [R=301,L]
   RewriteRule ^services/transmission/?$ /transmission-repair/ [R=301,L]
+
+  # Nov 2026: State Inspections & Emissions split into two pages. The
+  # change list gave /services/... addresses; the pages live at the root
+  # like every other service page, so those addresses redirect too.
+  RewriteRule ^emissions-test/?$ /virginia-safety-inspection/ [R=301,L]
+  RewriteRule ^services/virginia-safety-inspection/?$ /virginia-safety-inspection/ [R=301,L]
+  RewriteRule ^services/virginia-emissions-inspection/?$ /virginia-emissions-inspection/ [R=301,L]
+  # The old combined AC & Heating URL (/car-ac-repair/) is now the A/C page.
+  RewriteRule ^auto-air-conditioning-repair-alexandria-va/?$ /car-ac-repair/ [R=301,L]
+  RewriteRule ^services/(cooling-system-repair|car-heater-repair|car-ac-repair)/?$ /$1/ [R=301,L]
 
   # Vehicle pages that moved to the site root
   RewriteRule ^vehicles/toyota/?$ /toyota-mechanic/ [R=301,L]

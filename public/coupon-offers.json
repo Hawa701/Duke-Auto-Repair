@@ -1,5 +1,5 @@
 {
-  "_comment": "The 7 coupons (Coupon Cards, Thank-You Page & Email Copy Guide). Used by the coupons page, the claim pop-up, the thank-you page (lib/coupons.ts) and the coupon email (public/send-coupons.php), so edit offers here only. Set expires to null for no expiration. group: winter (red, top row), winter-driving (middle row), evergreen (bottom row).",
+  "_comment": "The 7 coupons (Coupon Cards, Thank-You Page & Email Copy Guide). Used by the coupons page, the claim pop-up, the thank-you page (lib/coupons.ts) and the coupon email (public/send-coupons.php), so edit offers here only. Set expires to null for no expiration. group: winter (red, top row), winter-driving (red, middle row), evergreen (yellow, bottom row).",
   "coupons": [
     {
       "id": "winter-safety",

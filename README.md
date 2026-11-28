@@ -2,7 +2,7 @@
 
 A responsive website for Duke Auto Repair & Service in Alexandria, Virginia. Visitors can explore services, meet the team, read customer feedback, find contact details, and book appointments through ShopGenie.
 
-The site includes Home, About, Services (8 service pages), Vehicles We Service (17 brand pages), Reviews, Contact, Coupons (with a claim-and-email coupon funnel), Car Tips (with articles) and Request a Quote. It uses local photography and fonts, shared page layouts, and selective entrance animations.
+The site includes Home, About, Services (15 service pages), Vehicles We Service (17 brand pages), Reviews, Contact, Coupons (with a claim-and-email coupon funnel), Car Tips (with articles) and Request a Quote. It uses local photography and fonts, shared page layouts, and selective entrance animations.
 
 ## Tech stack
 
@@ -142,7 +142,7 @@ The checker defaults to `http://localhost:3000`. Pass a different local base URL
 python scripts/check-site.py http://localhost:3001
 ```
 
-The script covers all 38 pages and confirms removed routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
+The script covers all 41 pages and confirms removed routes return 404. Also check mobile, tablet and desktop layouts in a browser, including navigation, keyboard focus, review filters and appointment links.
 
 ## Static build and SiteGround deployment
 
@@ -168,7 +168,7 @@ Test the deployment on a temporary or test domain first, including direct visits
 
 ### Coupon funnel
 
-1. **/promotions/** shows the 7 coupons (2 red winter specials, 2 winter driving & inspection specials, 3 first-visit/everyday coupons). "Claim Coupon" opens one pop-up form with that coupon already ticked; visitors can tick more. It asks for name and email, with optional phone and vehicle, and sends any `utm_*` tags from the landing URL (e.g. `/promotions/?utm_campaign=winter`).
+1. **/promotions/** shows the 7 coupons (2 winter specials and 2 winter driving & inspection specials, all red; 3 first-visit/everyday coupons in yellow). "Claim Coupon" opens one pop-up form with that coupon already ticked; visitors can tick more. It asks for name, email and phone (required), with an optional vehicle, and sends any `utm_*` tags from the landing URL (e.g. `/promotions/?utm_campaign=winter`).
 2. The form posts to **public/send-coupons.php**, which emails the voucher (subject "Your Duke Auto Repair Coupons Inside!") from `service@dukeautorepair.com` with a blind copy to the shop (`LEAD_BCC`). The shop's copy carries `X-Duke-Coupons` and `X-Duke-Lead-Source` headers for inbox rules. It is rate-limited per visitor and per email address and has the same spam traps as the quote form.
 3. The visitor lands on **/thank-you-coupons/?c=CODE,CODE** with only the coupons they chose, their promo codes, the ShopGenie booking instructions, a "Schedule Your Appointment Now" button, and a "Print Your Coupon" button under each card that prints just that card. If the email fails they still get this page, with a note to print or screenshot.
 4. GTM receives `coupon_claim` and `coupon_thank_you` events for tracking.

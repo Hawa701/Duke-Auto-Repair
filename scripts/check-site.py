@@ -12,7 +12,7 @@ BASE = (sys.argv[1] if len(sys.argv) > 1 else "http://localhost:3000").rstrip("/
 ROUTES = (
     ['/', '/about-us', '/services', '/vehicles', '/reviews', '/contact', '/promotions', '/thank-you-coupons', '/car-tips', '/quote']
     # Root-level pages from the Master SEO Blueprint.
-    + ['/brake-repair', '/check-engine-light-diagnostic', '/emissions-test', '/wheel-alignment', '/oil-change-service', '/car-ac-repair', '/suspension-repair', '/transmission-repair', '/tire-shop-alexandria', '/mechanic-alexandria-va', '/auto-electrical-repair', '/auto-tune-up']
+    + ['/brake-repair', '/check-engine-light-diagnostic', '/virginia-safety-inspection', '/virginia-emissions-inspection', '/wheel-alignment', '/oil-change-service', '/car-ac-repair', '/cooling-system-repair', '/car-heater-repair', '/suspension-repair', '/transmission-repair', '/tire-shop-alexandria', '/mechanic-alexandria-va', '/auto-electrical-repair', '/auto-tune-up']
     + ['/toyota-mechanic', '/honda-repairs', '/nissan-repair-shop', '/ford-service', '/hyundai-maintenance', '/chevy-repair', '/bmw-service', '/mercedes-service', '/jeep-repair-shop', '/lexus-mechanic', '/audi-repair']
     + [f'/car-tips/{slug}' for slug in ['diagnosing-vehicle-alignment-issues', 'winter-driving-tips-northern-virginia', 'what-your-check-engine-light-means']]
     # Car Tips articles at the site root (Master SEO Blueprint, section 4).

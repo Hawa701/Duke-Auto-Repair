@@ -398,8 +398,8 @@
   height: 96px;
 }
 
-/* "In the shop" photos under the service copy. Three photos: one wide on
-   top, two below. Two photos: side by side. */
+/* "In the shop" photos under the service copy: two per row; with an odd
+   number, one landscape photo runs wide on top (see galleryLayout). */
 .silo-gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -413,9 +413,16 @@
   aspect-ratio: 4 / 3;
   background: var(--concrete);
 }
-.silo-gallery-grid figure:first-child:nth-last-child(3) {
+.silo-gallery-grid figure.is-wide {
   grid-column: 1 / -1;
   aspect-ratio: 16 / 7;
+}
+/* Every photo portrait: tall frames, three across when there are three. */
+.silo-gallery-grid--tall figure {
+  aspect-ratio: 3 / 4;
+}
+.silo-gallery-grid--thirds {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .silo-gallery-grid img {
   display: block;
@@ -428,8 +435,18 @@
     grid-template-columns: minmax(0, 1fr);
   }
   .silo-gallery-grid figure,
-  .silo-gallery-grid figure:first-child:nth-last-child(3) {
+  .silo-gallery-grid figure.is-wide {
     aspect-ratio: 16 / 9;
+  }
+  .silo-gallery-grid--tall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .silo-gallery-grid--thirds {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .silo-gallery-grid--tall figure {
+    aspect-ratio: 3 / 4;
   }
 }
 

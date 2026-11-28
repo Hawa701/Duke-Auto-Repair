@@ -163,14 +163,14 @@ foreach (['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
 if (!$codes) {
     finish(false, 'Please choose at least one coupon.', 422);
 }
-if ($name === '' || $email === '') {
-    finish(false, 'Please enter your name and email.', 422);
+if ($name === '' || $email === '' || $phone === '') {
+    finish(false, 'Please enter your name, email and phone number.', 422);
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     finish(false, 'Please enter a valid email address.', 422);
 }
-if ($phone !== '' && !preg_match('/\d{7,}/', preg_replace('/\D+/', '', $phone))) {
-    finish(false, 'Please enter a valid phone number, or leave it blank.', 422);
+if (!preg_match('/\d{7,}/', preg_replace('/\D+/', '', $phone))) {
+    finish(false, 'Please enter a valid phone number.', 422);
 }
 
 $ipKey    = 'ip-' . ($_SERVER['REMOTE_ADDR'] ?? 'unknown');
@@ -231,7 +231,8 @@ $yellow = '#e2c143';
 $red = '#b3121a';
 $cards = '';
 foreach ($chosen as $code => $offer) {
-    $holiday = ($offer['group'] ?? '') === 'winter';
+    // Winter rows are red, like the website's cards.
+    $holiday = in_array($offer['group'] ?? '', ['winter', 'winter-driving'], true);
     $head    = $holiday ? $red : $yellow;
     $headInk = $holiday ? '#ffffff' : $navy;
     $expires = $offer['expires'] ? 'Expires ' . h((string) $offer['expires']) : 'No expiration';

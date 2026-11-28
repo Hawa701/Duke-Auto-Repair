@@ -262,12 +262,14 @@ export default function CouponClaim() {
             />
           </div>
           <div className="coupon-claim__field">
-            <label htmlFor="claim-phone">Phone (optional)</label>
+            <label htmlFor="claim-phone">Phone</label>
             <input
               id="claim-phone"
               type="tel"
               name="phone"
               autoComplete="tel"
+              required
+              minLength={7}
               maxLength={30}
             />
           </div>
